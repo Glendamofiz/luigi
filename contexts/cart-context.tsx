@@ -11,6 +11,7 @@ export interface CartItem {
   price: string
   perUnit: string
   quantity: number
+  source?: "product-page" | "wholesale"
 }
 
 interface CartContextType {

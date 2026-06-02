@@ -47,6 +47,7 @@ export function AddToCartButton({
       units: units,
       price: `$${(priceNumber * quantity).toFixed(0)}`,
       perUnit: perUnit,
+      source: "product-page",
     }
     
     // Add item with specified quantity

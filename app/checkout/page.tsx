@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ShoppingCart, Truck, CheckCircle, ArrowLeft, Trash2, Plus, Minus, MessageCircle, Wallet, Coins, AlertCircle, Upload } from "lucide-react"
 import { CryptoCheckout } from "@/components/crypto-checkout"
-import { getTotalQuantity, meetsMinimumQuantity, getCryptoDiscount, CRYPTO_DISCOUNT_RATE } from "@/lib/order-utils"
+import { getTotalQuantity, meetsMinimumQuantity, getCryptoDiscount, CRYPTO_DISCOUNT_RATE, getProductPageQuantity, getQuantityShortfall } from "@/lib/order-utils"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -260,8 +260,11 @@ export default function CheckoutPage() {
   const isUSA = shippingInfo.country === "United States"
   const paymentMethods = isUSA ? USA_PAYMENT_METHODS : INTERNATIONAL_PAYMENT_METHODS
 
-  // Quantity validation (minimum 5 units)
+  // Quantity validation (minimum 5 units for product-page items only)
   const totalQuantity = getTotalQuantity(items)
+  const productPageQty = getProductPageQuantity(items)
+  const quantityShortfall = getQuantityShortfall(items)
+  const hasWholesaleOnly = items.every(item => item.source === "wholesale")
   const canCheckout = meetsMinimumQuantity(items)
 
   // Crypto 5% discount
@@ -490,13 +493,13 @@ export default function CheckoutPage() {
                   </div>
 
                   {/* Minimum order warnings */}
-                  {!canCheckout && (
+                  {!canCheckout && !hasWholesaleOnly && (
                     <div className="mt-4 p-3 bg-amber-50 border border-amber-200 rounded-lg">
                       <div className="flex items-center gap-2">
                         <AlertCircle className="w-4 h-4 text-amber-600" />
                         <p className="text-sm text-amber-800">
-                          <span className="font-semibold">Minimum:</span> Add at least 5 units. You have{" "}
-                          <span className="font-semibold">{totalQuantity}</span>.
+                          <span className="font-semibold">Product items minimum:</span> You have {productPageQty} units. Add{" "}
+                          <span className="font-semibold">{quantityShortfall} more</span> to reach 5 unit minimum.
                         </p>
                       </div>
                     </div>
