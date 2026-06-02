@@ -6,9 +6,9 @@ import { Footer } from "@/components/footer"
 import { useCart } from "@/contexts/cart-context"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { ShoppingCart, Truck, CheckCircle, ArrowLeft, Trash2, Plus, Minus, MessageCircle, Wallet, Coins, AlertCircle } from "lucide-react"
+import { ShoppingCart, Truck, CheckCircle, ArrowLeft, Trash2, Plus, Minus, MessageCircle, Wallet, Coins, AlertCircle, Upload } from "lucide-react"
 import { CryptoCheckout } from "@/components/crypto-checkout"
-import { getTotalQuantity, meetsMinimumQuantity, getCryptoDiscount, CRYPTO_DISCOUNT_RATE } from "@/lib/order-utils"
+import { getTotalQuantity, meetsMinimumQuantity, getCryptoDiscount, CRYPTO_DISCOUNT_RATE, getProductPageQuantity, getQuantityShortfall } from "@/lib/order-utils"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -260,8 +260,11 @@ export default function CheckoutPage() {
   const isUSA = shippingInfo.country === "United States"
   const paymentMethods = isUSA ? USA_PAYMENT_METHODS : INTERNATIONAL_PAYMENT_METHODS
 
-  // Quantity validation (minimum 5 units)
+  // Quantity validation (minimum 5 units for product-page items only)
   const totalQuantity = getTotalQuantity(items)
+  const productPageQty = getProductPageQuantity(items)
+  const quantityShortfall = getQuantityShortfall(items)
+  const hasWholesaleOnly = items.every(item => item.source === "wholesale")
   const canCheckout = meetsMinimumQuantity(items)
 
   // Crypto 5% discount
@@ -490,13 +493,13 @@ export default function CheckoutPage() {
                   </div>
 
                   {/* Minimum order warnings */}
-                  {!canCheckout && (
+                  {!canCheckout && !hasWholesaleOnly && (
                     <div className="mt-4 p-3 bg-amber-50 border border-amber-200 rounded-lg">
                       <div className="flex items-center gap-2">
                         <AlertCircle className="w-4 h-4 text-amber-600" />
                         <p className="text-sm text-amber-800">
-                          <span className="font-semibold">Minimum:</span> Add at least 5 units. You have{" "}
-                          <span className="font-semibold">{totalQuantity}</span>.
+                          <span className="font-semibold">Product items minimum:</span> You have {productPageQty} units. Add{" "}
+                          <span className="font-semibold">{quantityShortfall} more</span> to reach 5 unit minimum.
                         </p>
                       </div>
                     </div>
@@ -756,38 +759,96 @@ export default function CheckoutPage() {
 
                       {/* Payment Instructions */}
                       {selectedPayment && selectedPayment !== "crypto" && (
-                        <div className="p-6 bg-gray-50 border border-gray-200 rounded-xl">
-                          <div className="text-center">
-                            <div className="w-16 h-16 bg-[#D4AF37]/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                              <MessageCircle className="w-8 h-8 text-[#D4AF37]" />
+                        <div className="p-6 bg-gray-50 border border-gray-200 rounded-xl space-y-6">
+                          {/* Chime-specific display */}
+                          {selectedPayment === "chime" && (
+                            <div className="text-center space-y-4">
+                              <div>
+                                <h3 className="font-semibold text-gray-900 mb-2 text-lg">Chime Payment</h3>
+                                <p className="text-gray-600 mb-4">
+                                  Send <span className="font-bold text-[#D4AF37]">${totalPrice.toLocaleString()}</span> to:
+                                </p>
+                                <div className="bg-white p-4 rounded-lg border border-green-300 inline-block">
+                                  <p className="text-2xl font-bold text-green-700">$Albert-Ham-1</p>
+                                </div>
+                              </div>
+                              
+                              <div className="flex justify-center">
+                                <img 
+                                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chime-sSeIbtAyWzo8qmYZ8Xctw4mRZnUrDu.jpg"
+                                  alt="Chime Payment QR Code"
+                                  className="w-64 h-64 rounded-lg border-2 border-gray-300"
+                                />
+                              </div>
+
+                              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-left">
+                                <h4 className="font-semibold text-blue-900 mb-2">How to pay:</h4>
+                                <ol className="text-sm text-blue-800 space-y-1 list-decimal list-inside">
+                                  <li>Open your Chime app</li>
+                                  <li>Tap "Send Money" or scan the QR code above</li>
+                                  <li>Enter username: <span className="font-bold">$Albert-Ham-1</span></li>
+                                  <li>Enter amount: <span className="font-bold">${totalPrice.toLocaleString()}</span></li>
+                                  <li>Complete the payment</li>
+                                </ol>
+                              </div>
+
+                              <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 space-y-3">
+                                <h4 className="font-semibold text-amber-900 flex items-center gap-2">
+                                  <Upload className="w-5 h-5" />
+                                  Upload Payment Proof
+                                </h4>
+                                <p className="text-sm text-amber-800">
+                                  After sending payment, please upload a screenshot confirming the transaction:
+                                </p>
+                                <input
+                                  type="file"
+                                  accept="image/*"
+                                  onChange={(e) => {
+                                    const file = e.target.files?.[0]
+                                    if (file) {
+                                      console.log('Payment proof uploaded:', file.name)
+                                    }
+                                  }}
+                                  className="w-full px-4 py-2 border border-amber-300 rounded-lg cursor-pointer file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:bg-amber-100 file:text-amber-900 file:font-semibold hover:file:bg-amber-200"
+                                />
+                              </div>
                             </div>
-                            <h3 className="font-semibold text-gray-900 mb-2">
-                              {paymentMethods.find(m => m.id === selectedPayment)?.name} Payment
-                            </h3>
-                            <p className="text-gray-600 mb-4">
-                              To complete your payment of <span className="font-bold text-[#D4AF37]">${totalPrice.toLocaleString()}</span>, 
-                              please contact our live chat agent for payment details.
-                            </p>
-                            <button
-                              type="button"
-                              onClick={() => {
-                                // Open live chat - can be connected to Tawk.to or other chat widget
-                                if (typeof window !== 'undefined') {
-                                  const tawkAPI = (window as Window & { Tawk_API?: { toggle?: () => void } }).Tawk_API
-                                  if (tawkAPI?.toggle) {
-                                    tawkAPI.toggle()
-                                  } else {
-                                    // Fallback - scroll to bottom where chat widget usually is or show alert
-                                    alert("Live chat is loading. Please click the chat icon in the bottom right corner, or try again in a moment.")
+                          )}
+
+                          {/* Other payment methods */}
+                          {selectedPayment !== "chime" && (
+                            <div className="text-center">
+                              <div className="w-16 h-16 bg-[#D4AF37]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <MessageCircle className="w-8 h-8 text-[#D4AF37]" />
+                              </div>
+                              <h3 className="font-semibold text-gray-900 mb-2">
+                                {paymentMethods.find(m => m.id === selectedPayment)?.name} Payment
+                              </h3>
+                              <p className="text-gray-600 mb-4">
+                                To complete your payment of <span className="font-bold text-[#D4AF37]">${totalPrice.toLocaleString()}</span>, 
+                                please contact our live chat agent for payment details.
+                              </p>
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  // Open live chat - can be connected to Tawk.to or other chat widget
+                                  if (typeof window !== 'undefined') {
+                                    const tawkAPI = (window as Window & { Tawk_API?: { toggle?: () => void } }).Tawk_API
+                                    if (tawkAPI?.toggle) {
+                                      tawkAPI.toggle()
+                                    } else {
+                                      // Fallback - scroll to bottom where chat widget usually is or show alert
+                                      alert("Live chat is loading. Please click the chat icon in the bottom right corner, or try again in a moment.")
+                                    }
                                   }
-                                }
-                              }}
-                              className="inline-flex items-center gap-2 bg-[#D4AF37] text-black font-semibold px-6 py-3 rounded-lg hover:bg-[#C5A028] transition-colors"
-                            >
-                              <MessageCircle className="w-5 h-5" />
-                              Contact Live Chat Agent
-                            </button>
-                          </div>
+                                }}
+                                className="inline-flex items-center gap-2 bg-[#D4AF37] text-black font-semibold px-6 py-3 rounded-lg hover:bg-[#C5A028] transition-colors"
+                              >
+                                <MessageCircle className="w-5 h-5" />
+                                Contact Live Chat Agent
+                              </button>
+                            </div>
+                          )}
                         </div>
                       )}
 

@@ -5,13 +5,16 @@ import { X, Plus, Minus, ShoppingCart, Trash2, AlertCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
-import { getTotalQuantity, meetsMinimumQuantity } from "@/lib/order-utils"
+import { getTotalQuantity, meetsMinimumQuantity, getProductPageQuantity, getQuantityShortfall } from "@/lib/order-utils"
 
 export function CartSidebar() {
   const { items, isOpen, closeCart, removeItem, updateQuantity, totalItems, totalPrice, clearCart } = useCart()
 
   const totalQuantity = getTotalQuantity(items)
+  const productPageQty = getProductPageQuantity(items)
+  const quantityShortfall = getQuantityShortfall(items)
   const canCheckout = meetsMinimumQuantity(items)
+  const hasWholesaleOnly = items.every(item => item.source === "wholesale")
 
   if (!isOpen) return null
 
@@ -122,16 +125,16 @@ export function CartSidebar() {
         {/* Footer */}
         {items.length > 0 && (
           <div className="border-t border-gray-200 px-6 py-4 space-y-4">
-            {/* Minimum quantity warning */}
-            {!canCheckout && (
+            {/* Minimum quantity warning - only show if has product-page items */}
+            {!canCheckout && !hasWholesaleOnly && (
               <div className="rounded-lg border border-amber-200 bg-amber-50 p-3">
                 <div className="flex items-start gap-2">
                   <AlertCircle className="w-4 h-4 text-amber-600 mt-0.5 flex-shrink-0" />
                   <div className="text-xs text-amber-800">
                     <p>
-                      <span className="font-semibold">Minimum order:</span> Add at least{" "}
-                      <span className="font-semibold">5 units</span> to your cart. You have{" "}
-                      <span className="font-semibold">{totalQuantity}</span>.
+                      <span className="font-semibold">Minimum for product items:</span> You have{" "}
+                      <span className="font-semibold">{productPageQty}</span> product units. Add{" "}
+                      <span className="font-semibold">{quantityShortfall} more</span> to reach 5 units minimum.
                     </p>
                   </div>
                 </div>
@@ -159,7 +162,7 @@ export function CartSidebar() {
                 disabled
                 className="w-full bg-gray-300 text-gray-500 font-semibold py-6 cursor-not-allowed"
               >
-                Need 5 Units Minimum
+                {hasWholesaleOnly ? "Proceed to Checkout" : `Need ${quantityShortfall} More Units`}
               </Button>
             )}
             <button

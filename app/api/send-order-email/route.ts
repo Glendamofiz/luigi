@@ -106,9 +106,12 @@ function generateCustomerEmailHTML(order: OrderData) {
             ${order.shippingAddress.country}
           </p>
           
-          <div style="background-color: #1a1a1a; padding: 30px 20px; border-radius: 8px; text-align: center; margin-bottom: 30px;">
-            <p style="margin: 0 0 20px; color: #ffffff; font-size: 16px;">Need help with your order?</p>
-            <a href="https://t.me/luigiofficial" target="_blank" style="display: inline-block; background-color: #0088cc; color: white; padding: 14px 40px; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px; transition: background-color 0.3s;">Contact Us on Telegram</a>
+          <div style="background-color: #f0f8ff; border: 2px solid #0088cc; padding: 25px; border-radius: 12px; margin-bottom: 30px; text-align: center;">
+            <h3 style="color: #0088cc; margin: 0 0 15px; font-size: 18px;">📱 Questions About Your Order?</h3>
+            <p style="color: #666; margin: 0 0 15px; line-height: 1.6;">
+              Contact our team on Telegram for quick support and updates on your order.
+            </p>
+            <a href="https://t.me/luigiofficial" target="_blank" style="display: inline-block; background-color: #0088cc; color: white; padding: 12px 32px; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px; transition: background-color 0.3s; margin-top: 10px;">Message Us on Telegram</a>
           </div>
         </div>
         

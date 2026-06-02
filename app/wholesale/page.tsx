@@ -185,6 +185,7 @@ export default function WholesalePage() {
       productImage: product.image,
       units: typeof tier.units === 'number' ? tier.units : parseInt(tier.units.replace(/,/g, '')),
       perUnit: tier.perUnit,
+      source: "wholesale",
     })
 
     setAddedToCart(prev => ({
