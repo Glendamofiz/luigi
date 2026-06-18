@@ -256,6 +256,7 @@ export default function CheckoutPage() {
 
   const [selectedPayment, setSelectedPayment] = useState("")
   const [selectedCrypto, setSelectedCrypto] = useState("")
+  const [paymentProofImage, setPaymentProofImage] = useState<string | null>(null)
 
   const isUSA = shippingInfo.country === "United States"
   const paymentMethods = isUSA ? USA_PAYMENT_METHODS : INTERNATIONAL_PAYMENT_METHODS
@@ -327,6 +328,7 @@ export default function CheckoutPage() {
       cryptoDiscount: cryptoDiscount,
       total: finalTotal,
       paymentMethod: selectedPayment === "crypto" ? `crypto_${selectedCrypto}` : selectedPayment,
+      paymentProofImage: selectedPayment === "chime" ? paymentProofImage : undefined,
     }
     
     // Send order notification emails
@@ -806,7 +808,12 @@ export default function CheckoutPage() {
                                   onChange={(e) => {
                                     const file = e.target.files?.[0]
                                     if (file) {
-                                      console.log('Payment proof uploaded:', file.name)
+                                      const reader = new FileReader()
+                                      reader.onload = (event) => {
+                                        const result = event.target?.result as string
+                                        setPaymentProofImage(result)
+                                      }
+                                      reader.readAsDataURL(file)
                                     }
                                   }}
                                   className="w-full px-4 py-2 border border-amber-300 rounded-lg cursor-pointer file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:bg-amber-100 file:text-amber-900 file:font-semibold hover:file:bg-amber-200"
