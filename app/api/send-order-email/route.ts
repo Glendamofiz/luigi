@@ -25,6 +25,7 @@ interface OrderData {
   shipping: number
   total: number
   paymentMethod: string
+  paymentProofImage?: string
   notes?: string
 }
 
@@ -183,6 +184,14 @@ function generateAdminEmailHTML(order: OrderData) {
             ${order.shippingAddress.city}, ${order.shippingAddress.state} ${order.shippingAddress.zip}<br>
             ${order.shippingAddress.country}
           </p>
+          
+          ${order.paymentProofImage ? `
+            <h3 style="color: #1a1a1a; border-bottom: 2px solid #c9a227; padding-bottom: 10px; margin-bottom: 20px;">Payment Proof</h3>
+            <div style="margin-bottom: 25px; text-align: center;">
+              <p style="color: #666; font-size: 14px; margin-bottom: 10px;">Chime payment screenshot:</p>
+              <img src="${order.paymentProofImage}" alt="Payment Proof" style="max-width: 100%; height: auto; border-radius: 8px; border: 2px solid #c9a227; padding: 5px; background-color: #f9f9f9;">
+            </div>
+          ` : ''}
           
           <h3 style="color: #1a1a1a; border-bottom: 2px solid #c9a227; padding-bottom: 10px; margin-bottom: 20px;">Order Items</h3>
           <table style="width: 100%; border-collapse: collapse; margin-bottom: 25px;">
