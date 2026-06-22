@@ -38,6 +38,16 @@ const blogSchema = {
 
 const blogPosts = [
   {
+    slug: "do-liquid-diamonds-get-you-high",
+    title: "Do Liquid Diamonds Get You High? Potency Explained",
+    excerpt: "Here's what the lab data says about THCA crystallization, terpene content, and potency in Luigi's live resin products.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg",
+    category: "Education",
+    readTime: "9 min read",
+    date: "June 22, 2026",
+    featured: true,
+  },
+  {
     slug: "how-to-open-a-luigi-preroll",
     title: "How to Open a Luigi Preroll: Step-by-Step Guide for All Formats",
     excerpt: "Master the art of opening Luigi prerolls with our comprehensive step-by-step guide. Learn proper techniques for different formats and storage tips.",

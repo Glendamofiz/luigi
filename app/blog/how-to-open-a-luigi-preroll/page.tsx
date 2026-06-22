@@ -82,13 +82,11 @@ export default function HowToOpenLuigiPrerollPage() {
 
         {/* Featured Image */}
         <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 -mt-4">
-          <div className="aspect-[16/9] relative rounded-xl overflow-hidden shadow-lg">
-            <Image
+          <div className="relative w-full h-auto rounded-xl overflow-hidden shadow-lg">
+            <img
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLUE-MIST-2400x2400-OxiuQ3JOKiYpyMGJhNXNx7v0JwA2J3.jpg"
               alt="How to open Luigi Preroll - Luigi Fattones hash rosin infused joints"
-              fill
-              className="object-cover"
-              priority
+              className="w-full h-auto object-cover"
             />
           </div>
         </div>
