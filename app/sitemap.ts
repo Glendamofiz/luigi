@@ -91,6 +91,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   const blogPosts = [
+    'live-rosin-vs-liquid-diamonds',
+    'do-liquid-diamonds-get-you-high',
+    'how-to-open-a-luigi-preroll',
     'official-luigi-brand-guide-2026',
     'luigi-series-6-flavors-guide-2026',
     'luigi-fattones-flavors-guide-2026',

@@ -38,6 +38,36 @@ const blogSchema = {
 
 const blogPosts = [
   {
+    slug: "live-rosin-vs-liquid-diamonds",
+    title: "What's the Difference Between Live Rosin and Liquid Diamonds?",
+    excerpt: "Compare extraction methods, terpene content, and potency in this Luigi Oil product guide.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg",
+    category: "Education",
+    readTime: "9 min read",
+    date: "June 22, 2026",
+    featured: true,
+  },
+  {
+    slug: "do-liquid-diamonds-get-you-high",
+    title: "Do Liquid Diamonds Get You High? Potency Explained",
+    excerpt: "Here's what the lab data says about THCA crystallization, terpene content, and potency in Luigi's live resin products.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg",
+    category: "Education",
+    readTime: "9 min read",
+    date: "June 22, 2026",
+    featured: true,
+  },
+  {
+    slug: "how-to-open-a-luigi-preroll",
+    title: "How to Open a Luigi Preroll: Step-by-Step Guide for All Formats",
+    excerpt: "Master the art of opening Luigi prerolls with our comprehensive step-by-step guide. Learn proper techniques for different formats and storage tips.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLUE-MIST-OxiuQ3JOKiYpyMGJhNXNx7v0JwA2J3.jpg",
+    category: "How-To Guide",
+    readTime: "5 min read",
+    date: "June 1, 2026",
+    featured: true,
+  },
+  {
     slug: "how-long-do-luigi-disposables-last",
     title: "How Long Do Luigi Disposables Last? (2026 Complete Guide)",
     excerpt: "Learn how long Luigi disposables last, what affects vape lifespan, puff duration, battery performance, and tips to make your Luigi Series 6 last longer.",
