@@ -38,6 +38,16 @@ const blogSchema = {
 
 const blogPosts = [
   {
+    slug: "how-to-open-a-luigi-preroll",
+    title: "How to Open a Luigi Preroll: Step-by-Step Guide for All Formats",
+    excerpt: "Master the art of opening Luigi prerolls with our comprehensive step-by-step guide. Learn proper techniques for different formats and storage tips.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLUE-MIST-OxiuQ3JOKiYpyMGJhNXNx7v0JwA2J3.jpg",
+    category: "How-To Guide",
+    readTime: "5 min read",
+    date: "June 1, 2026",
+    featured: true,
+  },
+  {
     slug: "how-long-do-luigi-disposables-last",
     title: "How Long Do Luigi Disposables Last? (2026 Complete Guide)",
     excerpt: "Learn how long Luigi disposables last, what affects vape lifespan, puff duration, battery performance, and tips to make your Luigi Series 6 last longer.",
