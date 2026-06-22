@@ -146,13 +146,13 @@ export default function LiveRosinVsLiquidDiamondsBlog() {
 
               {/* Product Image - Fattones */}
               <div className="my-10">
-                <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+                <div className="rounded-lg overflow-hidden shadow-lg">
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLACKBERRY-DREAM-2400x2400-pe085AZelET8AuGO0fti7o4giOhjqR.jpg"
                     alt="Luigi Fattones hash rosin infused preroll joints - solventless cannabis extract"
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover"
+                    width={800}
+                    height={450}
+                    className="w-full h-auto object-cover"
                   />
                 </div>
                 <p className="text-center text-gray-600 text-sm mt-3">Luigi Fattones use solventless hash rosin for their premium preroll infusions</p>
@@ -206,13 +206,13 @@ export default function LiveRosinVsLiquidDiamondsBlog() {
 
               {/* Product Image - Series 6 */}
               <div className="my-10">
-                <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+                <div className="rounded-lg overflow-hidden shadow-lg">
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLUE-MIST-2400x2400-OxiuQ3JOKiYpyMGJhNXNx7v0JwA2J3.jpg"
                     alt="Luigi Series 6 liquid diamond vape disposable - THCA crystalline extract high potency"
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover"
+                    width={800}
+                    height={450}
+                    className="w-full h-auto object-cover"
                   />
                 </div>
                 <p className="text-center text-gray-600 text-sm mt-3">Luigi Series 6 disposables feature liquid diamond extract for maximum potency</p>

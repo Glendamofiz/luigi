@@ -82,13 +82,13 @@ export default function LiquidDiamondsPage() {
 
         {/* Featured Image */}
         <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 -mt-4">
-          <div className="aspect-[16/9] relative rounded-xl overflow-hidden shadow-lg">
+          <div className="rounded-xl overflow-hidden shadow-lg">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg"
               alt="Liquid diamonds potency - high THC cannabis concentrates"
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover"
+              width={1200}
+              height={675}
+              className="w-full h-auto object-cover"
               priority
             />
           </div>
