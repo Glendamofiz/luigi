@@ -91,6 +91,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   const blogPosts = [
+    'how-to-verify-authentic-luigi-carts',
     'live-rosin-vs-liquid-diamonds',
     'do-liquid-diamonds-get-you-high',
     'how-to-open-a-luigi-preroll',

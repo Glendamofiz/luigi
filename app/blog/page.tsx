@@ -38,6 +38,16 @@ const blogSchema = {
 
 const blogPosts = [
   {
+    slug: "how-to-verify-authentic-luigi-carts",
+    title: "How to Verify Authentic Luigi Carts (Step-by-Step Guide)",
+    excerpt: "Learn how to verify authentic Luigi carts with our 5-step guide. Discover the pros & cons of authentication methods, plus safety tips for spotting counterfeits.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg",
+    category: "Safety Guide",
+    readTime: "12 min read",
+    date: "June 24, 2026",
+    featured: true,
+  },
+  {
     slug: "live-rosin-vs-liquid-diamonds",
     title: "What's the Difference Between Live Rosin and Liquid Diamonds?",
     excerpt: "Compare extraction methods, terpene content, and potency in this Luigi Oil product guide.",
