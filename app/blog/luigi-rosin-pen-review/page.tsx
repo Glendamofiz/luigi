@@ -1,4 +1,5 @@
 import { Header } from "@/components/header"
+import { RelatedGuides } from "@/components/related-guides"
 import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 import Link from "next/link"
@@ -158,6 +159,7 @@ export default function LuigiRosinPenReview() {
           </div>
         </div>
       </article>
+      <RelatedGuides />
       <Footer />
     </main>
   )

@@ -1,5 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { RelatedGuides } from "@/components/related-guides"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 
@@ -154,6 +155,7 @@ export default function LuigiCartsLA() {
           </div>
         </div>
       </article>
+      <RelatedGuides />
       <Footer />
     </main>
   )

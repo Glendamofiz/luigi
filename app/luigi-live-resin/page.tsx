@@ -903,57 +903,89 @@ export default function LuigiLiveResinPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Link
-                href="/blog/luigi-series-6-disposable-review"
-                className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
-              >
-                <span className="text-[#D4AF37] text-sm font-semibold">Product Review</span>
-                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">
-                  Luigi Series 6 Disposable Review
-                </h3>
-                <p className="mt-2 text-sm text-gray-600">
-                  Premium high potency vape guide with Series 5 vs 6 comparison.
-                </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <Link href="/blog/luigi-carts-los-angeles" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-[#D4AF37] text-sm font-semibold">Retail Guide</span>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">Where to Buy Luigi Oil in Los Angeles</h3>
+                <p className="mt-2 text-sm text-gray-600">Find confirmed LA dispensaries carrying Luigi Oil.</p>
               </Link>
 
-              <Link
-                href="/blog/live-rosin-vape-vs-live-resin"
-                className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
-              >
+              <Link href="/blog/best-dispensaries-los-angeles-luigi" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-[#D4AF37] text-sm font-semibold">Retail Guide</span>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">Best Dispensaries in Los Angeles for Luigi Oil</h3>
+                <p className="mt-2 text-sm text-gray-600">Verified retailers with evaluation checklist.</p>
+              </Link>
+
+              <Link href="/blog/buy-luigi-carts-wholesale" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-[#D4AF37] text-sm font-semibold">Wholesale</span>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">Buy Luigi Carts Wholesale Guide</h3>
+                <p className="mt-2 text-sm text-gray-600">Dispensary owner's complete ordering guide.</p>
+              </Link>
+
+              <Link href="/blog/luigi-rosin-pen-review" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-[#D4AF37] text-sm font-semibold">Product Review</span>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">Luigi Rosin Pen Review</h3>
+                <p className="mt-2 text-sm text-gray-600">Is solventless rosin worth the premium?</p>
+              </Link>
+
+              <Link href="/blog/luigi-series-6-disposable-review" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-[#D4AF37] text-sm font-semibold">Product Review</span>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">Luigi Series 6 Disposable Review</h3>
+                <p className="mt-2 text-sm text-gray-600">Premium 2G live resin + liquid diamond guide.</p>
+              </Link>
+
+              <Link href="/blog/live-rosin-vape-vs-live-resin" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
                 <span className="text-[#D4AF37] text-sm font-semibold">Education</span>
-                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">
-                  Live Rosin vs Live Resin
-                </h3>
-                <p className="mt-2 text-sm text-gray-600">
-                  Understand the difference and why Luigi Rosin Pens stand out.
-                </p>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">Live Rosin vs Live Resin</h3>
+                <p className="mt-2 text-sm text-gray-600">Understand the difference and why Luigi stands out.</p>
               </Link>
 
-              <Link
-                href="/blog/best-infused-pre-rolls"
-                className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
-              >
+              <Link href="/blog/best-infused-pre-rolls" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
                 <span className="text-[#D4AF37] text-sm font-semibold">Guide</span>
-                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">
-                  Best Infused Pre-Rolls 2026
-                </h3>
-                <p className="mt-2 text-sm text-gray-600">
-                  Why Luigi FatTones rank #1 for premium infused joints.
-                </p>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">Best Infused Pre-Rolls 2026</h3>
+                <p className="mt-2 text-sm text-gray-600">Why Luigi FatTones rank #1 premium.</p>
               </Link>
 
-              <Link
-                href="/blog/are-luigi-carts-worth-it"
-                className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
-              >
+              <Link href="/blog/luigi-series-6-flavors-guide-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-[#D4AF37] text-sm font-semibold">Flavor Guide</span>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">Series 6 Flavors Guide (2026)</h3>
+                <p className="mt-2 text-sm text-gray-600">All 10+ strains and flavor profiles.</p>
+              </Link>
+
+              <Link href="/blog/luigi-fattones-flavors-guide-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-[#D4AF37] text-sm font-semibold">Pre-Roll Guide</span>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">Fattones Flavors Guide (2026)</h3>
+                <p className="mt-2 text-sm text-gray-600">Complete combo pack breakdown.</p>
+              </Link>
+
+              <Link href="/blog/how-to-verify-authentic-luigi-carts" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-[#D4AF37] text-sm font-semibold">Safety Guide</span>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">How to Verify Authentic Luigi Carts</h3>
+                <p className="mt-2 text-sm text-gray-600">5-step authentication guide.</p>
+              </Link>
+
+              <Link href="/blog/how-to-open-a-luigi-preroll" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-[#D4AF37] text-sm font-semibold">How-To</span>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">How to Open a Luigi Preroll</h3>
+                <p className="mt-2 text-sm text-gray-600">Step-by-step for all formats.</p>
+              </Link>
+
+              <Link href="/blog/do-liquid-diamonds-get-you-high" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-[#D4AF37] text-sm font-semibold">Education</span>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">Do Liquid Diamonds Get You High?</h3>
+                <p className="mt-2 text-sm text-gray-600">Potency explained with lab data.</p>
+              </Link>
+
+              <Link href="/blog/live-rosin-vs-liquid-diamonds" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-[#D4AF37] text-sm font-semibold">Comparison</span>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">Live Rosin vs Liquid Diamonds</h3>
+                <p className="mt-2 text-sm text-gray-600">Extract methods and potency compared.</p>
+              </Link>
+
+              <Link href="/blog/are-luigi-carts-worth-it" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
                 <span className="text-[#D4AF37] text-sm font-semibold">Product Review</span>
-                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">
-                  Are Luigi Carts Worth It?
-                </h3>
-                <p className="mt-2 text-sm text-gray-600">
-                  Honest value analysis and quality breakdown.
-                </p>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">Are Luigi Carts Worth It?</h3>
+                <p className="mt-2 text-sm text-gray-600">Honest value analysis.</p>
               </Link>
             </div>
 
@@ -962,7 +994,7 @@ export default function LuigiLiveResinPage() {
                 href="/blog"
                 className="inline-flex items-center gap-2 text-[#D4AF37] font-semibold hover:text-[#C5A028] transition-colors"
               >
-                View All Articles
+                View All Articles (25+ More)
                 <ChevronRight className="w-4 h-4" />
               </Link>
             </div>

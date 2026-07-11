@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import Script from "next/script"
 import { Header } from "@/components/header"
+import { RelatedGuides } from "@/components/related-guides"
 import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 import Image from "next/image"
@@ -321,7 +322,8 @@ export default function LiquidDiamondsPage() {
           </div>
         </article>
 
-        <Footer />
+        <RelatedGuides />
+      <Footer />
       </main>
     </>
   )
