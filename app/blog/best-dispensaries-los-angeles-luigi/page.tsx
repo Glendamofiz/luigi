@@ -1,52 +1,89 @@
+import type { Metadata } from "next"
+import Script from "next/script"
+import Link from "next/link"
 import { Header } from "@/components/header"
 import { RelatedGuides } from "@/components/related-guides"
 import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
-import Script from "next/script"
-import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Best Dispensaries in Los Angeles for Luigi Oil (Verified Guide) | Luigi Oil",
   description: "Find the best dispensaries in Los Angeles carrying Luigi Oil. See confirmed LA retailers plus a practical checklist for evaluating any dispensary before you buy.",
-  keywords: "best dispensaries los angeles luigi, Luigi Oil Los Angeles dispensaries, best LA dispensary Luigi carts, top Luigi dispensary LA",
+  keywords: ["best dispensaries los angeles luigi", "Luigi Oil Los Angeles dispensaries", "best LA dispensary Luigi carts", "top Luigi dispensary LA"],
   openGraph: {
     title: "Best Dispensaries in Los Angeles for Luigi Oil (Verified Guide)",
-    title: "Best Dispensaries in Los Angeles for Luigi Oil (Verified Guide)",
-    description: "Confirmed LA dispensaries carrying Luigi Oil, plus a practical checklist for evaluating any dispensary before you buy.",
-    url: "https://www.luigiofficialbrand.com/blog/best-dispensaries-los-angeles-luigi",
+    description: "Find the best dispensaries in Los Angeles carrying Luigi Oil. See confirmed LA retailers plus a practical checklist for evaluating any dispensary before you buy.",
     type: "article",
+    publishedTime: "2026-07-24T00:00:00.000Z",
   },
+  alternates: {
+    canonical: "/blog/best-dispensaries-los-angeles-luigi",
+  },
+}
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Best Dispensaries in Los Angeles for Luigi Oil (Verified Guide)",
+  "datePublished": "2026-07-24",
+  "author": { "@type": "Organization", "name": "Luigi Oil Product Team" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Luigi Oil",
+    "logo": { "@type": "ImageObject", "url": "https://luigiofficialbrand.com/logo.png" }
+  },
+  "description": "Find the best dispensaries in Los Angeles carrying Luigi Oil with a practical evaluation checklist."
 }
 
 export default function BestDispensariesLA() {
   return (
-    <main className="min-h-screen bg-white">
-      <Header />
-      <article className="py-12 md:py-16">
-        <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
-          {/* Back Button */}
-          <Link href="/blog" className="mb-8 inline-flex items-center gap-2 text-sm text-gray-600 hover:text-black transition-colors">
-            <ArrowLeft size={16} />
-            Back to Blog
-          </Link>
+    <>
+      <Script
+        id="article-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <main className="min-h-screen bg-white">
+        <Header />
 
-          {/* Title */}
-          <h1 className="mb-4 text-4xl font-bold text-black md:text-5xl">Best Dispensaries in Los Angeles for Luigi Oil</h1>
-
-          {/* Meta Info */}
-          <div className="mb-8 flex flex-wrap gap-4 text-sm text-gray-600">
-            <div className="flex items-center gap-2">
-              <Calendar size={16} />
-              <span>July 24, 2026</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Clock size={16} />
-              <span>10 min read</span>
+        {/* Hero */}
+        <section className="relative pt-24 pb-8 md:pt-32 md:pb-12 bg-black overflow-hidden">
+          <div 
+            className="absolute inset-0 bg-cover bg-center opacity-30"
+            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg')" }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+          <div className="relative z-10 mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-2 text-[#D4AF37] hover:text-[#C5A028] mb-6"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Blog
+            </Link>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 text-balance">
+              Best Dispensaries in Los Angeles for Luigi Oil
+            </h1>
+            <p className="text-xl text-gray-300 mb-6 max-w-2xl">
+              Find the best dispensaries in Los Angeles carrying Luigi Oil with confirmed retailers and a practical evaluation checklist.
+            </p>
+            <div className="mt-6 flex items-center gap-4 text-gray-400">
+              <span className="flex items-center gap-2">
+                <Calendar className="w-4 h-4" />
+                July 24, 2026
+              </span>
+              <span className="flex items-center gap-2">
+                <Clock className="w-4 h-4" />
+                10 min read
+              </span>
             </div>
           </div>
+        </section>
 
-          {/* Content */}
-          <div className="prose prose-lg max-w-none">
+        {/* Content */}
+        <article className="py-12 md:py-16">
+          <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+            <div className="prose prose-lg max-w-none space-y-8">
             <p className="text-lg font-semibold text-gray-800">
               When people search for the best dispensaries in Los Angeles for Luigi, what they actually want is a shortlist they can trust — not just a list of ten names. Dispensary rosters shift constantly as inventory rotates, so instead of stretching a handful of confirmed retailers into an artificial &quot;Top 10,&quot; this guide covers what&apos;s actually verifiable: the LA dispensaries confirmed to carry Luigi Oil right now, plus the exact checklist to use when judging any dispensary — including ones not listed here.
             </p>
@@ -158,11 +195,12 @@ export default function BestDispensariesLA() {
 
             <h2>Final Thoughts</h2>
             <p>The best dispensaries in Los Angeles for Luigi Oil aren&apos;t defined by a fixed ranking — they&apos;re defined by consistent stock, proper licensing, and staff who take authenticity seriously. Roots LA Dispensary, Level28, and Green Label Rx Echo Park meet that bar today, and the checklist above will help you evaluate any new shop that starts carrying the brand. Explore the full lineup on the <Link href="/products">Products page</Link>, or if you run a dispensary and want to add Luigi Oil to your own shelves, get started through <Link href="/wholesale">Luigi Oil Wholesale</Link>.</p>
+            </div>
           </div>
-        </div>
-      </article>
-      <RelatedGuides />
-      <Footer />
-    </main>
+        </article>
+        <RelatedGuides />
+        <Footer />
+      </main>
+    </>
   )
 }

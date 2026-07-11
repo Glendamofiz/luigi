@@ -1,52 +1,89 @@
+import type { Metadata } from "next"
+import Script from "next/script"
+import Link from "next/link"
 import { Header } from "@/components/header"
 import { RelatedGuides } from "@/components/related-guides"
 import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
-import Script from "next/script"
-import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Buy Luigi Carts Wholesale: A Dispensary Owner's Guide | Luigi Oil",
   description: "Everything a dispensary owner needs to know before you buy Luigi carts wholesale — licensing requirements, order minimums, product lineup, pricing tiers, and how to order direct.",
-  keywords: "buy luigi carts wholesale, Luigi Oil wholesale, Luigi Carts distributor, dispensary wholesale cannabis, Luigi 2G Disposable wholesale",
+  keywords: ["buy luigi carts wholesale", "Luigi Oil wholesale", "Luigi Carts distributor", "dispensary wholesale cannabis", "Luigi 2G Disposable wholesale"],
   openGraph: {
     title: "Buy Luigi Carts Wholesale: A Dispensary Owner's Guide",
-    title: "Buy Luigi Carts Wholesale: A Dispensary Owner's Guide",
-    description: "A dispensary owner's complete guide to buying Luigi carts wholesale — licensing, minimums, pricing tiers, and the full authorized product lineup.",
-    url: "https://www.luigiofficialbrand.com/blog/buy-luigi-carts-wholesale",
+    description: "Everything a dispensary owner needs to know before you buy Luigi carts wholesale — licensing requirements, order minimums, product lineup, pricing tiers, and how to order direct.",
     type: "article",
+    publishedTime: "2026-07-24T00:00:00.000Z",
   },
+  alternates: {
+    canonical: "/blog/buy-luigi-carts-wholesale",
+  },
+}
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Buy Luigi Carts Wholesale: A Dispensary Owner's Guide",
+  "datePublished": "2026-07-24",
+  "author": { "@type": "Organization", "name": "Luigi Oil Product Team" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Luigi Oil",
+    "logo": { "@type": "ImageObject", "url": "https://luigiofficialbrand.com/logo.png" }
+  },
+  "description": "Everything a dispensary owner needs to know before you buy Luigi carts wholesale — licensing, minimums, pricing tiers, and the full product lineup."
 }
 
 export default function BuyLuigiWholesale() {
   return (
-    <main className="min-h-screen bg-white">
-      <Header />
-      <article className="py-12 md:py-16">
-        <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
-          {/* Back Button */}
-          <Link href="/blog" className="mb-8 inline-flex items-center gap-2 text-sm text-gray-600 hover:text-black transition-colors">
-            <ArrowLeft size={16} />
-            Back to Blog
-          </Link>
+    <>
+      <Script
+        id="article-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <main className="min-h-screen bg-white">
+        <Header />
 
-          {/* Title */}
-          <h1 className="mb-4 text-4xl font-bold text-black md:text-5xl">Buy Luigi Carts Wholesale: A Dispensary Owner's Guide</h1>
-
-          {/* Meta Info */}
-          <div className="mb-8 flex flex-wrap gap-4 text-sm text-gray-600">
-            <div className="flex items-center gap-2">
-              <Calendar size={16} />
-              <span>July 24, 2026</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Clock size={16} />
-              <span>12 min read</span>
+        {/* Hero */}
+        <section className="relative pt-24 pb-8 md:pt-32 md:pb-12 bg-black overflow-hidden">
+          <div 
+            className="absolute inset-0 bg-cover bg-center opacity-30"
+            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg')" }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+          <div className="relative z-10 mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-2 text-[#D4AF37] hover:text-[#C5A028] mb-6"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Blog
+            </Link>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 text-balance">
+              Buy Luigi Carts Wholesale: A Dispensary Owner's Guide
+            </h1>
+            <p className="text-xl text-gray-300 mb-6 max-w-2xl">
+              Everything you need to know before buying Luigi carts wholesale — licensing requirements, order minimums, product lineup, and pricing tiers.
+            </p>
+            <div className="mt-6 flex items-center gap-4 text-gray-400">
+              <span className="flex items-center gap-2">
+                <Calendar className="w-4 h-4" />
+                July 24, 2026
+              </span>
+              <span className="flex items-center gap-2">
+                <Clock className="w-4 h-4" />
+                12 min read
+              </span>
             </div>
           </div>
+        </section>
 
-          {/* Content */}
-          <div className="prose prose-lg max-w-none">
+        {/* Content */}
+        <article className="py-12 md:py-16">
+          <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+            <div className="prose prose-lg max-w-none space-y-8">
             <p className="text-lg font-semibold text-gray-800">
               If you&apos;re trying to buy Luigi carts wholesale for your dispensary, the process comes down to three things: a valid license, the right order channel, and knowing which products in the lineup move fastest. Luigi Oil has become one of the most requested live resin liquid diamond brands on dispensary shelves, and retailers who stock it early tend to build repeat customers around it. This guide breaks down exactly how to get set up as an authorized buyer, what to expect from the ordering process, and how to choose the right mix of products for your shelf.
             </p>
@@ -145,11 +182,12 @@ export default function BuyLuigiWholesale() {
 
             <h2>Final Thoughts</h2>
             <p>For dispensary owners ready to buy Luigi carts wholesale, the path is straightforward: confirm your license, order through the official channel, and start with a product mix that fits your customer base. Browse the full <Link href="/products">Products page</Link> to plan your first order, or head straight to <Link href="/wholesale">Luigi Oil Wholesale</Link> to get your account set up. Questions before you order? Reach the team directly via the <Link href="/contact">Contact page</Link>.</p>
+            </div>
           </div>
-        </div>
-      </article>
-      <RelatedGuides />
-      <Footer />
-    </main>
+        </article>
+        <RelatedGuides />
+        <Footer />
+      </main>
+    </>
   )
 }

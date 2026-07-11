@@ -1,52 +1,89 @@
+import type { Metadata } from "next"
+import Script from "next/script"
+import Link from "next/link"
 import { Header } from "@/components/header"
 import { RelatedGuides } from "@/components/related-guides"
 import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
-import Script from "next/script"
-import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Luigi Rosin Pen Review: Is Solventless Worth It? | Luigi Oil",
   description: "An honest Luigi Rosin Pen review — how the solventless hash rosin dual pack compares to live resin, what it costs, and whether it's worth the switch.",
-  keywords: "luigi rosin pen review, Luigi Rosin Pen, solventless rosin vape, Luigi hash rosin, Luigi rosin dual pack",
+  keywords: ["luigi rosin pen review", "Luigi Rosin Pen", "solventless rosin vape", "Luigi hash rosin", "Luigi rosin dual pack"],
   openGraph: {
     title: "Luigi Rosin Pen Review: Is Solventless Worth It?",
-    title: "Luigi Rosin Pen Review: Is Solventless Worth It?",
-    description: "A full breakdown of the Luigi Rosin Pen dual pack — flavor, strains, price, and how solventless rosin stacks up against live resin.",
-    url: "https://www.luigiofficialbrand.com/blog/luigi-rosin-pen-review",
+    description: "An honest Luigi Rosin Pen review — how the solventless hash rosin dual pack compares to live resin, what it costs, and whether it's worth the switch.",
     type: "article",
+    publishedTime: "2026-07-24T00:00:00.000Z",
   },
+  alternates: {
+    canonical: "/blog/luigi-rosin-pen-review",
+  },
+}
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Luigi Rosin Pen Review: Is Solventless Worth It?",
+  "datePublished": "2026-07-24",
+  "author": { "@type": "Organization", "name": "Luigi Oil Product Team" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Luigi Oil",
+    "logo": { "@type": "ImageObject", "url": "https://luigiofficialbrand.com/logo.png" }
+  },
+  "description": "An honest Luigi Rosin Pen review comparing solventless rosin to live resin."
 }
 
 export default function LuigiRosinPenReview() {
   return (
-    <main className="min-h-screen bg-white">
-      <Header />
-      <article className="py-12 md:py-16">
-        <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
-          {/* Back Button */}
-          <Link href="/blog" className="mb-8 inline-flex items-center gap-2 text-sm text-gray-600 hover:text-black transition-colors">
-            <ArrowLeft size={16} />
-            Back to Blog
-          </Link>
+    <>
+      <Script
+        id="article-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <main className="min-h-screen bg-white">
+        <Header />
 
-          {/* Title */}
-          <h1 className="mb-4 text-4xl font-bold text-black md:text-5xl">Luigi Rosin Pen Review: Is Solventless Worth It?</h1>
-
-          {/* Meta Info */}
-          <div className="mb-8 flex flex-wrap gap-4 text-sm text-gray-600">
-            <div className="flex items-center gap-2">
-              <Calendar size={16} />
-              <span>July 24, 2026</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Clock size={16} />
-              <span>11 min read</span>
+        {/* Hero */}
+        <section className="relative pt-24 pb-8 md:pt-32 md:pb-12 bg-black overflow-hidden">
+          <div 
+            className="absolute inset-0 bg-cover bg-center opacity-30"
+            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg')" }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+          <div className="relative z-10 mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-2 text-[#D4AF37] hover:text-[#C5A028] mb-6"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Blog
+            </Link>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 text-balance">
+              Luigi Rosin Pen Review: Is Solventless Worth It?
+            </h1>
+            <p className="text-xl text-gray-300 mb-6 max-w-2xl">
+              An honest Luigi Rosin Pen review comparing solventless hash rosin to live resin, including pricing and whether it's worth the premium.
+            </p>
+            <div className="mt-6 flex items-center gap-4 text-gray-400">
+              <span className="flex items-center gap-2">
+                <Calendar className="w-4 h-4" />
+                July 24, 2026
+              </span>
+              <span className="flex items-center gap-2">
+                <Clock className="w-4 h-4" />
+                11 min read
+              </span>
             </div>
           </div>
+        </section>
 
-          {/* Content */}
-          <div className="prose prose-lg max-w-none">
+        {/* Content */}
+        <article className="py-12 md:py-16">
+          <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+            <div className="prose prose-lg max-w-none space-y-8">
             <p className="text-lg font-semibold text-gray-800">
               This Luigi Rosin Pen review breaks down exactly what you&apos;re getting in the dual pack, how it compares to live resin, and whether solventless is worth paying for. Solventless hash rosin has built a reputation as the &quot;purist&apos;s choice&quot; in cannabis extraction — no chemical solvents, just heat and pressure applied directly to flower or hash. Luigi Oil&apos;s take on it comes packaged as a dual pack: a 1-gram rosin disposable paired with a 1-gram rosin-infused blunt. Here&apos;s how it actually holds up.
             </p>
@@ -158,11 +195,12 @@ export default function LuigiRosinPenReview() {
 
             <h2>Final Thoughts</h2>
             <p>The Luigi Rosin Pen delivers on what solventless rosin promises: distinct, terpene-forward flavor and a cleaner extraction story, wrapped into a dual pack that adds real versatility for the price. It won&apos;t out-potency the liquid diamond lineup, but that&apos;s not really the point — this is the pick for flavor-first sessions. See the full lineup and current strains on the <Link href="/products/rosin-pens">Rosin Pens product page</Link>, or browse the rest of the catalog on <Link href="/products">Products</Link>.</p>
+            </div>
           </div>
-        </div>
-      </article>
-      <RelatedGuides />
-      <Footer />
-    </main>
+        </article>
+        <RelatedGuides />
+        <Footer />
+      </main>
+    </>
   )
 }
