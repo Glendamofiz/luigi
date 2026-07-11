@@ -4,6 +4,7 @@ import Image from "next/image"
 import Script from "next/script"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { RelatedGuides } from "@/components/related-guides"
 import { Calendar, Clock, ArrowLeft, CheckCircle, AlertCircle, Zap } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -461,7 +462,8 @@ export default function LuigiVapeNotWorkingPage() {
         </article>
 
         <Footer />
-      </main>
+            <RelatedGuides />
+    </main>
     </>
   )
 }

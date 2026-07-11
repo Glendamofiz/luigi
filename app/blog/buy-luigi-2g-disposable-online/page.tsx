@@ -3,6 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { RelatedGuides } from "@/components/related-guides"
 import { Calendar, Clock, ArrowLeft, CheckCircle, AlertTriangle, ShieldCheck } from "lucide-react"
 import Script from "next/script"
 
@@ -727,7 +728,8 @@ export default function BuyLuigi2GDisposablePage() {
         </article>
 
         <Footer />
-      </main>
+            <RelatedGuides />
+    </main>
     </>
   )
 }

@@ -987,6 +987,72 @@ export default function LuigiLiveResinPage() {
                 <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">Are Luigi Carts Worth It?</h3>
                 <p className="mt-2 text-sm text-gray-600">Honest value analysis.</p>
               </Link>
+
+              <Link href="/blog/buy-luigi-2g-disposable-online" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-[#D4AF37] text-sm font-semibold">Shopping Guide</span>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">Buy Luigi 2G Disposable Online</h3>
+                <p className="mt-2 text-sm text-gray-600">Complete guide to ordering Luigi online safely.</p>
+              </Link>
+
+              <Link href="/blog/buy-luigi-disposable-vape" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-[#D4AF37] text-sm font-semibold">Buying Guide</span>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">Buy Luigi Disposable Vape</h3>
+                <p className="mt-2 text-sm text-gray-600">Where and how to purchase Luigi disposables.</p>
+              </Link>
+
+              <Link href="/blog/how-long-do-luigi-disposables-last" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-[#D4AF37] text-sm font-semibold">Product Guide</span>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">How Long Do Luigi Disposables Last?</h3>
+                <p className="mt-2 text-sm text-gray-600">Lifespan, puff count, and battery guide.</p>
+              </Link>
+
+              <Link href="/blog/infused-pre-rolls-vs-regular" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-[#D4AF37] text-sm font-semibold">Comparison</span>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">Infused Pre-Rolls vs Regular</h3>
+                <p className="mt-2 text-sm text-gray-600">What makes infused pre-rolls different.</p>
+              </Link>
+
+              <Link href="/blog/luigi-disposable-vape-review" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-[#D4AF37] text-sm font-semibold">Product Review</span>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">Luigi Disposable Vape Review</h3>
+                <p className="mt-2 text-sm text-gray-600">Complete review of Luigi disposable vapes.</p>
+              </Link>
+
+              <Link href="/blog/luigi-rosin-pens-flavors-guide-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-[#D4AF37] text-sm font-semibold">Flavor Guide</span>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">Luigi Rosin Pens Flavors Guide 2026</h3>
+                <p className="mt-2 text-sm text-gray-600">Complete rosin pen strain breakdown.</p>
+              </Link>
+
+              <Link href="/blog/luigi-series-6-vs-series-5" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-[#D4AF37] text-sm font-semibold">Comparison</span>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">Luigi Series 6 vs Series 5</h3>
+                <p className="mt-2 text-sm text-gray-600">Which generation is right for you?</p>
+              </Link>
+
+              <Link href="/blog/luigi-vape-not-working-fix" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-[#D4AF37] text-sm font-semibold">Troubleshooting</span>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">Luigi Vape Not Working - Fix Guide</h3>
+                <p className="mt-2 text-sm text-gray-600">Solutions for common Luigi vape issues.</p>
+              </Link>
+
+              <Link href="/blog/official-luigi-brand-guide-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-[#D4AF37] text-sm font-semibold">Brand Guide</span>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">Official Luigi Brand Guide 2026</h3>
+                <p className="mt-2 text-sm text-gray-600">Comprehensive Luigi brand overview.</p>
+              </Link>
+
+              <Link href="/blog/what-is-live-rosin-vape" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-[#D4AF37] text-sm font-semibold">Education</span>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">What is Live Rosin Vape?</h3>
+                <p className="mt-2 text-sm text-gray-600">Understanding live rosin extraction.</p>
+              </Link>
+
+              <Link href="/blog/why-luigi-vapes-taste-better" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <span className="text-[#D4AF37] text-sm font-semibold">Education</span>
+                <h3 className="mt-2 font-bold text-gray-900 group-hover:text-[#D4AF37] transition-colors">Why Luigi Vapes Taste Better</h3>
+                <p className="mt-2 text-sm text-gray-600">The science behind Luigi flavor profiles.</p>
+              </Link>
             </div>
 
             <div className="mt-8 text-center">

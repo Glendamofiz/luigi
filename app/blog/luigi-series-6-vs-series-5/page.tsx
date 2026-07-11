@@ -322,7 +322,8 @@ export default function BlogPost() {
             </div>
           </div>
         </article>
-      </main>
+            <RelatedGuides />
+    </main>
     </>
   )
 }
