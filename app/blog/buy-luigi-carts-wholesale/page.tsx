@@ -2,13 +2,15 @@ import { Header } from "@/components/header"
 import { RelatedGuides } from "@/components/related-guides"
 import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
+import Script from "next/script"
 import Link from "next/link"
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Buy Luigi Carts Wholesale: A Dispensary Owner's Guide | Luigi Oil",
   description: "Everything a dispensary owner needs to know before you buy Luigi carts wholesale — licensing requirements, order minimums, product lineup, pricing tiers, and how to order direct.",
   keywords: "buy luigi carts wholesale, Luigi Oil wholesale, Luigi Carts distributor, dispensary wholesale cannabis, Luigi 2G Disposable wholesale",
   openGraph: {
+    title: "Buy Luigi Carts Wholesale: A Dispensary Owner's Guide",
     title: "Buy Luigi Carts Wholesale: A Dispensary Owner's Guide",
     description: "A dispensary owner's complete guide to buying Luigi carts wholesale — licensing, minimums, pricing tiers, and the full authorized product lineup.",
     url: "https://www.luigiofficialbrand.com/blog/buy-luigi-carts-wholesale",

@@ -2,13 +2,15 @@ import { Header } from "@/components/header"
 import { RelatedGuides } from "@/components/related-guides"
 import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
+import Script from "next/script"
 import Link from "next/link"
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Luigi Rosin Pen Review: Is Solventless Worth It? | Luigi Oil",
   description: "An honest Luigi Rosin Pen review — how the solventless hash rosin dual pack compares to live resin, what it costs, and whether it's worth the switch.",
   keywords: "luigi rosin pen review, Luigi Rosin Pen, solventless rosin vape, Luigi hash rosin, Luigi rosin dual pack",
   openGraph: {
+    title: "Luigi Rosin Pen Review: Is Solventless Worth It?",
     title: "Luigi Rosin Pen Review: Is Solventless Worth It?",
     description: "A full breakdown of the Luigi Rosin Pen dual pack — flavor, strains, price, and how solventless rosin stacks up against live resin.",
     url: "https://www.luigiofficialbrand.com/blog/luigi-rosin-pen-review",

@@ -1,50 +1,89 @@
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { RelatedGuides } from "@/components/related-guides"
-import { Calendar, Clock, ArrowLeft } from "lucide-react"
+import type { Metadata } from "next"
 import Link from "next/link"
+import Script from "next/script"
+import { Header } from "@/components/header"
+import { RelatedGuides } from "@/components/related-guides"
+import { Footer } from "@/components/footer"
+import { Calendar, Clock, ArrowLeft } from "lucide-react"
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Where to Buy Luigi Oil in Los Angeles (Dispensary Guide) | Luigi Oil",
-  description: "Find Luigi carts in Los Angeles. See confirmed LA dispensaries carrying Luigi Oil, how to check live stock near you, and how to make sure what you buy is authentic.",
-  keywords: "luigi carts los angeles, Luigi Oil Los Angeles, buy Luigi carts LA, Luigi dispensary near me, Luigi Oil dispensary",
+  description: "Find Luigi carts in Los Angeles. See confirmed LA dispensaries carrying Luigi Oil, how to check live stock near you, and verify authenticity.",
+  keywords: ["luigi carts los angeles", "Luigi Oil Los Angeles", "buy Luigi carts LA", "Luigi dispensary near me", "Luigi Oil dispensary"],
   openGraph: {
     title: "Where to Buy Luigi Oil in Los Angeles (Dispensary Guide)",
     description: "Confirmed LA dispensaries carrying Luigi carts, plus how to check live stock near you and verify authenticity before you buy.",
-    url: "https://www.luigiofficialbrand.com/blog/luigi-carts-los-angeles",
     type: "article",
+    publishedTime: "2026-07-24T00:00:00.000Z",
   },
+  alternates: {
+    canonical: "/blog/luigi-carts-los-angeles",
+  },
+}
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Where to Buy Luigi Oil in Los Angeles (Dispensary Guide)",
+  "datePublished": "2026-07-24",
+  "author": { "@type": "Organization", "name": "Luigi Oil Product Team" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Luigi Oil",
+    "logo": { "@type": "ImageObject", "url": "https://luigiofficialbrand.com/logo.png" }
+  },
+  "description": "Find Luigi carts in Los Angeles with confirmed dispensaries, stock checking tips, and authenticity verification."
 }
 
 export default function LuigiCartsLA() {
   return (
-    <main className="min-h-screen bg-white">
-      <Header />
-      <article className="py-12 md:py-16">
-        <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
-          {/* Back Button */}
-          <Link href="/blog" className="mb-8 inline-flex items-center gap-2 text-sm text-gray-600 hover:text-black transition-colors">
-            <ArrowLeft size={16} />
-            Back to Blog
-          </Link>
+    <>
+      <Script
+        id="article-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <main className="min-h-screen bg-white">
+        <Header />
 
-          {/* Title */}
-          <h1 className="mb-4 text-4xl font-bold text-black md:text-5xl">Luigi Carts Los Angeles: Where to Buy Luigi Oil Near You</h1>
-
-          {/* Meta Info */}
-          <div className="mb-8 flex flex-wrap gap-4 text-sm text-gray-600">
-            <div className="flex items-center gap-2">
-              <Calendar size={16} />
-              <span>July 24, 2026</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Clock size={16} />
-              <span>10 min read</span>
+        {/* Hero */}
+        <section className="relative pt-24 pb-8 md:pt-32 md:pb-12 bg-black overflow-hidden">
+          <div 
+            className="absolute inset-0 bg-cover bg-center opacity-30"
+            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg')" }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+          <div className="relative z-10 mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-2 text-[#D4AF37] hover:text-[#C5A028] mb-6"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Blog
+            </Link>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 text-balance">
+              Where to Buy Luigi Oil in Los Angeles
+            </h1>
+            <p className="text-xl text-gray-300 mb-6 max-w-2xl">
+              Find confirmed LA dispensaries carrying Luigi Oil, check live stock, and verify authenticity before you buy.
+            </p>
+            <div className="mt-6 flex items-center gap-4 text-gray-400">
+              <span className="flex items-center gap-2">
+                <Calendar className="w-4 h-4" />
+                July 24, 2026
+              </span>
+              <span className="flex items-center gap-2">
+                <Clock className="w-4 h-4" />
+                10 min read
+              </span>
             </div>
           </div>
+        </section>
 
-          {/* Content */}
-          <div className="prose prose-lg max-w-none">
+        {/* Content */}
+        <article className="py-12 md:py-16">
+          <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+            <div className="prose prose-lg max-w-none space-y-8">
             <p className="text-lg font-semibold text-gray-800">
               If you&apos;re looking for Luigi carts in Los Angeles, the fastest path is a licensed dispensary that currently stocks the brand — and a handful of LA shops have consistently carried it. Because dispensary inventory shifts week to week, this guide covers the LA retailers known to carry Luigi Oil, how to check live stock before you make the trip, and how to confirm what&apos;s on the shelf is genuine.
             </p>
@@ -146,17 +185,12 @@ export default function LuigiCartsLA() {
 
             <h3>How do I know a Luigi cart from an LA dispensary is authentic?</h3>
             <p>Purchasing from a licensed California dispensary is the first safeguard. From there, scan the QR code or scratch-off verification tag on the packaging to confirm it links to Luigi Oil&apos;s official verification result.</p>
-
-            <h3>Are Luigi carts sold online outside of licensed dispensaries legit?</h3>
-            <p>Licensed cannabis products legally sell only through state-licensed retailers, not through unlicensed websites promising nationwide shipping. Sites offering that are not authorized Luigi Oil sellers and should be avoided.</p>
-
-            <h2>Final Thoughts</h2>
-            <p>Los Angeles has one of the strongest concentrations of Luigi Oil retailers anywhere, with Roots LA Dispensary, Level28, and Green Label Rx Echo Park among the confirmed local carriers. Since shelves rotate, pair this guide with a live stock check before you head out, and always verify your product through the QR code on arrival. Browse the current lineup on the <Link href="/products">Products page</Link>, or if you&apos;re a retailer looking to stock Luigi Oil in your own LA shop, get started through <Link href="/wholesale">Luigi Oil Wholesale</Link>.</p>
+            </div>
           </div>
-        </div>
-      </article>
-      <RelatedGuides />
-      <Footer />
-    </main>
+        </article>
+        <RelatedGuides />
+        <Footer />
+      </main>
+    </>
   )
 }

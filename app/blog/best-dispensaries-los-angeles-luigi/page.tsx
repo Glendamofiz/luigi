@@ -2,13 +2,15 @@ import { Header } from "@/components/header"
 import { RelatedGuides } from "@/components/related-guides"
 import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
+import Script from "next/script"
 import Link from "next/link"
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Best Dispensaries in Los Angeles for Luigi Oil (Verified Guide) | Luigi Oil",
   description: "Find the best dispensaries in Los Angeles carrying Luigi Oil. See confirmed LA retailers plus a practical checklist for evaluating any dispensary before you buy.",
   keywords: "best dispensaries los angeles luigi, Luigi Oil Los Angeles dispensaries, best LA dispensary Luigi carts, top Luigi dispensary LA",
   openGraph: {
+    title: "Best Dispensaries in Los Angeles for Luigi Oil (Verified Guide)",
     title: "Best Dispensaries in Los Angeles for Luigi Oil (Verified Guide)",
     description: "Confirmed LA dispensaries carrying Luigi Oil, plus a practical checklist for evaluating any dispensary before you buy.",
     url: "https://www.luigiofficialbrand.com/blog/best-dispensaries-los-angeles-luigi",
