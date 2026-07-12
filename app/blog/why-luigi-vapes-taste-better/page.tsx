@@ -3,6 +3,7 @@
 import { Metadata } from "next"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { RelatedGuides } from "@/components/related-guides"
 import Link from "next/link"
 import Script from "next/script"
 import { MessageCircle, TrendingUp, Zap, Leaf } from "lucide-react"
@@ -438,7 +439,8 @@ export default function FlavorBlogPost() {
             </div>
           </div>
         </section>
-      </main>
+            <RelatedGuides />
+    </main>
       <Footer />
     </>
   )

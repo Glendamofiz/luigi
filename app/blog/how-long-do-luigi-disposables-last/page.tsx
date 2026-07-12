@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Clock, Zap } from 'lucide-react'
+import { RelatedGuides } from '@/components/related-guides'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -288,7 +289,8 @@ export default function BlogPost() {
             </div>
           </div>
         </article>
-      </main>
+            <RelatedGuides />
+    </main>
     </>
   )
 }

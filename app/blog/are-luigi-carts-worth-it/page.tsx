@@ -3,6 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 import Script from "next/script"
 import { Header } from "@/components/header"
+import { RelatedGuides } from "@/components/related-guides"
 import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft, CheckCircle, X, DollarSign, Sparkles, Shield } from "lucide-react"
 
@@ -372,6 +373,7 @@ export default function AreLuigiCartsWorthItPage() {
         </div>
       </article>
 
+      <RelatedGuides />
       <Footer />
       </main>
     </>

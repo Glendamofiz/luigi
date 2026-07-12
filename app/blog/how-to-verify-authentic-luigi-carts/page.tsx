@@ -1,4 +1,5 @@
 import { Header } from "@/components/header"
+import { RelatedGuides } from "@/components/related-guides"
 import { Footer } from "@/components/footer"
 import { Calendar, Clock, CheckCircle, AlertCircle } from "lucide-react"
 import Image from "next/image"
@@ -364,6 +365,7 @@ export default function VerifyAuthenticLuigiCartsPage() {
           }}
         />
       </main>
+      <RelatedGuides />
       <Footer />
     </>
   )

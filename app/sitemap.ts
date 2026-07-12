@@ -91,6 +91,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   const blogPosts = [
+    'luigi-carts-los-angeles',
+    'buy-luigi-carts-wholesale',
+    'luigi-rosin-pen-review',
+    'best-dispensaries-los-angeles-luigi',
     'how-to-verify-authentic-luigi-carts',
     'live-rosin-vs-liquid-diamonds',
     'do-liquid-diamonds-get-you-high',

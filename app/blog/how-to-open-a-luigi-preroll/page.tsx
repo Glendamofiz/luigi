@@ -3,6 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 import Script from "next/script"
 import { Header } from "@/components/header"
+import { RelatedGuides } from "@/components/related-guides"
 import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 
@@ -371,7 +372,8 @@ export default function HowToOpenLuigiPrerollPage() {
           </div>
         </article>
 
-        <Footer />
+        <RelatedGuides />
+      <Footer />
       </main>
     </>
   )
