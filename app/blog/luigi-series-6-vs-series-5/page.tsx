@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: 'https://www.luigiofficialbrand.com/blog/luigi-series-6-vs-series-5',
     images: [
       {
-        url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg',
+        url: 'https://www.luigiofficialbrand.com/og-images/blog-series-6-disposables.png',
         width: 1200,
         height: 630,
         alt: 'Luigi Series 6 vs Series 5 Comparison',
@@ -392,6 +392,14 @@ export default function BlogPost() {
             Shop Series 6
           </Link>
         </div>
+      </section>
+
+            <section className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+        <ProductCTA
+          productName="Luigi Series 6"
+          productLink="/products/series-6"
+          description="See how Series 6 improves on the proven Series 5 design."
+        />
       </section>
 
       <RelatedGuides />

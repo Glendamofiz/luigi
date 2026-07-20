@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/luigi-series-6-disposable-review",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        url: "https://www.luigiofficialbrand.com/og-images/blog-series-6-disposables.png",
         width: 1200,
         height: 630,
         alt: "Luigi Oil - Premium Cannabis Products",
@@ -436,7 +436,15 @@ export default function LuigiSeries6ReviewPage() {
       </section>
 
       <Footer />
-            <RelatedGuides />
+                  <section className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+        <ProductCTA
+          productName="Luigi Series 6"
+          productLink="/products/series-6"
+          description="Discover why Series 6 represents the latest evolution in Luigi disposables."
+        />
+      </section>
+
+      <RelatedGuides />
     </main>
     </>
   )
