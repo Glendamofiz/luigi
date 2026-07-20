@@ -336,11 +336,13 @@ export default function BlogPage() {
               >
                 <div className="aspect-[16/10] relative overflow-hidden">
                   <Image
-                    src={post.image}
+                src={post.image}
                     alt={post.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
+                width={800}
+                height={600}
+                
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+              />
                   <div className="absolute top-4 left-4">
                     <span className="bg-[#D4AF37] text-black text-xs font-bold px-3 py-1 rounded-full">
                       {post.category}
@@ -387,11 +389,13 @@ export default function BlogPage() {
                 <div className="md:w-48 lg:w-64 flex-shrink-0">
                   <div className="aspect-[16/10] md:aspect-square relative rounded-lg overflow-hidden">
                     <Image
-                      src={post.image}
+                src={post.image}
                       alt={post.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
+                width={800}
+                height={600}
+                
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+              />
                   </div>
                 </div>
                 <div className="flex-1 flex flex-col justify-center">

@@ -119,8 +119,9 @@ export default function LuigiLiveResinPage() {
           <Image
             src="https://www.luigiofficialbrand.com/wp-content/uploads/2025/11/Luigi-BG_Pattern-Home-Banner.jpg"
             alt=""
-            fill
-            className="object-cover opacity-20"
+            width={1920}
+            height={1080}
+            className="absolute inset-0 w-full h-full object-cover opacity-20"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black" />

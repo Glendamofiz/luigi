@@ -54,11 +54,13 @@ export default function BlogPost() {
           {/* Featured Image */}
           <div className="relative w-full h-96 mb-12 rounded-lg overflow-hidden">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-6O8v95MMvi4PdyNGiy5AYHnzaPoq3b.jpg"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-6O8v95MMvi4PdyNGiy5AYHnzaPoq3b.jpg"
               alt="Luigi Series 6 vs Series 5"
-              fill
-              className="object-cover"
-            />
+                width={800}
+                height={600}
+                
+                className="object-cover"
+              />
           </div>
 
           {/* Quick Answer */}
