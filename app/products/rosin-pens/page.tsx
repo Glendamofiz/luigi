@@ -9,8 +9,8 @@ import Image from "next/image"
 import { AddToCartButton } from "@/components/add-to-cart-button"
 
 export const metadata: Metadata = {
-  title: "Luigi Rosin Pens | Premium Solventless Hash Rosin Dual Packs",
-  description: "Shop Luigi Rosin Dual Packs - 1G solventless rosin disposable + 1G rosin infused blunt. 10 strains including OG Reserve, Garlic Glue, and Peanut Butter Breath.",
+  title: "Luigi Rosin Pens | Solventless Hash Rosin Dual Packs",
+  description: "Shop Luigi rosin pens — premium solventless hash rosin dual packs with no solvents, no fillers. Pure, potent, and strain-specific. California's top rosin pen brand.",
   keywords: ["Luigi Rosin Pen", "hash rosin vape", "solventless rosin", "Luigi rosin dual pack", "premium rosin disposable", "live rosin vape"],
   alternates: {
     canonical: "/products/rosin-pens",

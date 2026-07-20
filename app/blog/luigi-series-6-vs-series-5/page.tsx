@@ -5,8 +5,8 @@ import { RelatedGuides } from '@/components/related-guides'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Luigi Series 6 vs Series 5 – What Changed? (2026 Comparison Guide)',
-  description: 'Compare Luigi Series 6 vs Series 5 disposables. Discover differences in flavor, airflow, smoothness, potency, and overall vape performance.',
+  title: 'Luigi Series 6 vs Series 5 | What Changed in 2026?',
+  description: 'Luigi Series 6 vs Series 5 — full 2026 comparison. What changed in potency, design, flavors, and live resin quality? Which Luigi disposable should you buy this year?',
   keywords: 'Luigi Series 6 vs Series 5, Luigi vape comparison, Luigi Series disposable review, Luigi Series 6 airflow, Luigi vape flavor comparison',
   openGraph: {
     title: 'Luigi Series 6 vs Series 5 – What Changed? (2026 Comparison Guide)',

@@ -8,8 +8,8 @@ import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Where to Buy Luigi Oil in Los Angeles (Dispensary Guide) | Luigi Oil",
-  description: "Find Luigi carts in Los Angeles. See confirmed LA dispensaries carrying Luigi Oil, how to check live stock near you, and verify authenticity.",
+  title: "Where to Buy Luigi Oil in Los Angeles | Dispensary Guide",
+  description: "Where to buy Luigi Oil in Los Angeles. Complete guide to verified LA dispensaries stocking authentic Luigi carts, 2G disposables, and Fattones pre-rolls near you.",
   keywords: ["luigi carts los angeles", "Luigi Oil Los Angeles", "buy Luigi carts LA", "Luigi dispensary near me", "Luigi Oil dispensary"],
   openGraph: {
     title: "Where to Buy Luigi Oil in Los Angeles (Dispensary Guide)",

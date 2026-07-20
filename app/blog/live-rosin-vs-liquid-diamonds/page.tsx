@@ -8,8 +8,8 @@ import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "What's the Difference Between Live Rosin and Liquid Diamonds? | Luigi Oil",
-  description: "Compare live rosin vs liquid diamonds: extraction methods, terpene content, potency, and which Luigi products use each extract type.",
+  title: "Live Rosin vs Liquid Diamonds | What's the Difference?",
+  description: "Live rosin vs liquid diamonds — solventless vs crystalline THC explained. Flavor, potency, purity, and price compared. Which extract should you choose in 2026?",
   keywords: "live rosin, liquid diamonds, extract types, THCA crystallization, terpenes, cannabis concentrate",
   openGraph: {
     title: "What's the Difference Between Live Rosin and Liquid Diamonds?",

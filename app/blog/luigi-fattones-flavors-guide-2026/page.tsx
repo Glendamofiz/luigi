@@ -8,8 +8,8 @@ import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft, Package } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Luigi Fattones Flavors 2026: Complete Guide to 4-in-1 Infused Packs",
-  description: "Complete guide to Luigi Fattones flavors in 2026. Explore all 10 flavors, 4-in-1 pack contents, effects, and where to buy these premium hash rosin infused packs.",
+  title: "Luigi Fattones Flavors 2026 | Complete 4-in-1 Pack Guide",
+  description: "Every Luigi Fattones flavor ranked — complete 2026 guide to the 4-in-1 infused pre-roll pack. Strains, terpenes, potency, and where to buy Luigi Fattones near you.",
   keywords: ["Luigi Fattones flavors", "Luigi Fattones 2026", "Luigi infused pre-rolls", "hash rosin infused", "Luigi 4-in-1 packs", "Banana Gelato Fattone", "Blue Mist Fattone"],
   openGraph: {
     title: "Luigi Fattones Flavors 2026: Complete Guide",

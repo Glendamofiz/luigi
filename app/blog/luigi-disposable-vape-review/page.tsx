@@ -8,8 +8,8 @@ import { RelatedGuides } from "@/components/related-guides"
 import { Calendar, Clock, ArrowLeft, Star, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Luigi Disposable Vape Review – Why This Premium THC Vape Dominates (2026)",
-  description: "Honest Luigi disposable vape review covering quality, performance, and user experience. Discover why this premium THC vape stands out from the competition.",
+  title: "Luigi Disposable Vape Review | Why It Dominates (2026)",
+  description: "Full Luigi disposable vape review for 2026. Why this premium THC vape leads the market — live resin, liquid diamonds, flavor, potency, and overall verdict. Read now.",
   keywords: "Luigi disposable vape review, Luigi Series vape review, Luigi carts review, premium THC vape Luigi, high potency vape disposable",
   openGraph: {
     title: "Luigi Disposable Vape Review – Premium THC Vape (2026)",

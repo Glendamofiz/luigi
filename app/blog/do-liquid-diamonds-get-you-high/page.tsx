@@ -8,8 +8,8 @@ import { Calendar, Clock, ArrowLeft } from "lucide-react"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "Do Liquid Diamonds Get You High? Potency Explained | Luigi Oil",
-  description: "Do liquid diamonds get you high? Here's what the lab data says about THCA crystallization, terpene content, and potency in Luigi's live resin products.",
+  title: "Do Liquid Diamonds Get You High? Potency Explained",
+  description: "Do liquid diamonds get you high? Full potency breakdown — THC concentration, effects vs live resin, and what to expect from Luigi liquid diamond disposables.",
   keywords: ["liquid diamonds potency", "THCA vs THC", "cannabis extract potency", "liquid diamonds effects", "lab tested THC", "Series 6 disposables", "live resin concentrates"],
   openGraph: {
     title: "Do Liquid Diamonds Get You High? Potency Explained",

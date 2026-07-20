@@ -8,8 +8,8 @@ import { CheckCircle, Zap, Leaf, Award, ChevronRight } from "lucide-react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Luigi Oil 2026 Guide | Buy Luigi 2G Disposable Online, Fattones & Rosin Pre-Rolls",
-  description: "Buy authentic Luigi 2G disposable online. Complete 2026 guide to Luigi Oil Fattones, Series 6 Collection live resin liquid diamonds & hash rosin pre-rolls. Find Luigi near me at licensed CA dispensaries.",
+  title: "Luigi Oil 2026 Guide | 2G Disposable, Fattones & Rosin",
+  description: "Buy Luigi 2G disposable online — complete 2026 guide to Luigi Oil Fattones, Series 6 live resin liquid diamonds, and hash rosin pre-rolls at CA dispensaries.",
   keywords: [
     "buy Luigi 2G disposable online",
     "Luigi disposable near me",

@@ -7,8 +7,8 @@ import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Luigi Blog - Premium Cannabis Guides, Reviews & Education | Luigi Oil",
-  description: "Explore Luigi's blog for expert cannabis guides, product reviews, and educational content about live resin, rosin pens, and premium THC vapes. Learn how to buy authentic Luigi products.",
+  title: "Luigi Blog | Cannabis Guides, Reviews & Education",
+  description: "Explore Luigi Oil's premium cannabis blog — in-depth guides on live resin, liquid diamonds, rosin pens, Fattones pre-rolls, and how to spot authentic Luigi carts.",
   keywords: "Luigi blog, cannabis guides, live resin education, THC vape reviews, premium cannabis content, buy Luigi disposable, Luigi Oil guide",
   openGraph: {
     title: "Luigi Blog - Premium Cannabis Guides, Reviews & Education",

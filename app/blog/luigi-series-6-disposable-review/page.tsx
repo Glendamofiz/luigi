@@ -8,8 +8,8 @@ import { RelatedGuides } from "@/components/related-guides"
 import { Calendar, Clock, ArrowLeft, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Luigi Series 6 Disposable Review – Premium High Potency Vape (2026 Guide)",
-  description: "Discover Luigi Series 6 disposable vapes with high potency, smooth hits, and premium flavor. See why this luxury vape stands out from the competition.",
+  title: "Luigi Series 6 Disposable Review | High Potency Vape 2026",
+  description: "Honest Luigi Series 6 review 2026. Live resin liquid diamonds, potency, flavors, and battery life tested. Is Luigi Series 6 worth it? Full verdict inside.",
   keywords: "Luigi Series 6 disposable, Luigi vape Series 6 review, Luigi disposable vape strength, best THC disposable Luigi, Series 6 vs Series 5 Luigi",
   openGraph: {
     title: "Luigi Series 6 Disposable Review – Premium High Potency Vape (2026)",

@@ -8,8 +8,8 @@ import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Buy Luigi Carts Wholesale: A Dispensary Owner's Guide | Luigi Oil",
-  description: "Everything a dispensary owner needs to know before you buy Luigi carts wholesale — licensing requirements, order minimums, product lineup, pricing tiers, and how to order direct.",
+  title: "Buy Luigi Carts Wholesale | Dispensary Owner's Guide",
+  description: "Dispensary owners guide to buying Luigi carts wholesale — MOQs, pricing tiers, authentic sourcing, and how to become an authorised Luigi Oil retailer in 2026.",
   keywords: ["buy luigi carts wholesale", "Luigi Oil wholesale", "Luigi Carts distributor", "dispensary wholesale cannabis", "Luigi 2G Disposable wholesale"],
   openGraph: {
     title: "Buy Luigi Carts Wholesale: A Dispensary Owner's Guide",

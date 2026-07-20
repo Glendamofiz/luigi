@@ -8,8 +8,8 @@ import { RelatedGuides } from "@/components/related-guides"
 import { Calendar, Clock, ArrowLeft, Leaf } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Luigi Rosin Pens Flavors Guide 2026: Complete Solventless Hash Rosin Guide",
-  description: "Complete guide to Luigi Rosin Pens flavors in 2026. Discover all solventless hash rosin strains, effects, and why these are the cleanest vape option from Luigi Oil.",
+  title: "Luigi Rosin Pens Flavors 2026 | Solventless Hash Rosin Guide",
+  description: "Every Luigi rosin pen flavor ranked for 2026. Complete solventless hash rosin guide — strains, terpenes, potency, and how to choose the right Luigi rosin pen for you.",
   keywords: ["Luigi Rosin Pens flavors", "Luigi Rosin Pens 2026", "solventless hash rosin", "Luigi solventless vape", "Tropicana Gold", "OG Reserve", "where to buy Luigi Rosin Pens online"],
   openGraph: {
     title: "Luigi Rosin Pens Flavors Guide 2026",

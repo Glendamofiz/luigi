@@ -8,8 +8,8 @@ import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft, CheckCircle, X, DollarSign, Sparkles, Shield } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Are Luigi Carts Worth It? Honest Review & Value Analysis (2026)",
-  description: "Wondering if Luigi carts are worth the premium price? This honest review breaks down quality, value, and why discerning users choose Luigi.",
+  title: "Are Luigi Carts Worth It? Honest 2026 Review & Value",
+  description: "Are Luigi carts worth it? Honest 2026 review — potency, flavor, quality vs cost, and how Luigi compares to other premium THC cart brands. Read before you buy.",
   keywords: "are Luigi carts worth it, Luigi vape review, Luigi disposable quality, premium cannabis brand Luigi",
   openGraph: {
     title: "Are Luigi Carts Worth It? Honest Review (2026)",

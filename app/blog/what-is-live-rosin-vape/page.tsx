@@ -8,8 +8,8 @@ import { RelatedGuides } from "@/components/related-guides"
 import { Calendar, Clock, ArrowLeft, CheckCircle, Leaf, Sparkles, Shield } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "What is Live Rosin Vape? A Beginner's Guide to Solventless Cannabis",
-  description: "New to live rosin? This beginner-friendly guide explains everything about solventless cannabis vapes, rosin benefits, and why they're the cleanest option.",
+  title: "What Is Live Rosin Vape? Beginner's Solventless Guide",
+  description: "What is live rosin vape? Beginner's guide to solventless cannabis — how it's made, purity vs live resin, and why Luigi rosin pens lead the market in 2026.",
   keywords: "what is live rosin vape, Luigi rosin pens guide, solventless cannabis vape, clean THC vape, rosin benefits",
   openGraph: {
     title: "What is Live Rosin Vape? Beginner's Guide",

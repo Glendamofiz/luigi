@@ -8,8 +8,8 @@ import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Luigi Series 6 Disposables Flavors Guide 2026: Complete Breakdown",
-  description: "Complete breakdown of all Luigi Series 6 disposable flavors for 2026. Discover effects, tasting notes, and where to buy authentic Luigi 2G live resin vapes.",
+  title: "Luigi Series 6 Flavors Guide 2026 | Complete Breakdown",
+  description: "All Luigi Series 6 disposable flavors ranked and reviewed. Complete 2026 breakdown of live resin liquid diamond strains, effects, and terpene profiles. Find your flavor.",
   keywords: ["Luigi Series 6 flavors", "Luigi 2G disposable", "Luigi live resin flavors", "Black Diesel Milk", "Candy Corn Chaos", "Luigi disposable flavors 2026"],
   openGraph: {
     title: "Luigi Series 6 Disposables Flavors Guide 2026",

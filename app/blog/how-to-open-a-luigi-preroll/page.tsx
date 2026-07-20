@@ -8,8 +8,8 @@ import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "How to Open a Luigi Preroll: Step-by-Step Guide | Luigi Oil",
-  description: "Learn how to open a Luigi Preroll the right way. Step-by-step instructions for unwrapping, lighting, and storing your Luigi Fattones hash rosin prerolls.",
+  title: "How to Open a Luigi Preroll: Step-by-Step Guide",
+  description: "Not sure how to open your Luigi Fattones preroll? Step-by-step guide with photos — how to unwrap, light, and get the best experience from your Luigi infused pre-roll.",
   keywords: ["how to open luigi preroll", "luigi fattones", "hash rosin infused joints", "preroll packaging", "glass tip blunt", "luigi preroll guide"],
   openGraph: {
     title: "How to Open a Luigi Preroll: Step-by-Step Guide",

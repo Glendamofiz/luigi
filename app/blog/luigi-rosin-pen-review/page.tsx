@@ -8,8 +8,8 @@ import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Luigi Rosin Pen Review: Is Solventless Worth It? | Luigi Oil",
-  description: "An honest Luigi Rosin Pen review — how the solventless hash rosin dual pack compares to live resin, what it costs, and whether it's worth the switch.",
+  title: "Luigi Rosin Pen Review | Is Solventless Worth It?",
+  description: "Honest Luigi rosin pen review for 2026. Is solventless hash rosin worth the price? Flavor, potency, hardware, and full verdict vs live resin disposables. Read before buying.",
   keywords: ["luigi rosin pen review", "Luigi Rosin Pen", "solventless rosin vape", "Luigi hash rosin", "Luigi rosin dual pack"],
   openGraph: {
     title: "Luigi Rosin Pen Review: Is Solventless Worth It?",

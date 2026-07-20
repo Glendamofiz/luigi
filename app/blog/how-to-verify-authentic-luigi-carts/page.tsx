@@ -5,8 +5,8 @@ import { Calendar, Clock, CheckCircle, AlertCircle } from "lucide-react"
 import Image from "next/image"
 
 export const metadata = {
-  title: "How to Verify Authentic Luigi Carts (Step-by-Step Guide) | Luigi Official",
-  description: "Learn how to verify authentic Luigi carts with our 5-step guide. Discover the pros & cons of authentication methods, plus safety tips for spotting counterfeit Luigi Oil products.",
+  title: "How to Verify Authentic Luigi Carts | Luigi Official",
+  description: "Don't get faked out. Use this step-by-step guide to verify authentic Luigi carts — QR codes, packaging details, and official sources. Spot fake Luigi Oil fast.",
   keywords: "verify authentic luigi carts, luigi cart authentication, how to spot fake luigi, authentic luigi oil",
   openGraph: {
     title: "How to Verify Authentic Luigi Carts (Step-by-Step Guide)",

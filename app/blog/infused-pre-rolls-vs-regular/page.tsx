@@ -8,8 +8,8 @@ import { RelatedGuides } from "@/components/related-guides"
 import { Calendar, Clock, ArrowLeft, CheckCircle, Zap, Flame } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Infused Pre Rolls vs Regular – Why Potency Matters (FatTones Guide)",
-  description: "Discover the potency difference between infused and regular pre-rolls. Learn why Luigi FatTones deliver an unmatched premium experience.",
+  title: "Infused Pre Rolls vs Regular | Why Potency Matters",
+  description: "Infused pre rolls vs regular — potency, effects, and experience compared. Luigi Fattones guide explains why infused pre-rolls hit harder and last longer in 2026.",
   keywords: "infused pre rolls vs regular, Luigi FatTones review, best infused pre rolls, strong pre rolls THC, premium pre rolls Luigi",
   openGraph: {
     title: "Infused Pre Rolls vs Regular – Why Potency Matters",

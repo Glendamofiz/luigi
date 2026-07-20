@@ -8,8 +8,8 @@ import { RelatedGuides } from "@/components/related-guides"
 import { Calendar, Clock, ArrowLeft, CheckCircle, Trophy, Star } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Best Infused Pre Rolls 2026 – Top Premium Picks (Luigi FatTones #1)",
-  description: "Looking for the best infused pre-rolls? Our expert guide ranks the top options with Luigi FatTones taking the crown for premium quality.",
+  title: "Best Infused Pre Rolls 2026 | Luigi Fattones Ranked #1",
+  description: "Best infused pre rolls 2026 ranked. Luigi Fattones earns the #1 spot — potency, flavors, and value broken down against every major infused pre-roll brand.",
   keywords: "best infused pre rolls, Luigi FatTones pre rolls review, strong THC pre rolls, infused joint benefits",
   openGraph: {
     title: "Best Infused Pre Rolls 2026 – Luigi FatTones #1",

@@ -8,8 +8,8 @@ import { RelatedGuides } from "@/components/related-guides"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Official Luigi Brand 2026 Guide: Buy Luigi Disposables & Rosin Pens Online",
-  description: "Complete guide to the official Luigi brand in 2026. Learn how to buy Luigi disposables, Luigi 2G live resin, and Luigi Rosin Pens online safely from licensed dispensaries.",
+  title: "Official Luigi Brand 2026 Guide | Disposables & Rosin Pens",
+  description: "The official Luigi brand guide for 2026 — buy Luigi disposables, rosin pens, and Fattones online. Authentic sources, product lineup, and everything new from Luigi Oil.",
   keywords: ["official Luigi brand", "Luigi disposables", "Luigi 2G", "buy Luigi live resin online", "where to buy Luigi Rosin Pens online", "Luigi Oil", "authentic Luigi"],
   openGraph: {
     title: "Official Luigi Brand 2026 Guide",

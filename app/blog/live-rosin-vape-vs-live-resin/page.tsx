@@ -8,8 +8,8 @@ import { RelatedGuides } from "@/components/related-guides"
 import { Calendar, Clock, ArrowLeft, CheckCircle, X } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Live Rosin Vape vs Live Resin – The Ultimate Comparison Guide (2026)",
-  description: "Understand the key differences between live rosin and live resin vapes. Learn why Luigi Rosin Pens are the premium choice for solventless cannabis.",
+  title: "Live Rosin Vape vs Live Resin | Ultimate 2026 Guide",
+  description: "Live rosin vs live resin — what's the real difference? Solvent-free vs solvent-based extraction, flavor, potency, and value compared. Complete 2026 guide.",
   keywords: "live rosin vape vs live resin, Luigi Rosin Pens review, rosin vs resin vape difference, solventless vape benefits, premium rosin vape",
   openGraph: {
     title: "Live Rosin Vape vs Live Resin – Ultimate Comparison (2026)",

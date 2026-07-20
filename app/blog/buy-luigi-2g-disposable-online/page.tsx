@@ -8,8 +8,8 @@ import { Calendar, Clock, ArrowLeft, CheckCircle, AlertTriangle, ShieldCheck } f
 import Script from "next/script"
 
 export const metadata: Metadata = {
-  title: "Buy Luigi 2G Disposable Online: Where to Order Authentic Luigi Oil (2026)",
-  description: "Learn how to safely buy Luigi 2G disposable online in 2026. Find authentic Luigi Oil Series 6 flavors, verify real vs fake products, and discover trusted dispensaries.",
+  title: "Buy Luigi 2G Disposable Online | Authentic Luigi Oil 2026",
+  description: "Where to buy Luigi 2G disposable online in 2026. Find authentic Luigi Oil at licensed dispensaries — avoid fakes. Order real Luigi carts and get them delivered fast.",
   keywords: "buy Luigi 2G disposable online, Luigi 2G disposable, order Luigi disposable, Luigi Oil online, Luigi Series 6 flavors, authentic Luigi vape, Luigi disposable near me",
   openGraph: {
     title: "Buy Luigi 2G Disposable Online: Where to Order Authentic Luigi Oil (2026)",

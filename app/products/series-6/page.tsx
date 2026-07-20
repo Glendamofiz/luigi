@@ -9,8 +9,8 @@ import Image from "next/image"
 import { AddToCartButton } from "@/components/add-to-cart-button"
 
 export const metadata: Metadata = {
-  title: "Luigi Series 6 Disposables | 2G Live Resin Liquid Diamond Vapes",
-  description: "Shop Luigi Series 6 - premium 2G live resin liquid diamond disposables with infused prerolls. 10+ strains including Orange Lava Kush, Black Diesel Milk, and Rage Berry Blitz.",
+  title: "Luigi Series 6 | 2G Live Resin Liquid Diamond Vapes",
+  description: "Shop Luigi Series 6 — premium 2G live resin liquid diamond disposables. Full-spectrum THC, bold flavors, no fillers. California's best THC disposable vape. Buy now.",
   keywords: ["Luigi Series 6", "Luigi 2G Disposable", "live resin liquid diamond", "Luigi disposable vape", "Luigi dual pack", "premium THC vape"],
   alternates: {
     canonical: "/products/series-6",

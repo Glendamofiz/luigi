@@ -8,8 +8,8 @@ import { RelatedGuides } from "@/components/related-guides"
 import { Calendar, Clock, ArrowLeft, CheckCircle, MapPin, ShieldCheck, Store, AlertTriangle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Buy Luigi Disposable Vape – Where to Find Premium THC Vapes",
-  description: "Ready to buy Luigi disposable vapes? This guide shows you where to find authentic Luigi products and what to look for when purchasing.",
+  title: "Buy Luigi Disposable Vape | Where to Find Premium THC",
+  description: "Where to buy Luigi disposable vape in 2026. Find authentic premium THC vapes at licensed dispensaries — avoid counterfeits and get the real Luigi Oil experience near you.",
   keywords: "buy Luigi disposable vape, Luigi Series 6 for sale, Luigi vape online, best THC disposable brand",
   openGraph: {
     title: "Buy Luigi Disposable Vape – Where to Find Premium THC Vapes",
