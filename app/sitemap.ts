@@ -112,6 +112,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'best-infused-pre-rolls',
     'infused-pre-rolls-vs-regular',
     'buy-luigi-disposable-vape',
+    'luigi-series-6-vs-series-5',
+    'luigi-vape-not-working-fix',
+    'why-luigi-vapes-taste-better',
+    'how-long-do-luigi-disposables-last',
   ].map((slug) => ({
     url: `${baseUrl}/blog/${slug}`,
     lastModified: new Date(),

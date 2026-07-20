@@ -1,24 +1,118 @@
 # Luigi Oil Robots.txt
 # https://www.luigiofficialbrand.com
 
+# Allow all bots
 User-agent: *
 Allow: /
 
 # Sitemaps
 Sitemap: https://www.luigiofficialbrand.com/sitemap.xml
 
-# Allow AI crawlers
+# OpenAI - ChatGPT, GPT-4, etc.
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
+# Google AI crawlers
 User-agent: Google-Extended
 Allow: /
 
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Anthropic - Claude
 User-agent: anthropic-ai
 Allow: /
 
+User-agent: Claude-Web
+Allow: /
+
 User-agent: ClaudeBot
+Allow: /
+
+# Microsoft - Copilot, BingBot
+User-agent: Copilot
+Allow: /
+
+User-agent: copilot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# xAI - Grok
+User-agent: grok-web
+Allow: /
+
+User-agent: Grok-web
+Allow: /
+
+# Meta - LLaMA
+User-agent: facebookexternalhit
+Allow: /
+
+# Apple Intelligence
+User-agent: AppleBot
+Allow: /
+
+User-agent: applebot
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# CCBot - Common Crawl
+User-agent: CCBot
+Allow: /
+
+# Amazonbot
+User-agent: Amazonbot
+Allow: /
+
+# Brave Search
+User-agent: Bravobots
+Allow: /
+
+# Qwant
+User-agent: Qwantify
+Allow: /
+
+# Baidu
+User-agent: Baiduspider
+Allow: /
+
+# Yandex
+User-agent: Yandex
+Allow: /
+
+# Other search engines
+User-agent: Slurp
+Allow: /
+
+User-agent: SemrushBot
+Allow: /
+
+User-agent: DotBot
+Allow: /
+
+User-agent: MJ12Bot
+Allow: /
+
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: SemrushBot-SA
 Allow: /
