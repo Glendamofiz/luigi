@@ -290,7 +290,7 @@ export default function BuyLuigiDisposableVapePage() {
               <div className="flex gap-6 p-6 bg-gray-50 rounded-xl">
                 <div className="w-24 h-24 flex-shrink-0">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-IDqQOWuyALZ6h7xUUNjKgk32NqZFvM.png"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-2400x2400-OA10oIBvKBToWVDytXhwa5JPGI0xCU.png"
                     alt="best THC disposable brand - Rosin Pens"
                     width={96}
                     height={96}

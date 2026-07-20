@@ -181,7 +181,7 @@ export default function LuigiLiveResinPage() {
               </div>
               <div className="bg-gray-800 rounded-xl p-4 hover:bg-gray-700 transition-colors">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CASABLANCA-PEACH-5dXyjfcSR5zyCWi9diFHGIoI6VFEDP.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CASABLANCA-PEACH-2400x2400-PUZfpFgzkhH327g6CU6so3dRABrdPl.png"
                   alt="Luigi Rosin Pen - Casablanca Peach"
                   width={300}
                   height={300}
@@ -201,7 +201,7 @@ export default function LuigiLiveResinPage() {
               </div>
               <div className="bg-gray-800 rounded-xl p-4 hover:bg-gray-700 transition-colors">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GARLIC-GLUE-k4jcVnv6nkPnp6gpHBFHxoqE9wb9SZ.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GARLIC-GLUE-2400x2400-xKXyqIm8nQMrx1JULcPLke7bxNpWKc.png"
                   alt="Luigi Rosin Pen - Garlic Glue"
                   width={300}
                   height={300}
@@ -221,7 +221,7 @@ export default function LuigiLiveResinPage() {
               </div>
               <div className="bg-gray-800 rounded-xl p-4 hover:bg-gray-700 transition-colors">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TROPICANA-GOLD.png-dhBq1NLArSubAaVls0j2TDDALt9Scp.jpeg"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TROPICANA-GOLD-2400x2400-TAYe3vXWG9Af3nTW9SFzeScdo4Ctel.png"
                   alt="Luigi Rosin Pen - Tropicana Gold"
                   width={300}
                   height={300}
@@ -231,7 +231,7 @@ export default function LuigiLiveResinPage() {
               </div>
               <div className="bg-gray-800 rounded-xl p-4 hover:bg-gray-700 transition-colors">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-IDqQOWuyALZ6h7xUUNjKgk32NqZFvM.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-2400x2400-OA10oIBvKBToWVDytXhwa5JPGI0xCU.png"
                   alt="Luigi Rosin Pen - OG Reserve"
                   width={300}
                   height={300}
@@ -284,7 +284,7 @@ export default function LuigiLiveResinPage() {
               <div className="relative">
                 <div className="bg-gray-100 rounded-2xl p-8 lg:p-12">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-IDqQOWuyALZ6h7xUUNjKgk32NqZFvM.png"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-2400x2400-OA10oIBvKBToWVDytXhwa5JPGI0xCU.png"
                     alt="Luigi Premium Cannabis Products - OG Reserve Rosin Pen"
                     width={500}
                     height={500}
@@ -412,7 +412,7 @@ export default function LuigiLiveResinPage() {
               <div>
                 <div className="bg-gray-900 rounded-2xl p-8">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TROPICANA-GOLD.png-dhBq1NLArSubAaVls0j2TDDALt9Scp.jpeg"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TROPICANA-GOLD-2400x2400-TAYe3vXWG9Af3nTW9SFzeScdo4Ctel.png"
                     alt="Luigi Rosin Pen - Tropicana Gold"
                     width={400}
                     height={400}

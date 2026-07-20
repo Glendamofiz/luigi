@@ -51,7 +51,7 @@ export default function DeliveryPage() {
         <section className="relative py-20 md:py-28 lg:py-32 bg-black overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-IDqQOWuyALZ6h7xUUNjKgk32NqZFvM.png')" }}
+            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-2400x2400-OA10oIBvKBToWVDytXhwa5JPGI0xCU.png')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
