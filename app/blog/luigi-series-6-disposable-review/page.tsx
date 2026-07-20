@@ -8,14 +8,24 @@ import { RelatedGuides } from "@/components/related-guides"
 import { Calendar, Clock, ArrowLeft, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Luigi Series 6 Disposable Review – Premium High Potency Vape (2026 Guide)",
-  description: "Discover Luigi Series 6 disposable vapes with high potency, smooth hits, and premium flavor. See why this luxury vape stands out from the competition.",
+  title: "Luigi Series 6 Disposable Review | High Potency Vape 2026",
+  description: "Honest Luigi Series 6 review 2026. Live resin liquid diamonds, potency, flavors, and battery life tested. Is Luigi Series 6 worth it? Full verdict inside.",
   keywords: "Luigi Series 6 disposable, Luigi vape Series 6 review, Luigi disposable vape strength, best THC disposable Luigi, Series 6 vs Series 5 Luigi",
   openGraph: {
     title: "Luigi Series 6 Disposable Review – Premium High Potency Vape (2026)",
     description: "Discover Luigi Series 6 disposable vapes with high potency, smooth hits, and premium flavor.",
     type: "article",
     publishedTime: "2026-03-20T00:00:00.000Z",
+  ,
+    url: "https://www.luigiofficialbrand.com/blog/luigi-series-6-disposable-review",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil - Premium Cannabis Products",
+      },
+    ],
   },
   alternates: {
     canonical: "/blog/luigi-series-6-disposable-review",
@@ -95,6 +105,53 @@ const reviewSchema = {
   "reviewBody": "The Luigi Series 6 disposable represents the ultimate evolution in premium THC vaping with live resin liquid diamond extract, advanced ceramic heating, and 12+ strain options."
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Luigi Series 6?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi Series 6 is a premium 2-gram disposable vape featuring live resin liquid diamond extract, advanced ceramic heating technology, and 12+ strain options. Each disposable delivers smooth, flavorful hits with potency up to 35%+ THC."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes Luigi Series 6 special?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi Series 6 stands out with full-spectrum live resin liquid diamond extract, ceramic heating technology for smooth hits, and a carefully curated strain selection. Each batch is lab-tested for potency, purity, and safety."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a 2G Luigi disposable last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A 2G Luigi Series 6 disposable typically lasts 1-2 weeks with moderate daily use. Exact duration depends on individual consumption habits and draw intensity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What strains are available in Series 6?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi Series 6 offers premium strains including Orange Lava Kush, Black Diesel Milk, Rage Berry Blitz, Graveberry Kush, Candy Corn Chaos, and more. Each strain has unique terpene profiles and effects."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I buy Luigi Series 6?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Purchase authentic Luigi Series 6 at licensed California dispensaries. Verify the retailer is an authorized Luigi Oil distributor to ensure you receive genuine, lab-tested products."
+      }
+    }
+  ]
+}
+
 export default function LuigiSeries6ReviewPage() {
   return (
     <>
@@ -102,6 +159,11 @@ export default function LuigiSeries6ReviewPage() {
         id="review-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />
@@ -359,6 +421,19 @@ export default function LuigiSeries6ReviewPage() {
           </div>
         </div>
       </article>
+
+      {/* CTA - Related Product */}
+      <section className="py-12 md:py-16 bg-gray-50 border-t border-gray-200">
+        <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+          <div className="bg-gradient-to-r from-[#D4AF37]/10 to-transparent border border-[#D4AF37]/30 rounded-lg p-8 text-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">Ready to Try Luigi Series 6?</h3>
+            <p className="text-gray-600 mb-6">Explore our full collection of live resin liquid diamond disposables with 10+ premium strains.</p>
+            <Link href="/products/series-6" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+              Shop Series 6 Disposables
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <Footer />
             <RelatedGuides />

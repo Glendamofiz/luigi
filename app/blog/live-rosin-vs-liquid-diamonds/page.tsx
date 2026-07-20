@@ -8,8 +8,8 @@ import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "What's the Difference Between Live Rosin and Liquid Diamonds? | Luigi Oil",
-  description: "Compare live rosin vs liquid diamonds: extraction methods, terpene content, potency, and which Luigi products use each extract type.",
+  title: "Live Rosin vs Liquid Diamonds | What's the Difference?",
+  description: "Live rosin vs liquid diamonds — solventless vs crystalline THC explained. Flavor, potency, purity, and price compared. Which extract should you choose in 2026?",
   keywords: "live rosin, liquid diamonds, extract types, THCA crystallization, terpenes, cannabis concentrate",
   openGraph: {
     title: "What's the Difference Between Live Rosin and Liquid Diamonds?",
@@ -25,9 +25,61 @@ export const metadata: Metadata = {
   },
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the difference between live rosin and liquid diamonds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Live rosin is made purely with heat and pressure (solventless). Liquid diamonds use solvent extraction that isolates and crystallizes THCA before purification. Rosin is typically solventless, while liquid diamonds contain THCA crystal formations in terpene sauce."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which has better flavor - live rosin or liquid diamonds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Live rosin typically has richer, more complete terpene profiles because the solventless extraction preserves all plant compounds. Liquid diamonds offer a different flavor experience with crystalline THCA and concentrated terp sauce, but may lack full-spectrum complexity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is live rosin or liquid diamonds more potent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Liquid diamonds often have higher pure THC potency due to THCA crystallization. Live rosin delivers strong effects with full-spectrum terpenes and cannabinoids. Potency perception depends on extraction and individual sensitivity, not just THC percentage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is cleaner - live rosin or liquid diamonds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Live rosin is solventless, making it the cleanest option with no chemical residue. Liquid diamonds may use solvents during extraction but are purified, so both are generally safe when lab-tested. Live rosin is preferable for users seeking zero-solvent products."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which Luigi products use live rosin vs liquid diamonds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi Rosin Pens use solventless live rosin exclusively. Luigi Series 6 features live resin liquid diamonds. Both are premium Luigi options—choose rosin for solventless purity, choose Series 6 for liquid diamond effects and potency."
+      }
+    }
+  ]
+}
+
 export default function LiveRosinVsLiquidDiamondsBlog() {
   return (
     <>
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Header />
       <main className="min-h-screen bg-white">
         {/* Hero Section */}

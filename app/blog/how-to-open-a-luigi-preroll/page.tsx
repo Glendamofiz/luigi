@@ -8,14 +8,24 @@ import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "How to Open a Luigi Preroll: Step-by-Step Guide | Luigi Oil",
-  description: "Learn how to open a Luigi Preroll the right way. Step-by-step instructions for unwrapping, lighting, and storing your Luigi Fattones hash rosin prerolls.",
+  title: "How to Open a Luigi Preroll: Step-by-Step Guide",
+  description: "Not sure how to open your Luigi Fattones preroll? Step-by-step guide with photos — how to unwrap, light, and get the best experience from your Luigi infused pre-roll.",
   keywords: ["how to open luigi preroll", "luigi fattones", "hash rosin infused joints", "preroll packaging", "glass tip blunt", "luigi preroll guide"],
   openGraph: {
     title: "How to Open a Luigi Preroll: Step-by-Step Guide",
     description: "Learn how to open a Luigi Preroll the right way with our complete guide.",
     type: "article",
     publishedTime: "2026-06-22T00:00:00.000Z",
+  ,
+    url: "https://www.luigiofficialbrand.com/blog/how-to-open-a-luigi-preroll",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil - Premium Cannabis Products",
+      },
+    ],
   },
   alternates: {
     canonical: "/blog/how-to-open-a-luigi-preroll",
@@ -36,6 +46,53 @@ const articleSchema = {
   "description": "Learn how to open a Luigi Preroll the right way. Step-by-step instructions for unwrapping, lighting, and storing your Luigi Fattones hash rosin prerolls."
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do you open a Luigi Fattones preroll?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Remove outer packaging carefully. You'll find a glass-tip blunt and rosin-infused joints. Gently pull the glass tip apart, then light the rounded end and enjoy with slow draws."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's included in a Luigi Fattones pack?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each 4-in-1 pack includes: 1 glass-tip blunt, 2 rosin-infused full-size joints, 4 mini rosin-infused joints, and 6 hash-infused gummies—all in the same strain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I light a Luigi preroll correctly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use a lighter on the rounded tip. Roll gently between your fingers while lighting until evenly glowing. Take slow, deliberate draws for even burn and best flavor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a Luigi preroll last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A single rosin-infused joint lasts 5-15 minutes depending on draw intensity. The full 4-in-1 pack provides multiple sessions over several hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I relight a partially smoked preroll?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, extinguish carefully and store in an airtight container in cool, dark place. Rosin-infused prerolls stay fresh for several days when properly stored."
+      }
+    }
+  ]
+}
+
 export default function HowToOpenLuigiPrerollPage() {
   return (
     <>
@@ -43,6 +100,11 @@ export default function HowToOpenLuigiPrerollPage() {
         id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />
@@ -371,6 +433,22 @@ export default function HowToOpenLuigiPrerollPage() {
             </div>
           </div>
         </article>
+
+        {/* CTA - Shop Fattones */}
+        <section className="py-12 md:py-16 bg-gradient-to-r from-[#D4AF37]/10 to-transparent border-t border-gray-200">
+          <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 text-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">Ready for Your First Fattones?</h3>
+            <p className="text-gray-600 mb-6">Now that you know how to open a Luigi preroll, it's time to grab your Fattones and enjoy.</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/products/fattones" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+                Shop Fattones
+              </Link>
+              <Link href="/blog/luigi-fattones-flavors-guide-2026" className="inline-block border border-[#D4AF37] text-[#D4AF37] font-semibold px-8 py-3 rounded-lg hover:bg-[#D4AF37]/10 transition-colors">
+                See All Flavors
+              </Link>
+            </div>
+          </div>
+        </section>
 
         <RelatedGuides />
       <Footer />

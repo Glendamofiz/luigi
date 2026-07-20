@@ -21,10 +21,10 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Luigi Oil | Premium Cannabis Disposables & Pre-Rolls',
+    default: 'Luigi Oil | Buy Luigi Carts & 2G Disposables Wholesale',
     template: '%s | Luigi Oil'
   },
-  description: 'Luigi Oil produces premium THC disposable vapes, rosin pens, and pre-roll joints available at licensed dispensaries across California.',
+  description: 'Shop authentic Luigi Oil — premium 2G disposables, Luigi carts, and live resin liquid diamonds. Wholesale pricing available. California's top THC vape brand. Order now.',
   keywords: ['Luigi Oil', 'Luigi Carts', 'Luigi 2G Disposable', 'THC disposable vape', 'cannabis rosin pen', 'premium pre roll', 'live resin disposable', 'Luigi Fattones', 'Luigi Series 6'],
   metadataBase: new URL('https://www.luigiofficialbrand.com'),
   verification: {
@@ -42,11 +42,13 @@ export const metadata: Metadata = {
     url: 'https://www.luigiofficialbrand.com',
     images: [
       {
-        url: '/og-image.png',
+        url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg',
         width: 1200,
         height: 630,
         alt: 'Luigi Oil - Premium Cannabis Disposables & Pre-Rolls',
       },
+    ],
+  },
     ],
     locale: 'en_US',
   },

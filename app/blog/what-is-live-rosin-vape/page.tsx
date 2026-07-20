@@ -8,14 +8,24 @@ import { RelatedGuides } from "@/components/related-guides"
 import { Calendar, Clock, ArrowLeft, CheckCircle, Leaf, Sparkles, Shield } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "What is Live Rosin Vape? A Beginner's Guide to Solventless Cannabis",
-  description: "New to live rosin? This beginner-friendly guide explains everything about solventless cannabis vapes, rosin benefits, and why they're the cleanest option.",
+  title: "What Is Live Rosin Vape? Beginner's Solventless Guide",
+  description: "What is live rosin vape? Beginner's guide to solventless cannabis — how it's made, purity vs live resin, and why Luigi rosin pens lead the market in 2026.",
   keywords: "what is live rosin vape, Luigi rosin pens guide, solventless cannabis vape, clean THC vape, rosin benefits",
   openGraph: {
     title: "What is Live Rosin Vape? Beginner's Guide",
     description: "Beginner-friendly guide to solventless cannabis vapes and rosin benefits.",
     type: "article",
     publishedTime: "2026-03-12T00:00:00.000Z",
+  ,
+    url: "https://www.luigiofficialbrand.com/blog/what-is-live-rosin-vape",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil - Premium Cannabis Products",
+      },
+    ],
   },
   alternates: {
     canonical: "/blog/what-is-live-rosin-vape",
@@ -35,6 +45,53 @@ const articleSchema = {
   }
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is live rosin vape?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Live rosin vape is a solventless cannabis extract made purely with heat and pressure from fresh frozen flower. It's the cleanest vape option available—no solvents, no chemicals, just pure cannabinoids and terpenes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is live rosin vape safe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, live rosin vape is the safest cannabis vape option. Because it's solventless, there's no risk of solvent residue. Luigi rosin pens are lab-tested for purity and potency, ensuring clean, safe cannabis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is live rosin vape made?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Live rosin is extracted using only heat and pressure applied to fresh frozen cannabis flower. No solvents like propane, butane, or ethanol are used. The result is a pure, full-spectrum cannabis concentrate with rich terpenes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the potency of Luigi rosin pens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi rosin pens deliver 35%+ THC potency. Each pen is lab-tested to verify exact THC content, terpene profile, and safety. The solventless extraction preserves all cannabinoids and terpenes for powerful, flavorful effects."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I buy live rosin vape?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Buy Luigi rosin pens at licensed California dispensaries. Verify the dispensary is an authorized Luigi Oil retailer to ensure genuine, lab-tested solventless rosin products."
+      }
+    }
+  ]
+}
+
 export default function WhatIsLiveRosinVapePage() {
   return (
     <>
@@ -42,6 +99,11 @@ export default function WhatIsLiveRosinVapePage() {
         id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />

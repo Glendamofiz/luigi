@@ -1,3 +1,4 @@
+import Script from "next/script"
 import { Header } from "@/components/header"
 import { RelatedGuides } from "@/components/related-guides"
 import { Footer } from "@/components/footer"
@@ -5,19 +6,81 @@ import { Calendar, Clock, CheckCircle, AlertCircle } from "lucide-react"
 import Image from "next/image"
 
 export const metadata = {
-  title: "How to Verify Authentic Luigi Carts (Step-by-Step Guide) | Luigi Official",
-  description: "Learn how to verify authentic Luigi carts with our 5-step guide. Discover the pros & cons of authentication methods, plus safety tips for spotting counterfeit Luigi Oil products.",
+  title: "How to Verify Authentic Luigi Carts | Luigi Official",
+  description: "Don't get faked out. Use this step-by-step guide to verify authentic Luigi carts — QR codes, packaging details, and official sources. Spot fake Luigi Oil fast.",
   keywords: "verify authentic luigi carts, luigi cart authentication, how to spot fake luigi, authentic luigi oil",
   openGraph: {
     title: "How to Verify Authentic Luigi Carts (Step-by-Step Guide)",
     description: "Learn how to verify authentic Luigi carts with our 5-step guide. Discover the pros & cons of authentication methods, plus safety tips for spotting counterfeit Luigi Oil products.",
     type: "article",
+  ,
+    url: "https://www.luigiofficialbrand.com/blog/how-to-verify-authentic-luigi-carts",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil - Premium Cannabis Products",
+      },
+    ],
   },
+}
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can I verify if my Luigi cart is authentic?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Verify authenticity using the QR code on the packaging. Scan it with your smartphone to confirm the product is genuine on the official Luigi Oil verification page. Check packaging quality, print clarity, and material feel for signs of counterfeits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are signs of a fake Luigi cart?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fake Luigi carts often have blurry text, faded logos, misaligned printing, and cheap packaging materials. QR codes may not scan or redirect to suspicious websites. Verify through official Luigi Oil channels and licensed dispensaries."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is authentication important for Luigi carts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Counterfeit vape products can contain harmful additives like vitamin E acetate that cause health risks. Fake carts don't meet safety standards and deliver poor quality. Authentication ensures you get genuine, lab-tested, safe Luigi products."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where should I buy Luigi carts to ensure authenticity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only purchase Luigi carts at licensed California dispensaries. Verify the dispensary is an authorized Luigi Oil retailer. Check the retailer list on LuigiOfficialBrand.com to find trusted locations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can counterfeiters replicate Luigi packaging?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "While counterfeits can look similar at first glance, they typically lack the premium material quality and printing precision of authentic Luigi products. The QR code authentication system is the most reliable way to verify genuineness."
+      }
+    }
+  ]
 }
 
 export default function VerifyAuthenticLuigiCartsPage() {
   return (
     <>
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Header />
       <main className="min-h-screen bg-white">
         <article className="py-12 md:py-16">
@@ -294,78 +357,30 @@ export default function VerifyAuthenticLuigiCartsPage() {
           </div>
         </article>
 
-        {/* Schema.org Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Article",
-              "headline": "How to Verify Authentic Luigi Carts (Step-by-Step Guide)",
-              "description": "Learn how to verify authentic Luigi carts with our 5-step guide. Discover the pros & cons of authentication methods, plus safety tips for spotting counterfeit Luigi Oil products.",
-              "image": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg",
-              "datePublished": "2026-06-24",
-              "author": {
-                "@type": "Organization",
-                "name": "Luigi Official"
-              }
-            })
-          }}
-        />
+        <div className="mt-12 bg-gray-50 rounded-lg p-8 text-center border border-gray-200">
+          <h3 className="text-2xl font-bold text-gray-900 mb-3">Buy with Confidence</h3>
+          <p className="text-gray-600 mb-6">Use these verification steps to ensure every Luigi product you buy is authentic, safe, and delivers the premium experience you expect.</p>
+        </div>
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "How can I verify authentic Luigi carts without a QR code?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "If your product lacks a QR code, focus on other verification methods: check the packaging quality and print clarity, verify the batch numbers match on packaging and cartridge, inspect the oil consistency and color, and buy only from trusted sources."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What are the risks of using counterfeit Luigi products?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Counterfeit vape cartridges can contain dangerous additives like vitamin E acetate, linked to severe respiratory issues including EVALI. Other risks include respiratory damage, vomiting, nausea, fatigue, weakness, chest pain, and exposure to unknown chemicals."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Where can I buy authentic Luigi products?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Always purchase from the official Luigi website or authorized retailers at luigiofficialbrand.com. You can also contact customer service for verification questions."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What should I do if I think I bought a counterfeit?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "If you suspect a counterfeit, stop using it immediately, contact Luigi's customer service, report the seller to the platform, and if possible, report the counterfeit to relevant authorities."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Can I verify a product by the oil color alone?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "No. While oil color can be an indicator, it's not reliable on its own. Genuine cannabis oil can range from clear to light amber, but counterfeiters can add colorings. Always use multiple verification methods."
-                  }
-                }
-              ]
-            })
-          }}
-        />
-      </main>
-      <RelatedGuides />
+        {/* CTA - Shop Now */}
+        <section className="py-12 md:py-16 bg-gradient-to-r from-[#D4AF37]/10 to-transparent border-t border-gray-200">
+          <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 text-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">Ready to Shop Authentic Luigi?</h3>
+            <p className="text-gray-600 mb-6">Browse our full collection of verified genuine products at licensed dispensaries.</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/products/series-6" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+                Series 6 Disposables
+              </Link>
+              <Link href="/products/rosin-pens" className="inline-block bg-gray-900 text-white font-semibold px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+                Rosin Pens
+              </Link>
+              <Link href="/products/fattones" className="inline-block bg-gray-900 text-white font-semibold px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+                Fattones
+              </Link>
+            </div>
+          </div>
+        </section>
+
       <Footer />
     </>
   )

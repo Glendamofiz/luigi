@@ -8,14 +8,24 @@ import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Luigi Rosin Pen Review: Is Solventless Worth It? | Luigi Oil",
-  description: "An honest Luigi Rosin Pen review — how the solventless hash rosin dual pack compares to live resin, what it costs, and whether it's worth the switch.",
+  title: "Luigi Rosin Pen Review | Is Solventless Worth It?",
+  description: "Honest Luigi rosin pen review for 2026. Is solventless hash rosin worth the price? Flavor, potency, hardware, and full verdict vs live resin disposables. Read before buying.",
   keywords: ["luigi rosin pen review", "Luigi Rosin Pen", "solventless rosin vape", "Luigi hash rosin", "Luigi rosin dual pack"],
   openGraph: {
     title: "Luigi Rosin Pen Review: Is Solventless Worth It?",
     description: "An honest Luigi Rosin Pen review — how the solventless hash rosin dual pack compares to live resin, what it costs, and whether it's worth the switch.",
     type: "article",
     publishedTime: "2026-07-24T00:00:00.000Z",
+  ,
+    url: "https://www.luigiofficialbrand.com/blog/luigi-rosin-pen-review",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil - Premium Cannabis Products",
+      },
+    ],
   },
   alternates: {
     canonical: "/blog/luigi-rosin-pen-review",
@@ -36,6 +46,53 @@ const articleSchema = {
   "description": "An honest Luigi Rosin Pen review comparing solventless rosin to live resin."
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Luigi Rosin Pen worth it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Luigi rosin pens are worth it for users prioritizing purity and clean cannabis. The solventless extraction delivers pure cannabinoids and terpenes without any chemical residue. At 35%+ THC with premium flavor, they justify the premium price."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes Luigi Rosin Pens different?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi Rosin Pens use solventless extraction—pure heat and pressure only. No chemicals or solvents are used. This delivers the cleanest possible cannabis experience with full-spectrum terpenes and cannabinoids."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are rosin pens better than live resin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both are premium options. Rosin pens are cleaner (solventless) with pure terpene profiles. Live resin offers different flavor profiles and potency. Choose rosin for solventless purity, choose live resin for concentrated effects and liquid diamond potency."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How potent are Luigi rosin pens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi rosin pens deliver 35%+ THC potency. Each pen is lab-tested to verify exact THC content and terpene profile. The solventless extraction preserves all cannabinoids, creating powerful full-spectrum effects."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I buy Luigi Rosin Pens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Buy Luigi rosin pens at licensed California dispensaries. Only purchase from authorized Luigi Oil retailers to ensure genuine, lab-tested solventless products."
+      }
+    }
+  ]
+}
+
 export default function LuigiRosinPenReview() {
   return (
     <>
@@ -43,6 +100,11 @@ export default function LuigiRosinPenReview() {
         id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />
@@ -214,9 +276,25 @@ export default function LuigiRosinPenReview() {
             <p>The Luigi Rosin Pen delivers on what solventless rosin promises: distinct, terpene-forward flavor and a cleaner extraction story, wrapped into a dual pack that adds real versatility for the price. It won&apos;t out-potency the liquid diamond lineup, but that&apos;s not really the point — this is the pick for flavor-first sessions. See the full lineup and current strains on the <Link href="/products/rosin-pens">Rosin Pens product page</Link>, or browse the rest of the catalog on <Link href="/products">Products</Link>.</p>
             </div>
           </div>
-        </article>
-        <RelatedGuides />
-        <Footer />
+      </article>
+
+      {/* CTA - Shop Rosin Pens */}
+      <section className="py-12 md:py-16 bg-gradient-to-r from-[#D4AF37]/10 to-transparent border-t border-gray-200">
+        <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 text-center">
+          <h3 className="text-2xl font-bold text-gray-900 mb-2">Ready for Pure Solventless?</h3>
+          <p className="text-gray-600 mb-6">Experience the cleanest cannabis vape with Luigi rosin pens. No solvents, no fillers, just pure potency and flavor.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/products/rosin-pens" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+              Shop Rosin Pens
+            </Link>
+            <Link href="/blog/luigi-rosin-pens-flavors-guide-2026" className="inline-block border border-[#D4AF37] text-[#D4AF37] font-semibold px-8 py-3 rounded-lg hover:bg-[#D4AF37]/10 transition-colors">
+              Explore All Flavors
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
       </main>
     </>
   )

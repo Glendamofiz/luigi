@@ -9,8 +9,8 @@ import { ArrowLeft } from "lucide-react"
 import { AddToCartButton } from "@/components/add-to-cart-button"
 
 export const metadata: Metadata = {
-  title: "Luigi Fattones | Premium Infused Pre-Rolls & Hash Rosin Packs",
-  description: "Shop Luigi Fattones 4-in-1 packs - glass-tip blunts, hash rosin infused prerolls, mini joints, and infused gummies. 10 flavors including Cherry Pie, Watermelon, and Blue Razz Lime.",
+  title: "Luigi Fattones | Infused Pre-Rolls & Hash Rosin Packs",
+  description: "Shop Luigi Fattones — premium infused pre-rolls and 4-in-1 hash rosin packs. Live resin liquid diamonds in every pull. California's best infused pre-roll brand.",
   keywords: ["Luigi Fattones", "Luigi prerolls", "infused pre-rolls", "hash rosin joints", "Luigi gummies", "premium cannabis packs", "glass tip blunt"],
   alternates: {
     canonical: "/products/fattones",
@@ -19,6 +19,15 @@ export const metadata: Metadata = {
     title: "Luigi Fattones | Premium Infused Pre-Roll Packs",
     description: "4-in-1 packs with glass-tip blunts, hash rosin infused prerolls, and gummies.",
     type: "website",
+    url: "https://www.luigiofficialbrand.com/products/fattones",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Fattones - Premium Infused Pre-Roll Packs",
+      },
+    ],
   },
 }
 

@@ -16,6 +16,16 @@ export const metadata: Metadata = {
     description: "Complete troubleshooting guide for Luigi vape problems. Learn quick fixes for airflow clogs, battery issues, and more.",
     type: "article",
     publishedTime: "2026-04-24T00:00:00.000Z",
+  ,
+    url: "https://www.luigiofficialbrand.com/blog/luigi-vape-not-working-fix",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil - Premium Cannabis Products",
+      },
+    ],
   },
   alternates: {
     canonical: "/blog/luigi-vape-not-working-fix",
@@ -54,13 +64,65 @@ const articleSchema = {
   ]
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why isn't my Luigi vape hitting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes: airflow blockage, oil too thick from cold, overheating/overuse, or depleted battery. Try warming the device in your hands for 1-2 minutes, using gentle puffs, and clearing any blockage in the mouthpiece."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix a clogged Luigi vape?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Carefully blow lightly into the mouthpiece or use a toothpick to gently clear blockage. Warm the device to thin the oil. Try very gentle puffs first. If still clogged, warm environment or holding it in your hands helps."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if my Luigi disposable battery died?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi disposables are non-rechargeable. Once the battery depletes, the device cannot be recharged or revived. Dispose responsibly according to local e-waste regulations and purchase a new device."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I fix my Luigi vape myself?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, many issues resolve with troubleshooting: clear blockages carefully, warm the device, take gentler puffs, and let it rest if overheated. If these steps don't work, contact Luigi Oil support or replace the device."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's Luigi's warranty on disposables?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi disposables come with quality assurance. Defective products can be reported to Luigi Oil support or your dispensary. Check your purchase receipt and contact the retailer with photo evidence of defects."
+      }
+    }
+  ]
+}
+
 export default function LuigiVapeNotWorkingPage() {
   return (
     <>
       <Script
-        id="howto-schema"
+        id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />
@@ -459,10 +521,26 @@ export default function LuigiVapeNotWorkingPage() {
               </div>
             </div>
           </div>
-        </article>
+      </article>
 
-        <Footer />
-            <RelatedGuides />
+      {/* CTA - Shop Replacement or New Device */}
+      <section className="py-12 md:py-16 bg-gradient-to-r from-[#D4AF37]/10 to-transparent border-t border-gray-200">
+        <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 text-center">
+          <h3 className="text-2xl font-bold text-gray-900 mb-2">Still having issues?</h3>
+          <p className="text-gray-600 mb-6">If troubleshooting doesn't resolve the problem, it may be time for a new device. Shop premium Luigi Series 6 disposables, rosin pens, or Fattones today.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/products/series-6" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+              Shop Series 6
+            </Link>
+            <Link href="/products/rosin-pens" className="inline-block border border-[#D4AF37] text-[#D4AF37] font-semibold px-8 py-3 rounded-lg hover:bg-[#D4AF37]/10 transition-colors">
+              Shop Rosin Pens
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+      <RelatedGuides />
     </main>
     </>
   )

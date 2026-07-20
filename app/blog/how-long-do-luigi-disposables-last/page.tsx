@@ -11,7 +11,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'How Long Do Luigi Disposables Last? (2026 Complete Guide)',
     description: 'Complete guide to Luigi disposable lifespan, battery performance, and tips to extend your vape life.',
+    type: 'article',
     url: 'https://www.luigiofficialbrand.com/blog/how-long-do-luigi-disposables-last',
+    images: [
+      {
+        url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'How Long Do Luigi Disposables Last',
+      },
+    ],
   },
 }
 
@@ -28,9 +37,57 @@ export default function BlogPost() {
     publisher: { '@type': 'Organization', name: 'Luigi Oil' },
   }
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': [
+      {
+        '@type': 'Question',
+        'name': 'How long does a Luigi 2G disposable last?',
+        'acceptedAnswer': {
+          '@type': 'Answer',
+          'text': 'A 2G Luigi disposable typically lasts 1-2 weeks with moderate daily use. Duration depends on individual consumption habits and draw intensity. Premium potency means fewer puffs needed per session.'
+        }
+      },
+      {
+        '@type': 'Question',
+        'name': 'What affects Luigi disposable battery life?',
+        'acceptedAnswer': {
+          '@type': 'Answer',
+          'text': 'Battery life depends on draw duration and frequency. Shorter, lighter draws extend battery life compared to long, deep draws. Temperature and storage conditions also impact performance.'
+        }
+      },
+      {
+        '@type': 'Question',
+        'name': 'How many puffs does a Luigi disposable have?',
+        'acceptedAnswer': {
+          '@type': 'Answer',
+          'text': 'A 2G Luigi disposable delivers approximately 500-600 puffs depending on draw technique. This translates to 1-2 weeks of typical use. Lighter draws maximize puff count.'
+        }
+      },
+      {
+        '@type': 'Question',
+        'name': 'Can I recharge a Luigi disposable?',
+        'acceptedAnswer': {
+          '@type': 'Answer',
+          'text': 'No, Luigi disposables are non-rechargeable. Once the battery depletes, the device cannot be recharged. Dispose responsibly according to local regulations.'
+        }
+      },
+      {
+        '@type': 'Question',
+        'name': 'How can I make my Luigi disposable last longer?',
+        'acceptedAnswer': {
+          '@type': 'Answer',
+          'text': 'Take shorter, lighter draws instead of long deep ones. Store in cool conditions away from extreme heat or cold. Avoid leaving it in direct sunlight to preserve battery and extract quality.'
+        }
+      }
+    ]
+  }
+
   return (
     <>
       <script type="application/ld+json">{JSON.stringify(schema)}</script>
+      <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       <main className="min-h-screen bg-white">
         <article className="max-w-4xl mx-auto px-4 py-16">
           {/* Header */}
@@ -289,9 +346,21 @@ export default function BlogPost() {
                 Chat with us on Telegram
               </a>
             </div>
-          </div>
-        </article>
-            <RelatedGuides />
+        </div>
+      </article>
+
+      {/* CTA - Shop Now */}
+      <section className="py-12 md:py-16 bg-gray-50 border-t border-gray-200 max-w-4xl mx-auto px-4">
+        <div className="bg-gradient-to-r from-[#D4AF37]/10 to-transparent border border-[#D4AF37]/30 rounded-lg p-8 text-center">
+          <h3 className="text-2xl font-bold text-gray-900 mb-2">Make Your Luigi Last</h3>
+          <p className="text-gray-600 mb-6">Follow our tips to maximize your Luigi disposable lifespan. Shop Series 6 today.</p>
+          <Link href="/products/series-6" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+            Shop Series 6
+          </Link>
+        </div>
+      </section>
+
+      <RelatedGuides />
     </main>
     </>
   )

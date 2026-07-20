@@ -8,18 +8,75 @@ import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Best Dispensaries in Los Angeles for Luigi Oil (Verified Guide) | Luigi Oil",
-  description: "Find the best dispensaries in Los Angeles carrying Luigi Oil. See confirmed LA retailers plus a practical checklist for evaluating any dispensary before you buy.",
+  title: "Best Dispensaries in Los Angeles | 2026",
+  description: "Find Luigi Oil near you in Los Angeles. Verified guide to the best LA dispensaries carrying authentic Luigi carts, Series 6 disposables, and Fattones pre-rolls in 2026.",
   keywords: ["best dispensaries los angeles luigi", "Luigi Oil Los Angeles dispensaries", "best LA dispensary Luigi carts", "top Luigi dispensary LA"],
   openGraph: {
     title: "Best Dispensaries in Los Angeles for Luigi Oil (Verified Guide)",
     description: "Find the best dispensaries in Los Angeles carrying Luigi Oil. See confirmed LA retailers plus a practical checklist for evaluating any dispensary before you buy.",
     type: "article",
     publishedTime: "2026-07-24T00:00:00.000Z",
+  ,
+    url: "https://www.luigiofficialbrand.com/blog/best-dispensaries-los-angeles-luigi",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil - Premium Cannabis Products",
+      },
+    ],
   },
   alternates: {
     canonical: "/blog/best-dispensaries-los-angeles-luigi",
   },
+}
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which LA dispensaries carry Luigi Oil?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Multiple authorized dispensaries throughout Los Angeles stock Luigi products. See the verified list in our guide. Check the Luigi Oil website's dispensary locator for the most current locations and stock availability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if a dispensary is authorized?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Authorized Luigi dispensaries display official Luigi signage, stock QR-coded authentic products, and have verification status on the Luigi Oil website. Contact Luigi directly to confirm a dispensary's authorization status."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Luigi products do LA dispensaries stock?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most LA dispensaries stock Series 6 disposables (10+ strains), rosin pens, Fattones pre-rolls, and Luigi carts. Specific inventory varies by location—call ahead or check online menus to confirm stock."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there fake Luigi products?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Counterfeit Luigi products exist. Verify authenticity by checking packaging quality, scanning QR codes on the Luigi Oil website, and purchasing only from authorized dispensaries listed by Luigi Oil."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I look for in a good dispensary?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Choose dispensaries with: licensed operation, authentic product verification, professional staff, competitive pricing, delivery options, and customer reviews. Always confirm they're authorized to sell Luigi products."
+      }
+    }
+  ]
 }
 
 const articleSchema = {
@@ -43,6 +100,11 @@ export default function BestDispensariesLA() {
         id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />
@@ -214,9 +276,23 @@ export default function BestDispensariesLA() {
             <p>The best dispensaries in Los Angeles for Luigi Oil aren&apos;t defined by a fixed ranking — they&apos;re defined by consistent stock, proper licensing, and staff who take authenticity seriously. Roots LA Dispensary, Level28, and Green Label Rx Echo Park meet that bar today, and the checklist above will help you evaluate any new shop that starts carrying the brand. Explore the full lineup on the <Link href="/products">Products page</Link>, or if you run a dispensary and want to add Luigi Oil to your own shelves, get started through <Link href="/wholesale">Luigi Oil Wholesale</Link>.</p>
             </div>
           </div>
-        </article>
-        <RelatedGuides />
-        <Footer />
+      </article>
+
+      {/* CTA - Shop Now */}
+      <section className="py-12 md:py-16 bg-gradient-to-r from-[#D4AF37]/10 to-transparent border-t border-gray-200">
+        <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 text-center">
+          <h3 className="text-2xl font-bold text-gray-900 mb-2">Ready to shop Luigi in LA?</h3>
+          <p className="text-gray-600 mb-6">Explore the complete Luigi lineup including Series 6 disposables, rosin pens, and Fattones pre-rolls.</p>
+          <Link href="/products" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+            Browse All Products
+          </Link>
+        </div>
+      </section>
+
+      <RelatedGuides />
+    </main>
+
+    <Footer />
       </main>
     </>
   )

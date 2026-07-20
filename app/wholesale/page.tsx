@@ -1,3 +1,28 @@
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Luigi Oil Wholesale | B2B Dispensary Partnership",
+  description: "Become a Luigi Oil wholesale partner. Competitive pricing, bulk discounts, and dedicated wholesale support for dispensaries and retailers.",
+  keywords: ["Luigi wholesale", "cannabis wholesale", "bulk pricing", "dispensary partner", "B2B cannabis"],
+  alternates: {
+    canonical: "/wholesale",
+  },
+  openGraph: {
+    title: "Luigi Oil Wholesale | B2B Dispensary Partnership",
+    description: "Wholesale opportunities for dispensaries and retailers. Competitive bulk pricing and partnership support.",
+    type: "website",
+    url: "https://www.luigiofficialbrand.com/wholesale",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil Wholesale",
+      },
+    ],
+  },
+}
+
 "use client"
 
 import { useState } from "react"
@@ -82,7 +107,7 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "Luigi Oil Wholesale Products",
-  "description": "Premium cannabis wholesale products for licensed dispensaries and retailers. Includes Fattones 4-in-1 packs starting at $22.50/unit, Series 6 live resin disposables from $7.125/unit, and Rosin Pens from $8.25/unit. Competitive bulk pricing with dedicated account management and fast California distribution.",
+  "description": "Buy Luigi carts and 2G disposables wholesale. Bulk pricing on live resin liquid diamonds, Fattones pre-rolls, and rosin pens for dispensaries and distributors.",
   "brand": { "@type": "Brand", "name": "Luigi Oil" },
   "image": "https://www.luigiofficialbrand.com/og-image.jpg",
   "url": "https://www.luigiofficialbrand.com/wholesale",

@@ -8,14 +8,24 @@ import { Calendar, Clock, ArrowLeft } from "lucide-react"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "Do Liquid Diamonds Get You High? Potency Explained | Luigi Oil",
-  description: "Do liquid diamonds get you high? Here's what the lab data says about THCA crystallization, terpene content, and potency in Luigi's live resin products.",
+  title: "Do Liquid Diamonds Get You High? Potency Explained",
+  description: "Do liquid diamonds get you high? Full potency breakdown — THC concentration, effects vs live resin, and what to expect from Luigi liquid diamond disposables.",
   keywords: ["liquid diamonds potency", "THCA vs THC", "cannabis extract potency", "liquid diamonds effects", "lab tested THC", "Series 6 disposables", "live resin concentrates"],
   openGraph: {
     title: "Do Liquid Diamonds Get You High? Potency Explained",
     description: "Here's what the lab data says about THCA crystallization, terpene content, and potency in Luigi's live resin products.",
     type: "article",
     publishedTime: "2026-06-22T00:00:00.000Z",
+  ,
+    url: "https://www.luigiofficialbrand.com/blog/do-liquid-diamonds-get-you-high",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil - Premium Cannabis Products",
+      },
+    ],
   },
   alternates: {
     canonical: "/blog/do-liquid-diamonds-get-you-high",
@@ -36,6 +46,53 @@ const articleSchema = {
   "description": "Do liquid diamonds get you high? Here's what the lab data says about THCA crystallization, terpene content, and potency in Luigi's live resin products."
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do liquid diamonds get you high?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, liquid diamonds are highly potent and will get you high. They contain concentrated THCA crystals that convert to THC when heated, delivering powerful effects. Luigi liquid diamonds contain 35%+ THC potency."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are liquid diamonds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Liquid diamonds are cannabis extracts featuring THCA crystals suspended in terpene-rich sauce. The crystalline THCA delivers high potency while the terpenes provide flavor and aromatic effects. Luigi uses this extraction in Series 6 disposables."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How potent are liquid diamonds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Liquid diamonds are among the most potent cannabis extracts available. They typically contain 35-50%+ THC concentration. Luigi Series 6 liquid diamonds are lab-tested to verify exact potency and safety."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do liquid diamonds compare to live resin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Liquid diamonds are more potent than standard live resin due to THCA crystallization, but may have less complex flavor. Live resin delivers full-spectrum effects with better terpene preservation. Both are premium Luigi options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I buy liquid diamonds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Buy Luigi Series 6 liquid diamonds at licensed California dispensaries. Only purchase from authorized Luigi Oil retailers to ensure genuine, lab-tested products."
+      }
+    }
+  ]
+}
+
 export default function LiquidDiamondsPage() {
   return (
     <>
@@ -43,6 +100,11 @@ export default function LiquidDiamondsPage() {
         id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />
@@ -320,9 +382,21 @@ export default function LiquidDiamondsPage() {
 
             </div>
           </div>
-        </article>
+      </article>
 
-        <RelatedGuides />
+      {/* CTA - Shop Liquid Diamonds */}
+      <section className="py-12 md:py-16 bg-gray-50 border-t border-gray-200">
+        <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+          <div className="bg-gradient-to-r from-[#D4AF37]/10 to-transparent border border-[#D4AF37]/30 rounded-lg p-8 text-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">Experience Liquid Diamonds</h3>
+            <p className="text-gray-600 mb-6">Ready to feel the power of liquid diamonds? Shop Luigi Series 6 with live resin liquid diamond extract.</p>
+            <Link href="/products/series-6" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+              Shop Series 6 Diamonds
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <Footer />
       </main>
     </>

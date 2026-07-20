@@ -8,18 +8,75 @@ import { RelatedGuides } from "@/components/related-guides"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Official Luigi Brand 2026 Guide: Buy Luigi Disposables & Rosin Pens Online",
-  description: "Complete guide to the official Luigi brand in 2026. Learn how to buy Luigi disposables, Luigi 2G live resin, and Luigi Rosin Pens online safely from licensed dispensaries.",
+  title: "Official Luigi Brand 2026 Guide | Disposables & Rosin Pens",
+  description: "The official Luigi brand guide for 2026 — buy Luigi disposables, rosin pens, and Fattones online. Authentic sources, product lineup, and everything new from Luigi Oil.",
   keywords: ["official Luigi brand", "Luigi disposables", "Luigi 2G", "buy Luigi live resin online", "where to buy Luigi Rosin Pens online", "Luigi Oil", "authentic Luigi"],
   openGraph: {
     title: "Official Luigi Brand 2026 Guide",
     description: "Complete guide to buying Luigi disposables, 2G live resin, and Rosin Pens online safely.",
     type: "article",
     publishedTime: "2026-03-27T00:00:00.000Z",
+  ,
+    url: "https://www.luigiofficialbrand.com/blog/official-luigi-brand-guide-2026",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil - Premium Cannabis Products",
+      },
+    ],
   },
   alternates: {
     canonical: "/blog/official-luigi-brand-guide-2026",
   },
+}
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the official Luigi brand?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi Oil is a premium cannabis brand specializing in live resin extracts. Official products include Series 6 disposables with liquid diamonds, rosin pens, Fattones pre-rolls, and carts—all lab-tested for purity and potency."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are Luigi Series 6 disposables?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Series 6 are premium 2G disposables with live resin liquid diamond extract, ceramic heating, and 35%+ THC potency. Available in 10+ strain options with complete terpene profiles."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes Luigi rosin pens special?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi rosin pens are solventless hash rosin in portable pen format. Extracted using pure heat and pressure—no chemicals or solvents. Delivers clean, full-spectrum cannabis experience with premium flavor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Luigi Fattones pre-rolls?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Luigi Fattones are premium 4-in-1 packs with rosin-infused joints, glass-tip blunts, and hash-infused gummies. Each pack contains 35%+ THC potency across multiple products in one strain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I verify official Luigi products?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Official Luigi products feature clear branding, professional packaging, QR code authentication, and lab testing details. Verify with the Luigi Oil website's QR code scanner to confirm authenticity."
+      }
+    }
+  ]
 }
 
 const articleSchema = {
@@ -43,6 +100,11 @@ export default function OfficialLuigiBrandGuidePage() {
         id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />
@@ -254,9 +316,28 @@ export default function OfficialLuigiBrandGuidePage() {
               </div>
             </div>
           </div>
-        </article>
+      </article>
 
-        <Footer />
+      {/* CTA - Shop Now */}
+      <section className="py-12 md:py-16 bg-gradient-to-r from-[#D4AF37]/10 to-transparent border-t border-gray-200">
+        <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 text-center">
+          <h3 className="text-2xl font-bold text-gray-900 mb-2">Experience Luigi's Premium Lineup</h3>
+          <p className="text-gray-600 mb-6">Discover all Luigi products — Series 6 disposables, rosin pens, Fattones, and carts. Shop the complete collection today.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/products/series-6" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+              Shop Series 6
+            </Link>
+            <Link href="/products/fattones" className="inline-block bg-gray-900 text-white font-semibold px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+              Shop Fattones
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <RelatedGuides />
+    </main>
+
+    <Footer />
             <RelatedGuides />
     </main>
     </>

@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer"
 import { AgeVerification } from "@/components/age-verification"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Luigi Oil",
+  title: "Privacy Policy",
   description: "Luigi Oil privacy policy. Learn how we collect, use, and protect your personal information when using our website and services.",
   alternates: {
     canonical: "/privacy",
@@ -13,6 +13,15 @@ export const metadata: Metadata = {
     title: "Privacy Policy | Luigi Oil",
     description: "How Luigi Oil collects, uses, and protects your personal information.",
     type: "website",
+    url: "https://www.luigiofficialbrand.com/privacy",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Privacy Policy",
+      },
+    ],
   },
   robots: {
     index: true,

@@ -8,8 +8,8 @@ import { Calendar, Clock, ArrowLeft, CheckCircle, AlertTriangle, ShieldCheck } f
 import Script from "next/script"
 
 export const metadata: Metadata = {
-  title: "Buy Luigi 2G Disposable Online: Where to Order Authentic Luigi Oil (2026)",
-  description: "Learn how to safely buy Luigi 2G disposable online in 2026. Find authentic Luigi Oil Series 6 flavors, verify real vs fake products, and discover trusted dispensaries.",
+  title: "Buy Luigi 2G Disposable Online | Authentic 2026",
+  description: "Where to buy Luigi 2G disposable online in 2026. Find authentic Luigi Oil at licensed dispensaries — avoid fakes. Order real Luigi carts and get them delivered fast.",
   keywords: "buy Luigi 2G disposable online, Luigi 2G disposable, order Luigi disposable, Luigi Oil online, Luigi Series 6 flavors, authentic Luigi vape, Luigi disposable near me",
   openGraph: {
     title: "Buy Luigi 2G Disposable Online: Where to Order Authentic Luigi Oil (2026)",
@@ -17,6 +17,16 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2026-03-25T00:00:00.000Z",
     authors: ["Luigi Oil"],
+  ,
+    url: "https://www.luigiofficialbrand.com/blog/buy-luigi-2g-disposable-online",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil - Premium Cannabis Products",
+      },
+    ],
   },
   alternates: {
     canonical: "/blog/buy-luigi-2g-disposable-online",

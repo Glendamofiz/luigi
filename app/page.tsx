@@ -11,8 +11,8 @@ import { ProductsGridSection } from "@/components/sections/products-grid"
 import { ContactSection } from "@/components/sections/contact"
 
 export const metadata: Metadata = {
-  title: "Luigi Oil | Buy Luigi Carts & 2G Disposables Wholesale - Premium Live Resin",
-  description: "Buy Luigi Carts and 2G Disposables wholesale. Premium live resin liquid diamond vapes, Luigi Prerolls (Fattones), and Rosin Pens. Authentic Luigi Oil for dispensaries and retailers.",
+  title: "Luigi Oil | Buy Luigi Carts & 2G Disposables Wholesale",
+  description: "Shop authentic Luigi Oil — premium 2G disposables, Luigi carts, and live resin liquid diamonds. Wholesale pricing available. California's top THC vape brand. Order now.",
   keywords: ["Luigi Oil", "Luigi Carts", "Luigi 2G Disposable", "buy Luigi wholesale", "live resin disposable", "Luigi Prerolls", "Luigi Fattones", "Luigi Rosin Pen", "Series 6", "hash rosin vape"],
   alternates: {
     canonical: "/",
@@ -21,7 +21,15 @@ export const metadata: Metadata = {
     title: "Luigi Oil | Premium Live Resin Cannabis Products",
     description: "Shop authentic Luigi Oil products - 2G Disposables, Fattones, and Rosin Pens. Premium live resin liquid diamond experience.",
     type: "website",
-    url: "/",
+    url: "https://www.luigiofficialbrand.com",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil - Premium Live Resin Cannabis Products",
+      },
+    ],
   },
 }
 
