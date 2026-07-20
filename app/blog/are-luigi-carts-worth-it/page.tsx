@@ -4,6 +4,7 @@ import Image from "next/image"
 import Script from "next/script"
 import { Header } from "@/components/header"
 import { RelatedGuides } from "@/components/related-guides"
+import { ProductCTA } from "@/components/product-cta"
 import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft, CheckCircle, X, DollarSign, Sparkles, Shield } from "lucide-react"
 

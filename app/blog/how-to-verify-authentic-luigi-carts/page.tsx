@@ -1,6 +1,7 @@
 import Script from "next/script"
 import { Header } from "@/components/header"
 import { RelatedGuides } from "@/components/related-guides"
+import { ProductCTA } from "@/components/product-cta"
 import { Footer } from "@/components/footer"
 import { Calendar, Clock, CheckCircle, AlertCircle } from "lucide-react"
 import Image from "next/image"
