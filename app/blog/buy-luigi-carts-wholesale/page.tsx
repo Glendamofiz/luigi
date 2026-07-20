@@ -114,6 +114,7 @@ export default function BuyLuigiWholesale() {
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg"
                 alt="Luigi 2G Disposable wholesale cannabis products for dispensary buyers"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
                 className="object-cover"
               />
             </div>
@@ -160,6 +161,7 @@ export default function BuyLuigiWholesale() {
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLACKBERRY-DREAM-2400x2400-pe085AZelET8AuGO0fti7o4giOhjqR.jpg"
                 alt="Luigi Fattones pre-rolls wholesale distributor authorized product"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
                 className="object-cover"
               />
             </div>
