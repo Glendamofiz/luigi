@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import Script from "next/script"
 import { Header } from "@/components/header"
@@ -139,11 +140,12 @@ export default function LuigiCartsLA() {
 
             <p>To see the complete current catalog before you head out, browse the full <Link href="/products">Products page</Link> — that way you know exactly what to ask for if a specific item isn&apos;t visible on the shelf.</p>
 
-            <div className="relative w-full h-auto rounded-xl overflow-hidden shadow-lg my-8">
-              <img
+            <div className="relative w-full h-96 rounded-xl overflow-hidden shadow-lg my-8">
+              <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg"
                 alt="Luigi Oil Los Angeles dispensary buy local cannabis carts"
-                className="w-full h-auto object-cover"
+                fill
+                className="object-cover"
               />
             </div>
 
@@ -161,11 +163,12 @@ export default function LuigiCartsLA() {
               <li><strong>Cons:</strong> Verification happens after the product arrives rather than before purchase, so checking the QR code immediately on delivery matters more.</li>
             </ul>
 
-            <div className="relative w-full h-auto rounded-xl overflow-hidden shadow-lg my-8">
-              <img
+            <div className="relative w-full h-96 rounded-xl overflow-hidden shadow-lg my-8">
+              <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLACKBERRY-DREAM-2400x2400-pe085AZelET8AuGO0fti7o4giOhjqR.jpg"
                 alt="Verify authentic Luigi carts Los Angeles QR code batch number"
-                className="w-full h-auto object-cover"
+                fill
+                className="object-cover"
               />
             </div>
 

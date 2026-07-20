@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import Script from "next/script"
 import Link from "next/link"
 import { Header } from "@/components/header"
@@ -107,11 +108,12 @@ export default function LuigiRosinPenReview() {
             </ul>
             <p>What stands out across the lineup is how distinct each profile is from the next — the loud, funk-forward strains like Garlic Glue and Donny Burger sit at one end, while Casablanca Peach and Citrus Mimosa lean sweet and bright. That range makes it easy to pick a strain by mood rather than settling for a one-size-fits-all flavor.</p>
 
-            <div className="relative w-full h-auto rounded-xl overflow-hidden shadow-lg my-8">
-              <img
+            <div className="relative w-full h-96 rounded-xl overflow-hidden shadow-lg my-8">
+              <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg"
                 alt="Luigi Rosin Pen solventless hash rosin dual pack strains"
-                className="w-full h-auto object-cover"
+                fill
+                className="object-cover"
               />
             </div>
 
@@ -172,11 +174,12 @@ export default function LuigiRosinPenReview() {
               <li><strong>Premium price per gram:</strong> Solventless extraction is more labor-intensive, which shows up in the price relative to distillate-based products.</li>
             </ul>
 
-            <div className="relative w-full h-auto rounded-xl overflow-hidden shadow-lg my-8">
-              <img
+            <div className="relative w-full h-96 rounded-xl overflow-hidden shadow-lg my-8">
+              <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLACKBERRY-DREAM-2400x2400-pe085AZelET8AuGO0fti7o4giOhjqR.jpg"
                 alt="Luigi Rosin Pen vs live resin liquid diamond solventless cannabis vape comparison"
-                className="w-full h-auto object-cover"
+                fill
+                className="object-cover"
               />
             </div>
 

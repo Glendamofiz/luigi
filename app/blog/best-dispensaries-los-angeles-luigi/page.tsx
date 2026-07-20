@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import Script from "next/script"
 import Link from "next/link"
 import { Header } from "@/components/header"
@@ -120,11 +121,12 @@ export default function BestDispensariesLA() {
             <h3>5. Verification-Friendly Policies</h3>
             <p>The best shops don&apos;t mind you scanning a QR code or checking a scratch-off tag before you buy. Hesitation or discouragement around verification is a red flag, not a best-dispensary trait.</p>
 
-            <div className="relative w-full h-auto rounded-xl overflow-hidden shadow-lg my-8">
-              <img
+            <div className="relative w-full h-96 rounded-xl overflow-hidden shadow-lg my-8">
+              <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg"
                 alt="Best dispensaries Los Angeles Luigi Oil verified retailers"
-                className="w-full h-auto object-cover"
+                fill
+                className="object-cover"
               />
             </div>
 
@@ -158,11 +160,12 @@ export default function BestDispensariesLA() {
               </tbody>
             </table>
 
-            <div className="relative w-full h-auto rounded-xl overflow-hidden shadow-lg my-8">
-              <img
+            <div className="relative w-full h-96 rounded-xl overflow-hidden shadow-lg my-8">
+              <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLACKBERRY-DREAM-2400x2400-pe085AZelET8AuGO0fti7o4giOhjqR.jpg"
                 alt="Luigi Oil product lineup Los Angeles dispensary 2G disposable Fattones Series 6"
-                className="w-full h-auto object-cover"
+                fill
+                className="object-cover"
               />
             </div>
 

@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import Script from "next/script"
 import Link from "next/link"
 import { Header } from "@/components/header"
@@ -108,11 +109,12 @@ export default function BuyLuigiWholesale() {
             <h3>5. Place Your First Order and Set a Reorder Cadence</h3>
             <p>Once your first order ships, the easiest way to avoid stockouts is to set a reorder cadence based on how quickly each product line sells. High-turnover items like 2G Disposables often need more frequent restocking than slower-moving specialty items.</p>
 
-            <div className="relative w-full h-auto rounded-xl overflow-hidden shadow-lg my-8">
-              <img
+            <div className="relative w-full h-96 rounded-xl overflow-hidden shadow-lg my-8">
+              <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg"
                 alt="Luigi 2G Disposable wholesale cannabis products for dispensary buyers"
-                className="w-full h-auto object-cover"
+                fill
+                className="object-cover"
               />
             </div>
 
@@ -153,11 +155,12 @@ export default function BuyLuigiWholesale() {
 
             <h2>Pros and Cons of Buying Luigi Carts Wholesale</h2>
 
-            <div className="relative w-full h-auto rounded-xl overflow-hidden shadow-lg my-8">
-              <img
+            <div className="relative w-full h-96 rounded-xl overflow-hidden shadow-lg my-8">
+              <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLACKBERRY-DREAM-2400x2400-pe085AZelET8AuGO0fti7o4giOhjqR.jpg"
                 alt="Luigi Fattones pre-rolls wholesale distributor authorized product"
-                className="w-full h-auto object-cover"
+                fill
+                className="object-cover"
               />
             </div>
 
