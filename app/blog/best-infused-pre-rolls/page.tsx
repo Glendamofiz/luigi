@@ -16,6 +16,15 @@ export const metadata: Metadata = {
     description: "Expert guide ranking the top infused pre-rolls with Luigi FatTones taking the crown.",
     type: "article",
     publishedTime: "2026-03-08T00:00:00.000Z",
+    url: "https://www.luigiofficialbrand.com/blog/best-infused-pre-rolls",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Best Infused Pre Rolls 2026",
+      },
+    ],
   },
   alternates: {
     canonical: "/blog/best-infused-pre-rolls",

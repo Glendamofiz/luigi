@@ -13,6 +13,16 @@ export const metadata = {
     title: "How to Verify Authentic Luigi Carts (Step-by-Step Guide)",
     description: "Learn how to verify authentic Luigi carts with our 5-step guide. Discover the pros & cons of authentication methods, plus safety tips for spotting counterfeit Luigi Oil products.",
     type: "article",
+  ,
+    url: "https://www.luigiofficialbrand.com/blog/how-to-verify-authentic-luigi-carts",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil - Premium Cannabis Products",
+      },
+    ],
   },
 }
 

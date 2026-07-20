@@ -16,6 +16,16 @@ export const metadata: Metadata = {
     description: "Find the best dispensaries in Los Angeles carrying Luigi Oil. See confirmed LA retailers plus a practical checklist for evaluating any dispensary before you buy.",
     type: "article",
     publishedTime: "2026-07-24T00:00:00.000Z",
+  ,
+    url: "https://www.luigiofficialbrand.com/blog/best-dispensaries-los-angeles-luigi",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil - Premium Cannabis Products",
+      },
+    ],
   },
   alternates: {
     canonical: "/blog/best-dispensaries-los-angeles-luigi",

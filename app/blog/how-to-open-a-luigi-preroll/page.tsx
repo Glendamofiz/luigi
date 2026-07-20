@@ -16,6 +16,16 @@ export const metadata: Metadata = {
     description: "Learn how to open a Luigi Preroll the right way with our complete guide.",
     type: "article",
     publishedTime: "2026-06-22T00:00:00.000Z",
+  ,
+    url: "https://www.luigiofficialbrand.com/blog/how-to-open-a-luigi-preroll",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil - Premium Cannabis Products",
+      },
+    ],
   },
   alternates: {
     canonical: "/blog/how-to-open-a-luigi-preroll",

@@ -16,6 +16,16 @@ export const metadata: Metadata = {
     description: "Complete troubleshooting guide for Luigi vape problems. Learn quick fixes for airflow clogs, battery issues, and more.",
     type: "article",
     publishedTime: "2026-04-24T00:00:00.000Z",
+  ,
+    url: "https://www.luigiofficialbrand.com/blog/luigi-vape-not-working-fix",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil - Premium Cannabis Products",
+      },
+    ],
   },
   alternates: {
     canonical: "/blog/luigi-vape-not-working-fix",

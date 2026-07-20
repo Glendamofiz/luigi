@@ -16,6 +16,16 @@ export const metadata: Metadata = {
     description: "An honest Luigi Rosin Pen review — how the solventless hash rosin dual pack compares to live resin, what it costs, and whether it's worth the switch.",
     type: "article",
     publishedTime: "2026-07-24T00:00:00.000Z",
+  ,
+    url: "https://www.luigiofficialbrand.com/blog/luigi-rosin-pen-review",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil - Premium Cannabis Products",
+      },
+    ],
   },
   alternates: {
     canonical: "/blog/luigi-rosin-pen-review",

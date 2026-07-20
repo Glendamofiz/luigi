@@ -16,6 +16,16 @@ export const metadata: Metadata = {
     description: "Complete breakdown of all Luigi Series 6 flavors with effects, tasting notes, and buying guide.",
     type: "article",
     publishedTime: "2026-03-26T00:00:00.000Z",
+  ,
+    url: "https://www.luigiofficialbrand.com/blog/luigi-series-6-flavors-guide-2026",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil - Premium Cannabis Products",
+      },
+    ],
   },
   alternates: {
     canonical: "/blog/luigi-series-6-flavors-guide-2026",

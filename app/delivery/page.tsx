@@ -16,6 +16,15 @@ export const metadata: Metadata = {
     title: "Luigi Oil Shipping & Delivery",
     description: "Fast, reliable worldwide shipping for all Luigi Oil wholesale orders.",
     type: "website",
+    url: "https://www.luigiofficialbrand.com/delivery",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil Shipping & Delivery",
+      },
+    ],
   },
 }
 

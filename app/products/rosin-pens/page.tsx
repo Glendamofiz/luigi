@@ -19,6 +19,15 @@ export const metadata: Metadata = {
     title: "Luigi Rosin Pens | Premium Solventless Hash Rosin",
     description: "Pure solventless rosin in dual packs - vape device + infused blunt.",
     type: "website",
+    url: "https://www.luigiofficialbrand.com/products/rosin-pens",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Rosin Pens - Premium Solventless Hash Rosin",
+      },
+    ],
   },
 }
 

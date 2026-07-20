@@ -16,6 +16,15 @@ export const metadata: Metadata = {
     description: "Discover the potency difference between infused and regular pre-rolls.",
     type: "article",
     publishedTime: "2026-03-10T00:00:00.000Z",
+    url: "https://www.luigiofficialbrand.com/blog/infused-pre-rolls-vs-regular",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil - Premium Cannabis Products",
+      },
+    ],
   },
   alternates: {
     canonical: "/blog/infused-pre-rolls-vs-regular",

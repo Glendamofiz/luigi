@@ -31,7 +31,15 @@ export const metadata: Metadata = {
     title: "Luigi Oil 2026 Guide | Buy Authentic Fattones, Series 6 & Rosin Pre-Rolls Online",
     description: "Complete guide to buying authentic Luigi Oil products. Shop Series 6 2G disposables, Fattones pre-roll packs, and hash rosin products at licensed California dispensaries.",
     type: "website",
-    url: "/luigi-live-resin",
+    url: "https://www.luigiofficialbrand.com/luigi-live-resin",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil 2026 Guide - Fattones, Series 6 & Rosin Pre-Rolls",
+      },
+    ],
   },
   alternates: {
     canonical: "/luigi-live-resin",

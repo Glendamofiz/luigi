@@ -16,6 +16,16 @@ export const metadata: Metadata = {
     title: "Why Luigi Vapes Taste Better (2026 Flavor Breakdown)",
     description: "Discover why Luigi vapes taste better than many disposables. Learn about terpene quality, airflow, rosin extraction, and flavor consistency.",
     url: "https://www.luigiofficialbrand.com/blog/why-luigi-vapes-taste-better",
+  ,
+    url: "https://www.luigiofficialbrand.com/blog/why-luigi-vapes-taste-better",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil - Premium Cannabis Products",
+      },
+    ],
   },
 }
 

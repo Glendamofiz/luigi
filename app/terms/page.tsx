@@ -13,6 +13,15 @@ export const metadata: Metadata = {
     title: "Terms of Service | Luigi Oil",
     description: "Terms and conditions for using Luigi Oil website and purchasing products.",
     type: "website",
+    url: "https://www.luigiofficialbrand.com/terms",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Terms of Service",
+      },
+    ],
   },
   robots: {
     index: true,

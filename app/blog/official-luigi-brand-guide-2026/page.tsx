@@ -16,6 +16,16 @@ export const metadata: Metadata = {
     description: "Complete guide to buying Luigi disposables, 2G live resin, and Rosin Pens online safely.",
     type: "article",
     publishedTime: "2026-03-27T00:00:00.000Z",
+  ,
+    url: "https://www.luigiofficialbrand.com/blog/official-luigi-brand-guide-2026",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil - Premium Cannabis Products",
+      },
+    ],
   },
   alternates: {
     canonical: "/blog/official-luigi-brand-guide-2026",

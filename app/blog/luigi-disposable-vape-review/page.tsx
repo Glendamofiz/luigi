@@ -16,6 +16,16 @@ export const metadata: Metadata = {
     description: "Honest Luigi disposable vape review covering quality, performance, and user experience.",
     type: "article",
     publishedTime: "2026-03-18T00:00:00.000Z",
+  ,
+    url: "https://www.luigiofficialbrand.com/blog/luigi-disposable-vape-review",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil - Premium Cannabis Products",
+      },
+    ],
   },
   alternates: {
     canonical: "/blog/luigi-disposable-vape-review",

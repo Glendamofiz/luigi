@@ -16,6 +16,15 @@ export const metadata: Metadata = {
     title: "About Luigi Oil | Our Story",
     description: "Discover the Luigi Oil story - crafting premium cannabis experiences through innovation and quality.",
     type: "website",
+    url: "https://www.luigiofficialbrand.com/about",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "About Luigi Oil",
+      },
+    ],
   },
 }
 

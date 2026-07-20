@@ -17,6 +17,16 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2026-03-25T00:00:00.000Z",
     authors: ["Luigi Oil"],
+  ,
+    url: "https://www.luigiofficialbrand.com/blog/buy-luigi-2g-disposable-online",
+    images: [
+      {
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Luigi Oil - Premium Cannabis Products",
+      },
+    ],
   },
   alternates: {
     canonical: "/blog/buy-luigi-2g-disposable-online",

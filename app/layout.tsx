@@ -42,11 +42,13 @@ export const metadata: Metadata = {
     url: 'https://www.luigiofficialbrand.com',
     images: [
       {
-        url: '/og-image.png',
+        url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg',
         width: 1200,
         height: 630,
         alt: 'Luigi Oil - Premium Cannabis Disposables & Pre-Rolls',
       },
+    ],
+  },
     ],
     locale: 'en_US',
   },

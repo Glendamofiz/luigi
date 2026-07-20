@@ -11,7 +11,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'How Long Do Luigi Disposables Last? (2026 Complete Guide)',
     description: 'Complete guide to Luigi disposable lifespan, battery performance, and tips to extend your vape life.',
+    type: 'article',
     url: 'https://www.luigiofficialbrand.com/blog/how-long-do-luigi-disposables-last',
+    images: [
+      {
+        url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'How Long Do Luigi Disposables Last',
+      },
+    ],
   },
 }
 

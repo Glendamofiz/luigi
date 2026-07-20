@@ -11,7 +11,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Luigi Series 6 vs Series 5 – What Changed? (2026 Comparison Guide)',
     description: 'Complete comparison of Luigi Series 6 and Series 5 disposables.',
+    type: 'article',
     url: 'https://www.luigiofficialbrand.com/blog/luigi-series-6-vs-series-5',
+    images: [
+      {
+        url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Luigi Series 6 vs Series 5 Comparison',
+      },
+    ],
   },
 }
 
