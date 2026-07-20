@@ -20,10 +20,10 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/buy-luigi-disposable-vape",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/product-2g-disposables.png",
+        url: "https://www.luigiofficialbrand.com/og-images/blog-buy-luigi-disposable.png",
         width: 1200,
         height: 630,
-        alt: "Luigi Oil - Premium Cannabis Products",
+        alt: "Buy Luigi Disposable Vape - Where to Find Premium THC",
       },
     ],
   },

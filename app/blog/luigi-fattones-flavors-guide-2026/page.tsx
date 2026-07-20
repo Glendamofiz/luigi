@@ -4,6 +4,7 @@ import Image from "next/image"
 import Script from "next/script"
 import { Header } from "@/components/header"
 import { RelatedGuides } from "@/components/related-guides"
+import { ProductCTA } from "@/components/product-cta"
 import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft, Package } from "lucide-react"
 
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/luigi-fattones-flavors-guide-2026",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        url: "https://www.luigiofficialbrand.com/og-images/blog-luigi-fattones-flavors-guide.png",
         width: 1200,
         height: 630,
         alt: "Luigi Oil - Premium Cannabis Products",
@@ -355,8 +356,15 @@ export default function FattonesFlavorGuidePage() {
           </div>
         </section>
 
-        <Footer />
-            <RelatedGuides />
+        <Footer />      <section className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+        <ProductCTA
+          productName="Luigi Fattones"
+          productLink="/products/fattones"
+          description="Ready to experience the best? Browse our complete collection of premium products."
+        />
+      </section>
+
+<RelatedGuides />
       <Footer />
       </main>
     </>

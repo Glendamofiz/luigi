@@ -15,10 +15,10 @@ export const metadata: Metadata = {
     url: 'https://www.luigiofficialbrand.com/blog/how-long-do-luigi-disposables-last',
     images: [
       {
-        url: 'https://www.luigiofficialbrand.com/og-images/product-2g-disposables.png',
+        url: 'https://www.luigiofficialbrand.com/og-images/blog-how-long-disposables-last.png',
         width: 1200,
         height: 630,
-        alt: 'How Long Do Luigi Disposables Last',
+        alt: 'How Long Do Luigi Disposables Last - 2026 Guide',
       },
     ],
   },

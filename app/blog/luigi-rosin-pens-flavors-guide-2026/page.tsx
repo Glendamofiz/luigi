@@ -20,10 +20,10 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/luigi-rosin-pens-flavors-guide-2026",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/product-rosin-pens.png",
+        url: "https://www.luigiofficialbrand.com/og-images/blog-rosin-pens-flavors.png",
         width: 1200,
         height: 630,
-        alt: "Luigi Oil - Premium Cannabis Products",
+        alt: "Luigi Rosin Pens Flavors 2026 Guide",
       },
     ],
   },
