@@ -40,6 +40,7 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'Luigi Oil',
     url: 'https://www.luigiofficialbrand.com',
+    locale: 'en_US',
     images: [
       {
         url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg',
@@ -48,9 +49,6 @@ export const metadata: Metadata = {
         alt: 'Luigi Oil - Premium Cannabis Disposables & Pre-Rolls',
       },
     ],
-  },
-    ],
-    locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
