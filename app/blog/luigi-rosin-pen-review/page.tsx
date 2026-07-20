@@ -108,15 +108,13 @@ export default function LuigiRosinPenReview() {
             </ul>
             <p>What stands out across the lineup is how distinct each profile is from the next — the loud, funk-forward strains like Garlic Glue and Donny Burger sit at one end, while Casablanca Peach and Citrus Mimosa lean sweet and bright. That range makes it easy to pick a strain by mood rather than settling for a one-size-fits-all flavor.</p>
 
-            <div className="relative w-full h-96 rounded-xl overflow-hidden shadow-lg my-8">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg"
-                alt="Luigi Rosin Pen solventless hash rosin dual pack strains"
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
-                className="object-cover"
-              />
-            </div>
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg"
+              alt="Luigi Rosin Pen solventless hash rosin dual pack strains"
+              width={800}
+              height={600}
+              className="w-full h-auto rounded-xl shadow-lg my-8"
+            />
 
             <h2>Solventless Rosin vs. Live Resin: What&apos;s the Real Difference?</h2>
             <p>The core question behind any rosin pen review is whether solventless is actually worth the premium positioning. Here&apos;s how the two extraction methods compare.</p>
@@ -175,15 +173,13 @@ export default function LuigiRosinPenReview() {
               <li><strong>Premium price per gram:</strong> Solventless extraction is more labor-intensive, which shows up in the price relative to distillate-based products.</li>
             </ul>
 
-            <div className="relative w-full h-96 rounded-xl overflow-hidden shadow-lg my-8">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLACKBERRY-DREAM-2400x2400-pe085AZelET8AuGO0fti7o4giOhjqR.jpg"
-                alt="Luigi Rosin Pen vs live resin liquid diamond solventless cannabis vape comparison"
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
-                className="object-cover"
-              />
-            </div>
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLACKBERRY-DREAM-2400x2400-pe085AZelET8AuGO0fti7o4giOhjqR.jpg"
+              alt="Luigi Rosin Pen vs live resin liquid diamond solventless cannabis vape comparison"
+              width={800}
+              height={600}
+              className="w-full h-auto rounded-xl shadow-lg my-8"
+            />
 
             <h2>How the Rosin Pen Compares to Other Luigi Product Lines</h2>
             <p>If you&apos;re deciding between the Rosin Pen and the rest of the catalog, here&apos;s the quick version:</p>

@@ -140,15 +140,13 @@ export default function LuigiCartsLA() {
 
             <p>To see the complete current catalog before you head out, browse the full <Link href="/products">Products page</Link> — that way you know exactly what to ask for if a specific item isn&apos;t visible on the shelf.</p>
 
-            <div className="relative w-full h-96 rounded-xl overflow-hidden shadow-lg my-8">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg"
-                alt="Luigi Oil Los Angeles dispensary buy local cannabis carts"
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
-                className="object-cover"
-              />
-            </div>
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg"
+              alt="Luigi Oil Los Angeles dispensary buy local cannabis carts"
+              width={800}
+              height={600}
+              className="w-full h-auto rounded-xl shadow-lg my-8"
+            />
 
             <h2>In-Store Pickup vs. Delivery: Which Fits Your LA Search?</h2>
 
@@ -164,15 +162,13 @@ export default function LuigiCartsLA() {
               <li><strong>Cons:</strong> Verification happens after the product arrives rather than before purchase, so checking the QR code immediately on delivery matters more.</li>
             </ul>
 
-            <div className="relative w-full h-96 rounded-xl overflow-hidden shadow-lg my-8">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLACKBERRY-DREAM-2400x2400-pe085AZelET8AuGO0fti7o4giOhjqR.jpg"
-                alt="Verify authentic Luigi carts Los Angeles QR code batch number"
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
-                className="object-cover"
-              />
-            </div>
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLACKBERRY-DREAM-2400x2400-pe085AZelET8AuGO0fti7o4giOhjqR.jpg"
+              alt="Verify authentic Luigi carts Los Angeles QR code batch number"
+              width={800}
+              height={600}
+              className="w-full h-auto rounded-xl shadow-lg my-8"
+            />
 
             <h2>How to Verify Your Luigi Cart Is Authentic</h2>
             <p>Buying from a licensed LA dispensary is the first safeguard against counterfeit product, but it&apos;s worth confirming authenticity on your end too. Scan the QR code or scratch-off verification tag on the packaging — it should resolve to Luigi Oil&apos;s official verification result with a matching batch number. For the full breakdown of what to check, see the complete <Link href="/blog/how-to-verify-authentic-luigi-carts">Luigi Authenticity Guide</Link>.</p>
