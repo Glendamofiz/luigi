@@ -22,6 +22,53 @@ export const metadata: Metadata = {
   },
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which LA dispensaries carry Luigi Oil?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Multiple authorized dispensaries throughout Los Angeles stock Luigi products. See the verified list in our guide. Check the Luigi Oil website's dispensary locator for the most current locations and stock availability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if a dispensary is authorized?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Authorized Luigi dispensaries display official Luigi signage, stock QR-coded authentic products, and have verification status on the Luigi Oil website. Contact Luigi directly to confirm a dispensary's authorization status."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Luigi products do LA dispensaries stock?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most LA dispensaries stock Series 6 disposables (10+ strains), rosin pens, Fattones pre-rolls, and Luigi carts. Specific inventory varies by location—call ahead or check online menus to confirm stock."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there fake Luigi products?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Counterfeit Luigi products exist. Verify authenticity by checking packaging quality, scanning QR codes on the Luigi Oil website, and purchasing only from authorized dispensaries listed by Luigi Oil."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I look for in a good dispensary?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Choose dispensaries with: licensed operation, authentic product verification, professional staff, competitive pricing, delivery options, and customer reviews. Always confirm they're authorized to sell Luigi products."
+      }
+    }
+  ]
+}
+
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -43,6 +90,11 @@ export default function BestDispensariesLA() {
         id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />

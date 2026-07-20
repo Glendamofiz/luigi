@@ -36,6 +36,53 @@ const articleSchema = {
   "description": "Learn how to open a Luigi Preroll the right way. Step-by-step instructions for unwrapping, lighting, and storing your Luigi Fattones hash rosin prerolls."
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do you open a Luigi Fattones preroll?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Remove outer packaging carefully. You'll find a glass-tip blunt and rosin-infused joints. Gently pull the glass tip apart, then light the rounded end and enjoy with slow draws."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's included in a Luigi Fattones pack?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each 4-in-1 pack includes: 1 glass-tip blunt, 2 rosin-infused full-size joints, 4 mini rosin-infused joints, and 6 hash-infused gummies—all in the same strain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I light a Luigi preroll correctly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use a lighter on the rounded tip. Roll gently between your fingers while lighting until evenly glowing. Take slow, deliberate draws for even burn and best flavor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a Luigi preroll last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A single rosin-infused joint lasts 5-15 minutes depending on draw intensity. The full 4-in-1 pack provides multiple sessions over several hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I relight a partially smoked preroll?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, extinguish carefully and store in an airtight container in cool, dark place. Rosin-infused prerolls stay fresh for several days when properly stored."
+      }
+    }
+  ]
+}
+
 export default function HowToOpenLuigiPrerollPage() {
   return (
     <>
@@ -43,6 +90,11 @@ export default function HowToOpenLuigiPrerollPage() {
         id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />

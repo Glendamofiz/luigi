@@ -95,6 +95,53 @@ const articleSchema = {
   "reviewBody": "The Luigi disposable vape delivers exceptional quality with premium construction, advanced ceramic heating, and live resin liquid diamond extract."
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What makes Luigi disposables premium?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi disposables stand out with live resin liquid diamond extract, advanced ceramic heating, full-spectrum terpenes, and rigorous lab testing. Each device delivers smooth, flavorful hits with 35%+ THC and consistent quality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a Luigi disposable vape last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A 2G Luigi disposable typically lasts 1-2 weeks with moderate daily use. Duration depends on individual consumption habits and draw intensity. Premium potency means fewer puffs needed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the best Luigi disposable vape?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi Series 6 is the best overall disposable with live resin liquid diamonds and 12+ strain options. Choose based on desired effects: uplifting for social use, relaxing for evening use, balanced for any occasion."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Luigi better than other premium brands?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Luigi leads the market with superior extraction methods, ceramic heating technology, full-spectrum terpenes, and consistent potency. Lab testing and quality control ensure every device delivers premium experience."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I buy Luigi disposables?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Buy Luigi disposables at licensed California dispensaries. Purchase from authorized Luigi Oil retailers to ensure genuine, lab-tested products."
+      }
+    }
+  ]
+}
+
 export default function LuigiDisposableVapeReviewPage() {
   return (
     <>
@@ -102,6 +149,11 @@ export default function LuigiDisposableVapeReviewPage() {
         id="review-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />
@@ -354,9 +406,22 @@ export default function LuigiDisposableVapeReviewPage() {
               </div>
             </div>
           </div>
-        </article>
+      </article>
 
-        <Footer />
+      {/* CTA - Shop Now */}
+      <section className="py-12 md:py-16 bg-gray-50 border-t border-gray-200">
+        <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+          <div className="bg-gradient-to-r from-[#D4AF37]/10 to-transparent border border-[#D4AF37]/30 rounded-lg p-8 text-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">Ready to experience premium?</h3>
+            <p className="text-gray-600 mb-6">Luigi disposables deliver the quality and potency you&apos;ve been looking for. Shop Series 6 today.</p>
+            <Link href="/products/series-6" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+              Shop Series 6 Now
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
             <RelatedGuides />
     </main>
     </>

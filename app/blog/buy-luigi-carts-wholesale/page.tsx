@@ -22,6 +22,53 @@ export const metadata: Metadata = {
   },
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the minimum order for Luigi wholesale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wholesale MOQs vary by product category and partnership tier. Contact Luigi Oil wholesale at wholesale@luigioil.com for specific MOQ details and custom pricing based on your order volume."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I become an authorized Luigi distributor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Apply through Luigi Oil's wholesale portal. You'll need active dispensary license, tax documentation, and resale permits. Luigi will review your application and contact you with partnership options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What products are available for wholesale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Series 6 disposables, rosin pens, Fattones pre-rolls, Luigi carts, and liquid diamond products are available wholesale. Exact inventory and pricing depend on your tier and location."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What wholesale pricing tiers does Luigi offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi offers tiered wholesale pricing based on order volume. Higher volume orders receive better per-unit pricing. Contact wholesale team for exact pricing tiers and discounts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often can I reorder wholesale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reorder frequency and terms vary by partnership agreement. Most authorized retailers can reorder weekly or based on your inventory management needs. Confirm specifics with your Luigi wholesale account manager."
+      }
+    }
+  ]
+}
+
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -43,6 +90,11 @@ export default function BuyLuigiWholesale() {
         id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />
@@ -201,9 +253,23 @@ export default function BuyLuigiWholesale() {
             <p>For dispensary owners ready to buy Luigi carts wholesale, the path is straightforward: confirm your license, order through the official channel, and start with a product mix that fits your customer base. Browse the full <Link href="/products">Products page</Link> to plan your first order, or head straight to <Link href="/wholesale">Luigi Oil Wholesale</Link> to get your account set up. Questions before you order? Reach the team directly via the <Link href="/contact">Contact page</Link>.</p>
             </div>
           </div>
-        </article>
-        <RelatedGuides />
-        <Footer />
+      </article>
+
+      {/* CTA - Wholesale Contact */}
+      <section className="py-12 md:py-16 bg-gradient-to-r from-[#D4AF37]/10 to-transparent border-t border-gray-200">
+        <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 text-center">
+          <h3 className="text-2xl font-bold text-gray-900 mb-2">Ready to become an authorized retailer?</h3>
+          <p className="text-gray-600 mb-6">Apply for Luigi wholesale partnership to stock our premium products and build your cannabis business.</p>
+          <Link href="/wholesale-inquiry" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+            Apply for Wholesale
+          </Link>
+        </div>
+      </section>
+
+      <RelatedGuides />
+    </main>
+
+    <Footer />
       </main>
     </>
   )

@@ -37,6 +37,53 @@ const listSchema = {
   ]
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the best infused pre-rolls in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi Fattones rank #1 for best infused pre-rolls in 2026. They combine premium flower with live resin liquid diamonds, delivering 35%+ THC and superior flavor. Each 4-in-1 pack includes glass-tip blunts, rosin-infused joints, and gummies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes infused pre-rolls better?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Infused pre-rolls combine premium flower with cannabis concentrates (rosin, hash, oil) for 2-3x higher potency than regular joints. They deliver stronger effects, longer-lasting experiences, and richer terpene profiles."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How potent are Luigi Fattones?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi Fattones deliver 35%+ THC potency. Each pack is lab-tested to verify exact potency and safety. The combination of premium flower and live resin liquid diamonds creates a powerful, complex cannabis experience."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are infused pre-rolls worth the price?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, premium infused pre-rolls justify higher pricing. Higher potency means fewer joints needed, longer-lasting effects, and superior flavor and experience. Luigi Fattones deliver premium quality and consistency that standard pre-rolls cannot match."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I buy Luigi Fattones?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Buy Luigi Fattones at licensed California dispensaries. Verify the dispensary is an authorized Luigi Oil retailer to ensure genuine, lab-tested products."
+      }
+    }
+  ]
+}
+
 export default function BestInfusedPreRollsPage() {
   return (
     <>
@@ -44,6 +91,11 @@ export default function BestInfusedPreRollsPage() {
         id="list-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(listSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />

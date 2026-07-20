@@ -35,6 +35,53 @@ const articleSchema = {
   }
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are infused pre-rolls?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Infused pre-rolls are hand-rolled joints coated or stuffed with cannabis concentrates like rosin, kief, or hash oil. They deliver higher THC potency and stronger effects compared to regular flower pre-rolls."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between infused and regular pre-rolls?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Regular pre-rolls contain only ground cannabis flower. Infused pre-rolls add rosin, hash, kief, or oil for 2-3x higher potency. Infused pre-rolls deliver stronger effects, longer-lasting experiences, and richer flavor profiles."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are infused pre-rolls stronger than regular pre-rolls?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, infused pre-rolls are significantly stronger. A regular pre-roll might contain 10-15% THC, while an infused pre-roll can deliver 30-40%+ THC when coated with rosin or hash. The difference is noticeable in both potency and duration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are Luigi Fattones infused pre-rolls?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi Fattones are premium 4-in-1 infused packs containing a glass-tip blunt, 2 rosin-infused full-size joints, 4 mini rosin-infused joints, and 6 hash-infused gummies—all with 35%+ THC potency."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are infused pre-rolls worth the extra cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, infused pre-rolls offer better value per experience. The higher potency means fewer pre-rolls needed, lasting effects, and premium flavor. Luigi Fattones deliver superior quality and consistent potency justifying premium pricing."
+      }
+    }
+  ]
+}
+
 export default function InfusedPreRollsVsRegularPage() {
   return (
     <>
@@ -42,6 +89,11 @@ export default function InfusedPreRollsVsRegularPage() {
         id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />

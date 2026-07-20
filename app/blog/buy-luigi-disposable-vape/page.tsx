@@ -35,6 +35,53 @@ const articleSchema = {
   }
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where can I safely buy Luigi disposables?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Buy Luigi disposables only at licensed California dispensaries. Verify the retailer is an authorized Luigi Oil distributor to ensure authentic, lab-tested products and avoid counterfeits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I spot fake Luigi disposables?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fake Luigi disposables have blurry text, faded logos, poor packaging quality, and may have QR codes that don't scan. Authentic products have crisp printing, premium materials, and verified QR codes on Luigi's official site."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the price range for Luigi disposables?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi 2G disposables retail for $35-45 at licensed dispensaries depending on location and retailer markup. Premium pricing reflects quality live resin extraction and lab testing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I buy Luigi disposables online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some licensed California dispensaries offer online ordering with delivery or pickup. Check dispensary websites to see if they ship or offer pickup for Luigi products in your area."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I verify authentic Luigi products?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the QR code on authentic Luigi packaging. Scan it with your smartphone to verify on the official Luigi Oil authentication page. Check packaging quality, print clarity, and material feel."
+      }
+    }
+  ]
+}
+
 export default function BuyLuigiDisposableVapePage() {
   return (
     <>
@@ -42,6 +89,11 @@ export default function BuyLuigiDisposableVapePage() {
         id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />
@@ -359,6 +411,22 @@ export default function BuyLuigiDisposableVapePage() {
           </div>
         </div>
       </article>
+
+      {/* CTA - Shop Now */}
+      <section className="py-12 md:py-16 bg-gradient-to-r from-[#D4AF37]/10 to-transparent border-t border-gray-200">
+        <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 text-center">
+          <h3 className="text-2xl font-bold text-gray-900 mb-2">Find Luigi Near You</h3>
+          <p className="text-gray-600 mb-6">Ready to buy authentic Luigi disposables? Find authorized dispensaries and get your Series 6 today.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/products/series-6" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+              Shop Series 6
+            </Link>
+            <Link href="/blog/best-dispensaries-los-angeles-luigi" className="inline-block border border-[#D4AF37] text-[#D4AF37] font-semibold px-8 py-3 rounded-lg hover:bg-[#D4AF37]/10 transition-colors">
+              Find Dispensaries
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <Footer />
             <RelatedGuides />

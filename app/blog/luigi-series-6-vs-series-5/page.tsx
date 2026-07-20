@@ -28,9 +28,57 @@ export default function BlogPost() {
     publisher: { '@type': 'Organization', name: 'Luigi Oil' },
   }
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': [
+      {
+        '@type': 'Question',
+        'name': 'What's the difference between Series 6 and Series 5?',
+        'acceptedAnswer': {
+          '@type': 'Answer',
+          'text': 'Series 6 offers enhanced potency, improved airflow, updated strain selection, and refined ceramic heating technology compared to Series 5. Live resin liquid diamonds deliver more pronounced effects and consistent quality.'
+        }
+      },
+      {
+        '@type': 'Question',
+        'name': 'Is Series 6 more potent than Series 5?',
+        'acceptedAnswer': {
+          '@type': 'Answer',
+          'text': 'Yes, Series 6 delivers higher potency with improved live resin liquid diamond extraction. Expect stronger effects and more pronounced flavor profiles compared to Series 5.'
+        }
+      },
+      {
+        '@type': 'Question',
+        'name': 'Which Luigi disposable should I buy in 2026?',
+        'acceptedAnswer': {
+          '@type': 'Answer',
+          'text': 'Series 6 is the current recommended model with the latest technology and strain selection. If Series 5 is still available and discounted, it remains a solid choice, though Series 6 offers superior overall experience.'
+        }
+      },
+      {
+        '@type': 'Question',
+        'name': 'Are Series 5 disposables still available?',
+        'acceptedAnswer': {
+          '@type': 'Answer',
+          'text': 'Series 5 may still be available at some dispensaries during transition to Series 6, but supply is limited. Check with local retailers, as Series 6 is now the primary offering.'
+        }
+      },
+      {
+        '@type': 'Question',
+        'name': 'What flavors come in Series 6?',
+        'acceptedAnswer': {
+          '@type': 'Answer',
+          'text': 'Series 6 offers 10+ premium strains including Orange Lava Kush, Black Diesel Milk, Candy Corn Chaos, Graveberry Kush, and more. Each strain features unique terpene profiles and effects.'
+        }
+      }
+    ]
+  }
+
   return (
     <>
       <script type="application/ld+json">{JSON.stringify(schema)}</script>
+      <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       <main className="min-h-screen bg-white">
         <article className="max-w-4xl mx-auto px-4 py-16">
           {/* Header */}
@@ -323,9 +371,21 @@ export default function BlogPost() {
                 Chat with our team
               </a>
             </div>
-          </div>
-        </article>
-            <RelatedGuides />
+        </div>
+      </article>
+
+      {/* CTA - Shop Series 6 */}
+      <section className="py-12 md:py-16 bg-gray-50 border-t border-gray-200 max-w-4xl mx-auto px-4">
+        <div className="bg-gradient-to-r from-[#D4AF37]/10 to-transparent border border-[#D4AF37]/30 rounded-lg p-8 text-center">
+          <h3 className="text-2xl font-bold text-gray-900 mb-2">Upgrade to Series 6 Today</h3>
+          <p className="text-gray-600 mb-6">Experience the latest improvements: enhanced potency, better airflow, and new strains. Series 6 is available now.</p>
+          <Link href="/products/series-6" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+            Shop Series 6
+          </Link>
+        </div>
+      </section>
+
+      <RelatedGuides />
     </main>
     </>
   )

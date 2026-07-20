@@ -36,6 +36,53 @@ const articleSchema = {
   "description": "Find Luigi carts in Los Angeles with confirmed dispensaries, stock checking tips, and authenticity verification."
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where can I buy Luigi carts in Los Angeles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi carts are available at authorized dispensaries throughout Los Angeles. Verified retailers stock Series 6 disposables, rosin pens, Fattones, and carts. Check the Luigi Oil website for an updated dispensary locator."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I verify an authentic Luigi dispensary?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contact Luigi Oil directly to confirm authorized dispensaries. Check for official Luigi signage and QR code authentication on packaging. Verify license status with California Department of Cannabis Control."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Luigi products are available in LA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most LA dispensaries stock Luigi Series 6 disposables with 10+ strain options, rosin pens, Fattones pre-rolls, and Luigi carts. Availability varies by location—call ahead or check online menus."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the typical price for Luigi disposables in LA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A 2G Luigi Series 6 disposable typically costs $35-45 at LA dispensaries depending on retailer and location. Prices may vary slightly between different areas of Los Angeles."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Luigi products be delivered in Los Angeles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some licensed LA dispensaries offer delivery for Luigi products. Check dispensary websites or call to confirm delivery availability in your zip code."
+      }
+    }
+  ]
+}
+
 export default function LuigiCartsLA() {
   return (
     <>
@@ -43,6 +90,11 @@ export default function LuigiCartsLA() {
         id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />
@@ -204,9 +256,23 @@ export default function LuigiCartsLA() {
             <p>Purchasing from a licensed California dispensary is the first safeguard. From there, scan the QR code or scratch-off verification tag on the packaging to confirm it links to Luigi Oil&apos;s official verification result.</p>
             </div>
           </div>
-        </article>
-        <RelatedGuides />
-        <Footer />
+      </article>
+
+      {/* CTA - Shop Now */}
+      <section className="py-12 md:py-16 bg-gradient-to-r from-[#D4AF37]/10 to-transparent border-t border-gray-200">
+        <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 text-center">
+          <h3 className="text-2xl font-bold text-gray-900 mb-2">Can't find Luigi locally?</h3>
+          <p className="text-gray-600 mb-6">Browse Luigi's complete product lineup including Series 6 disposables, rosin pens, and Fattones directly.</p>
+          <Link href="/products" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+            Shop All Products
+          </Link>
+        </div>
+      </section>
+
+      <RelatedGuides />
+    </main>
+
+    <Footer />
       </main>
     </>
   )

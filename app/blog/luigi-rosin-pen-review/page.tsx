@@ -36,6 +36,53 @@ const articleSchema = {
   "description": "An honest Luigi Rosin Pen review comparing solventless rosin to live resin."
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Luigi Rosin Pen worth it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Luigi rosin pens are worth it for users prioritizing purity and clean cannabis. The solventless extraction delivers pure cannabinoids and terpenes without any chemical residue. At 35%+ THC with premium flavor, they justify the premium price."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes Luigi Rosin Pens different?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi Rosin Pens use solventless extraction—pure heat and pressure only. No chemicals or solvents are used. This delivers the cleanest possible cannabis experience with full-spectrum terpenes and cannabinoids."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are rosin pens better than live resin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both are premium options. Rosin pens are cleaner (solventless) with pure terpene profiles. Live resin offers different flavor profiles and potency. Choose rosin for solventless purity, choose live resin for concentrated effects and liquid diamond potency."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How potent are Luigi rosin pens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi rosin pens deliver 35%+ THC potency. Each pen is lab-tested to verify exact THC content and terpene profile. The solventless extraction preserves all cannabinoids, creating powerful full-spectrum effects."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I buy Luigi Rosin Pens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Buy Luigi rosin pens at licensed California dispensaries. Only purchase from authorized Luigi Oil retailers to ensure genuine, lab-tested solventless products."
+      }
+    }
+  ]
+}
+
 export default function LuigiRosinPenReview() {
   return (
     <>
@@ -43,6 +90,11 @@ export default function LuigiRosinPenReview() {
         id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />

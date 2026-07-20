@@ -41,13 +41,65 @@ const schemaData = {
   }
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why do Luigi vapes taste better?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi vapes taste superior due to premium live resin liquid diamond extract, advanced ceramic heating, full-spectrum terpene preservation, and meticulous quality control. Each batch is lab-tested for flavor consistency."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the best tasting Luigi flavor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Taste preferences vary, but popular Luigi Series 6 flavors include Orange Lava Kush, Black Diesel Milk, and Graveberry Kush. Try multiple strains to find your favorite terpene profile and flavor intensity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does ceramic heating improve taste?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ceramic heating elements distribute heat evenly without hot spots, preventing burning or degradation of terpenes. This preserves the full flavor profile and delivers smooth, consistent taste with each draw."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Luigi rosin pens more flavorful than Series 6?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both deliver excellent flavor. Rosin pens offer solventless purity with complete terpene profiles. Series 6 liquid diamonds provide potent crystalline effects with rich terpene sauce. Both are top-tier flavor choices."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes Luigi better than competitors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi combines premium extraction methods, ceramic heating technology, rigorous lab testing, and complete terpene preservation. This dedication to quality results in superior flavor consistency that competitors cannot match."
+      }
+    }
+  ]
+}
+
 export default function FlavorBlogPost() {
   return (
     <>
       <Script
-        id="blog-schema"
+        id="faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
+      <Script
+        id="faq-page-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <Header />
       <main className="bg-white">
@@ -439,8 +491,24 @@ export default function FlavorBlogPost() {
             </div>
           </div>
         </section>
-            <RelatedGuides />
-    </main>
+      {/* CTA - Shop Now */}
+      <section className="py-12 md:py-16 bg-gradient-to-r from-[#D4AF37]/10 to-transparent border-t border-gray-200">
+        <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 text-center">
+          <h3 className="text-2xl font-bold text-gray-900 mb-2">Taste the Difference</h3>
+          <p className="text-gray-600 mb-6">Experience why Luigi vapes lead the market. Shop premium disposables, rosin pens, and Fattones today.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/products/series-6" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+              Series 6 Disposables
+            </Link>
+            <Link href="/products/rosin-pens" className="inline-block bg-gray-900 text-white font-semibold px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+              Rosin Pens
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <RelatedGuides />
+      </main>
       <Footer />
     </>
   )

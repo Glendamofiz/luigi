@@ -36,6 +36,53 @@ const articleSchema = {
   "description": "Do liquid diamonds get you high? Here's what the lab data says about THCA crystallization, terpene content, and potency in Luigi's live resin products."
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do liquid diamonds get you high?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, liquid diamonds are highly potent and will get you high. They contain concentrated THCA crystals that convert to THC when heated, delivering powerful effects. Luigi liquid diamonds contain 35%+ THC potency."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are liquid diamonds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Liquid diamonds are cannabis extracts featuring THCA crystals suspended in terpene-rich sauce. The crystalline THCA delivers high potency while the terpenes provide flavor and aromatic effects. Luigi uses this extraction in Series 6 disposables."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How potent are liquid diamonds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Liquid diamonds are among the most potent cannabis extracts available. They typically contain 35-50%+ THC concentration. Luigi Series 6 liquid diamonds are lab-tested to verify exact potency and safety."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do liquid diamonds compare to live resin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Liquid diamonds are more potent than standard live resin due to THCA crystallization, but may have less complex flavor. Live resin delivers full-spectrum effects with better terpene preservation. Both are premium Luigi options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I buy liquid diamonds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Buy Luigi Series 6 liquid diamonds at licensed California dispensaries. Only purchase from authorized Luigi Oil retailers to ensure genuine, lab-tested products."
+      }
+    }
+  ]
+}
+
 export default function LiquidDiamondsPage() {
   return (
     <>
@@ -43,6 +90,11 @@ export default function LiquidDiamondsPage() {
         id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />
