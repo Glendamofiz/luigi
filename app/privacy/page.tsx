@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer"
 import { AgeVerification } from "@/components/age-verification"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Luigi Oil",
+  title: "Privacy Policy",
   description: "Luigi Oil privacy policy. Learn how we collect, use, and protect your personal information when using our website and services.",
   alternates: {
     canonical: "/privacy",

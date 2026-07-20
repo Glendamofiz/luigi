@@ -49,6 +49,53 @@ const articleSchema = {
   "image": "https://www.luigiofficialbrand.com/og-image.jpg"
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are Luigi Fattones?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi Fattones are premium 4-in-1 infused pre-roll packs from Luigi Oil containing a glass-tip blunt, 2 full-size rosin-infused joints, 4 mini rosin-infused joints, and 6 hash-infused gummies. Each pack features a different strain with 35-42%+ THC potency."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What flavors does Luigi Fattones come in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi Fattones offers 10 flavors: Banana Gelato, Blackberry Dream, Blue Mist, Blue Razz Lime, Cherry Pie, Honeydew Melon, Pineapple Diesel, Strawberry OG, Watermelon, and Blood Orange. Each flavor delivers unique terpene profiles and effects."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much THC is in Luigi Fattones?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi Fattones typically contain 35-42%+ THC. The exact potency varies by strain and product batch. Each pack is lab-tested to verify THC content and ensure safety and quality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's included in each Luigi Fattones pack?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each Fattones pack includes: 1 glass-tip blunt, 2 full-size hash rosin infused pre-roll joints, 4 mini hash rosin infused joints, and 6 hash-infused gummies all matched to the pack's strain flavor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I buy Luigi Fattones?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Buy authentic Luigi Fattones at licensed California dispensaries. Verify the dispensary is an authorized Luigi Oil retailer to ensure you're getting genuine, lab-tested products."
+      }
+    }
+  ]
+}
+
 const fattonesFlavors = [
   { name: "Banana Gelato", type: "Hybrid", description: "Creamy banana sweetness blended with rich gelato and subtle vanilla notes. Balanced high combining mental euphoria with gentle body relaxation." },
   { name: "Blackberry Dream", type: "Indica", description: "Ripe blackberry with a creamy, dreamy kush finish. Deep relaxation and soothing body effects, ideal for evening wind-down." },
@@ -74,6 +121,11 @@ export default function FattonesFlavorGuidePage() {
         id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />
@@ -280,7 +332,21 @@ export default function FattonesFlavorGuidePage() {
           </div>
         </article>
 
-        <RelatedGuides />
+        {/* CTA - Related Product */}
+        <section className="py-12 md:py-16 bg-gray-50 border-t border-gray-200">
+          <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+            <div className="bg-gradient-to-r from-[#D4AF37]/10 to-transparent border border-[#D4AF37]/30 rounded-lg p-8 text-center">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Shop Luigi Fattones Today</h3>
+              <p className="text-gray-600 mb-6">Get all 10 premium 4-in-1 infused packs with rosin-infused pre-rolls and hash-infused gummies.</p>
+              <Link href="/products/fattones" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+                Shop Fattones Packs
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <Footer />
+            <RelatedGuides />
       <Footer />
       </main>
     </>

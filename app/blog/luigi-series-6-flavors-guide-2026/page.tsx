@@ -36,6 +36,53 @@ const articleSchema = {
   "description": "Complete guide to Luigi Series 6 disposable flavors including effects, tasting notes, and where to buy."
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many Series 6 flavors does Luigi offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi Series 6 offers 10+ distinct flavors including Black Diesel Milk, Candy Corn Chaos, Graveberry Kush, Green Gumbo, Hella Hallow Jam, Orange Lava Kush, Plum Wreck, Rageberry Blitz, Razor Thin Pine, and Sour Cran Smash. Each delivers unique terpene profiles and effects."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the best Luigi Series 6 flavor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The best flavor depends on your preferences. For uplifting effects, try Orange Lava Kush or Rageberry Blitz. For relaxation, choose Graveberry Kush or Plum Wreck. For balanced hybrid effects, try Black Diesel Milk or Candy Corn Chaos. All are premium live resin liquid diamonds."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What type of extract is Series 6?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi Series 6 features live resin liquid diamond extract. This combines full-spectrum terpenes with crystallized THCA, delivering premium potency (up to 35%+ THC) and rich flavor profiles."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much THC is in Luigi Series 6?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi Series 6 disposables contain 35%+ THC potency. The exact percentage varies by strain and batch. Each disposable is lab-tested to verify THC content and ensure safety and quality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I buy Luigi Series 6?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Purchase authentic Luigi Series 6 at licensed California dispensaries. Verify the dispensary is an authorized Luigi Oil retailer to ensure you get genuine, lab-tested live resin liquid diamond disposables."
+      }
+    }
+  ]
+}
+
 const series6Flavors = [
   { name: "Black Diesel Milk", type: "Hybrid", description: "Bold fusion of gassy diesel fuel with creamy milk chocolate sweetness. Energizing cerebral effects paired with relaxing body buzz." },
   { name: "Candy Corn Chaos", type: "Hybrid", description: "Nostalgic candy corn sweetness with vanilla and caramel notes. Balanced hybrid effects - uplifting mood with gentle physical relaxation." },
@@ -56,6 +103,11 @@ export default function Series6FlavorsGuidePage() {
         id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />
@@ -240,7 +292,19 @@ export default function Series6FlavorsGuidePage() {
           </div>
         </article>
 
-        <RelatedGuides />
+      {/* CTA - Related Product */}
+      <section className="py-12 md:py-16 bg-gray-50 border-t border-gray-200">
+        <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+          <div className="bg-gradient-to-r from-[#D4AF37]/10 to-transparent border border-[#D4AF37]/30 rounded-lg p-8 text-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">Shop All Series 6 Flavors</h3>
+            <p className="text-gray-600 mb-6">Browse all 10+ live resin liquid diamond strains and find your favorite flavor profile.</p>
+            <Link href="/products/series-6" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+              Explore Series 6
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <Footer />
       </main>
     </>

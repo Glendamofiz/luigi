@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer"
 import { AgeVerification } from "@/components/age-verification"
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Luigi Oil",
+  title: "Terms of Service",
   description: "Luigi Oil terms of service. Read our terms and conditions for using our website and purchasing our premium cannabis products.",
   alternates: {
     canonical: "/terms",

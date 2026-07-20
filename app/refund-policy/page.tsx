@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer"
 import { AgeVerification } from "@/components/age-verification"
 
 export const metadata: Metadata = {
-  title: "Refund Policy | Luigi Oil",
+  title: "Refund Policy",
   description: "Luigi Oil refund and return policy. Learn about our policies for wholesale orders, damaged products, and quality guarantees.",
   alternates: {
     canonical: "/refund-policy",

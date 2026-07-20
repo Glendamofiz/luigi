@@ -95,6 +95,53 @@ const reviewSchema = {
   "reviewBody": "Luigi carts deliver premium quality that justifies the price with live resin liquid diamond extract and superior hardware."
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are Luigi carts worth it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Luigi carts are worth it for premium cannabis consumers. They deliver live resin liquid diamond extract with 35%+ THC potency, superior hardware, and consistent quality across all strains. The price reflects premium extraction methods and rigorous lab testing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes Luigi carts better than other brands?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi carts stand out with full-spectrum terpene profiles, advanced ceramic heating, live resin liquid diamond extract, and meticulous quality control. Each batch is lab-tested for potency and purity, ensuring consistent effects and flavor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long do Luigi carts last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A 2G Luigi cart typically lasts 1-2 weeks with moderate daily use. This depends on individual consumption habits and draw intensity. Many users appreciate the long-lasting value relative to the premium quality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What strains does Luigi offer in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi offers 10+ premium strains including Graveberry Kush, Orange Lava Kush, Black Diesel Milk, Rage Berry Blitz, and more. Each strain is available in their Series 6 live resin liquid diamond collection with distinct terpene profiles."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I buy authentic Luigi carts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Buy authentic Luigi carts only at licensed California dispensaries. Visit LuigiOfficialBrand.com to verify authorized retailers near you and avoid counterfeit products."
+      }
+    }
+  ]
+}
+
 export default function AreLuigiCartsWorthItPage() {
   return (
     <>
@@ -102,6 +149,11 @@ export default function AreLuigiCartsWorthItPage() {
         id="review-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />
@@ -373,7 +425,19 @@ export default function AreLuigiCartsWorthItPage() {
         </div>
       </article>
 
-      <RelatedGuides />
+      {/* CTA - Shop Now */}
+      <section className="py-12 md:py-16 bg-gray-50 border-t border-gray-200">
+        <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+          <div className="bg-gradient-to-r from-[#D4AF37]/10 to-transparent border border-[#D4AF37]/30 rounded-lg p-8 text-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">Experience Luigi Series 6 Today</h3>
+            <p className="text-gray-600 mb-6">Discover why Luigi Series 6 delivers premium quality that justifies its value. Shop live resin liquid diamonds at licensed dispensaries.</p>
+            <Link href="/products/series-6" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+              Shop Series 6 Now
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <Footer />
       </main>
     </>

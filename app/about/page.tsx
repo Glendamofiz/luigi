@@ -6,7 +6,7 @@ import { AgeVerification } from "@/components/age-verification"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "About Luigi Oil | Premium Cannabis Brand Story",
+  title: "About | Premium Cannabis Brand Story",
   description: "Learn about Luigi Oil, California's premium cannabis brand. Discover our commitment to quality live resin liquid diamond vapes, hash rosin, and infused pre-rolls.",
   keywords: ["about Luigi Oil", "Luigi Oil brand", "Luigi Oil story", "premium cannabis California", "Luigi Oil quality"],
   alternates: {

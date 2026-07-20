@@ -36,6 +36,53 @@ const articleSchema = {
   "description": "Complete guide to Luigi Rosin Pens flavors - the cleanest solventless vape option from Luigi Oil."
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are Luigi Rosin Pens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi Rosin Pens are premium 1G solventless hash rosin dual packs featuring 1G pure rosin disposable + 1G rosin-infused blunt. They deliver zero-solvent, clean cannabis experience with 35%+ THC potency and authentic strain flavors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What flavors are available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luigi offers 10 rosin pen flavors: Tropicana Gold, Tangie Diesel, Sour Tart Ribbons, Peanut Butter Breath, Berry Amarillo, Casablanca Peach, Citrus Mimosa, Donny Burger, Garlic Glue, and OG Reserve. Each strain delivers unique terpene profiles and effects."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between rosin pens and live resin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rosin pens are solventless (no chemicals), made with pure heat and pressure. Live resin uses solvents for extraction. Rosin is cleaner and more terpene-rich, while live resin offers different flavor profiles. Both are premium options from Luigi Oil."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a Luigi Rosin Pen last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A 1G Luigi rosin pen typically lasts 3-5 days with moderate daily use. Duration depends on individual consumption habits and draw intensity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I buy Luigi Rosin Pens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Purchase authentic Luigi Rosin Pens at licensed California dispensaries. Verify the dispensary is an authorized Luigi Oil retailer to ensure genuine, lab-tested products with solventless quality."
+      }
+    }
+  ]
+}
+
 const rosinFlavors = [
   { name: "Tropicana Gold", type: "Hybrid", description: "Bright tropical citrus with sweet orange and mango notes. Balanced uplift and gentle body relaxation. Ideal for daytime mood elevation." },
   { name: "Tangie Diesel", type: "Sativa-leaning", description: "Classic Tangie citrus zest fused with gassy diesel undertones. Energizing, creative effects with bold, pungent finish." },
@@ -56,6 +103,11 @@ export default function RosinPensFlavorsGuidePage() {
         id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-white">
         <Header />
@@ -306,6 +358,19 @@ export default function RosinPensFlavorsGuidePage() {
             </div>
           </div>
         </article>
+
+        {/* CTA - Related Product */}
+        <section className="py-12 md:py-16 bg-gray-50 border-t border-gray-200">
+          <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+            <div className="bg-gradient-to-r from-[#D4AF37]/10 to-transparent border border-[#D4AF37]/30 rounded-lg p-8 text-center">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Try Luigi Rosin Pens</h3>
+              <p className="text-gray-600 mb-6">Experience solventless hash rosin with zero solvents. Pure terpenes, pure potency, pure quality.</p>
+              <Link href="/products/rosin-pens" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+                Shop Rosin Pens
+              </Link>
+            </div>
+          </div>
+        </section>
 
         <Footer />
             <RelatedGuides />
