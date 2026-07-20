@@ -266,9 +266,25 @@ export default function LuigiRosinPenReview() {
             <p>The Luigi Rosin Pen delivers on what solventless rosin promises: distinct, terpene-forward flavor and a cleaner extraction story, wrapped into a dual pack that adds real versatility for the price. It won&apos;t out-potency the liquid diamond lineup, but that&apos;s not really the point — this is the pick for flavor-first sessions. See the full lineup and current strains on the <Link href="/products/rosin-pens">Rosin Pens product page</Link>, or browse the rest of the catalog on <Link href="/products">Products</Link>.</p>
             </div>
           </div>
-        </article>
-        <RelatedGuides />
-        <Footer />
+      </article>
+
+      {/* CTA - Shop Rosin Pens */}
+      <section className="py-12 md:py-16 bg-gradient-to-r from-[#D4AF37]/10 to-transparent border-t border-gray-200">
+        <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 text-center">
+          <h3 className="text-2xl font-bold text-gray-900 mb-2">Ready for Pure Solventless?</h3>
+          <p className="text-gray-600 mb-6">Experience the cleanest cannabis vape with Luigi rosin pens. No solvents, no fillers, just pure potency and flavor.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/products/rosin-pens" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+              Shop Rosin Pens
+            </Link>
+            <Link href="/blog/luigi-rosin-pens-flavors-guide-2026" className="inline-block border border-[#D4AF37] text-[#D4AF37] font-semibold px-8 py-3 rounded-lg hover:bg-[#D4AF37]/10 transition-colors">
+              Explore All Flavors
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
       </main>
     </>
   )

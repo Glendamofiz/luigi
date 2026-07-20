@@ -372,9 +372,21 @@ export default function LiquidDiamondsPage() {
 
             </div>
           </div>
-        </article>
+      </article>
 
-        <RelatedGuides />
+      {/* CTA - Shop Liquid Diamonds */}
+      <section className="py-12 md:py-16 bg-gray-50 border-t border-gray-200">
+        <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+          <div className="bg-gradient-to-r from-[#D4AF37]/10 to-transparent border border-[#D4AF37]/30 rounded-lg p-8 text-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">Experience Liquid Diamonds</h3>
+            <p className="text-gray-600 mb-6">Ready to feel the power of liquid diamonds? Shop Luigi Series 6 with live resin liquid diamond extract.</p>
+            <Link href="/products/series-6" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+              Shop Series 6 Diamonds
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <Footer />
       </main>
     </>

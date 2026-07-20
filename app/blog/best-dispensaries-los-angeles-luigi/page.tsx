@@ -266,9 +266,23 @@ export default function BestDispensariesLA() {
             <p>The best dispensaries in Los Angeles for Luigi Oil aren&apos;t defined by a fixed ranking — they&apos;re defined by consistent stock, proper licensing, and staff who take authenticity seriously. Roots LA Dispensary, Level28, and Green Label Rx Echo Park meet that bar today, and the checklist above will help you evaluate any new shop that starts carrying the brand. Explore the full lineup on the <Link href="/products">Products page</Link>, or if you run a dispensary and want to add Luigi Oil to your own shelves, get started through <Link href="/wholesale">Luigi Oil Wholesale</Link>.</p>
             </div>
           </div>
-        </article>
-        <RelatedGuides />
-        <Footer />
+      </article>
+
+      {/* CTA - Shop Now */}
+      <section className="py-12 md:py-16 bg-gradient-to-r from-[#D4AF37]/10 to-transparent border-t border-gray-200">
+        <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 text-center">
+          <h3 className="text-2xl font-bold text-gray-900 mb-2">Ready to shop Luigi in LA?</h3>
+          <p className="text-gray-600 mb-6">Explore the complete Luigi lineup including Series 6 disposables, rosin pens, and Fattones pre-rolls.</p>
+          <Link href="/products" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+            Browse All Products
+          </Link>
+        </div>
+      </section>
+
+      <RelatedGuides />
+    </main>
+
+    <Footer />
       </main>
     </>
   )
