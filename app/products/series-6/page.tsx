@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/products/series-6",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        url: "https://www.luigiofficialbrand.com/og-images/product-series-6.png",
         width: 1200,
         height: 630,
         alt: "Luigi Series 6 - 2G Live Resin Liquid Diamond Disposables",

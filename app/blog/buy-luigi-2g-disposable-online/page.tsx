@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/buy-luigi-2g-disposable-online",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        url: "https://www.luigiofficialbrand.com/og-images/product-2g-disposables.png",
         width: 1200,
         height: 630,
         alt: "Luigi Oil - Premium Cannabis Products",
@@ -738,7 +738,15 @@ export default function BuyLuigi2GDisposablePage() {
         </article>
 
         <Footer />
-            <RelatedGuides />
+                  <section className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+        <ProductCTA
+          productName="Luigi 2G Disposables"
+          productLink="/products"
+          description="Get maximum value with Luigi's premium 2G disposable vapes."
+        />
+      </section>
+
+      <RelatedGuides />
     </main>
     </>
   )

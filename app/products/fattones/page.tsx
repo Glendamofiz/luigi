@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/products/fattones",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        url: "https://www.luigiofficialbrand.com/og-images/product-fattones.png",
         width: 1200,
         height: 630,
         alt: "Luigi Fattones - Premium Infused Pre-Roll Packs",

@@ -17,7 +17,7 @@ export const metadata = {
     url: "https://www.luigiofficialbrand.com/blog/how-to-verify-authentic-luigi-carts",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        url: "https://www.luigiofficialbrand.com/og-images/blog-authentic-luigi-oil.png",
         width: 1200,
         height: 630,
         alt: "Luigi Oil - Premium Cannabis Products",

@@ -5,6 +5,7 @@ import Script from "next/script"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { RelatedGuides } from "@/components/related-guides"
+import { ProductCTA } from "@/components/product-cta"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/official-luigi-brand-guide-2026",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        url: "https://www.luigiofficialbrand.com/og-images/blog-authentic-luigi-oil.png",
         width: 1200,
         height: 630,
         alt: "Luigi Oil - Premium Cannabis Products",
@@ -334,11 +335,27 @@ export default function OfficialLuigiBrandGuidePage() {
         </div>
       </section>
 
+            <section className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+        <ProductCTA
+          productName="Luigi Products"
+          productLink="/products"
+          description="The complete 2026 guide to all authentic Luigi brand products."
+        />
+      </section>
+
       <RelatedGuides />
     </main>
 
     <Footer />
-            <RelatedGuides />
+                  <section className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+        <ProductCTA
+          productName="Luigi Products"
+          productLink="/products"
+          description="The complete 2026 guide to all authentic Luigi brand products."
+        />
+      </section>
+
+      <RelatedGuides />
     </main>
     </>
   )
