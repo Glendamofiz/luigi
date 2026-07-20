@@ -1,6 +1,7 @@
 import Script from "next/script"
 import { Header } from "@/components/header"
 import { RelatedGuides } from "@/components/related-guides"
+import { ProductCTA } from "@/components/product-cta"
 import { Footer } from "@/components/footer"
 import { Calendar, Clock, CheckCircle, AlertCircle } from "lucide-react"
 import Image from "next/image"
@@ -17,7 +18,7 @@ export const metadata = {
     url: "https://www.luigiofficialbrand.com/blog/how-to-verify-authentic-luigi-carts",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        url: "https://www.luigiofficialbrand.com/og-images/blog-authentic-luigi-oil.png",
         width: 1200,
         height: 630,
         alt: "Luigi Oil - Premium Cannabis Products",

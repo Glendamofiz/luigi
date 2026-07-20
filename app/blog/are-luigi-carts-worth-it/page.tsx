@@ -4,6 +4,7 @@ import Image from "next/image"
 import Script from "next/script"
 import { Header } from "@/components/header"
 import { RelatedGuides } from "@/components/related-guides"
+import { ProductCTA } from "@/components/product-cta"
 import { Footer } from "@/components/footer"
 import { Calendar, Clock, ArrowLeft, CheckCircle, X, DollarSign, Sparkles, Shield } from "lucide-react"
 
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/are-luigi-carts-worth-it",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        url: "https://www.luigiofficialbrand.com/og-images/blog-buy-luigi-carts-wholesale.png",
         width: 1200,
         height: 630,
         alt: "Are Luigi Carts Worth It",

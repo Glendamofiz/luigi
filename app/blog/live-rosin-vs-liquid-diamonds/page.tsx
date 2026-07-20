@@ -5,6 +5,7 @@ import Script from "next/script"
 import { Header } from "@/components/header"
 import { RelatedGuides } from "@/components/related-guides"
 import { Footer } from "@/components/footer"
+import { ProductCTA } from "@/components/product-cta"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/live-rosin-vs-liquid-diamonds",
     type: "article",
     images: [{
-      url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg",
+      url: "https://www.luigiofficialbrand.com/og-images/blog-rosin-vs-diamonds.png",
       width: 1200,
       height: 630,
       alt: "Live Rosin vs Liquid Diamonds - Cannabis extracts comparison",
@@ -421,6 +422,14 @@ export default function LiveRosinVsLiquidDiamondsBlog() {
           "dateModified": "2026-06-22",
         })}
       </Script>
+
+            <section className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+        <ProductCTA
+          productName="Premium Concentrates"
+          productLink="/products"
+          description="Explore the differences between live rosin and liquid diamonds."
+        />
+      </section>
 
       <RelatedGuides />
       <Footer />

@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   description: "Explore Luigi Oil's premium cannabis blog — in-depth guides on live resin, liquid diamonds, rosin pens, Fattones pre-rolls, and how to spot authentic Luigi carts.",
   keywords: "Luigi blog, cannabis guides, live resin education, THC vape reviews, premium cannabis content, buy Luigi disposable, Luigi Oil guide",
   openGraph: {
-    title: "Luigi Blog - Premium Cannabis Guides, Reviews & Education",
-    description: "Expert cannabis guides, product reviews, and educational content about live resin, rosin pens, and premium THC vapes.",
+    title: "Luigi Blog | Cannabis Guides, Reviews & Education",
+    description: "Explore Luigi Oil's premium cannabis blog — in-depth guides on live resin, liquid diamonds, rosin pens, Fattones pre-rolls, and how to spot authentic Luigi carts.",
     type: "website",
   },
   alternates: {

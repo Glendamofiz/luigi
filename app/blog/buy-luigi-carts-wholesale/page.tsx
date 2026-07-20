@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Header } from "@/components/header"
 import { RelatedGuides } from "@/components/related-guides"
 import { Footer } from "@/components/footer"
+import { ProductCTA } from "@/components/product-cta"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -20,10 +21,10 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/buy-luigi-carts-wholesale",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        url: "https://www.luigiofficialbrand.com/og-images/blog-buy-luigi-carts-wholesale.png",
         width: 1200,
         height: 630,
-        alt: "Luigi Oil - Premium Cannabis Products",
+        alt: "Buy Luigi Carts Wholesale - Dispensary Owner's Guide",
       },
     ],
   },
@@ -266,6 +267,14 @@ export default function BuyLuigiWholesale() {
       </article>
 
       {/* CTA - Wholesale Contact */}
+      <section className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+        <ProductCTA
+          productName="Luigi Carts"
+          productLink="/products"
+          description="Ready to experience our premium Luigi carts? Browse our complete collection of wholesale-quality products available for authorized retailers."
+        />
+      </section>
+
       <section className="py-12 md:py-16 bg-gradient-to-r from-[#D4AF37]/10 to-transparent border-t border-gray-200">
         <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 text-center">
           <h3 className="text-2xl font-bold text-gray-900 mb-2">Ready to become an authorized retailer?</h3>

@@ -20,10 +20,10 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/why-luigi-vapes-taste-better",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        url: "https://www.luigiofficialbrand.com/og-images/blog-why-taste-better.png",
         width: 1200,
         height: 630,
-        alt: "Luigi Oil - Premium Cannabis Products",
+        alt: "Why Luigi Vapes Taste Better - Flavor Breakdown",
       },
     ],
   },
@@ -515,6 +515,14 @@ export default function FlavorBlogPost() {
             </Link>
           </div>
         </div>
+      </section>
+
+            <section className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+        <ProductCTA
+          productName="Luigi Vapes"
+          productLink="/products"
+          description="Discover the science behind Luigi's superior flavor profile."
+        />
       </section>
 
       <RelatedGuides />

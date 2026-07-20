@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/luigi-vape-not-working-fix",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        url: "https://www.luigiofficialbrand.com/og-images/blog-series-6-disposables.png",
         width: 1200,
         height: 630,
         alt: "Luigi Oil - Premium Cannabis Products",
@@ -540,6 +540,14 @@ export default function LuigiVapeNotWorkingPage() {
       </section>
 
       <Footer />
+            <section className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
+        <ProductCTA
+          productName="Luigi Support"
+          productLink="/contact"
+          description="Troubleshoot your Luigi vape or contact our support team for help."
+        />
+      </section>
+
       <RelatedGuides />
     </main>
     </>

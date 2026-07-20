@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Header } from "@/components/header"
 import { RelatedGuides } from "@/components/related-guides"
 import { Footer } from "@/components/footer"
+import { ProductCTA } from "@/components/product-cta"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -20,10 +21,10 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/luigi-rosin-pen-review",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        url: "https://www.luigiofficialbrand.com/og-images/blog-luigi-rosin-pen-review.png",
         width: 1200,
         height: 630,
-        alt: "Luigi Oil - Premium Cannabis Products",
+        alt: "Luigi Rosin Pen Review - Is Solventless Worth It?",
       },
     ],
   },
