@@ -118,11 +118,13 @@ export default function ProductsPage() {
                 >
                   <div className="aspect-square relative bg-gray-200">
                     <Image
-                      src={category.image}
+                src={category.image}
                       alt={category.name}
-                      fill
-                      className="object-contain p-4"
-                    />
+                width={800}
+                height={600}
+                
+                className="object-contain p-4"
+              />
                   </div>
                   <div className="p-6 text-center">
                     <h3 className="text-xl md:text-2xl font-bold text-black mb-2 group-hover:text-[#D4AF37] transition-colors">
