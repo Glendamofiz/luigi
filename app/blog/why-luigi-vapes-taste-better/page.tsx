@@ -8,9 +8,9 @@ import Link from "next/link"
 import Script from "next/script"
 import { MessageCircle, TrendingUp, Zap, Leaf } from "lucide-react"
 
-const metadata: Metadata = {
-  title: "Why Luigi Vapes Taste Better (2026 Flavor Breakdown)",
-  description: "Discover why Luigi vapes taste better than many disposables. Learn about terpene quality, airflow, rosin extraction, and flavor consistency.",
+export const metadata: Metadata = {
+  title: "Why Luigi Vapes Taste Better | 2026 Flavor Breakdown",
+  description: "Why Luigi vapes taste better than other disposables — terpene quality, extraction methods, airflow design, and premium flavor consistency. Detailed 2026 breakdown.",
   keywords: ["Luigi vape flavor", "best tasting vape", "Luigi rosin pen review", "terpene-rich vape", "Luigi Series 6 flavor"],
   openGraph: {
     title: "Why Luigi Vapes Taste Better (2026 Flavor Breakdown)",
