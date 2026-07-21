@@ -23,6 +23,22 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   reactStrictMode: true,
+  redirects: async () => {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'header',
+            key: 'x-forwarded-proto',
+            value: 'http',
+          },
+        ],
+        destination: 'https://:host/:path*',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 export default nextConfig

@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { TrendingUp, CheckCircle, XCircle } from 'lucide-react'
 import { ProductCTA } from '@/components/product-cta'
 import { RelatedGuides } from '@/components/related-guides'
-import { ProductCTA } from '@/components/product-cta'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {

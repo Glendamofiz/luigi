@@ -192,22 +192,22 @@ export default function BuyLuigiWholesale() {
               </thead>
               <tbody>
                 <tr>
-                  <td className="border border-gray-300 p-3">2G Disposables</td>
-                  <td className="border border-gray-300 p-3">High-traffic dispensaries wanting a reliable daily mover</td>
-                  <td className="border border-gray-300 p-3">Fast, consistent turnover</td>
+                  <td className="border border-gray-300 p-3"><Link href="/products/series-6">2G Disposables</Link></td>
+                  <td className="border border-gray-300 p-3">High-volume movers for price-sensitive customers</td>
+                  <td className="border border-gray-300 p-3">Consistent demand, strong margins</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-300 p-3">Fattones (Pre-Rolls)</td>
+                  <td className="border border-gray-300 p-3"><Link href="/products/fattones">Fattones (Pre-Rolls)</Link></td>
                   <td className="border border-gray-300 p-3">Shops with strong flower/pre-roll customer base</td>
                   <td className="border border-gray-300 p-3">High repeat-purchase rate</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-300 p-3">Series 6 Collection</td>
+                  <td className="border border-gray-300 p-3"><Link href="/products/series-6">Series 6 Collection</Link></td>
                   <td className="border border-gray-300 p-3">Retailers positioning a premium tier</td>
                   <td className="border border-gray-300 p-3">Slower turnover, higher margin</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-300 p-3">Rosin Pens</td>
+                  <td className="border border-gray-300 p-3"><Link href="/products/rosin-pens">Rosin Pens</Link></td>
                   <td className="border border-gray-300 p-3">Shops serving concentrate-focused customers</td>
                   <td className="border border-gray-300 p-3">Steady niche demand</td>
                 </tr>
