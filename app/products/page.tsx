@@ -77,7 +77,7 @@ const productCategories = [
     name: "Rosin Pens",
     description: "Pure solventless rosin in convenient pen form",
     href: "/products/rosin-pens",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-IDqQOWuyALZ6h7xUUNjKgk32NqZFvM.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-2400x2400-OA10oIBvKBToWVDytXhwa5JPGI0xCU.png",
   },
 ]
 

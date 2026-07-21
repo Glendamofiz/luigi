@@ -17,7 +17,6 @@ export const metadata: Metadata = {
     description: "Find the best dispensaries in Los Angeles carrying Luigi Oil. See confirmed LA retailers plus a practical checklist for evaluating any dispensary before you buy.",
     type: "article",
     publishedTime: "2026-07-24T00:00:00.000Z",
-  
     url: "https://www.luigiofficialbrand.com/blog/best-dispensaries-los-angeles-luigi",
     images: [
       {
@@ -114,7 +113,7 @@ export default function BestDispensariesLA() {
         <section className="relative pt-24 pb-8 md:pt-32 md:pb-12 bg-black overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg')" }}
+            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           <div className="relative z-10 mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
@@ -185,7 +184,7 @@ export default function BestDispensariesLA() {
             <p>The best shops don&apos;t mind you scanning a QR code or checking a scratch-off tag before you buy. Hesitation or discouragement around verification is a red flag, not a best-dispensary trait.</p>
 
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
               alt="Best dispensaries Los Angeles Luigi Oil verified retailers"
               width={800}
               height={600}

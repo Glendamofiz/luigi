@@ -1,3 +1,4 @@
+import { ProductCTA } from "@/components/product-cta"
 import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
@@ -17,7 +18,6 @@ export const metadata: Metadata = {
     description: "Complete troubleshooting guide for Luigi vape problems. Learn quick fixes for airflow clogs, battery issues, and more.",
     type: "article",
     publishedTime: "2026-04-24T00:00:00.000Z",
-  
     url: "https://www.luigiofficialbrand.com/blog/luigi-vape-not-working-fix",
     images: [
       {
@@ -132,7 +132,7 @@ export default function LuigiVapeNotWorkingPage() {
         <section className="relative pt-24 pb-8 md:pt-32 md:pb-12 bg-black overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ORANGE-LAVA-KUSH-U6vHeCWeI0G9nUmBdicCOGrpL8kVYs.jpg')" }}
+            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ORANGE-LAVA-KUSH-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           <div className="relative z-10 mx-auto max-w-4xl px-4 md:px-6 lg:px-8">

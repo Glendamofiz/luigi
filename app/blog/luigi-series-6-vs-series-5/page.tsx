@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { TrendingUp, CheckCircle, XCircle } from 'lucide-react'
+import { ProductCTA } from '@/components/product-cta'
 import { RelatedGuides } from '@/components/related-guides'
 import { ProductCTA } from '@/components/product-cta'
 import type { Metadata } from 'next'
@@ -31,7 +32,7 @@ export default function BlogPost() {
     '@type': 'BlogPosting',
     headline: 'Luigi Series 6 vs Series 5 – What Changed?',
     description: 'Complete comparison of Luigi Series 6 vs Series 5 disposables',
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-6O8v95MMvi4PdyNGiy5AYHnzaPoq3b.jpg',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg',
     datePublished: '2026-04-25',
     dateModified: '2026-04-25',
     author: { '@type': 'Organization', name: 'Luigi Oil' },
@@ -112,7 +113,7 @@ export default function BlogPost() {
           {/* Featured Image */}
           <div className="relative w-full h-96 mb-12 rounded-lg overflow-hidden">
             <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-6O8v95MMvi4PdyNGiy5AYHnzaPoq3b.jpg"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
               alt="Luigi Series 6 vs Series 5"
                 width={800}
                 height={600}
@@ -294,7 +295,6 @@ export default function BlogPost() {
               <h3 className="font-bold text-lg text-gray-900 mb-3">Choose Series 6 If You:</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-700">
                 <li>Want smoother, more refined sessions</li>
-                <li>Prioritize flavor consistency and quality</li>
                 <li>Appreciate better airflow and less restriction</li>
                 <li>Prefer a premium overall feel</li>
                 <li>Want better long-term performance stability</li>

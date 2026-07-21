@@ -15,7 +15,6 @@ export const metadata = {
     title: "How to Verify Authentic Luigi Carts (Step-by-Step Guide)",
     description: "Learn how to verify authentic Luigi carts with our 5-step guide. Discover the pros & cons of authentication methods, plus safety tips for spotting counterfeit Luigi Oil products.",
     type: "article",
-  
     url: "https://www.luigiofficialbrand.com/blog/how-to-verify-authentic-luigi-carts",
     images: [
       {
@@ -106,7 +105,7 @@ export default function VerifyAuthenticLuigiCartsPage() {
             {/* Featured Image */}
             <div className="rounded-xl overflow-hidden shadow-lg mb-12">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
                 alt="How to verify authentic Luigi carts - genuine Luigi Oil products"
                 width={1200}
                 height={675}
@@ -191,7 +190,7 @@ export default function VerifyAuthenticLuigiCartsPage() {
               <div className="my-8">
                 <div className="rounded-lg overflow-hidden shadow-md">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK_DEVICE--MxrPv6enTVqlDXS9WlRJ9Xr9QqZmO0.jpg"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
                     alt="Luigi Series 6 liquid diamond disposable - inspect cartridge quality"
                     width={800}
                     height={450}
@@ -383,10 +382,8 @@ export default function VerifyAuthenticLuigiCartsPage() {
           </div>
         </section>
 
-      <RelatedGuides />
-    </main>
-
-    <Footer />
+      </main>
+      <Footer />
     </>
   )
 }

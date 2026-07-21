@@ -113,7 +113,7 @@ export default function LiveRosinVsLiquidDiamondsBlog() {
         <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 -mt-4">
           <div className="aspect-[16/9] relative rounded-xl overflow-hidden shadow-lg">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
               alt="Live Rosin vs Liquid Diamonds - Cannabis extract types comparison"
               fill
               className="object-cover"
@@ -409,7 +409,7 @@ export default function LiveRosinVsLiquidDiamondsBlog() {
           "@type": "BlogPosting",
           "headline": "What's the Difference Between Live Rosin and Liquid Diamonds?",
           "description": "Compare extraction methods, terpene content, and potency in this Luigi Oil product guide.",
-          "image": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg",
+          "image": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg",
           "author": {
             "@type": "Organization",
             "name": "Luigi Oil Product Team"

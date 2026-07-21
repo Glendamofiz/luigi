@@ -17,7 +17,6 @@ export const metadata: Metadata = {
     description: "Learn how to open a Luigi Preroll the right way with our complete guide.",
     type: "article",
     publishedTime: "2026-06-22T00:00:00.000Z",
-  
     url: "https://www.luigiofficialbrand.com/blog/how-to-open-a-luigi-preroll",
     images: [
       {
@@ -223,7 +222,7 @@ export default function HowToOpenLuigiPrerollPage() {
               <div className="my-8">
                 <div className="rounded-lg overflow-hidden shadow-md">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
                     alt="Luigi Fattones preroll opening - hash rosin infused cannabis joints"
                     width={800}
                     height={450}

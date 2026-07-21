@@ -17,7 +17,6 @@ export const metadata: Metadata = {
     description: "Everything a dispensary owner needs to know before you buy Luigi carts wholesale — licensing requirements, order minimums, product lineup, pricing tiers, and how to order direct.",
     type: "article",
     publishedTime: "2026-07-24T00:00:00.000Z",
-  
     url: "https://www.luigiofficialbrand.com/blog/buy-luigi-carts-wholesale",
     images: [
       {
@@ -114,7 +113,7 @@ export default function BuyLuigiWholesale() {
         <section className="relative pt-24 pb-8 md:pt-32 md:pb-12 bg-black overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg')" }}
+            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           <div className="relative z-10 mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
@@ -173,7 +172,7 @@ export default function BuyLuigiWholesale() {
             <p>Once your first order ships, the easiest way to avoid stockouts is to set a reorder cadence based on how quickly each product line sells. High-turnover items like 2G Disposables often need more frequent restocking than slower-moving specialty items.</p>
 
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
               alt="Luigi 2G Disposable wholesale cannabis products for dispensary buyers"
               width={800}
               height={600}
@@ -288,7 +287,6 @@ export default function BuyLuigiWholesale() {
       <RelatedGuides />
     </main>
 
-    <Footer />
     </>
   )
 }
