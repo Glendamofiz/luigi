@@ -1,4 +1,3 @@
-import { ProductCTA } from "@/components/product-cta"
 import Image from 'next/image'
 import Link from 'next/link'
 import { Clock, Zap } from 'lucide-react'

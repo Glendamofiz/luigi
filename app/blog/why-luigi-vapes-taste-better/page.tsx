@@ -1,4 +1,8 @@
 import type { Metadata } from "next"
+import { ProductCTA } from "@/components/product-cta"
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
+import { RelatedGuides } from "@/components/related-guides"
 
 export const metadata: Metadata = {
   title: "Why Luigi Vapes Taste Better | Full Flavor Science Guide",
@@ -12,14 +16,6 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/why-luigi-vapes-taste-better",
   },
 }
-
-'use client'
-
-import { ProductCTA } from "@/components/product-cta"
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { RelatedGuides } from "@/components/related-guides"
-import { ProductCTA } from "@/components/product-cta"
 import Link from "next/link"
 import Script from "next/script"
 import { MessageCircle, TrendingUp, Zap, Leaf } from "lucide-react"

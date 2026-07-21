@@ -142,21 +142,6 @@ const productSchema = {
   }
 }
 
-export const metadata: Metadata = {
-  title: "Luigi Oil Wholesale | Buy Luigi Carts in Bulk",
-  description: "Buy Luigi carts and 2G disposables wholesale. Bulk pricing on live resin liquid diamonds, Fattones pre-rolls, and rosin pens for dispensaries and distributors.",
-  keywords: ["Luigi wholesale", "buy Luigi carts wholesale", "Luigi bulk pricing", "Luigi 2G disposable wholesale", "premium cannabis wholesale"],
-  alternates: {
-    canonical: "/wholesale",
-  },
-  openGraph: {
-    title: "Luigi Oil Wholesale | Buy Luigi Carts in Bulk",
-    description: "Buy Luigi carts and 2G disposables wholesale. Bulk pricing on live resin liquid diamonds, Fattones pre-rolls, and rosin pens for dispensaries and distributors.",
-    type: "website",
-    url: "https://www.luigiofficialbrand.com/wholesale",
-  },
-}
-
 export default function WholesalePage() {
   const [expandedProduct, setExpandedProduct] = useState<string | null>(null)
   const [selectedPricing, setSelectedPricing] = useState<Record<string, number | null>>({

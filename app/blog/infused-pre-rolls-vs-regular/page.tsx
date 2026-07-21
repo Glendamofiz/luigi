@@ -6,7 +6,6 @@ import Script from "next/script"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { RelatedGuides } from "@/components/related-guides"
-import { ProductCTA } from "@/components/product-cta"
 import { Calendar, Clock, ArrowLeft, CheckCircle, Zap, Flame } from "lucide-react"
 
 export const metadata: Metadata = {
