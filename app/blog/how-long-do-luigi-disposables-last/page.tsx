@@ -1,3 +1,4 @@
+import { ProductCTA } from "@/components/product-cta"
 import Image from 'next/image'
 import Link from 'next/link'
 import { Clock, Zap } from 'lucide-react'
@@ -31,7 +32,7 @@ export default function BlogPost() {
     '@type': 'BlogPosting',
     headline: 'How Long Do Luigi Disposables Last? (2026 Complete Guide)',
     description: 'Learn how long Luigi disposables last and what affects lifespan',
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-6O8v95MMvi4PdyNGiy5AYHnzaPoq3b.jpg',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg',
     datePublished: '2026-04-25',
     dateModified: '2026-04-25',
     author: { '@type': 'Organization', name: 'Luigi Oil' },
@@ -112,7 +113,7 @@ export default function BlogPost() {
           {/* Featured Image */}
           <div className="relative w-full h-96 mb-12 rounded-lg overflow-hidden">
             <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-6O8v95MMvi4PdyNGiy5AYHnzaPoq3b.jpg"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
               alt="Luigi Disposable Vape"
                 width={800}
                 height={600}

@@ -17,7 +17,6 @@ export const metadata: Metadata = {
     description: "An honest Luigi Rosin Pen review — how the solventless hash rosin dual pack compares to live resin, what it costs, and whether it's worth the switch.",
     type: "article",
     publishedTime: "2026-07-24T00:00:00.000Z",
-  
     url: "https://www.luigiofficialbrand.com/blog/luigi-rosin-pen-review",
     images: [
       {
@@ -114,7 +113,7 @@ export default function LuigiRosinPenReview() {
         <section className="relative pt-24 pb-8 md:pt-32 md:pb-12 bg-black overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg')" }}
+            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           <div className="relative z-10 mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
@@ -172,7 +171,7 @@ export default function LuigiRosinPenReview() {
             <p>What stands out across the lineup is how distinct each profile is from the next — the loud, funk-forward strains like Garlic Glue and Donny Burger sit at one end, while Casablanca Peach and Citrus Mimosa lean sweet and bright. That range makes it easy to pick a strain by mood rather than settling for a one-size-fits-all flavor.</p>
 
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-6AmnPCBMqrOG9jGbKep4wfmljguOef.jpg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
               alt="Luigi Rosin Pen solventless hash rosin dual pack strains"
               width={800}
               height={600}
