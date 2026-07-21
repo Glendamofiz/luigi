@@ -1,3 +1,18 @@
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Why Luigi Vapes Taste Better | Full Flavor Science Guide",
+  description: "Why Luigi vapes taste better than most disposables. Deep dive into terpene preservation, extraction quality, ceramic heating, and flavor science behind superior Luigi vape taste.",
+  keywords: ["why do Luigi vapes taste better", "best tasting vape disposable", "Luigi vape flavor quality", "terpene preservation cannabis", "live resin vs live rosin flavor"],
+  openGraph: {
+    title: "Why Luigi Vapes Taste Better Than Most Disposables",
+    description: "Comprehensive guide explaining why Luigi vapes deliver superior flavor quality.",
+    type: "article",
+    publishedTime: "2026-04-23T00:00:00.000Z",
+    url: "https://www.luigiofficialbrand.com/blog/why-luigi-vapes-taste-better",
+  },
+}
+
 'use client'
 
 import { ProductCTA } from "@/components/product-cta"
