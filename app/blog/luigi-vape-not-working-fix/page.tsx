@@ -5,6 +5,7 @@ import Script from "next/script"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { RelatedGuides } from "@/components/related-guides"
+import { ProductCTA } from "@/components/product-cta"
 import { Calendar, Clock, ArrowLeft, CheckCircle, AlertCircle, Zap } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -16,20 +17,20 @@ export const metadata: Metadata = {
     description: "Complete troubleshooting guide for Luigi vape problems. Learn quick fixes for airflow clogs, battery issues, and more.",
     type: "article",
     publishedTime: "2026-04-24T00:00:00.000Z",
-  ,
+  
     url: "https://www.luigiofficialbrand.com/blog/luigi-vape-not-working-fix",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/blog-series-6-disposables.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-series-6-disposables.png",
         width: 1200,
         height: 630,
-        alt: "Luigi Oil - Premium Cannabis Products",
-      },
-    ],
+        alt: "Luigi Oil - Premium Cannabis Products"
+      }
+    ]
   },
   alternates: {
-    canonical: "/blog/luigi-vape-not-working-fix",
-  },
+    canonical: "/blog/luigi-vape-not-working-fix"
+  }
 }
 
 const articleSchema = {

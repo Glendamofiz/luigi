@@ -1,9 +1,8 @@
-'use client'
-
 import { Metadata } from "next"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { RelatedGuides } from "@/components/related-guides"
+import { ProductCTA } from "@/components/product-cta"
 import Link from "next/link"
 import Script from "next/script"
 import { MessageCircle, TrendingUp, Zap, Leaf } from "lucide-react"
@@ -16,17 +15,17 @@ export const metadata: Metadata = {
     title: "Why Luigi Vapes Taste Better (2026 Flavor Breakdown)",
     description: "Discover why Luigi vapes taste better than many disposables. Learn about terpene quality, airflow, rosin extraction, and flavor consistency.",
     url: "https://www.luigiofficialbrand.com/blog/why-luigi-vapes-taste-better",
-  ,
+  
     url: "https://www.luigiofficialbrand.com/blog/why-luigi-vapes-taste-better",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/blog-why-taste-better.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-why-taste-better.png",
         width: 1200,
         height: 630,
-        alt: "Why Luigi Vapes Taste Better - Flavor Breakdown",
-      },
-    ],
-  },
+        alt: "Why Luigi Vapes Taste Better - Flavor Breakdown"
+      }
+    ]
+  }
 }
 
 const schemaData = {

@@ -5,6 +5,7 @@ import Script from "next/script"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { RelatedGuides } from "@/components/related-guides"
+import { ProductCTA } from "@/components/product-cta"
 import { Calendar, Clock, ArrowLeft, CheckCircle, MapPin, ShieldCheck, Store, AlertTriangle } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -16,20 +17,20 @@ export const metadata: Metadata = {
     description: "Guide to finding authentic Luigi products and what to look for when purchasing.",
     type: "article",
     publishedTime: "2026-03-03T00:00:00.000Z",
-  ,
+  
     url: "https://www.luigiofficialbrand.com/blog/buy-luigi-disposable-vape",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/blog-buy-luigi-disposable.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-buy-luigi-disposable.png",
         width: 1200,
         height: 630,
-        alt: "Buy Luigi Disposable Vape - Where to Find Premium THC",
-      },
-    ],
+        alt: "Buy Luigi Disposable Vape - Where to Find Premium THC"
+      }
+    ]
   },
   alternates: {
-    canonical: "/blog/buy-luigi-disposable-vape",
-  },
+    canonical: "/blog/buy-luigi-disposable-vape"
+  }
 }
 
 const articleSchema = {
@@ -234,7 +235,7 @@ export default function BuyLuigiDisposableVapePage() {
                   "Child-resistant packaging",
                   "Clear strain and potency information",
                   "Lab test results available",
-                  "Purchased from licensed retailer",
+                  "Purchased from licensed retailer"
                 ].map((item, index) => (
                   <li key={index} className="flex items-center gap-3 text-gray-700">
                     <CheckCircle className="w-5 h-5 text-[#D4AF37] flex-shrink-0" />
@@ -343,7 +344,7 @@ export default function BuyLuigiDisposableVapePage() {
                 "Superior hardware that outlasts the oil",
                 "Consistent, potent effects every time",
                 "True-to-strain flavors from full terpene preservation",
-                "Lab-tested products you can trust",
+                "Lab-tested products you can trust"
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#D4AF37] flex-shrink-0 mt-0.5" />

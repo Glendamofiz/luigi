@@ -17,20 +17,20 @@ export const metadata: Metadata = {
     description: "Everything a dispensary owner needs to know before you buy Luigi carts wholesale — licensing requirements, order minimums, product lineup, pricing tiers, and how to order direct.",
     type: "article",
     publishedTime: "2026-07-24T00:00:00.000Z",
-  ,
+  
     url: "https://www.luigiofficialbrand.com/blog/buy-luigi-carts-wholesale",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/blog-buy-luigi-carts-wholesale.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-buy-luigi-carts-wholesale.png",
         width: 1200,
         height: 630,
-        alt: "Buy Luigi Carts Wholesale - Dispensary Owner's Guide",
-      },
-    ],
+        alt: "Buy Luigi Carts Wholesale - Dispensary Owner's Guide"
+      }
+    ]
   },
   alternates: {
-    canonical: "/blog/buy-luigi-carts-wholesale",
-  },
+    canonical: "/blog/buy-luigi-carts-wholesale"
+  }
 }
 
 const faqSchema = {
@@ -289,7 +289,6 @@ export default function BuyLuigiWholesale() {
     </main>
 
     <Footer />
-      </main>
     </>
   )
 }

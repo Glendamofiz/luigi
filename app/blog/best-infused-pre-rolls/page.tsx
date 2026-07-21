@@ -5,6 +5,7 @@ import Script from "next/script"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { RelatedGuides } from "@/components/related-guides"
+import { ProductCTA } from "@/components/product-cta"
 import { Calendar, Clock, ArrowLeft, CheckCircle, Trophy, Star } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -19,16 +20,16 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/best-infused-pre-rolls",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/blog-luigi-fattones-flavors-guide.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-luigi-fattones-flavors-guide.png",
         width: 1200,
         height: 630,
-        alt: "Best Infused Pre Rolls 2026",
-      },
-    ],
+        alt: "Best Infused Pre Rolls 2026"
+      }
+    ]
   },
   alternates: {
-    canonical: "/blog/best-infused-pre-rolls",
-  },
+    canonical: "/blog/best-infused-pre-rolls"
+  }
 }
 
 const listSchema = {
@@ -251,20 +252,20 @@ export default function BestInfusedPreRollsPage() {
               {[
                 {
                   title: "Enhanced Potency",
-                  desc: "2-3x stronger than regular pre-rolls for experienced users",
+                  desc: "2-3x stronger than regular pre-rolls for experienced users"
                 },
                 {
                   title: "Better Value",
-                  desc: "Need less product to achieve desired effects",
+                  desc: "Need less product to achieve desired effects"
                 },
                 {
                   title: "Complex Effects",
-                  desc: "Enhanced entourage effect from combined cannabinoids",
+                  desc: "Enhanced entourage effect from combined cannabinoids"
                 },
                 {
                   title: "Premium Flavor",
-                  desc: "Richer, more nuanced taste from quality infusion",
-                },
+                  desc: "Richer, more nuanced taste from quality infusion"
+                }
               ].map((item, index) => (
                 <div key={index} className="bg-gray-50 rounded-xl p-5">
                   <h4 className="font-bold text-gray-900 flex items-center gap-2">
