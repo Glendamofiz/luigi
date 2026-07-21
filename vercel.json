@@ -1,10 +1,1 @@
-{
-  "redirects": [
-    {
-      "source": "/:path((?!_next/.*|public/.*|favicon\\.ico).*)",
-      "destination": "https://$host/:path",
-      "permanent": true,
-      "statusCode": 308
-    }
-  ]
-}
+{}
