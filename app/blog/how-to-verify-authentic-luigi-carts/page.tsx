@@ -1,4 +1,5 @@
 import Script from "next/script"
+import Link from "next/link"
 import { Header } from "@/components/header"
 import { RelatedGuides } from "@/components/related-guides"
 import { ProductCTA } from "@/components/product-cta"
@@ -14,17 +15,17 @@ export const metadata = {
     title: "How to Verify Authentic Luigi Carts (Step-by-Step Guide)",
     description: "Learn how to verify authentic Luigi carts with our 5-step guide. Discover the pros & cons of authentication methods, plus safety tips for spotting counterfeit Luigi Oil products.",
     type: "article",
-  ,
+  
     url: "https://www.luigiofficialbrand.com/blog/how-to-verify-authentic-luigi-carts",
     images: [
       {
         url: "https://www.luigiofficialbrand.com/og-images/blog-authentic-luigi-oil.png",
         width: 1200,
         height: 630,
-        alt: "Luigi Oil - Premium Cannabis Products",
-      },
-    ],
-  },
+        alt: "How to Verify Authentic Luigi Carts"
+      }
+    ]
+  }
 }
 
 const faqSchema = {
@@ -382,7 +383,10 @@ export default function VerifyAuthenticLuigiCartsPage() {
           </div>
         </section>
 
-      <Footer />
+      <RelatedGuides />
+    </main>
+
+    <Footer />
     </>
   )
 }

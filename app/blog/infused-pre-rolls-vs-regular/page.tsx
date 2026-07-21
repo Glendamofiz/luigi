@@ -5,6 +5,7 @@ import Script from "next/script"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { RelatedGuides } from "@/components/related-guides"
+import { ProductCTA } from "@/components/product-cta"
 import { Calendar, Clock, ArrowLeft, CheckCircle, Zap, Flame } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -19,16 +20,16 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/infused-pre-rolls-vs-regular",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/blog-luigi-fattones-flavors-guide.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-luigi-fattones-flavors-guide.png",
         width: 1200,
         height: 630,
-        alt: "Luigi Oil - Premium Cannabis Products",
-      },
-    ],
+        alt: "Luigi Oil - Premium Cannabis Products"
+      }
+    ]
   },
   alternates: {
-    canonical: "/blog/infused-pre-rolls-vs-regular",
-  },
+    canonical: "/blog/infused-pre-rolls-vs-regular"
+  }
 }
 
 const articleSchema = {
@@ -285,7 +286,7 @@ export default function InfusedPreRollsVsRegularPage() {
                 "Those seeking longer-lasting effects",
                 "Flavor enthusiasts who appreciate complex terpene profiles",
                 "Anyone looking for premium quality over quantity",
-                "Social smokers who want to share a special experience",
+                "Social smokers who want to share a special experience"
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#D4AF37] flex-shrink-0 mt-0.5" />

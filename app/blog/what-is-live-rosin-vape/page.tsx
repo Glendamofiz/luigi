@@ -5,6 +5,7 @@ import Script from "next/script"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { RelatedGuides } from "@/components/related-guides"
+import { ProductCTA } from "@/components/product-cta"
 import { Calendar, Clock, ArrowLeft, CheckCircle, Leaf, Sparkles, Shield } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -16,20 +17,20 @@ export const metadata: Metadata = {
     description: "Beginner-friendly guide to solventless cannabis vapes and rosin benefits.",
     type: "article",
     publishedTime: "2026-03-12T00:00:00.000Z",
-  ,
+  
     url: "https://www.luigiofficialbrand.com/blog/what-is-live-rosin-vape",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/blog-live-resin-liquid-diamonds.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-live-resin-liquid-diamonds.png",
         width: 1200,
         height: 630,
-        alt: "Luigi Oil - Premium Cannabis Products",
-      },
-    ],
+        alt: "Luigi Oil - Premium Cannabis Products"
+      }
+    ]
   },
   alternates: {
-    canonical: "/blog/what-is-live-rosin-vape",
-  },
+    canonical: "/blog/what-is-live-rosin-vape"
+  }
 }
 
 const articleSchema = {
@@ -211,20 +212,20 @@ export default function WhatIsLiveRosinVapePage() {
               {[
                 {
                   title: "No Residual Chemicals",
-                  desc: "Traditional extracts may contain trace amounts of solvents. Live rosin has zero because none are ever used.",
+                  desc: "Traditional extracts may contain trace amounts of solvents. Live rosin has zero because none are ever used."
                 },
                 {
                   title: "True Plant Flavor",
-                  desc: "The gentle extraction process preserves the natural taste of the cannabis strain.",
+                  desc: "The gentle extraction process preserves the natural taste of the cannabis strain."
                 },
                 {
                   title: "Full Entourage Effect",
-                  desc: "All cannabinoids, terpenes, and flavonoids remain intact for the complete cannabis experience.",
+                  desc: "All cannabinoids, terpenes, and flavonoids remain intact for the complete cannabis experience."
                 },
                 {
                   title: "Smoother Experience",
-                  desc: "Many users find solventless vapes easier on the throat and lungs.",
-                },
+                  desc: "Many users find solventless vapes easier on the throat and lungs."
+                }
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-4 bg-[#D4AF37]/5 p-5 rounded-xl">
                   <CheckCircle className="w-6 h-6 text-[#D4AF37] flex-shrink-0 mt-0.5" />

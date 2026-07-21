@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { TrendingUp, CheckCircle, XCircle } from 'lucide-react'
 import { RelatedGuides } from '@/components/related-guides'
+import { ProductCTA } from '@/components/product-cta'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -15,13 +16,13 @@ export const metadata: Metadata = {
     url: 'https://www.luigiofficialbrand.com/blog/luigi-series-6-vs-series-5',
     images: [
       {
-        url: 'https://www.luigiofficialbrand.com/og-images/blog-series-6-disposables.png',
+    images: 'https://www.luigiofficialbrand.com/og-images/blog-series-6-disposables.png',
         width: 1200,
         height: 630,
-        alt: 'Luigi Series 6 vs Series 5 Comparison',
-      },
-    ],
-  },
+        alt: 'Luigi Series 6 vs Series 5 Comparison'
+      }
+    ]
+  }
 }
 
 export default function BlogPost() {
@@ -34,7 +35,7 @@ export default function BlogPost() {
     datePublished: '2026-04-25',
     dateModified: '2026-04-25',
     author: { '@type': 'Organization', name: 'Luigi Oil' },
-    publisher: { '@type': 'Organization', name: 'Luigi Oil' },
+    publisher: { '@type': 'Organization', name: 'Luigi Oil' }
   }
 
   const faqSchema = {
@@ -43,7 +44,7 @@ export default function BlogPost() {
     'mainEntity': [
       {
         '@type': 'Question',
-        'name': 'What's the difference between Series 6 and Series 5?',
+        'name': 'What\'s the difference between Series 6 and Series 5?',
         'acceptedAnswer': {
           '@type': 'Answer',
           'text': 'Series 6 offers enhanced potency, improved airflow, updated strain selection, and refined ceramic heating technology compared to Series 5. Live resin liquid diamonds deliver more pronounced effects and consistent quality.'

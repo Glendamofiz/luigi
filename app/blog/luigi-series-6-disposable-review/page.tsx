@@ -5,6 +5,7 @@ import Script from "next/script"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { RelatedGuides } from "@/components/related-guides"
+import { ProductCTA } from "@/components/product-cta"
 import { Calendar, Clock, ArrowLeft, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -16,20 +17,20 @@ export const metadata: Metadata = {
     description: "Discover Luigi Series 6 disposable vapes with high potency, smooth hits, and premium flavor.",
     type: "article",
     publishedTime: "2026-03-20T00:00:00.000Z",
-  ,
+  
     url: "https://www.luigiofficialbrand.com/blog/luigi-series-6-disposable-review",
     images: [
       {
         url: "https://www.luigiofficialbrand.com/og-images/blog-series-6-disposables.png",
         width: 1200,
         height: 630,
-        alt: "Luigi Oil - Premium Cannabis Products",
-      },
-    ],
+        alt: "Luigi Series 6 Disposable Review"
+      }
+    ]
   },
   alternates: {
-    canonical: "/blog/luigi-series-6-disposable-review",
-  },
+    canonical: "/blog/luigi-series-6-disposable-review"
+  }
 }
 
 const reviewSchema = {
@@ -233,7 +234,7 @@ export default function LuigiSeries6ReviewPage() {
                   "Advanced ceramic heating technology",
                   "Premium glass tank construction",
                   "Industry-leading battery life",
-                  "12+ strain options for every preference",
+                  "12+ strain options for every preference"
                 ].map((feature, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-[#D4AF37] flex-shrink-0 mt-0.5" />
