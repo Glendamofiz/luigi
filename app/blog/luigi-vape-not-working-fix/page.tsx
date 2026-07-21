@@ -16,7 +16,6 @@ export const metadata: Metadata = {
     description: "Complete troubleshooting guide for Luigi vape problems. Learn quick fixes for airflow clogs, battery issues, and more.",
     type: "article",
     publishedTime: "2026-04-24T00:00:00.000Z",
-  ,
     url: "https://www.luigiofficialbrand.com/blog/luigi-vape-not-working-fix",
     images: [
       {

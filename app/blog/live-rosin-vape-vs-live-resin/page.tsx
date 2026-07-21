@@ -16,7 +16,6 @@ export const metadata: Metadata = {
     description: "Understand the key differences between live rosin and live resin vapes.",
     type: "article",
     publishedTime: "2026-03-15T00:00:00.000Z",
-  ,
     url: "https://www.luigiofficialbrand.com/blog/live-rosin-vape-vs-live-resin",
     images: [
       {

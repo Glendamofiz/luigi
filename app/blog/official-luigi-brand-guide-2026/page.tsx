@@ -17,7 +17,6 @@ export const metadata: Metadata = {
     description: "Complete guide to buying Luigi disposables, 2G live resin, and Rosin Pens online safely.",
     type: "article",
     publishedTime: "2026-03-27T00:00:00.000Z",
-  ,
     url: "https://www.luigiofficialbrand.com/blog/official-luigi-brand-guide-2026",
     images: [
       {
@@ -356,7 +355,6 @@ export default function OfficialLuigiBrandGuidePage() {
       </section>
 
       <RelatedGuides />
-    </main>
     </>
   )
 }

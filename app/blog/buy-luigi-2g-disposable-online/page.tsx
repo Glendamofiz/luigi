@@ -17,7 +17,6 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2026-03-25T00:00:00.000Z",
     authors: ["Luigi Oil"],
-  ,
     url: "https://www.luigiofficialbrand.com/blog/buy-luigi-2g-disposable-online",
     images: [
       {

@@ -16,7 +16,6 @@ export const metadata: Metadata = {
     description: "Guide to finding authentic Luigi products and what to look for when purchasing.",
     type: "article",
     publishedTime: "2026-03-03T00:00:00.000Z",
-  ,
     url: "https://www.luigiofficialbrand.com/blog/buy-luigi-disposable-vape",
     images: [
       {

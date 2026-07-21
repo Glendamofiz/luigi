@@ -17,7 +17,6 @@ export const metadata: Metadata = {
     description: "Explore all 10 Luigi Fattones flavors with effects, pack contents, and where to buy.",
     type: "article",
     publishedTime: "2026-03-26T00:00:00.000Z",
-  ,
     url: "https://www.luigiofficialbrand.com/blog/luigi-fattones-flavors-guide-2026",
     images: [
       {

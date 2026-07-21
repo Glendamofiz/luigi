@@ -43,7 +43,7 @@ export default function BlogPost() {
     'mainEntity': [
       {
         '@type': 'Question',
-        'name': 'What's the difference between Series 6 and Series 5?',
+        'name': 'What\'s the difference between Series 6 and Series 5?',
         'acceptedAnswer': {
           '@type': 'Answer',
           'text': 'Series 6 offers enhanced potency, improved airflow, updated strain selection, and refined ceramic heating technology compared to Series 5. Live resin liquid diamonds deliver more pronounced effects and consistent quality.'
@@ -293,7 +293,6 @@ export default function BlogPost() {
               <h3 className="font-bold text-lg text-gray-900 mb-3">Choose Series 6 If You:</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-700">
                 <li>Want smoother, more refined sessions</li>
-                <li>Prioritize flavor consistency and quality</li>
                 <li>Appreciate better airflow and less restriction</li>
                 <li>Prefer a premium overall feel</li>
                 <li>Want better long-term performance stability</li>

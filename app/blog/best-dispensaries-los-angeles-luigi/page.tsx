@@ -17,7 +17,6 @@ export const metadata: Metadata = {
     description: "Find the best dispensaries in Los Angeles carrying Luigi Oil. See confirmed LA retailers plus a practical checklist for evaluating any dispensary before you buy.",
     type: "article",
     publishedTime: "2026-07-24T00:00:00.000Z",
-  ,
     url: "https://www.luigiofficialbrand.com/blog/best-dispensaries-los-angeles-luigi",
     images: [
       {
@@ -302,7 +301,6 @@ export default function BestDispensariesLA() {
     </main>
 
     <Footer />
-      </main>
     </>
   )
 }

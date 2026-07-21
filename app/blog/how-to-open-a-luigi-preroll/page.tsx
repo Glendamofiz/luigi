@@ -17,7 +17,6 @@ export const metadata: Metadata = {
     description: "Learn how to open a Luigi Preroll the right way with our complete guide.",
     type: "article",
     publishedTime: "2026-06-22T00:00:00.000Z",
-  ,
     url: "https://www.luigiofficialbrand.com/blog/how-to-open-a-luigi-preroll",
     images: [
       {
