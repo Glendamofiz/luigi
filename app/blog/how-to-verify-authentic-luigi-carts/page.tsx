@@ -1,4 +1,5 @@
 import Script from "next/script"
+import Link from "next/link"
 import { Header } from "@/components/header"
 import { RelatedGuides } from "@/components/related-guides"
 import { ProductCTA } from "@/components/product-cta"
