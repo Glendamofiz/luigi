@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from 'next/font/google'
 import { CartProvider } from '@/contexts/cart-context'
 import { CartSidebar } from '@/components/cart-sidebar'
 import { LiveChatWidgets } from '@/components/live-chat-widgets'
+import { siteSchema } from '@/lib/site-schema'
 import './globals.css'
 
 const inter = Inter({ 
@@ -80,6 +81,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }}
+        />
+      </head>
       <body className="font-sans antialiased bg-background text-foreground">
         <CartProvider>
           {children}
