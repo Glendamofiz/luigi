@@ -232,10 +232,10 @@ export default function BestDispensariesLA() {
             <h2>What to Expect From the Luigi Oil Lineup at LA Dispensaries</h2>
             <p>Even at the best dispensaries, shelf presence varies by product line. Here&apos;s the general pattern across LA retailers carrying the brand.</p>
             <ul>
-              <li><strong>2G Disposables</strong> — the most commonly stocked item, high turnover</li>
-              <li><strong>Fattones</strong> — regularly available at flower-forward shops</li>
-              <li><strong>Series 6 Collection</strong> — found at select premium retailers like Level28</li>
-              <li><strong>Rosin Pens</strong> — more niche, worth calling ahead to confirm</li>
+              <li><strong><Link href="/products/series-6">2G Disposables</Link></strong> — the most commonly stocked item, high turnover</li>
+              <li><strong><Link href="/products/fattones">Fattones</Link></strong> — regularly available at flower-forward shops</li>
+              <li><strong><Link href="/products/series-6">Series 6 Collection</Link></strong> — found at select premium retailers like Level28</li>
+              <li><strong><Link href="/products/rosin-pens">Rosin Pens</Link></strong> — more niche, worth calling ahead to confirm</li>
             </ul>
             <p>Browse the complete current lineup on the <Link href="/products">Products page</Link> before you go, so you know exactly what to ask for.</p>
 

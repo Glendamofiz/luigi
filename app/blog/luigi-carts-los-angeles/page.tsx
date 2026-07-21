@@ -178,22 +178,22 @@ export default function LuigiCartsLA() {
               </thead>
               <tbody>
                 <tr>
-                  <td className="border border-gray-300 p-3">2G Disposables</td>
+                  <td className="border border-gray-300 p-3"><Link href="/products/series-6">2G Disposables</Link></td>
                   <td className="border border-gray-300 p-3">Common, fast turnover</td>
                   <td className="border border-gray-300 p-3">Everyday convenience</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-300 p-3">Fattones (Pre-Rolls)</td>
+                  <td className="border border-gray-300 p-3"><Link href="/products/fattones">Fattones (Pre-Rolls)</Link></td>
                   <td className="border border-gray-300 p-3">Common in flower-forward shops</td>
                   <td className="border border-gray-300 p-3">Traditional smoking preference</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-300 p-3">Series 6 Collection</td>
+                  <td className="border border-gray-300 p-3"><Link href="/products/series-6">Series 6 Collection</Link></td>
                   <td className="border border-gray-300 p-3">Found at select premium retailers</td>
                   <td className="border border-gray-300 p-3">Higher-potency, top-shelf experience</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-300 p-3">Rosin Pens</td>
+                  <td className="border border-gray-300 p-3"><Link href="/products/rosin-pens">Rosin Pens</Link></td>
                   <td className="border border-gray-300 p-3">Occasional, niche stock</td>
                   <td className="border border-gray-300 p-3">Concentrate enthusiasts</td>
                 </tr>
