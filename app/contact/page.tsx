@@ -1,4 +1,6 @@
-import type { Metadata } from "next"
+"use client"
+
+import { useState } from "react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AgeVerification } from "@/components/age-verification"
@@ -6,29 +8,6 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, Send, MapPin, Clock } from "lucide-react"
-
-export const metadata: Metadata = {
-  title: "Contact Luigi Oil | Get in Touch",
-  description: "Contact Luigi Oil - reach out with questions about our premium cannabis products, wholesale inquiries, or general information. We're here to help.",
-  keywords: ["contact Luigi Oil", "Luigi Oil support", "Luigi Oil wholesale inquiry", "Luigi Oil customer service"],
-  alternates: {
-    canonical: "/contact",
-  },
-  openGraph: {
-    title: "Contact Luigi Oil",
-    description: "Get in touch with Luigi Oil - wholesale inquiries, product questions, and more.",
-    type: "website",
-    url: "https://www.luigiofficialbrand.com/contact",
-    images: [
-      {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Contact Luigi Oil",
-      },
-    ],
-  },
-}
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
