@@ -20,16 +20,16 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/how-to-open-a-luigi-preroll",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/blog-luigi-fattones-flavors-guide.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-luigi-fattones-flavors-guide.png",
         width: 1200,
         height: 630,
-        alt: "Luigi Oil - Premium Cannabis Products",
-      },
-    ],
+        alt: "Luigi Oil - Premium Cannabis Products"
+      }
+    ]
   },
   alternates: {
-    canonical: "/blog/how-to-open-a-luigi-preroll",
-  },
+    canonical: "/blog/how-to-open-a-luigi-preroll"
+  }
 }
 
 const articleSchema = {

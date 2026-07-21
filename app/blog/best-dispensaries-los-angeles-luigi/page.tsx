@@ -20,16 +20,16 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/best-dispensaries-los-angeles-luigi",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/blog-buy-luigi-carts-wholesale.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-buy-luigi-carts-wholesale.png",
         width: 1200,
         height: 630,
-        alt: "Luigi Oil - Premium Cannabis Products",
-      },
-    ],
+        alt: "Luigi Oil - Premium Cannabis Products"
+      }
+    ]
   },
   alternates: {
-    canonical: "/blog/best-dispensaries-los-angeles-luigi",
-  },
+    canonical: "/blog/best-dispensaries-los-angeles-luigi"
+  }
 }
 
 const faqSchema = {

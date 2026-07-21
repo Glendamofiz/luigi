@@ -20,16 +20,16 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/buy-luigi-carts-wholesale",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/blog-buy-luigi-carts-wholesale.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-buy-luigi-carts-wholesale.png",
         width: 1200,
         height: 630,
-        alt: "Buy Luigi Carts Wholesale - Dispensary Owner's Guide",
-      },
-    ],
+        alt: "Buy Luigi Carts Wholesale - Dispensary Owner's Guide"
+      }
+    ]
   },
   alternates: {
-    canonical: "/blog/buy-luigi-carts-wholesale",
-  },
+    canonical: "/blog/buy-luigi-carts-wholesale"
+  }
 }
 
 const faqSchema = {

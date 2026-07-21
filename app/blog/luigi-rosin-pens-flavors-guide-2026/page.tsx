@@ -6,6 +6,7 @@ import Script from "next/script"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { RelatedGuides } from "@/components/related-guides"
+import { ProductCTA } from "@/components/product-cta"
 import { Calendar, Clock, ArrowLeft, Leaf } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -20,16 +21,16 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/luigi-rosin-pens-flavors-guide-2026",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/blog-rosin-pens-flavors.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-rosin-pens-flavors.png",
         width: 1200,
         height: 630,
-        alt: "Luigi Rosin Pens Flavors 2026 Guide",
-      },
-    ],
+        alt: "Luigi Rosin Pens Flavors 2026 Guide"
+      }
+    ]
   },
   alternates: {
-    canonical: "/blog/luigi-rosin-pens-flavors-guide-2026",
-  },
+    canonical: "/blog/luigi-rosin-pens-flavors-guide-2026"
+  }
 }
 
 const articleSchema = {
@@ -103,7 +104,7 @@ const rosinFlavors = [
   { name: "Citrus Mimosa", type: "Sativa-leaning", description: "Champagne-like citrus fizz with orange and grapefruit brightness. Energizing, bubbly effects." },
   { name: "Donny Burger", type: "Indica-leaning", description: "Savory, cheesy, and gassy burger-like terpenes with deep earthiness. Strong body relaxation." },
   { name: "Garlic Glue", type: "Indica-leaning", description: "Pungent garlic and glue-like fuel with earthy undertones. Deep physical sedation and muscle relaxation." },
-  { name: "OG Reserve", type: "Indica", description: "Classic OG earthiness with pine and lemon fuel notes. Heavy relaxation and soothing body effects." },
+  { name: "OG Reserve", type: "Indica", description: "Classic OG earthiness with pine and lemon fuel notes. Heavy relaxation and soothing body effects." }
 ]
 
 export default function RosinPensFlavorsGuidePage() {

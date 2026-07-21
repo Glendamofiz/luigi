@@ -6,6 +6,7 @@ import Script from "next/script"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { RelatedGuides } from "@/components/related-guides"
+import { ProductCTA } from "@/components/product-cta"
 import { Calendar, Clock, ArrowLeft, CheckCircle, X } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -20,16 +21,16 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/live-rosin-vape-vs-live-resin",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/blog-live-resin-liquid-diamonds.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-live-resin-liquid-diamonds.png",
         width: 1200,
         height: 630,
-        alt: "Luigi Oil - Premium Cannabis Products",
-      },
-    ],
+        alt: "Luigi Oil - Premium Cannabis Products"
+      }
+    ]
   },
   alternates: {
-    canonical: "/blog/live-rosin-vape-vs-live-resin",
-  },
+    canonical: "/blog/live-rosin-vape-vs-live-resin"
+  }
 }
 
 const articleSchema = {
@@ -231,24 +232,24 @@ export default function LiveRosinVsLiveResinPage() {
               {[
                 {
                   title: "Zero Residual Solvents",
-                  desc: "No butane, propane, or other chemicals ever touch your concentrate",
+                  desc: "No butane, propane, or other chemicals ever touch your concentrate"
                 },
                 {
                   title: "True Terpene Expression",
-                  desc: "Heat and pressure extraction preserves the plant's natural flavor profile",
+                  desc: "Heat and pressure extraction preserves the plant's natural flavor profile"
                 },
                 {
                   title: "Full Entourage Effect",
-                  desc: "All cannabinoids and terpenes remain intact for maximum therapeutic benefit",
+                  desc: "All cannabinoids and terpenes remain intact for maximum therapeutic benefit"
                 },
                 {
                   title: "Cleaner Vapor",
-                  desc: "Many users report smoother hits and less irritation",
+                  desc: "Many users report smoother hits and less irritation"
                 },
                 {
                   title: "Premium Experience",
-                  desc: "The gold standard for cannabis connoisseurs worldwide",
-                },
+                  desc: "The gold standard for cannabis connoisseurs worldwide"
+                }
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3 bg-[#D4AF37]/5 p-4 rounded-lg">
                   <CheckCircle className="w-5 h-5 text-[#D4AF37] flex-shrink-0 mt-0.5" />

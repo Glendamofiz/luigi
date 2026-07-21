@@ -20,16 +20,16 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/are-luigi-carts-worth-it",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/blog-buy-luigi-carts-wholesale.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-buy-luigi-carts-wholesale.png",
         width: 1200,
         height: 630,
-        alt: "Are Luigi Carts Worth It",
-      },
-    ],
+        alt: "Are Luigi Carts Worth It"
+      }
+    ]
   },
   alternates: {
-    canonical: "/blog/are-luigi-carts-worth-it",
-  },
+    canonical: "/blog/are-luigi-carts-worth-it"
+  }
 }
 
 const reviewSchema = {
@@ -352,7 +352,7 @@ export default function AreLuigiCartsWorthItPage() {
                 "Those frustrated with inconsistent budget products",
                 "Flavor enthusiasts seeking true terpene expression",
                 "Anyone looking for a reliable, premium experience",
-                "Experienced users with refined preferences",
+                "Experienced users with refined preferences"
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#D4AF37] flex-shrink-0 mt-0.5" />

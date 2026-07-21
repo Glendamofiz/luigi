@@ -20,16 +20,16 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/luigi-fattones-flavors-guide-2026",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/blog-luigi-fattones-flavors-guide.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-luigi-fattones-flavors-guide.png",
         width: 1200,
         height: 630,
-        alt: "Luigi Oil - Premium Cannabis Products",
-      },
-    ],
+        alt: "Luigi Oil - Premium Cannabis Products"
+      }
+    ]
   },
   alternates: {
-    canonical: "/blog/luigi-fattones-flavors-guide-2026",
-  },
+    canonical: "/blog/luigi-fattones-flavors-guide-2026"
+  }
 }
 
 const breadcrumbSchema = {
@@ -116,7 +116,7 @@ const fattonesFlavors = [
   { name: "Pineapple Diesel", type: "Hybrid", description: "Tropical pineapple fused with gassy diesel undertones. Uplifting creativity with subtle body buzz." },
   { name: "Strawberry OG", type: "Sativa-leaning", description: "Sweet strawberry combined with classic OG earthiness. Uplifting, focused effects with familiar cannabis backbone." },
   { name: "Watermelon", type: "Indica", description: "Crisp, juicy watermelon sweetness paired with deep indica relaxation. Perfect for unwinding after a long day." },
-  { name: "Blood Orange", type: "Indica", description: "Vibrant citrus with tangy, slightly bitter edge. Strong body relaxation with refreshing citrus twist." },
+  { name: "Blood Orange", type: "Indica", description: "Vibrant citrus with tangy, slightly bitter edge. Strong body relaxation with refreshing citrus twist." }
 ]
 
 export default function FattonesFlavorGuidePage() {

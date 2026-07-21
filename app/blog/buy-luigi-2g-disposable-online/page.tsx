@@ -5,6 +5,7 @@ import Image from "next/image"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { RelatedGuides } from "@/components/related-guides"
+import { ProductCTA } from "@/components/product-cta"
 import { Calendar, Clock, ArrowLeft, CheckCircle, AlertTriangle, ShieldCheck } from "lucide-react"
 import Script from "next/script"
 
@@ -21,16 +22,16 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/buy-luigi-2g-disposable-online",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/blog-buy-luigi-2g-online.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-buy-luigi-2g-online.png",
         width: 1200,
         height: 630,
-        alt: "Buy Luigi 2G Disposable Online - Authentic 2026",
-      },
-    ],
+        alt: "Buy Luigi 2G Disposable Online - Authentic 2026"
+      }
+    ]
   },
   alternates: {
-    canonical: "/blog/buy-luigi-2g-disposable-online",
-  },
+    canonical: "/blog/buy-luigi-2g-disposable-online"
+  }
 }
 
 const articleSchema = {
@@ -181,7 +182,7 @@ const series6Flavors = [
   { name: "Rageberry Blitz", description: "Intense mixed berry with energetic effects" },
   { name: "Razor Thin Pine", description: "Crisp pine and citrus with gassy finish" },
   { name: "Black Diesel Milk", description: "Diesel meets creamy milk chocolate notes" },
-  { name: "Green Gumbo", description: "Savory, herbal, and slightly sweet" },
+  { name: "Green Gumbo", description: "Savory, herbal, and slightly sweet" }
 ]
 
 export default function BuyLuigi2GDisposablePage() {
@@ -300,7 +301,7 @@ export default function BuyLuigi2GDisposablePage() {
                     "2 Gram Capacity: Double the oil of standard 1g disposables for better value",
                     "Rechargeable Battery: USB-C port ensures you use every last drop",
                     "Convenient Format: Draw-activated, no buttons, no refilling",
-                    "Often Bundled with Pre-Roll: Many releases include a matching infused pre-roll",
+                    "Often Bundled with Pre-Roll: Many releases include a matching infused pre-roll"
                   ].map((feature, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-[#D4AF37] flex-shrink-0 mt-0.5" />
@@ -638,7 +639,7 @@ export default function BuyLuigi2GDisposablePage() {
                   "Start low and go slow, especially with high-potency live resin + diamond blends",
                   "Store in a cool, dark place to preserve terpenes",
                   "Keep away from children and pets",
-                  "Be mindful of local driving laws — never consume and drive",
+                  "Be mindful of local driving laws — never consume and drive"
                 ].map((tip, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-[#D4AF37] flex-shrink-0 mt-0.5" />

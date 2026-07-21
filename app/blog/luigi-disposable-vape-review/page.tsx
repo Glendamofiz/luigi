@@ -6,6 +6,7 @@ import Script from "next/script"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { RelatedGuides } from "@/components/related-guides"
+import { ProductCTA } from "@/components/product-cta"
 import { Calendar, Clock, ArrowLeft, Star, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -20,16 +21,16 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/luigi-disposable-vape-review",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/blog-disposable-vape-review.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-disposable-vape-review.png",
         width: 1200,
         height: 630,
-        alt: "Luigi Disposable Vape Review - Premium THC",
-      },
-    ],
+        alt: "Luigi Disposable Vape Review - Premium THC"
+      }
+    ]
   },
   alternates: {
-    canonical: "/blog/luigi-disposable-vape-review",
-  },
+    canonical: "/blog/luigi-disposable-vape-review"
+  }
 }
 
 const articleSchema = {
@@ -341,7 +342,7 @@ export default function LuigiDisposableVapeReviewPage() {
                   "Flavor enthusiasts seeking full-spectrum terpene profiles",
                   "Those tired of inconsistent experiences from cheaper brands",
                   "Anyone looking for a reliable, luxury vaping experience",
-                  "Cannabis connoisseurs who demand the best",
+                  "Cannabis connoisseurs who demand the best"
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-[#D4AF37] flex-shrink-0 mt-0.5" />

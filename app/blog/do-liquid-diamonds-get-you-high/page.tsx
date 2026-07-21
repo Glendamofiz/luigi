@@ -20,16 +20,16 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/do-liquid-diamonds-get-you-high",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/blog-live-resin-liquid-diamonds.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-live-resin-liquid-diamonds.png",
         width: 1200,
         height: 630,
-        alt: "Luigi Oil - Premium Cannabis Products",
-      },
-    ],
+        alt: "Luigi Oil - Premium Cannabis Products"
+      }
+    ]
   },
   alternates: {
-    canonical: "/blog/do-liquid-diamonds-get-you-high",
-  },
+    canonical: "/blog/do-liquid-diamonds-get-you-high"
+  }
 }
 
 const articleSchema = {

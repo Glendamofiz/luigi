@@ -1,6 +1,8 @@
 import type { Metadata } from "next"
 import Script from "next/script"
 
+export const dynamic = 'force-dynamic'
+
 export const metadata: Metadata = {
   title: "Luigi Oil Wholesale | Buy Luigi Carts & 2G Disposables in Bulk",
   description: "Buy Luigi Oil wholesale - Luigi Carts, 2G Disposables, Fattones, and Rosin Pens. Competitive bulk pricing for dispensaries and retailers. Worldwide shipping available.",

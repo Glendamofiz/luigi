@@ -20,16 +20,16 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/luigi-series-6-flavors-guide-2026",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/blog-series-6-disposables.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-series-6-disposables.png",
         width: 1200,
         height: 630,
-        alt: "Luigi Oil - Premium Cannabis Products",
-      },
-    ],
+        alt: "Luigi Oil - Premium Cannabis Products"
+      }
+    ]
   },
   alternates: {
-    canonical: "/blog/luigi-series-6-flavors-guide-2026",
-  },
+    canonical: "/blog/luigi-series-6-flavors-guide-2026"
+  }
 }
 
 const articleSchema = {
@@ -103,7 +103,7 @@ const series6Flavors = [
   { name: "Plum Wreck", type: "Indica", description: "Juicy plum sweetness with heavy indica relaxation. Deep body sedation and calming effects." },
   { name: "Rageberry Blitz", type: "Sativa-leaning", description: "Intense mixed-berry blast with energetic, fast-acting effects. Boosts mood and creativity." },
   { name: "Razor Thin Pine", type: "Hybrid", description: "Crisp pine and citrus gas with clean, sharp finish. Focused mental clarity with light body relaxation." },
-  { name: "Sour Cran Smash", type: "Sativa-leaning", description: "Tart cranberry with sour punch and refreshing finish. Energizing effects with bold, tangy flavor." },
+  { name: "Sour Cran Smash", type: "Sativa-leaning", description: "Tart cranberry with sour punch and refreshing finish. Energizing effects with bold, tangy flavor." }
 ]
 
 export default function Series6FlavorsGuidePage() {

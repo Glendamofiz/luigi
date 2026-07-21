@@ -23,13 +23,13 @@ export const metadata: Metadata = {
         url: "https://www.luigiofficialbrand.com/og-images/blog-series-6-disposables.png",
         width: 1200,
         height: 630,
-        alt: "Luigi Oil - Premium Cannabis Products",
-      },
-    ],
+        alt: "Luigi Series 6 Disposable Review"
+      }
+    ]
   },
   alternates: {
-    canonical: "/blog/luigi-series-6-disposable-review",
-  },
+    canonical: "/blog/luigi-series-6-disposable-review"
+  }
 }
 
 const reviewSchema = {
@@ -233,7 +233,7 @@ export default function LuigiSeries6ReviewPage() {
                   "Advanced ceramic heating technology",
                   "Premium glass tank construction",
                   "Industry-leading battery life",
-                  "12+ strain options for every preference",
+                  "12+ strain options for every preference"
                 ].map((feature, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-[#D4AF37] flex-shrink-0 mt-0.5" />

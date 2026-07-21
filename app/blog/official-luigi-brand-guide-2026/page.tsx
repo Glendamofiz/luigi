@@ -20,16 +20,16 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/official-luigi-brand-guide-2026",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/blog-authentic-luigi-oil.png",
+        url: "https://www.luigiofficialbrand.com/og-images/blog-official-luigi-guide.png",
         width: 1200,
         height: 630,
-        alt: "Luigi Oil - Premium Cannabis Products",
-      },
-    ],
+        alt: "Official Luigi Brand Guide 2026"
+      }
+    ]
   },
   alternates: {
-    canonical: "/blog/official-luigi-brand-guide-2026",
-  },
+    canonical: "/blog/official-luigi-brand-guide-2026"
+  }
 }
 
 const faqSchema = {

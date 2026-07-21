@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Clock, Zap } from 'lucide-react'
 import { RelatedGuides } from '@/components/related-guides'
+import { ProductCTA } from '@/components/product-cta'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -16,13 +17,13 @@ export const metadata: Metadata = {
     url: 'https://www.luigiofficialbrand.com/blog/how-long-do-luigi-disposables-last',
     images: [
       {
-        url: 'https://www.luigiofficialbrand.com/og-images/blog-how-long-disposables-last.png',
+    images: 'https://www.luigiofficialbrand.com/og-images/blog-how-long-disposables-last.png',
         width: 1200,
         height: 630,
-        alt: 'How Long Do Luigi Disposables Last - 2026 Guide',
-      },
-    ],
-  },
+        alt: 'How Long Do Luigi Disposables Last - 2026 Guide'
+      }
+    ]
+  }
 }
 
 export default function BlogPost() {
@@ -35,7 +36,7 @@ export default function BlogPost() {
     datePublished: '2026-04-25',
     dateModified: '2026-04-25',
     author: { '@type': 'Organization', name: 'Luigi Oil' },
-    publisher: { '@type': 'Organization', name: 'Luigi Oil' },
+    publisher: { '@type': 'Organization', name: 'Luigi Oil' }
   }
 
   const faqSchema = {

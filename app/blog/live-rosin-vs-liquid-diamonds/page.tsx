@@ -18,12 +18,12 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/live-rosin-vs-liquid-diamonds",
     type: "article",
     images: [{
-      url: "https://www.luigiofficialbrand.com/og-images/blog-rosin-vs-diamonds.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-rosin-vs-diamonds.png",
       width: 1200,
       height: 630,
-      alt: "Live Rosin vs Liquid Diamonds - Cannabis extracts comparison",
-    }],
-  },
+      alt: "Live Rosin vs Liquid Diamonds - Cannabis extracts comparison"
+    }]
+  }
 }
 
 const faqSchema = {
@@ -412,14 +412,14 @@ export default function LiveRosinVsLiquidDiamondsBlog() {
           "image": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg",
           "author": {
             "@type": "Organization",
-            "name": "Luigi Oil Product Team",
+            "name": "Luigi Oil Product Team"
           },
           "publisher": {
             "@type": "Organization",
-            "name": "Luigi Oil",
+            "name": "Luigi Oil"
           },
           "datePublished": "2026-06-22",
-          "dateModified": "2026-06-22",
+          "dateModified": "2026-06-22"
         })}
       </Script>
 

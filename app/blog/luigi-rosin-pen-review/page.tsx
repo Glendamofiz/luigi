@@ -20,16 +20,16 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/luigi-rosin-pen-review",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/blog-luigi-rosin-pen-review.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-luigi-rosin-pen-review.png",
         width: 1200,
         height: 630,
-        alt: "Luigi Rosin Pen Review - Is Solventless Worth It?",
-      },
-    ],
+        alt: "Luigi Rosin Pen Review - Is Solventless Worth It?"
+      }
+    ]
   },
   alternates: {
-    canonical: "/blog/luigi-rosin-pen-review",
-  },
+    canonical: "/blog/luigi-rosin-pen-review"
+  }
 }
 
 const articleSchema = {
