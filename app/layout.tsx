@@ -22,7 +22,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: {
     default: 'Luigi Oil | Buy Luigi Carts & 2G Disposables Wholesale',
-    template: '%s | Luigi Oil'
+    template: '%s'
   },
   description: 'Shop authentic Luigi Oil — premium 2G disposables, Luigi carts, and live resin liquid diamonds. Wholesale pricing available. California\'s top THC vape brand. Order now.',
   keywords: ['Luigi Oil', 'Luigi Carts', 'Luigi 2G Disposable', 'THC disposable vape', 'cannabis rosin pen', 'premium pre roll', 'live resin disposable', 'Luigi Fattones', 'Luigi Series 6'],
