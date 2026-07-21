@@ -16,7 +16,6 @@ export const metadata: Metadata = {
     description: "Beginner-friendly guide to solventless cannabis vapes and rosin benefits.",
     type: "article",
     publishedTime: "2026-03-12T00:00:00.000Z",
-  ,
     url: "https://www.luigiofficialbrand.com/blog/what-is-live-rosin-vape",
     images: [
       {

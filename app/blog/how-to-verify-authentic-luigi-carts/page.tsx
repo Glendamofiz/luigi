@@ -14,7 +14,6 @@ export const metadata = {
     title: "How to Verify Authentic Luigi Carts (Step-by-Step Guide)",
     description: "Learn how to verify authentic Luigi carts with our 5-step guide. Discover the pros & cons of authentication methods, plus safety tips for spotting counterfeit Luigi Oil products.",
     type: "article",
-  ,
     url: "https://www.luigiofficialbrand.com/blog/how-to-verify-authentic-luigi-carts",
     images: [
       {
@@ -382,6 +381,7 @@ export default function VerifyAuthenticLuigiCartsPage() {
           </div>
         </section>
 
+      </main>
       <Footer />
     </>
   )

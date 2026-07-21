@@ -16,7 +16,6 @@ export const metadata: Metadata = {
     description: "Complete guide to all Luigi Rosin Pens solventless flavors with effects and buying tips.",
     type: "article",
     publishedTime: "2026-03-26T00:00:00.000Z",
-  ,
     url: "https://www.luigiofficialbrand.com/blog/luigi-rosin-pens-flavors-guide-2026",
     images: [
       {

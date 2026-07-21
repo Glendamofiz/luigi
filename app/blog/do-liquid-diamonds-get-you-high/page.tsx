@@ -17,7 +17,6 @@ export const metadata: Metadata = {
     description: "Here's what the lab data says about THCA crystallization, terpene content, and potency in Luigi's live resin products.",
     type: "article",
     publishedTime: "2026-06-22T00:00:00.000Z",
-  ,
     url: "https://www.luigiofficialbrand.com/blog/do-liquid-diamonds-get-you-high",
     images: [
       {

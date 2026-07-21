@@ -16,7 +16,6 @@ export const metadata: Metadata = {
     description: "Discover Luigi Series 6 disposable vapes with high potency, smooth hits, and premium flavor.",
     type: "article",
     publishedTime: "2026-03-20T00:00:00.000Z",
-  ,
     url: "https://www.luigiofficialbrand.com/blog/luigi-series-6-disposable-review",
     images: [
       {

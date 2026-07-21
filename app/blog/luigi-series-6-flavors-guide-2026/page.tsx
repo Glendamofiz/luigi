@@ -17,7 +17,6 @@ export const metadata: Metadata = {
     description: "Complete breakdown of all Luigi Series 6 flavors with effects, tasting notes, and buying guide.",
     type: "article",
     publishedTime: "2026-03-26T00:00:00.000Z",
-  ,
     url: "https://www.luigiofficialbrand.com/blog/luigi-series-6-flavors-guide-2026",
     images: [
       {

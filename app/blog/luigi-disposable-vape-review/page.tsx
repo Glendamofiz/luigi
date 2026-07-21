@@ -16,7 +16,6 @@ export const metadata: Metadata = {
     description: "Honest Luigi disposable vape review covering quality, performance, and user experience.",
     type: "article",
     publishedTime: "2026-03-18T00:00:00.000Z",
-  ,
     url: "https://www.luigiofficialbrand.com/blog/luigi-disposable-vape-review",
     images: [
       {
