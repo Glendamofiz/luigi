@@ -1,5 +1,6 @@
 'use client'
 
+import { ProductCTA } from "@/components/product-cta"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { RelatedGuides } from "@/components/related-guides"
