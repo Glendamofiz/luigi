@@ -38,7 +38,7 @@ const articleSchema = {
   "@type": "Article",
   "headline": "Buy Luigi 2G Disposable Online: Where to Order Authentic Luigi Oil in 2026",
   "description": "Learn how to safely buy Luigi 2G disposable online in 2026. Find authentic Luigi Oil Series 6 flavors, verify real vs fake products, and discover trusted dispensaries.",
-  "image": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-6O8v95MMvi4PdyNGiy5AYHnzaPoq3b.jpg",
+  "image": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg",
   "datePublished": "2026-03-25",
   "dateModified": "2026-03-27",
   "author": {
@@ -210,7 +210,7 @@ export default function BuyLuigi2GDisposablePage() {
         <section className="relative pt-24 pb-8 md:pt-32 md:pb-12 bg-black overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-6O8v95MMvi4PdyNGiy5AYHnzaPoq3b.jpg')" }}
+            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           <div className="relative z-10 mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
@@ -255,7 +255,7 @@ export default function BuyLuigi2GDisposablePage() {
           <div className="mt-8 md:mt-10 mx-auto max-w-5xl px-4 md:px-6 lg:px-8">
             <div className="aspect-video md:aspect-[16/9] relative rounded-lg md:rounded-2xl overflow-hidden">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-6O8v95MMvi4PdyNGiy5AYHnzaPoq3b.jpg"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
                 alt="Luigi 2G disposable vape with live resin liquid diamond"
                 fill
                 className="object-cover"
@@ -386,7 +386,7 @@ export default function BuyLuigi2GDisposablePage() {
               <div className="my-8 grid grid-cols-2 md:grid-cols-3 gap-4">
                 <div className="bg-gray-100 rounded-xl p-4">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ORANGE-LAVA-KUSH-U6vHeCWeI0G9nUmBdicCOGrpL8kVYs.jpg"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ORANGE-LAVA-KUSH-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
                     alt="Luigi Orange Lava Kush 2G disposable"
                     width={300}
                     height={300}
@@ -396,7 +396,7 @@ export default function BuyLuigi2GDisposablePage() {
                 </div>
                 <div className="bg-gray-100 rounded-xl p-4">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GRAVEBERRY-KUSH-hKjxaitdO97OYTulXo3Qftf6pZ9EAW.jpg"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GRAVEBERRY-KUSH-fPHrHqXuykGra6fRPkZmAHbEV7O8mm.jpg"
                     alt="Luigi Graveberry Kush 2G disposable"
                     width={300}
                     height={300}
@@ -406,7 +406,7 @@ export default function BuyLuigi2GDisposablePage() {
                 </div>
                 <div className="bg-gray-100 rounded-xl p-4 col-span-2 md:col-span-1">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-6O8v95MMvi4PdyNGiy5AYHnzaPoq3b.jpg"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
                     alt="Luigi Black Diesel Milk 2G disposable"
                     width={300}
                     height={300}

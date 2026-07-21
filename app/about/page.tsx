@@ -193,7 +193,7 @@ export default function AboutPage() {
               <div className="text-center">
                 <div className="bg-gray-100 rounded-xl p-6 mb-4">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-IDqQOWuyALZ6h7xUUNjKgk32NqZFvM.png"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-2400x2400-OA10oIBvKBToWVDytXhwa5JPGI0xCU.png"
                     alt="Rosin Pens"
                     width={300}
                     height={300}

@@ -117,9 +117,9 @@ const products = [
     shortDescription: "Pure, timeless OG character. Earthy pine and lemon peel ride alongside that unmistakable gassy finish. Balanced, powerful, and forever iconic—this is OG the way it's meant to be.",
     description: "NEW from Luigi! Our Rosin Dual Pack delivers the best of both worlds - a premium rosin vape device paired with an additional 1-gram infused blunt. Two ways to enjoy the same high-quality experience, all in one pack. No compromises.",
     flavorProfile: "Earthy pine, lemon rind, classic gas",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-IDqQOWuyALZ6h7xUUNjKgk32NqZFvM.png",
-    deviceImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE_DEVICE-JBIlePFz6oqyaNz9dWRHV0uNtoUMDE.png",
-    cigarImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE_CIGAR-2400x2400-lkwteZRZCny2stq1pDUOEEgiThrrp1.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-2400x2400-OA10oIBvKBToWVDytXhwa5JPGI0xCU.png",
+    deviceImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-2400x2400-OA10oIBvKBToWVDytXhwa5JPGI0xCU.png",
+    cigarImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-2400x2400-OA10oIBvKBToWVDytXhwa5JPGI0xCU.png",
     effects: ["Relaxed", "Happy", "Giggly"],
     flavors: ["Earthy", "Strawberry", "Lemon"],
     contents: [
@@ -138,9 +138,9 @@ const products = [
     shortDescription: "Lush, smooth, and refined. Ripe peach sweetness melts into creamy undertones with a gentle floral lift. Elegant and flavorful, this one feels sun-drenched and indulgent.",
     description: "NEW from Luigi! Our Rosin Dual Pack delivers the best of both worlds - a premium rosin vape device paired with an additional 1-gram infused blunt. Two ways to enjoy the same high-quality experience, all in one pack. No compromises.",
     flavorProfile: "Juicy peach, soft cream, light floral sweetness",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CASABLANCA-PEACH-5dXyjfcSR5zyCWi9diFHGIoI6VFEDP.png",
-    deviceImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CASABLANCA-PEACH_DEVICE--XaJxQrelnogzod6Zrdv7GjY5cvo1Z7.png",
-    cigarImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CASABLANCA-PEACH_CIGAR--RENBLWbYLrhvOSAy7VpsPoYUntPk8J.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CASABLANCA-PEACH-2400x2400-PUZfpFgzkhH327g6CU6so3dRABrdPl.png",
+    deviceImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CASABLANCA-PEACH-2400x2400-PUZfpFgzkhH327g6CU6so3dRABrdPl.png",
+    cigarImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CASABLANCA-PEACH-2400x2400-PUZfpFgzkhH327g6CU6so3dRABrdPl.png",
     effects: ["Relaxed", "Happy", "Calm"],
     flavors: ["Peach", "Cream", "Floral"],
     contents: [
@@ -159,9 +159,9 @@ const products = [
     shortDescription: "A timeless classic in rosin form. Piercing diesel notes are balanced with fresh lemon zest and a crisp herbal finish. Clean, energizing, and instantly recognizable.",
     description: "NEW from Luigi! Our Rosin Dual Pack delivers the best of both worlds - a premium rosin vape device paired with an additional 1-gram infused blunt. Two ways to enjoy the same high-quality experience, all in one pack. No compromises.",
     flavorProfile: "Sharp diesel, lemon zest, clean herbal edge",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TANGIE-DIESEL-xpYNhwkWRRMTpVjqBSCr2C0D6FuqIc.png",
-    deviceImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TANGIE-DIESEL_DEVICE--OoroV0TIwCTSJ2fE6G1AGYQ2oK6OZ6.png",
-    cigarImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TANGIE-DIESEL_CIGAR--2sdIJUhmiE27sGnewsJ8Yc0HD4TLJz.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/RAZOR-THN-PINE-ZIQ3smR1vonMKGzZn3eWy0OlHxF9YE.jpg",
+    deviceImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/RAZOR-THN-PINE-ZIQ3smR1vonMKGzZn3eWy0OlHxF9YE.jpg",
+    cigarImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/RAZOR-THN-PINE-ZIQ3smR1vonMKGzZn3eWy0OlHxF9YE.jpg",
     effects: ["Happy", "Uplifted", "Relaxed"],
     flavors: ["Diesel", "Lemon", "Citrus"],
     contents: [
@@ -180,9 +180,9 @@ const products = [
     shortDescription: "Bold and deeply aromatic. Garlic-forward funk collides with earthy pine and classic Glue gas, creating a powerful and unmistakable profile. Sticky, savory, and unapologetically loud.",
     description: "NEW from Luigi! Our Rosin Dual Pack delivers the best of both worlds - a premium rosin vape device paired with an additional 1-gram infused blunt. Two ways to enjoy the same high-quality experience, all in one pack. No compromises.",
     flavorProfile: "Pungent garlic, earthy pine, heavy fuel",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GARLIC-GLUE-k4jcVnv6nkPnp6gpHBFHxoqE9wb9SZ.png",
-    deviceImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GARLIC-GLUE_DEVICE--ofrMi1XxeKLUn69kHymarM53yT4KST.png",
-    cigarImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GARLIC-GLUE_CIGAR--V6SqH9i0QmqgN4i7ao79ZAUHuCJ7vr.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GARLIC-GLUE-2400x2400-xKXyqIm8nQMrx1JULcPLke7bxNpWKc.png",
+    deviceImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GARLIC-GLUE-2400x2400-xKXyqIm8nQMrx1JULcPLke7bxNpWKc.png",
+    cigarImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GARLIC-GLUE-2400x2400-xKXyqIm8nQMrx1JULcPLke7bxNpWKc.png",
     effects: ["Relaxed", "Sleepy", "Calm"],
     flavors: ["Garlic", "Pine", "Fuel"],
     contents: [
@@ -201,9 +201,9 @@ const products = [
     shortDescription: "Sweet and tropical with a berry twist. Ripe berries blend with bright mango notes for a fruity, relaxing experience that's as flavorful as it is soothing.",
     description: "NEW from Luigi! Our Rosin Dual Pack delivers the best of both worlds - a premium rosin vape device paired with an additional 1-gram infused blunt. Two ways to enjoy the same high-quality experience, all in one pack. No compromises.",
     flavorProfile: "Mixed berries, tropical mango, sweet finish",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BERRY-AMARILLO.png-u0YfZtPsoDqrMdry1s9Q9Q41wRDVd8.jpeg",
-    deviceImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BERRY-AMARILLO_DEVICE--DeWed9krpVeudg2wXLvfzZJhUPu54z.png",
-    cigarImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BERRY-AMARILLO_CIGAR--5JZb6vEjEfGmkBmDJMWZpzEIRDOvA4.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BERRY-AMARILLO-2400x2400-BxsAeWKNTMWRweUjdKqbuHdptlnho7.png",
+    deviceImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BERRY-AMARILLO-2400x2400-BxsAeWKNTMWRweUjdKqbuHdptlnho7.png",
+    cigarImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BERRY-AMARILLO-2400x2400-BxsAeWKNTMWRweUjdKqbuHdptlnho7.png",
     effects: ["Relaxed", "Uplifted", "Happy"],
     flavors: ["Berry", "Mango", "Tropical"],
     contents: [
@@ -222,9 +222,9 @@ const products = [
     shortDescription: "A playful clash of sour and sweet. Tangy citrus and tart candy notes lead the charge, balanced by a subtle gassy backbone. Bright, layered, and surprisingly smooth with a clean rosin finish.",
     description: "NEW from Luigi! Our Rosin Dual Pack delivers the best of both worlds - a premium rosin vape device paired with an additional 1-gram infused blunt. Two ways to enjoy the same high-quality experience, all in one pack. No compromises.",
     flavorProfile: "Sharp citrus sour, candy sweetness, light gas",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SOUR-TART-RIBBONS-d0zXbXlAFF7dET4nQTRsZWXZrOZd3M.png",
-    deviceImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SOUR-TART-RIBBONS_DEVICE--0SNs5dbvOh2QHX72bFczpgz6nhSjdg.png",
-    cigarImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SOUR-TART-RIBBONS_CIGAR--ENWglvf1TqWj33TK0fqoKaEPETdLYj.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SOUR-CRAN-SMASH-2400x2400-1CO56NsICn0LVZyioVpOMyqkXZ30s2.jpg",
+    deviceImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SOUR-CRAN-SMASH-2400x2400-1CO56NsICn0LVZyioVpOMyqkXZ30s2.jpg",
+    cigarImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SOUR-CRAN-SMASH-2400x2400-1CO56NsICn0LVZyioVpOMyqkXZ30s2.jpg",
     effects: ["Happy", "Uplifted", "Relaxed"],
     flavors: ["Diesel", "Lemon", "Citrus"],
     contents: [
@@ -243,9 +243,9 @@ const products = [
     shortDescription: "Not for the faint of heart. Donny Burger brings bold garlic, savory funk, and classic GMO gas wrapped in a smooth rosin profile. Loud, unapologetic, and deeply satisfying for true connoisseurs.",
     description: "NEW from Luigi! Our Rosin Dual Pack delivers the best of both worlds - a premium rosin vape device paired with an additional 1-gram infused blunt. Two ways to enjoy the same high-quality experience, all in one pack. No compromises.",
     flavorProfile: "Garlic funk, umami earth, fuel-forward finish",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DONNY-BURGER.png-o0Tc1VGUbDRNaHcstwgEMFXXjtuFRr.jpeg",
-    deviceImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DONNY-BURGER_DEVICE--OOvQWHV3NLjKk6g8JsPg4OhMpZnGEc.png",
-    cigarImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DONNY-BURGER_CIGAR--NoAjreOoryRaitAPCiVXmKGC19Chlu.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DONNY-BURGER-2400x2400-jXvOMNUqHw9WKe1yfU1yo9POscgDRd.png",
+    deviceImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DONNY-BURGER-2400x2400-jXvOMNUqHw9WKe1yfU1yo9POscgDRd.png",
+    cigarImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DONNY-BURGER-2400x2400-jXvOMNUqHw9WKe1yfU1yo9POscgDRd.png",
     effects: ["Relaxed", "Happy", "Tingly"],
     flavors: ["Cheese", "Earthy", "Pungent"],
     contents: [
@@ -264,9 +264,9 @@ const products = [
     shortDescription: "Deep, rich, and indulgent. This rosin expression delivers nutty roasted peanut flavors layered with creamy earth and a quiet diesel finish. Smooth and savory with a heavy-hitting, slow-burn character.",
     description: "NEW from Luigi! Our Rosin Dual Pack delivers the best of both worlds - a premium rosin vape device paired with an additional 1-gram infused blunt. Two ways to enjoy the same high-quality experience, all in one pack. No compromises.",
     flavorProfile: "Roasted peanut, earthy cream, subtle diesel funk",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PEANUT-BUTTER-BREATH-BPbJd4ykDHBT6WuBG7DAokuiR200FZ.png",
-    deviceImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PEANUT-BUTTER-BREATH_DEVICE--TY3FvVoy9WfmLMxcmxfyaEwd1EeKKT.png",
-    cigarImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PEANUT-BUTTER-BREATH_CIGAR--XHGmpu9pkVQiVpoRvq6GmPvnaeBHie.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PEANUT-BUTTER-BREATH-2400x2400-iPktMdVwCpQdAn8qPNR6p3M7FJkMSa.png",
+    deviceImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PEANUT-BUTTER-BREATH-2400x2400-iPktMdVwCpQdAn8qPNR6p3M7FJkMSa.png",
+    cigarImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PEANUT-BUTTER-BREATH-2400x2400-iPktMdVwCpQdAn8qPNR6p3M7FJkMSa.png",
     effects: ["Relaxed", "Happy", "Giggly"],
     flavors: ["Nutty", "Earthy", "Woody"],
     contents: [
@@ -285,9 +285,9 @@ const products = [
     shortDescription: "A celebratory citrus strain that hits clean and uplifting. Juicy tangerine and lemon zest shine up front, finished with a crisp, effervescent edge reminiscent of a morning mimosa. Bright, refreshing, and effortlessly smooth.",
     description: "NEW from Luigi! Our Rosin Dual Pack delivers the best of both worlds - a premium rosin vape device paired with an additional 1-gram infused blunt. Two ways to enjoy the same high-quality experience, all in one pack. No compromises.",
     flavorProfile: "Sparkling tangerine, lemon zest, crisp champagne notes",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CITRUS-MIMOSA.png-nRjgFONB6rG3hbln6DKOASybJgQhMw.jpeg",
-    deviceImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CITRUS-MIMOSA_DEVICE--CcLTXSEz8bkxeYtRraJYxaO0bRbWsE.png",
-    cigarImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CITRUS-MIMOSA_CIGAR--YyEnEtAReqRfNlEm8zdiAs5xmfnFfP.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CITRUS-MIMOSA-2400x2400-luG6baGQNLuVJsAQYF4iTwIGkq3ZeI.png",
+    deviceImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CITRUS-MIMOSA-2400x2400-luG6baGQNLuVJsAQYF4iTwIGkq3ZeI.png",
+    cigarImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CITRUS-MIMOSA-2400x2400-luG6baGQNLuVJsAQYF4iTwIGkq3ZeI.png",
     effects: ["Happy", "Relaxed"],
     flavors: ["Citrus", "Orange", "Tropical"],
     contents: [
@@ -306,9 +306,9 @@ const products = [
     shortDescription: "A radiant citrus-forward rosin with unmistakable Tropicana Cookies DNA. Bursting with fresh-squeezed orange, subtle sweetness, and a light floral funk that lingers on the exhale. Vibrant, smooth, and unapologetically golden.",
     description: "NEW from Luigi! Our Rosin Dual Pack delivers the best of both worlds - a premium rosin vape device paired with an additional 1-gram infused blunt. Two ways to enjoy the same high-quality experience, all in one pack. No compromises.",
     flavorProfile: "Bright blood orange, candied citrus peel, soft floral funk",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TROPICANA-GOLD.png-dhBq1NLArSubAaVls0j2TDDALt9Scp.jpeg",
-    deviceImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TROPICANA-GOLD_DEVICE--8HFStNqHw4yvWTKt1yq9Md81ugKRop.png",
-    cigarImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TROPICANA-GOLD_CIGAR--mrflhM99drNHNozeXOdPvmgtX1zhvS.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TROPICANA-GOLD-2400x2400-TAYe3vXWG9Af3nTW9SFzeScdo4Ctel.png",
+    deviceImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TROPICANA-GOLD-2400x2400-TAYe3vXWG9Af3nTW9SFzeScdo4Ctel.png",
+    cigarImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TROPICANA-GOLD-2400x2400-TAYe3vXWG9Af3nTW9SFzeScdo4Ctel.png",
     effects: ["Uplifted", "Happy", "Energetic"],
     flavors: ["Citrus", "Tropical", "Orange"],
     contents: [
@@ -338,7 +338,7 @@ export default function RosinPensPage() {
 <section className="relative py-20 md:py-28 lg:py-32 bg-black overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-IDqQOWuyALZ6h7xUUNjKgk32NqZFvM.png')" }}
+            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-2400x2400-OA10oIBvKBToWVDytXhwa5JPGI0xCU.png')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
