@@ -187,6 +187,17 @@ export default function BlogPost() {
               </table>
             </div>
 
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Product Showcase</h2>
+
+            <div className="aspect-[16/9] relative rounded-xl overflow-hidden shadow-lg my-8">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
+                alt="Luigi Series 6 vs Series 5 Disposable Vape Comparison"
+                fill
+                className="object-cover"
+              />
+            </div>
+
             <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Detailed Comparison Breakdown</h2>
 
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded mb-8">

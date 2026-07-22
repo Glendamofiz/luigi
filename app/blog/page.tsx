@@ -38,6 +38,16 @@ const blogSchema = {
 
 const blogPosts = [
   {
+    slug: "luigi-pre-rolls",
+    title: "Luigi Pre Rolls 2026 - Premium Infused Cannabis Pre-Rolls Guide",
+    excerpt: "Discover Luigi pre rolls: premium hash rosin infused pre-rolls from Fattones to disposables. Complete flavor guide, effects, and where to buy authentic Luigi products.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_STRAWBERRY-OG-2400x2400-XnsFZ2tFQxAAOyVtJXFC0NOp73GG2k.jpg",
+    category: "Product Guide",
+    readTime: "15 min read",
+    date: "July 22, 2026",
+    featured: true,
+  },
+  {
     slug: "luigi-carts-los-angeles",
     title: "Where to Buy Luigi Oil in Los Angeles (Dispensary Guide)",
     excerpt: "Find Luigi carts in Los Angeles. See confirmed LA dispensaries carrying Luigi Oil, how to check live stock near you, and verify authenticity.",
@@ -61,7 +71,7 @@ const blogPosts = [
     slug: "luigi-rosin-pen-review",
     title: "Luigi Rosin Pen Review: Is Solventless Worth It?",
     excerpt: "An honest Luigi Rosin Pen review — how the solventless hash rosin dual pack compares to live resin, what it costs, and whether it's worth the switch.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-2400x2400-OA10oIBvKBToWVDytXhwa5JPGI0xCU.png",
     category: "Product Review",
     readTime: "11 min read",
     date: "July 24, 2026",
@@ -111,7 +121,7 @@ const blogPosts = [
     slug: "how-to-open-a-luigi-preroll",
     title: "How to Open a Luigi Preroll: Step-by-Step Guide for All Formats",
     excerpt: "Master the art of opening Luigi prerolls with our comprehensive step-by-step guide. Learn proper techniques for different formats and storage tips.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLUE-MIST-2400x2400-OxiuQ3JOKiYpyMGJhNXNx7v0JwA2J3.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/RAGEBERRY-BLITZ-2400x2400-utns2NTRMInZtHI0QSMzpumRexCLYL.jpg",
     category: "How-To Guide",
     readTime: "5 min read",
     date: "June 1, 2026",
@@ -171,7 +181,7 @@ const blogPosts = [
     slug: "luigi-series-6-flavors-guide-2026",
     title: "Luigi Series 6 Disposables Flavors Guide 2026: Complete Breakdown",
     excerpt: "Complete breakdown of all Luigi Series 6 disposable flavors for 2026. Discover effects, tasting notes, and where to buy authentic Luigi 2G live resin vapes.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ORANGE-LAVA-KUSH-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CITRUS-MIMOSA-2400x2400-O1n2onJWb8ClZP5IQ3EfBiKzAz9jZM.png",
     category: "Flavor Guide",
     readTime: "12 min read",
     date: "March 26, 2026",
@@ -181,7 +191,7 @@ const blogPosts = [
     slug: "luigi-fattones-flavors-guide-2026",
     title: "Luigi Fattones Flavors 2026: Complete Guide to 4-in-1 Infused Packs",
     excerpt: "Complete guide to Luigi Fattones flavors in 2026. Explore all 10 flavors, 4-in-1 pack contents, effects, and where to buy these premium hash rosin infused packs.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLUE-MIST-2400x2400-OxiuQ3JOKiYpyMGJhNXNx7v0JwA2J3.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BERRY-AMARILLO-2400x2400-5YBNL82Gwc1LxajUHCQIZkv5AZpGiJ.png",
     category: "Flavor Guide",
     readTime: "14 min read",
     date: "March 26, 2026",
@@ -191,7 +201,7 @@ const blogPosts = [
     slug: "luigi-rosin-pens-flavors-guide-2026",
     title: "Luigi Rosin Pens Flavors Guide 2026: Complete Solventless Hash Rosin Guide",
     excerpt: "Complete guide to Luigi Rosin Pens flavors in 2026. Discover all solventless hash rosin strains, effects, and why these are the cleanest vape option from Luigi Oil.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-2400x2400-OA10oIBvKBToWVDytXhwa5JPGI0xCU.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PEANUT-BUTTER-BREATH-2400x2400-8sZ0KtLYivKkFdFFbCsRt0WM4TB74b.png",
     category: "Flavor Guide",
     readTime: "13 min read",
     date: "March 26, 2026",
@@ -211,7 +221,7 @@ const blogPosts = [
     slug: "luigi-series-6-disposable-review",
     title: "Luigi Series 6 Disposable Review – Premium High Potency Vape (2026 Guide)",
     excerpt: "Discover the ultimate Luigi Series 6 disposable vape with high potency, smooth hits, and premium flavor. See why this luxury vape stands out from the competition.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ORANGE-LAVA-KUSH-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DONNY-BURGER-2400x2400-L6fvkhNf5OPLZeIih9R3rrvd9VAQd3.png",
     category: "Product Review",
     readTime: "8 min read",
     date: "March 20, 2026",
@@ -221,7 +231,7 @@ const blogPosts = [
     slug: "luigi-disposable-vape-review",
     title: "Luigi Disposable Vape Review – Why This Premium THC Vape Dominates",
     excerpt: "An honest, trust-building review of Luigi disposable vapes covering quality, performance, and user experience. Find out if Luigi lives up to the hype.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ORANGE-LAVA-KUSH-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TANGIE-DIESEL-2400x2400-7LiS54zqUARYxEqL7eMzcIdtuq4zph.png",
     category: "Product Review",
     readTime: "7 min read",
     date: "March 18, 2026",
@@ -245,42 +255,47 @@ const blogPosts = [
     category: "Education",
     readTime: "6 min read",
     date: "March 12, 2026",
+    featured: true,
   },
   {
     slug: "infused-pre-rolls-vs-regular",
     title: "Infused Pre Rolls vs Regular – Why Potency Matters (FatTones Guide)",
     excerpt: "Discover the potency difference between infused and regular pre-rolls. Learn why Luigi FatTones deliver an unmatched premium experience.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLUE-MIST-2400x2400-OxiuQ3JOKiYpyMGJhNXNx7v0JwA2J3.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/RAZOR-THN-PINE-2400x2400-CYlk42Z0MvDyt3fs4jA1PyifYZBrap.jpg",
     category: "Education",
     readTime: "7 min read",
     date: "March 10, 2026",
+    featured: true,
   },
   {
     slug: "best-infused-pre-rolls",
     title: "Best Infused Pre Rolls 2026 – Top Premium Picks (Luigi FatTones #1)",
     excerpt: "Looking for the best infused pre-rolls? Our expert guide ranks the top options with Luigi FatTones taking the crown for premium quality.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLUE-MIST-2400x2400-OxiuQ3JOKiYpyMGJhNXNx7v0JwA2J3.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SOUR-CRAN-SMASH-2400x2400-k7noPbm2aeeWLJ4bToWvPP10TcIIFl.jpg",
     category: "Guides",
     readTime: "9 min read",
     date: "March 8, 2026",
+    featured: true,
   },
   {
     slug: "are-luigi-carts-worth-it",
     title: "Are Luigi Carts Worth It? Honest Review & Value Analysis (2026)",
     excerpt: "Wondering if Luigi carts are worth the premium price? This honest review breaks down quality, value, and why discerning users choose Luigi.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GRAVEBERRY-KUSH-fPHrHqXuykGra6fRPkZmAHbEV7O8mm.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg",
     category: "Product Review",
     readTime: "8 min read",
     date: "March 5, 2026",
+    featured: true,
   },
   {
     slug: "buy-luigi-disposable-vape",
     title: "Buy Luigi Disposable Vape – Where to Find Premium THC Vapes",
     excerpt: "Ready to buy Luigi disposable vapes? This guide shows you where to find authentic Luigi products and what to look for when purchasing.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ORANGE-LAVA-KUSH-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg",
     category: "Buying Guide",
     readTime: "5 min read",
     date: "March 3, 2026",
+    featured: true,
   },
 ]
 
@@ -302,7 +317,7 @@ export default function BlogPage() {
       <section className="relative pt-24 pb-16 md:pt-32 md:pb-20 bg-black overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-30"
-          style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GRAVEBERRY-KUSH-fPHrHqXuykGra6fRPkZmAHbEV7O8mm.jpg')" }}
+          style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
         <div className="relative z-10 mx-auto max-w-7xl px-4 md:px-6 lg:px-8">

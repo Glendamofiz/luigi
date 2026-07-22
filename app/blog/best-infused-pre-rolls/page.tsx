@@ -176,6 +176,15 @@ export default function BestInfusedPreRollsPage() {
                   <h3 className="text-xl sm:text-2xl font-bold text-gray-900">Luigi FatTones</h3>
                 </div>
               </div>
+
+              <div className="aspect-[16/9] relative rounded-xl overflow-hidden shadow-lg my-8">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLUE-MIST-2400x2400-OxiuQ3JOKiYpyMGJhNXNx7v0JwA2J3.jpg"
+                  alt="Luigi FatTones Best Infused Pre Rolls 2026"
+                  fill
+                  className="object-cover"
+                />
+              </div>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 mt-6">
                 <div className="flex items-center justify-center">

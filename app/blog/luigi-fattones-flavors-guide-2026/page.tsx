@@ -268,6 +268,40 @@ export default function FattonesFlavorGuidePage() {
               </div>
 
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
+                Product Showcase
+              </h2>
+
+              <div className="grid md:grid-cols-3 gap-6 my-12">
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BERRY-AMARILLO-2400x2400-5YBNL82Gwc1LxajUHCQIZkv5AZpGiJ.png"
+                    alt="Luigi Fattones Berry Amarillo flavor - premium hash rosin infused cannabis pre-roll 4-in-1 pack"
+                    width={400}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLUE-MIST-2400x2400-OxiuQ3JOKiYpyMGJhNXNx7v0JwA2J3.jpg"
+                    alt="Luigi Fattones Blue Mist flavor - premium hash rosin infused cannabis pre-roll 4-in-1 pack"
+                    width={400}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-2400x2400-R1XDG4P9Hu1VJ9cERVE7nVmsDfVeWt.png"
+                    alt="Luigi OG Reserve rosin pen - premium solventless hash rosin cannabis vape with Fattones pairing"
+                    width={400}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              </div>
+
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
                 Why Luigi Fattones Stand Out in 2026
               </h2>
 

@@ -184,6 +184,19 @@ export default function OfficialLuigiBrandGuidePage() {
               </ul>
 
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
+                Product Showcase
+              </h2>
+
+              <div className="aspect-[16/9] relative rounded-xl overflow-hidden shadow-lg my-8">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
+                  alt="Luigi Official Brand Products 2026 - Disposables and Rosin Pens"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
                 Exploring Luigi Disposables: The Flagship Convenience Product
               </h2>
 

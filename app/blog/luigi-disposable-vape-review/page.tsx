@@ -172,7 +172,7 @@ export default function LuigiDisposableVapeReviewPage() {
         <section className="relative pt-24 pb-8 md:pt-32 md:pb-12 bg-black overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ORANGE-LAVA-KUSH-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg')" }}
+            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           <div className="relative z-10 mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
@@ -238,6 +238,31 @@ export default function LuigiDisposableVapeReviewPage() {
               </div>
 
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
+                Product Showcase
+              </h2>
+
+              <div className="grid md:grid-cols-2 gap-6 my-12">
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TANGIE-DIESEL-2400x2400-7LiS54zqUARYxEqL7eMzcIdtuq4zph.png"
+                    alt="Luigi Tangie Diesel disposable vape - premium live resin THC vape cartridge"
+                    width={400}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PEANUT-BUTTER-BREATH-2400x2400-8sZ0KtLYivKkFdFFbCsRt0WM4TB74b.png"
+                    alt="Luigi Peanut Butter Breath disposable vape - premium live resin THC vape cartridge"
+                    width={400}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              </div>
+
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
                 Luigi Disposable Vape Review: First Impressions
               </h2>
               <p className="text-gray-700 leading-relaxed mb-6">
@@ -255,7 +280,7 @@ export default function LuigiDisposableVapeReviewPage() {
               <div className="grid md:grid-cols-2 gap-6 my-8">
                 <div className="bg-gray-50 rounded-xl p-6">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GRAVEBERRY-KUSH-fPHrHqXuykGra6fRPkZmAHbEV7O8mm.jpg"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
                     alt="Luigi carts review - Graveberry Kush"
                     width={400}
                     height={400}

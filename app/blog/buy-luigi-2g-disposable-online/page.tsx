@@ -386,7 +386,7 @@ export default function BuyLuigi2GDisposablePage() {
               <div className="my-8 grid grid-cols-2 md:grid-cols-3 gap-4">
                 <div className="bg-gray-100 rounded-xl p-4">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ORANGE-LAVA-KUSH-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
                     alt="Luigi Orange Lava Kush 2G disposable"
                     width={300}
                     height={300}
@@ -396,7 +396,7 @@ export default function BuyLuigi2GDisposablePage() {
                 </div>
                 <div className="bg-gray-100 rounded-xl p-4">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GRAVEBERRY-KUSH-fPHrHqXuykGra6fRPkZmAHbEV7O8mm.jpg"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
                     alt="Luigi Graveberry Kush 2G disposable"
                     width={300}
                     height={300}

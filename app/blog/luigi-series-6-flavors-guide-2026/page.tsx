@@ -126,7 +126,7 @@ export default function Series6FlavorsGuidePage() {
         <section className="relative pt-24 pb-8 md:pt-32 md:pb-12 bg-black overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ORANGE-LAVA-KUSH-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg')" }}
+            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           <div className="relative z-10 mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
@@ -157,7 +157,7 @@ export default function Series6FlavorsGuidePage() {
         <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 -mt-4">
           <div className="aspect-[16/9] relative rounded-xl overflow-hidden shadow-lg">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ORANGE-LAVA-KUSH-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
               alt="Luigi Series 6 Disposable - Live Resin Liquid Diamond Collection"
               fill
               className="object-cover"
@@ -191,6 +191,40 @@ export default function Series6FlavorsGuidePage() {
               <p className="text-gray-700 leading-relaxed mb-6">
                 Unlike basic distillate vapes, Series 6 uses a sophisticated live resin + liquid diamond blend that preserves natural terpenes while boosting potency and smoothness. Key advantages include longer sessions thanks to the 2g size, rich true-to-strain flavor, and consistent performance from first puff to last.
               </p>
+
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
+                Product Showcase
+              </h2>
+
+              <div className="grid md:grid-cols-3 gap-6 my-12">
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CITRUS-MIMOSA-2400x2400-O1n2onJWb8ClZP5IQ3EfBiKzAz9jZM.png"
+                    alt="Luigi Series 6 Citrus Mimosa disposable - premium live resin liquid diamond vape"
+                    width={400}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CASABLANCA-PEACH-2400x2400-fyIv3fk6NkOwNavZ78XB9Ff2loSks9.png"
+                    alt="Luigi Series 6 Casablanca Peach disposable - premium live resin liquid diamond vape"
+                    width={400}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TANGIE-DIESEL-2400x2400-7LiS54zqUARYxEqL7eMzcIdtuq4zph.png"
+                    alt="Luigi Series 6 Tangie Diesel disposable - premium live resin liquid diamond vape"
+                    width={400}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              </div>
 
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
                 Complete Luigi Series 6 Flavors List 2026

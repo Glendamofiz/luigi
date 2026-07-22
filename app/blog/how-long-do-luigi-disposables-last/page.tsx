@@ -267,6 +267,16 @@ export default function BlogPost() {
               </table>
             </div>
 
+            {/* Product Showcase */}
+            <div className="aspect-[16/9] relative rounded-xl overflow-hidden shadow-lg my-12">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ORANGE-LAVA-KUSH-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
+                alt="Luigi Disposable Vape Lifespan and Performance Guide"
+                fill
+                className="object-cover"
+              />
+            </div>
+
             {/* FAQ Section */}
             <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Frequently Asked Questions</h2>
             

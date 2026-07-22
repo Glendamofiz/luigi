@@ -244,6 +244,31 @@ export default function LuigiSeries6ReviewPage() {
             </div>
 
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
+              Product Showcase
+            </h2>
+
+            <div className="grid md:grid-cols-2 gap-6 my-12">
+              <div className="rounded-xl overflow-hidden shadow-lg">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DONNY-BURGER-2400x2400-L6fvkhNf5OPLZeIih9R3rrvd9VAQd3.png"
+                  alt="Luigi Series 6 Donny Burger disposable vape - premium live resin liquid diamond THC"
+                  width={400}
+                  height={400}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="rounded-xl overflow-hidden shadow-lg">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GARLIC-GLUE-2400x2400-a3O0lNFClY1jptyznAJLI7sqYZ4Miq.png"
+                  alt="Luigi Series 6 Garlic Glue disposable vape - premium live resin liquid diamond THC"
+                  width={400}
+                  height={400}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
               Luigi Series 6 vs Series 5: What Changed?
             </h2>
             <p className="text-gray-700 leading-relaxed mb-6">
@@ -256,7 +281,7 @@ export default function LuigiSeries6ReviewPage() {
             <div className="my-8 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
               <div className="bg-gray-100 rounded-lg md:rounded-xl p-3 md:p-6">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ORANGE-LAVA-KUSH-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
                   alt="premium THC vape Luigi Series 6"
                   width={400}
                   height={400}
@@ -265,7 +290,7 @@ export default function LuigiSeries6ReviewPage() {
               </div>
               <div className="bg-gray-100 rounded-lg md:rounded-xl p-3 md:p-6">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GRAVEBERRY-KUSH-fPHrHqXuykGra6fRPkZmAHbEV7O8mm.jpg"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
                   alt="Luigi disposable vape strength comparison"
                   width={400}
                   height={400}

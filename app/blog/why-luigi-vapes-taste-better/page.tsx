@@ -105,8 +105,17 @@ export default function FlavorBlogPost() {
       <Header />
       <main className="bg-white">
         {/* Hero Section */}
-        <section className="relative py-12 md:py-16 lg:py-20 bg-gradient-to-b from-black to-gray-900">
-          <div className="max-w-4xl mx-auto px-4 md:px-6 lg:px-8">
+        <section 
+          className="relative py-12 md:py-16 lg:py-20 bg-gradient-to-b from-black to-gray-900"
+          style={{
+            backgroundImage: "url(https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed"
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-gray-900/80"></div>
+          <div className="max-w-4xl mx-auto px-4 md:px-6 lg:px-8 relative z-10">
             <div className="text-center">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#D4AF37]/10 rounded-full mb-4">
                 <Leaf className="w-4 h-4 text-[#D4AF37]" />

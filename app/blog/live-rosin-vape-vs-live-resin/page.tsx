@@ -207,7 +207,7 @@ export default function LiveRosinVsLiveResinPage() {
             <div className="grid md:grid-cols-2 gap-4 md:gap-6 my-8">
               <div className="bg-gray-50 rounded-lg md:rounded-xl p-3 md:p-6">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TROPICANA-GOLD-2400x2400-TAYe3vXWG9Af3nTW9SFzeScdo4Ctel.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-2400x2400-OA10oIBvKBToWVDytXhwa5JPGI0xCU.png"
                   alt="Luigi Rosin Pens review - Tropicana Gold"
                   width={400}
                   height={400}
