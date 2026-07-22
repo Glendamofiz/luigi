@@ -126,7 +126,7 @@ export default function RosinPensFlavorsGuidePage() {
         <section className="relative pt-24 pb-8 md:pt-32 md:pb-12 bg-black overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-2400x2400-OA10oIBvKBToWVDytXhwa5JPGI0xCU.png')" }}
+            style={{ backgroundImage: "url('/images/blog-luigi-rosin-pens.png')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           <div className="relative z-10 mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
@@ -157,7 +157,7 @@ export default function RosinPensFlavorsGuidePage() {
         <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 -mt-4">
           <div className="aspect-[16/9] relative rounded-xl overflow-hidden shadow-lg">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-2400x2400-OA10oIBvKBToWVDytXhwa5JPGI0xCU.png"
+              src="/images/blog-luigi-rosin-pens.png"
               alt="Luigi Rosin Pens - Premium Solventless Hash Rosin Vapes"
               fill
               className="object-cover"

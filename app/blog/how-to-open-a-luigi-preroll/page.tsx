@@ -113,7 +113,7 @@ export default function HowToOpenLuigiPrerollPage() {
         <section className="relative pt-24 pb-8 md:pt-32 md:pb-12 bg-black overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLUE-MIST-2400x2400-OxiuQ3JOKiYpyMGJhNXNx7v0JwA2J3.jpg')" }}
+            style={{ backgroundImage: "url('/images/blog-luigi-fattones.png')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           <div className="relative z-10 mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
@@ -147,7 +147,7 @@ export default function HowToOpenLuigiPrerollPage() {
         <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 -mt-4">
           <div className="rounded-xl overflow-hidden shadow-lg">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLUE-MIST-2400x2400-OxiuQ3JOKiYpyMGJhNXNx7v0JwA2J3.jpg"
+              src="/images/blog-luigi-fattones.png"
               alt="How to open Luigi Preroll - Luigi Fattones hash rosin infused joints"
               width={1200}
               height={675}
@@ -222,7 +222,7 @@ export default function HowToOpenLuigiPrerollPage() {
               <div className="my-8">
                 <div className="rounded-lg overflow-hidden shadow-md">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
+                    src="/images/blog-luigi-carts-worth-it.png"
                     alt="Luigi Fattones preroll opening - hash rosin infused cannabis joints"
                     width={800}
                     height={450}

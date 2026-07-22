@@ -105,7 +105,7 @@ export default function VerifyAuthenticLuigiCartsPage() {
             {/* Featured Image */}
             <div className="rounded-xl overflow-hidden shadow-lg mb-12">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
+                src="/images/blog-luigi-carts-worth-it.png"
                 alt="How to verify authentic Luigi carts - genuine Luigi Oil products"
                 width={1200}
                 height={675}
@@ -190,7 +190,7 @@ export default function VerifyAuthenticLuigiCartsPage() {
               <div className="my-8">
                 <div className="rounded-lg overflow-hidden shadow-md">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
+                    src="/images/blog-luigi-carts-worth-it.png"
                     alt="Luigi Series 6 liquid diamond disposable - inspect cartridge quality"
                     width={800}
                     height={450}

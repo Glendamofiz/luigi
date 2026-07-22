@@ -113,7 +113,7 @@ export default function LuigiCartsLA() {
         <section className="relative pt-24 pb-8 md:pt-32 md:pb-12 bg-black overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg')" }}
+            style={{ backgroundImage: "url('/images/blog-luigi-carts-worth-it.png')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           <div className="relative z-10 mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
@@ -203,7 +203,7 @@ export default function LuigiCartsLA() {
             <p>To see the complete current catalog before you head out, browse the full <Link href="/products">Products page</Link> — that way you know exactly what to ask for if a specific item isn&apos;t visible on the shelf.</p>
 
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
+              src="/images/blog-luigi-carts-worth-it.png"
               alt="Luigi Oil Los Angeles dispensary buy local cannabis carts"
               width={800}
               height={600}
