@@ -244,6 +244,31 @@ export default function LuigiSeries6ReviewPage() {
             </div>
 
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
+              Product Showcase
+            </h2>
+
+            <div className="grid md:grid-cols-2 gap-6 my-12">
+              <div className="rounded-xl overflow-hidden shadow-lg">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DONNY-BURGER-2400x2400-L6fvkhNf5OPLZeIih9R3rrvd9VAQd3.png"
+                  alt="Luigi Series 6 Donny Burger disposable vape - premium live resin liquid diamond THC"
+                  width={400}
+                  height={400}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="rounded-xl overflow-hidden shadow-lg">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GARLIC-GLUE-2400x2400-a3O0lNFClY1jptyznAJLI7sqYZ4Miq.png"
+                  alt="Luigi Series 6 Garlic Glue disposable vape - premium live resin liquid diamond THC"
+                  width={400}
+                  height={400}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
               Luigi Series 6 vs Series 5: What Changed?
             </h2>
             <p className="text-gray-700 leading-relaxed mb-6">

@@ -193,6 +193,40 @@ export default function Series6FlavorsGuidePage() {
               </p>
 
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
+                Product Showcase
+              </h2>
+
+              <div className="grid md:grid-cols-3 gap-6 my-12">
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CITRUS-MIMOSA-2400x2400-O1n2onJWb8ClZP5IQ3EfBiKzAz9jZM.png"
+                    alt="Luigi Series 6 Citrus Mimosa disposable - premium live resin liquid diamond vape"
+                    width={400}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CASABLANCA-PEACH-2400x2400-fyIv3fk6NkOwNavZ78XB9Ff2loSks9.png"
+                    alt="Luigi Series 6 Casablanca Peach disposable - premium live resin liquid diamond vape"
+                    width={400}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TANGIE-DIESEL-2400x2400-7LiS54zqUARYxEqL7eMzcIdtuq4zph.png"
+                    alt="Luigi Series 6 Tangie Diesel disposable - premium live resin liquid diamond vape"
+                    width={400}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              </div>
+
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
                 Complete Luigi Series 6 Flavors List 2026
               </h2>
 

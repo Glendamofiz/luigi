@@ -222,8 +222,8 @@ export default function HowToOpenLuigiPrerollPage() {
               <div className="my-8">
                 <div className="rounded-lg overflow-hidden shadow-md">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
-                    alt="Luigi Fattones preroll opening - hash rosin infused cannabis joints"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/RAGEBERRY-BLITZ-2400x2400-utns2NTRMInZtHI0QSMzpumRexCLYL.jpg"
+                    alt="Luigi Rageberry Blitz preroll pack - infused cannabis joints with reusable glass tips"
                     width={800}
                     height={450}
                     className="w-full h-auto object-cover"

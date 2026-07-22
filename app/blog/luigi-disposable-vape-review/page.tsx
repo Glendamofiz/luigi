@@ -238,6 +238,31 @@ export default function LuigiDisposableVapeReviewPage() {
               </div>
 
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
+                Product Showcase
+              </h2>
+
+              <div className="grid md:grid-cols-2 gap-6 my-12">
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TANGIE-DIESEL-2400x2400-7LiS54zqUARYxEqL7eMzcIdtuq4zph.png"
+                    alt="Luigi Tangie Diesel disposable vape - premium live resin THC vape cartridge"
+                    width={400}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PEANUT-BUTTER-BREATH-2400x2400-8sZ0KtLYivKkFdFFbCsRt0WM4TB74b.png"
+                    alt="Luigi Peanut Butter Breath disposable vape - premium live resin THC vape cartridge"
+                    width={400}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              </div>
+
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
                 Luigi Disposable Vape Review: First Impressions
               </h2>
               <p className="text-gray-700 leading-relaxed mb-6">

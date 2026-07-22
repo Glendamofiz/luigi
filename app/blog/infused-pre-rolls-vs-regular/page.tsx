@@ -221,6 +221,40 @@ export default function InfusedPreRollsVsRegularPage() {
             </div>
 
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
+              Product Showcase
+            </h2>
+
+            <div className="grid md:grid-cols-3 gap-6 my-12">
+              <div className="rounded-xl overflow-hidden shadow-lg">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/RAZOR-THN-PINE-2400x2400-CYlk42Z0MvDyt3fs4jA1PyifYZBrap.jpg"
+                  alt="Luigi Razor Thin Pine infused pre roll - premium THC infused cannabis joint"
+                  width={400}
+                  height={400}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="rounded-xl overflow-hidden shadow-lg">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SOUR-CRAN-SMASH-2400x2400-k7noPbm2aeeWLJ4bToWvPP10TcIIFl.jpg"
+                  alt="Luigi Sour Cran Smash infused pre roll - premium THC infused cannabis joint"
+                  width={400}
+                  height={400}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="rounded-xl overflow-hidden shadow-lg">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TROPICANA-GOLD-2400x2400-3J0DEPdYKWhhU4y5d9ncCzFOWJmOyN.png"
+                  alt="Luigi Tropicana Gold rosin pen - premium solventless cannabis extract vape"
+                  width={400}
+                  height={400}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
               Luigi FatTones Review: The Ultimate Infused Pre-Roll
             </h2>
             <p className="text-gray-700 leading-relaxed mb-6">
