@@ -113,7 +113,7 @@ export default function LiquidDiamondsPage() {
         <section className="relative pt-24 pb-8 md:pt-32 md:pb-12 bg-black overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('/images/blog-luigi-carts-worth-it.png')" }}
+            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           <div className="relative z-10 mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
@@ -147,7 +147,7 @@ export default function LiquidDiamondsPage() {
         <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 -mt-4">
           <div className="rounded-xl overflow-hidden shadow-lg">
             <Image
-              src="/images/blog-luigi-carts-worth-it.png"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
               alt="Liquid diamonds potency - high THC cannabis concentrates"
               width={1200}
               height={675}
