@@ -38,6 +38,16 @@ const blogSchema = {
 
 const blogPosts = [
   {
+    slug: "luigi-pre-rolls",
+    title: "Luigi Pre Rolls 2026 - Premium Infused Cannabis Pre-Rolls Guide",
+    excerpt: "Discover Luigi pre rolls: premium hash rosin infused pre-rolls from Fattones to disposables. Complete flavor guide, effects, and where to buy authentic Luigi products.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_STRAWBERRY-OG-2400x2400-XnsFZ2tFQxAAOyVtJXFC0NOp73GG2k.jpg",
+    category: "Product Guide",
+    readTime: "15 min read",
+    date: "July 22, 2026",
+    featured: true,
+  },
+  {
     slug: "luigi-carts-los-angeles",
     title: "Where to Buy Luigi Oil in Los Angeles (Dispensary Guide)",
     excerpt: "Find Luigi carts in Los Angeles. See confirmed LA dispensaries carrying Luigi Oil, how to check live stock near you, and verify authenticity.",
