@@ -71,21 +71,40 @@ function LuigiPreRollsContent() {
         }}
       />
 
-      <article className="py-12 md:py-16">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          {/* Header */}
-          <div className="mb-12">
-            <div className="mb-6 inline-block rounded-full bg-amber-100 px-4 py-2">
-              <p className="text-sm font-semibold text-amber-900">Premium Cannabis Guide</p>
+      {/* Hero Section with Background Image */}
+      <div className="relative h-96 md:h-[500px] w-full overflow-hidden">
+        <Image
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_PINEAPPLE-DIESEL_FAMILY-2400x2400-Ofs5U9ueOCm8X34Gm8i00pJDbCsy1Q.jpg"
+          alt="Luigi premium infused pre-rolls family collection - hero banner showcasing Fattones product line"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/40"></div>
+        <div className="absolute inset-0 flex items-center">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 w-full">
+            <div className="mb-6 inline-block rounded-full bg-amber-500/80 backdrop-blur-sm px-4 py-2">
+              <p className="text-sm font-semibold text-white">Premium Cannabis Guide</p>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight text-balance">
               Luigi Pre Rolls: Premium Infused Cannabis Pre-Rolls 2026 Guide
             </h1>
-            <div className="flex items-center gap-4 text-gray-600 mb-8">
+            <div className="flex items-center gap-4 text-gray-200 mb-6">
               <span>July 22, 2026</span>
               <span>•</span>
               <span>15 min read</span>
             </div>
+            <p className="text-lg text-gray-100 leading-relaxed max-w-2xl">
+              Discover the pinnacle of premium cannabis pre-rolls combining expertly cultivated flower with sophisticated extracts.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <article className="py-12 md:py-16">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          {/* Intro Section */}
+          <div className="mb-12 prose prose-lg max-w-none">
             <p className="text-lg text-gray-700 leading-relaxed">
               Luigi pre rolls represent the pinnacle of premium cannabis pre-roll craftsmanship, combining expertly cultivated flower with sophisticated cannabis extracts to deliver an unmatched smoking experience. Whether you&apos;re exploring the potent Fattones line with live rosin infusions or other Luigi premium offerings, this comprehensive guide covers everything you need to know about selecting, enjoying, and purchasing authentic Luigi pre rolls.
             </p>
