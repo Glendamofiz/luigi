@@ -261,6 +261,19 @@ export default function RosinPensFlavorsGuidePage() {
               </div>
 
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
+                Product Showcase
+              </h2>
+
+              <div className="aspect-[16/9] relative rounded-xl overflow-hidden shadow-lg my-8">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-2400x2400-OA10oIBvKBToWVDytXhwa5JPGI0xCU.png"
+                  alt="Luigi Rosin Pens Premium Solventless Hash Rosin"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
                 How Solventless Hash Rosin Enhances the Experience
               </h2>
 

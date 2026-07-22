@@ -268,6 +268,19 @@ export default function FattonesFlavorGuidePage() {
               </div>
 
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
+                Product Showcase
+              </h2>
+
+              <div className="aspect-[16/9] relative rounded-xl overflow-hidden shadow-lg my-8">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLUE-MIST-2400x2400-OxiuQ3JOKiYpyMGJhNXNx7v0JwA2J3.jpg"
+                  alt="Luigi Fattones Premium Hash Rosin Infused Pre-Rolls Pack"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">
                 Why Luigi Fattones Stand Out in 2026
               </h2>
 
