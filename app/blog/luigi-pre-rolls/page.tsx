@@ -272,42 +272,111 @@ function LuigiPreRollsContent() {
             </section>
 
             <section>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Related Luigi Products & Internal Links</h2>
-              <p className="leading-relaxed">
-                Luigi offers a comprehensive product ecosystem beyond pre rolls. Explore complementary products that enhance your cannabis experience:
+              <h2 className="text-3xl font-bold text-gray-900 mb-8">Related Luigi Products</h2>
+              <p className="leading-relaxed mb-8">
+                Explore our comprehensive guides on Luigi cannabis products and related topics:
               </p>
-              <ul className="space-y-3 my-6">
-                <li>
-                  <Link href="/blog/luigi-fattones-flavors-guide-2026" className="text-blue-600 hover:underline font-semibold">
-                    Complete Luigi Fattones Flavors Guide 2026
-                  </Link>
-                  {' '}— Comprehensive breakdown of all available Fattones flavors and effects
-                </li>
-                <li>
-                  <Link href="/blog/best-infused-pre-rolls" className="text-blue-600 hover:underline font-semibold">
-                    Best Infused Pre Rolls 2026
-                  </Link>
-                  {' '}— Compare Luigi Fattones with other premium infused pre roll brands
-                </li>
-                <li>
-                  <Link href="/blog/infused-pre-rolls-vs-regular" className="text-blue-600 hover:underline font-semibold">
-                    Infused Pre Rolls vs Regular
-                  </Link>
-                  {' '}— Understanding the potency and quality differences
-                </li>
-                <li>
-                  <Link href="/blog/luigi-series-6-disposable-review" className="text-blue-600 hover:underline font-semibold">
-                    Luigi Series 6 Disposable Review
-                  </Link>
-                  {' '}— Explore Luigi&apos;s disposable vape line featuring liquid diamonds
-                </li>
-                <li>
-                  <Link href="/blog/how-to-open-a-luigi-preroll" className="text-blue-600 hover:underline font-semibold">
-                    How to Open a Luigi Preroll
-                  </Link>
-                  {' '}— Step-by-step guide for properly opening and preparing pre rolls
-                </li>
-              </ul>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* Fattones Flavors */}
+                <Link href="/blog/luigi-fattones-flavors-guide-2026" className="group">
+                  <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-64">
+                    <Image
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BERRY-AMARILLO-2400x2400-5YBNL82Gwc1LxajUHCQIZkv5AZpGiJ.png"
+                      alt="Luigi Fattones flavors guide - complete collection of premium infused pre-rolls"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end">
+                      <div className="p-4">
+                        <h3 className="text-white font-bold text-lg">Fattones Flavors Guide</h3>
+                        <p className="text-gray-200 text-sm">Complete breakdown of all flavors</p>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Best Infused Pre Rolls */}
+                <Link href="/blog/best-infused-pre-rolls" className="group">
+                  <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-64">
+                    <Image
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SOUR-CRAN-SMASH-2400x2400-k7noPbm2aeeWLJ4bToWvPP10TcIIFl.jpg"
+                      alt="Best infused pre-rolls guide - premium cannabis pre-rolls comparison"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end">
+                      <div className="p-4">
+                        <h3 className="text-white font-bold text-lg">Best Infused Pre Rolls</h3>
+                        <p className="text-gray-200 text-sm">Top premium picks for 2026</p>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Infused vs Regular */}
+                <Link href="/blog/infused-pre-rolls-vs-regular" className="group">
+                  <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-64">
+                    <Image
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TROPICANA-GOLD-2400x2400-3J0DEPdYKWhhU4y5d9ncCzFOWJmOyN.png"
+                      alt="Infused vs regular pre-rolls comparison - understand potency differences"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end">
+                      <div className="p-4">
+                        <h3 className="text-white font-bold text-lg">Infused vs Regular</h3>
+                        <p className="text-gray-200 text-sm">Potency comparison guide</p>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Series 6 Review */}
+                <Link href="/blog/luigi-series-6-disposable-review" className="group">
+                  <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-64">
+                    <Image
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DONNY-BURGER-2400x2400-L6fvkhNf5OPLZeIih9R3rrvd9VAQd3.png"
+                      alt="Luigi Series 6 disposable vape review - premium liquid diamond THC"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end">
+                      <div className="p-4">
+                        <h3 className="text-white font-bold text-lg">Series 6 Review</h3>
+                        <p className="text-gray-200 text-sm">Premium disposable vapes</p>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+
+                {/* How to Open */}
+                <Link href="/blog/how-to-open-a-luigi-preroll" className="group">
+                  <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-64">
+                    <Image
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/RAGEBERRY-BLITZ-2400x2400-utns2NTRMInZtHI0QSMzpumRexCLYL.jpg"
+                      alt="How to open a Luigi preroll - step-by-step guide with infused cannabis pre-rolls"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end">
+                      <div className="p-4">
+                        <h3 className="text-white font-bold text-lg">How to Open</h3>
+                        <p className="text-gray-200 text-sm">Step-by-step guide</p>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Back to Blog */}
+                <Link href="/blog" className="group">
+                  <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-64 bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center">
+                    <div className="text-center p-4">
+                      <h3 className="text-white font-bold text-xl mb-2">Browse All Articles</h3>
+                      <p className="text-amber-100">More guides and reviews</p>
+                    </div>
+                  </div>
+                </Link>
+              </div>
             </section>
 
             <section>
