@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ArrowLeft } from 'lucide-react';
 
 function LuigiPreRollsContent() {
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(0);
@@ -83,6 +83,10 @@ function LuigiPreRollsContent() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/40"></div>
         <div className="absolute inset-0 flex items-center">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 w-full">
+            <Link href="/blog" className="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 mb-6 transition-colors">
+              <ArrowLeft className="w-4 h-4" />
+              Back to Blog
+            </Link>
             <div className="mb-6 inline-block rounded-full bg-amber-500/80 backdrop-blur-sm px-4 py-2">
               <p className="text-sm font-semibold text-white">Premium Cannabis Guide</p>
             </div>
