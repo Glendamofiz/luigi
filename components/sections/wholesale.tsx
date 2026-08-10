@@ -24,7 +24,14 @@ export function WholesaleSection() {
           </h3>
           
           <p className="text-white text-base md:text-lg lg:text-xl max-w-3xl mb-8 leading-relaxed">
-            Buy Luigi Carts and Disposables wholesale for premium live resin + liquid diamond experience. Stock Luigi 2G Disposables, Prerolls, and Rosin Pens with high-demand Fattones, Series 6, and hash rosin options. Order authentic Luigi Oil in bulk via licensed distributors.
+            <a
+              href="https://www.luigioildisposables.shop"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white no-underline hover:text-white"
+            >
+              Buy Luigi Carts
+            </a>{" "}and Disposables wholesale for premium live resin + liquid diamond experience. Stock Luigi 2G Disposables, Prerolls, and Rosin Pens with high-demand Fattones, Series 6, and hash rosin options. Order authentic Luigi Oil in bulk via licensed distributors.
           </p>
           
           <Link
