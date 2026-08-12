@@ -20,13 +20,14 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/are-luigi-carts-worth-it",
     images: [
       {
-    url: "https://www.luigiofficialbrand.com/og-images/blog-buy-luigi-carts-wholesale.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-are-luigi-carts-worth-it.jpg",
         width: 1200,
         height: 630,
         alt: "Are Luigi Carts Worth It"
       }
     ]
   },
+  twitter: { card: "summary_large_image", images: ["https://www.luigiofficialbrand.com/og-images/blog-are-luigi-carts-worth-it.jpg"] },
   alternates: {
     canonical: "/blog/are-luigi-carts-worth-it"
   }
@@ -172,7 +173,7 @@ export default function AreLuigiCartsWorthItPage() {
         <section className="relative pt-24 pb-8 md:pt-32 md:pb-12 bg-black overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg')" }}
+            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SOUR-CRAN-SMASH_DEVICE--EfsWNxDRDpRantxd6FQI82ZObkMfAV.jpg')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           <div className="relative z-10 mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
@@ -241,7 +242,7 @@ export default function AreLuigiCartsWorthItPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 my-8">
               <div className="bg-gray-100 rounded-lg md:rounded-xl p-3 md:p-6">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SOUR-CRAN-SMASH_DEVICE--EfsWNxDRDpRantxd6FQI82ZObkMfAV.jpg"
                   alt="premium cannabis brand Luigi"
                   width={400}
                   height={400}
@@ -251,7 +252,7 @@ export default function AreLuigiCartsWorthItPage() {
               </div>
               <div className="bg-gray-100 rounded-lg md:rounded-xl p-3 md:p-6">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SOUR-CRAN-SMASH_DEVICE--EfsWNxDRDpRantxd6FQI82ZObkMfAV.jpg"
                   alt="premium cannabis brand Luigi"
                   width={400}
                   height={400}

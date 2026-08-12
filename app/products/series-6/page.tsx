@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: "Luigi Series 6 | 2G Live Resin Liquid Diamond Vapes",
   description: "Shop Luigi Series 6 — premium 2G live resin liquid diamond disposables. Full-spectrum THC, bold flavors, no fillers. California's best THC disposable vape. Buy now.",
   keywords: ["Luigi Series 6", "Luigi 2G Disposable", "live resin liquid diamond", "Luigi disposable vape", "Luigi dual pack", "premium THC vape"],
+  twitter: { card: "summary_large_image", images: ["https://www.luigiofficialbrand.com/og-images/products-series-6.jpg"] },
   alternates: {
     canonical: "/products/series-6",
   },
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/products/series-6",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/product-series-6.png",
+        url: "https://www.luigiofficialbrand.com/og-images/products-series-6.jpg",
         width: 1200,
         height: 630,
         alt: "Luigi Series 6 - 2G Live Resin Liquid Diamond Disposables",
@@ -318,7 +319,7 @@ export default function Series6Page() {
 <section className="relative py-20 md:py-28 lg:py-32 bg-black overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-6O8v95MMvi4PdyNGiy5AYHnzaPoq3b.jpg')" }}
+            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BERRY-AMARILLO-2400x2400-8NKi765cE94a4z1uRNWuggRASdtUbm.png')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">

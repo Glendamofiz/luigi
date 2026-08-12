@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: "Luigi Rosin Pens | Solventless Hash Rosin Dual Packs",
   description: "Shop Luigi rosin pens — premium solventless hash rosin dual packs with no solvents, no fillers. Pure, potent, and strain-specific. California's top rosin pen brand.",
   keywords: ["Luigi Rosin Pen", "hash rosin vape", "solventless rosin", "Luigi rosin dual pack", "premium rosin disposable", "live rosin vape"],
+  twitter: { card: "summary_large_image", images: ["https://www.luigiofficialbrand.com/og-images/products-rosin-pens.jpg"] },
   alternates: {
     canonical: "/products/rosin-pens",
   },
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/products/rosin-pens",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/product-rosin-pens.png",
+        url: "https://www.luigiofficialbrand.com/og-images/products-rosin-pens.jpg",
         width: 1200,
         height: 630,
         alt: "Luigi Rosin Pens - Premium Solventless Hash Rosin",
@@ -338,7 +339,7 @@ export default function RosinPensPage() {
 <section className="relative py-20 md:py-28 lg:py-32 bg-black overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-2400x2400-OA10oIBvKBToWVDytXhwa5JPGI0xCU.png')" }}
+            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-2400x2400-qCcLhstTVd1sftJNGoXvVciaUJNZQe.jpg')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">

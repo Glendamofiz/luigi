@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: "Luigi Fattones | Infused Pre-Rolls & Hash Rosin Packs",
   description: "Shop Luigi Fattones — premium infused pre-rolls and 4-in-1 hash rosin packs. Live resin liquid diamonds in every pull. California's best infused pre-roll brand.",
   keywords: ["Luigi Fattones", "Luigi prerolls", "infused pre-rolls", "hash rosin joints", "Luigi gummies", "premium cannabis packs", "glass tip blunt"],
+  twitter: { card: "summary_large_image", images: ["https://www.luigiofficialbrand.com/og-images/products-fattones.jpg"] },
   alternates: {
     canonical: "/products/fattones",
   },
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/products/fattones",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/product-fattones.png",
+        url: "https://www.luigiofficialbrand.com/og-images/products-fattones.jpg",
         width: 1200,
         height: 630,
         alt: "Luigi Fattones - Premium Infused Pre-Roll Packs",
@@ -392,7 +393,7 @@ export default function FattonesPage() {
 <section className="relative py-20 md:py-28 lg:py-32 bg-black overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FATTONE_BLUE-MIST-OxiuQ3JOKiYpyMGJhNXNx7v0JwA2J3.jpg')" }}
+            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CITRUS-MIMOSA-2400x2400-D0zU0mYkYhWZHV4cugCw8cLtXfVhf2.png')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
