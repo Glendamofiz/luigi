@@ -20,13 +20,14 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/buy-luigi-disposable-vape",
     images: [
       {
-    url: "https://www.luigiofficialbrand.com/og-images/blog-buy-luigi-disposable.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-buy-luigi-disposable-vape.jpg",
         width: 1200,
         height: 630,
         alt: "Buy Luigi Disposable Vape - Where to Find Premium THC"
       }
     ]
   },
+  twitter: { card: "summary_large_image", images: ["https://www.luigiofficialbrand.com/og-images/blog-buy-luigi-disposable-vape.jpg"] },
   alternates: {
     canonical: "/blog/buy-luigi-disposable-vape"
   }
@@ -112,7 +113,7 @@ export default function BuyLuigiDisposableVapePage() {
         <section className="relative pt-24 pb-8 md:pt-32 md:pb-12 bg-black overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg')" }}
+            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TANGIE-DIESEL-2400x2400-UmcmRGdNcHgRycaTTnlf28BWSWSd9P.png')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           <div className="relative z-10 mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
@@ -269,7 +270,7 @@ export default function BuyLuigiDisposableVapePage() {
               <div className="flex gap-6 p-6 bg-gray-50 rounded-xl">
                 <div className="w-24 h-24 flex-shrink-0">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TANGIE-DIESEL-2400x2400-UmcmRGdNcHgRycaTTnlf28BWSWSd9P.png"
                     alt="Luigi vape online - Series 6"
                     width={96}
                     height={96}

@@ -20,13 +20,14 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/what-is-live-rosin-vape",
     images: [
       {
-    url: "https://www.luigiofficialbrand.com/og-images/blog-live-resin-liquid-diamonds.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-what-is-live-rosin-vape.jpg",
         width: 1200,
         height: 630,
         alt: "Luigi Oil - Premium Cannabis Products"
       }
     ]
   },
+  twitter: { card: "summary_large_image", images: ["https://www.luigiofficialbrand.com/og-images/blog-what-is-live-rosin-vape.jpg"] },
   alternates: {
     canonical: "/blog/what-is-live-rosin-vape"
   }
@@ -112,7 +113,7 @@ export default function WhatIsLiveRosinVapePage() {
         <section className="relative pt-24 pb-8 md:pt-32 md:pb-12 bg-black overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-2400x2400-OA10oIBvKBToWVDytXhwa5JPGI0xCU.png')" }}
+            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/RAZOR-THN-PINE_DEVICE-2400x2400-dR8RegmuFHiP1VFFku624ia4CKM0Xe.jpg')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           <div className="relative z-10 mx-auto max-w-4xl px-4 md:px-6 lg:px-8">
@@ -248,7 +249,7 @@ export default function WhatIsLiveRosinVapePage() {
             <div className="grid md:grid-cols-2 gap-6 my-8">
               <div className="bg-gray-100 rounded-xl p-6">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-2400x2400-OA10oIBvKBToWVDytXhwa5JPGI0xCU.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/RAZOR-THN-PINE_DEVICE-2400x2400-dR8RegmuFHiP1VFFku624ia4CKM0Xe.jpg"
                   alt="clean THC vape - Luigi OG Reserve"
                   width={400}
                   height={400}
