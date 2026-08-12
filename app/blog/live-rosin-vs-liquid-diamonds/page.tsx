@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/live-rosin-vs-liquid-diamonds",
     type: "article",
     images: [{
-    url: "https://www.luigiofficialbrand.com/og-images/blog-rosin-vs-diamonds.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-live-rosin-vs-liquid-diamonds.jpg",
       width: 1200,
       height: 630,
       alt: "Live Rosin vs Liquid Diamonds - Cannabis extracts comparison"

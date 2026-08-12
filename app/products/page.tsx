@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Luigi Oil Products | 2G Disposables, Fattones & Rosin Pens",
   description: "Shop Luigi Oil products - Series 6 live resin 2G disposables, Fattones infused pre-roll packs, and hash rosin pens. Premium cannabis products for connoisseurs.",
   keywords: ["Luigi Oil products", "Luigi 2G disposable", "Luigi Fattones", "Luigi Rosin Pens", "Luigi Series 6", "Luigi live resin", "premium cannabis products"],
+  twitter: { card: "summary_large_image", images: ["https://www.luigiofficialbrand.com/og-images/products.jpg"] },
   alternates: {
     canonical: "/products",
   },
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/products",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/product-fattones.png",
+        url: "https://www.luigiofficialbrand.com/og-images/products.jpg",
         width: 1200,
         height: 630,
         alt: "Luigi Oil Products - Premium Cannabis Collection",

@@ -21,13 +21,14 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/buy-luigi-2g-disposable-online",
     images: [
       {
-    url: "https://www.luigiofficialbrand.com/og-images/blog-buy-luigi-2g-online.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-buy-luigi-2g-disposable-online.jpg",
         width: 1200,
         height: 630,
         alt: "Buy Luigi 2G Disposable Online - Authentic 2026"
       }
     ]
   },
+  twitter: { card: "summary_large_image", images: ["https://www.luigiofficialbrand.com/og-images/blog-buy-luigi-2g-disposable-online.jpg"] },
   alternates: {
     canonical: "/blog/buy-luigi-2g-disposable-online"
   }
@@ -210,7 +211,7 @@ export default function BuyLuigi2GDisposablePage() {
         <section className="relative pt-24 pb-8 md:pt-32 md:pb-12 bg-black overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg')" }}
+            style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TANGIE-DIESEL-2400x2400-SAepd2zLoUDnaWCxt2XVh874traesY.png')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           <div className="relative z-10 mx-auto max-w-4xl px-4 md:px-6 lg:px-8">

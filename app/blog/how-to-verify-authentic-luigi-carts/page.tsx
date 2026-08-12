@@ -18,7 +18,7 @@ export const metadata = {
     url: "https://www.luigiofficialbrand.com/blog/how-to-verify-authentic-luigi-carts",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/blog-authentic-luigi-oil.png",
+        url: "https://www.luigiofficialbrand.com/og-images/blog-how-to-verify-authentic-luigi-carts.jpg",
         width: 1200,
         height: 630,
         alt: "How to Verify Authentic Luigi Carts"
