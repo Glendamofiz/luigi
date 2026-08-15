@@ -279,7 +279,7 @@ export default function BuyLuigiWholesale() {
         <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 text-center">
           <h3 className="text-2xl font-bold text-gray-900 mb-2">Ready to become an authorized retailer?</h3>
           <p className="text-gray-600 mb-6">Apply for Luigi wholesale partnership to stock our premium products and build your cannabis business.</p>
-          <Link href="/wholesale-inquiry" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+          <Link href="/wholesale" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
             Apply for Wholesale
           </Link>
         </div>
