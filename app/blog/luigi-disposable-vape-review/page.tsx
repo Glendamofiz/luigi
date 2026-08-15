@@ -20,13 +20,14 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/luigi-disposable-vape-review",
     images: [
       {
-    url: "https://www.luigiofficialbrand.com/og-images/blog-disposable-vape-review.png",
+    url: "https://www.luigiofficialbrand.com/og-images/blog-luigi-disposable-vape-review.jpg",
         width: 1200,
         height: 630,
         alt: "Luigi Disposable Vape Review - Premium THC"
       }
     ]
   },
+  twitter: { card: "summary_large_image", images: ["https://www.luigiofficialbrand.com/og-images/blog-luigi-disposable-vape-review.jpg"] },
   alternates: {
     canonical: "/blog/luigi-disposable-vape-review"
   }

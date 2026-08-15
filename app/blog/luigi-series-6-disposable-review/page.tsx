@@ -20,13 +20,14 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/blog/luigi-series-6-disposable-review",
     images: [
       {
-        url: "https://www.luigiofficialbrand.com/og-images/blog-series-6-disposables.png",
+        url: "https://www.luigiofficialbrand.com/og-images/blog-luigi-series-6-disposable-review.jpg",
         width: 1200,
         height: 630,
         alt: "Luigi Series 6 Disposable Review"
       }
     ]
   },
+  twitter: { card: "summary_large_image", images: ["https://www.luigiofficialbrand.com/og-images/blog-luigi-series-6-disposable-review.jpg"] },
   alternates: {
     canonical: "/blog/luigi-series-6-disposable-review"
   }
