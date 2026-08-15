@@ -24,7 +24,8 @@ export const metadata = {
         alt: "How to Verify Authentic Luigi Carts"
       }
     ]
-  }
+  },
+  twitter: { card: "summary_large_image", images: ["https://www.luigiofficialbrand.com/og-images/blog-how-to-verify-authentic-luigi-carts.jpg"] }
 }
 
 const faqSchema = {
@@ -105,7 +106,7 @@ export default function VerifyAuthenticLuigiCartsPage() {
             {/* Featured Image */}
             <div className="rounded-xl overflow-hidden shadow-lg mb-12">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SOUR-CRAN-SMASH_DEVICE--EfsWNxDRDpRantxd6FQI82ZObkMfAV.jpg"
                 alt="How to verify authentic Luigi carts - genuine Luigi Oil products"
                 width={1200}
                 height={675}
@@ -190,7 +191,7 @@ export default function VerifyAuthenticLuigiCartsPage() {
               <div className="my-8">
                 <div className="rounded-lg overflow-hidden shadow-md">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BLACK-DIESEL-MILK-frY5YnUfQtnLwd3DwfnyurI1uGVuTa.jpg"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SOUR-CRAN-SMASH_DEVICE--EfsWNxDRDpRantxd6FQI82ZObkMfAV.jpg"
                     alt="Luigi Series 6 liquid diamond disposable - inspect cartridge quality"
                     width={800}
                     height={450}
