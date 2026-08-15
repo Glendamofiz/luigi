@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Luigi Oil 2026 Guide: Disposables, Fattones & Rosin",
     description: "Explore Luigi Oil&apos;s 2026 product guide for licensed California dispensary shoppers.",
-    images: ["/og-images/og-image.jpg"],
+    images: ["/og-image.jpg"],
   },
   alternates: {
     canonical: "/luigi-live-resin",
