@@ -8,8 +8,8 @@ import { CheckCircle, Zap, Leaf, Award, ChevronRight } from "lucide-react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Luigi Oil 2026 Guide | 2G Disposable, Fattones & Rosin",
-  description: "Buy Luigi 2G disposable online — complete 2026 guide to Luigi Oil Fattones, Series 6 live resin liquid diamonds, and hash rosin pre-rolls at CA dispensaries.",
+  title: "Luigi Oil 2026 Guide: Disposables, Fattones & Rosin",
+  description: "Explore Luigi Oil&apos;s 2026 guide to 2G disposables, Fattones, Series 6 live resin, and rosin pre-rolls from licensed California dispensaries.",
   keywords: [
     "buy Luigi 2G disposable online",
     "Luigi disposable near me",
@@ -34,12 +34,18 @@ export const metadata: Metadata = {
     url: "https://www.luigiofficialbrand.com/luigi-live-resin",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HOME-PAGE-BANNER-DEVICES-for-mobile-XEoqV0endTG9hI2jLyeussqr64rj0r.jpg",
+        url: "https://www.luigiofficialbrand.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Luigi Oil 2026 Guide - Fattones, Series 6 & Rosin Pre-Rolls",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Luigi Oil 2026 Guide: Disposables, Fattones & Rosin",
+    description: "Explore Luigi Oil&apos;s 2026 product guide for licensed California dispensary shoppers.",
+    images: ["/og-image.jpg"],
   },
   alternates: {
     canonical: "/luigi-live-resin",
@@ -125,7 +131,7 @@ export default function LuigiLiveResinPage() {
         {/* Hero / Introduction */}
         <section className="bg-black py-16 md:py-24 lg:py-32 relative overflow-hidden">
           <Image
-            src="https://www.luigiofficialbrand.com/wp-content/uploads/2025/11/Luigi-BG_Pattern-Home-Banner.jpg"
+            src="/images/luigi-bg-pattern.jpg"
             alt=""
             width={1920}
             height={1080}
