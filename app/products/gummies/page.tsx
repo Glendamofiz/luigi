@@ -46,6 +46,17 @@ export default function GummiesCategoryPage() {
                 <div className="mt-5 flex items-center justify-between"><span className="text-xl font-bold">$15.00</span><span className="font-semibold text-[#9A7818]">View product →</span></div>
               </div>
             </Link>
+            <Link href="/products/gummies/var-banana" className="group block max-w-sm rounded-2xl border border-gray-200 bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
+              <div className="relative aspect-square overflow-hidden rounded-xl bg-gray-50">
+                <Image src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1789514648-variety_mix_1_-dskftRuIFx7LCb29jFn7LA6vblq6dj.avif" alt="LUIGI Var Banana Gummy Pack" fill className="object-contain p-6 transition duration-300 group-hover:scale-105" />
+              </div>
+              <div className="px-2 pb-2 pt-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#B08D24]">Var Banana gummy pack</p>
+                <h2 className="mt-2 text-2xl font-bold">Var Banana Gummy Pack</h2>
+                <p className="mt-3 leading-7 text-gray-600">A bright banana-forward rosin gummy pack paired with a live resin preroll.</p>
+                <div className="mt-5 flex items-center justify-between"><span className="text-xl font-bold">$15.00</span><span className="font-semibold text-[#9A7818]">View product →</span></div>
+              </div>
+            </Link>
           </div>
         </section>
       </main>
