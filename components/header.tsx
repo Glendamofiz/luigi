@@ -10,6 +10,7 @@ const productCategories = [
   { name: "Fattones", href: "/products/fattones" },
   { name: "The Series 6 Collections", href: "/products/series-6" },
   { name: "Rosin Pens", href: "/products/rosin-pens" },
+  { name: "Gummies", href: "/products/gummies" },
 ]
 
 const navItems = [
