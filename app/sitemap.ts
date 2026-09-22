@@ -78,6 +78,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${baseUrl}/products/pineapple-gummy-pack`,
+      lastModified,
+      changeFrequency: 'weekly' as const,
+      priority: 0.85,
+    },
+    {
       url: `${baseUrl}/wholesale`,
       lastModified,
       changeFrequency: 'weekly' as const,
