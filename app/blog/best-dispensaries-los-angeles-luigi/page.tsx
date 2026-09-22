@@ -89,7 +89,7 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Luigi Oil",
-    "logo": { "@type": "ImageObject", "url": "https://luigiofficialbrand.com/logo.png" }
+    "logo": { "@type": "ImageObject", "url": "https://www.luigiofficialbrand.com/logo.png" }
   },
   "description": "Find the best dispensaries in Los Angeles carrying Luigi Oil with a practical evaluation checklist."
 }
@@ -164,7 +164,7 @@ export default function BestDispensariesLA() {
             <h3>Green Label Rx Echo Park</h3>
             <p>Located in the Echo Park neighborhood, this dispensary has carried Luigi Oil products, though as with any shop, stock rotates and is worth confirming before a visit.</p>
 
-            <p>This isn&apos;t a ranked or exhaustive list — it&apos;s what&apos;s currently verifiable. New retailers pick up the brand regularly through the official <Link href="/wholesale">Luigi Oil Wholesale</Link> channel, so the map of where to buy in LA keeps expanding.</p>
+            <p>This isn&apos;t a ranked or exhaustive list — it&apos;s what&apos;s currently verifiable. New retailers pick up the brand regularly through the official <Link href="/wholesale-inquiry">Luigi Oil Wholesale</Link> channel, so the map of where to buy in LA keeps expanding.</p>
 
             <h2>How to Evaluate Any Dispensary for Luigi Oil (Beyond This List)</h2>
             <p>Because no static list stays current forever, the more durable skill is knowing how to judge a dispensary yourself — whether it&apos;s one of the three above or a new shop you&apos;ve just walked into.</p>
@@ -274,7 +274,7 @@ export default function BestDispensariesLA() {
             <p>Yes. Dispensaries can order Luigi Oil products through the official wholesale channel, so asking a favorite local shop to stock the brand is a legitimate way to get it added to their shelves.</p>
 
             <h2>Final Thoughts</h2>
-            <p>The best dispensaries in Los Angeles for Luigi Oil aren&apos;t defined by a fixed ranking — they&apos;re defined by consistent stock, proper licensing, and staff who take authenticity seriously. Roots LA Dispensary, Level28, and Green Label Rx Echo Park meet that bar today, and the checklist above will help you evaluate any new shop that starts carrying the brand. Explore the full lineup on the <Link href="/products">Products page</Link>, or if you run a dispensary and want to add Luigi Oil to your own shelves, get started through <Link href="/wholesale">Luigi Oil Wholesale</Link>.</p>
+            <p>The best dispensaries in Los Angeles for Luigi Oil aren&apos;t defined by a fixed ranking — they&apos;re defined by consistent stock, proper licensing, and staff who take authenticity seriously. Roots LA Dispensary, Level28, and Green Label Rx Echo Park meet that bar today, and the checklist above will help you evaluate any new shop that starts carrying the brand. Explore the full lineup on the <Link href="/products">Products page</Link>, or if you run a dispensary and want to add Luigi Oil to your own shelves, get started through <Link href="/wholesale-inquiry">Luigi Oil Wholesale</Link>.</p>
             </div>
           </div>
       </article>

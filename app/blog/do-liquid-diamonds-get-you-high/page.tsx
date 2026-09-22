@@ -42,7 +42,7 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Luigi Oil",
-    "logo": { "@type": "ImageObject", "url": "https://luigiofficialbrand.com/logo.png" }
+    "logo": { "@type": "ImageObject", "url": "https://www.luigiofficialbrand.com/logo.png" }
   },
   "description": "Do liquid diamonds get you high? Here's what the lab data says about THCA crystallization, terpene content, and potency in Luigi's live resin products."
 }

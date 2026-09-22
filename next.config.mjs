@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  env: {
+    NEXT_PUBLIC_SITE_URL: 'https://www.luigiofficialbrand.com',
+  },
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -25,6 +28,16 @@ const nextConfig = {
   reactStrictMode: true,
   redirects: async () => {
     return [
+      {
+        source: '/products/gummies/watermelon',
+        destination: '/products/watermelon-gummy-pack',
+        permanent: true,
+      },
+      {
+        source: '/products/gummies/var-banana',
+        destination: '/products/var-banana-gummy-pack',
+        permanent: true,
+      },
       {
         source: '/:path*',
         has: [

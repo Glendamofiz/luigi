@@ -42,7 +42,7 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Luigi Oil",
-    "logo": { "@type": "ImageObject", "url": "https://luigiofficialbrand.com/logo.png" }
+    "logo": { "@type": "ImageObject", "url": "https://www.luigiofficialbrand.com/logo.png" }
   },
   "description": "Find Luigi carts in Los Angeles with confirmed dispensaries, stock checking tips, and authenticity verification."
 }
@@ -163,7 +163,7 @@ export default function LuigiCartsLA() {
 
             <h2>How to Find Live Luigi Carts Stock Near You in LA</h2>
             <p>Because a static list can go out of date fast in a market this active, the most accurate way to find Luigi carts in Los Angeles today is to check a live retailer locator rather than relying on any fixed list — including this one. Search &quot;Luigi&quot; on a licensed cannabis marketplace locator to pull current in-stock listings, pricing, and pickup or delivery options for dispensaries near your ZIP code.</p>
-            <p>For dispensaries looking to add Luigi Oil to their own shelves, ordering happens through the official <Link href="/wholesale">Luigi Oil Wholesale</Link> channel — which is also how new LA-area retailers get added to the map over time.</p>
+            <p>For dispensaries looking to add Luigi Oil to their own shelves, ordering happens through the official <Link href="/wholesale-inquiry">Luigi Oil Wholesale</Link> channel — which is also how new LA-area retailers get added to the map over time.</p>
 
             <h2>What to Expect When You Buy Luigi Oil in LA</h2>
             <p>Los Angeles dispensaries carrying Luigi Oil typically stock a rotating selection from the current lineup rather than the full catalog at once. Here&apos;s what that generally looks like shelf to shelf.</p>

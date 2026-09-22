@@ -25,7 +25,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Luigi Oil Wholesale | Bulk Pricing for Dispensaries",
     description: "Partner with Luigi Oil for wholesale pricing on premium live resin disposables, infused pre-rolls, and hash rosin products.",
+    url: "https://www.luigiofficialbrand.com/wholesale",
+    siteName: "LUIGI",
     type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Luigi Oil Wholesale | Bulk Pricing for Dispensaries",
+    description: "Partner with LUIGI for wholesale cannabis product pricing.",
   },
 }
 

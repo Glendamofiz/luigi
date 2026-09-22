@@ -25,13 +25,13 @@ const blogSchema = {
   "@type": "Blog",
   "name": "Luigi Oil Blog",
   "description": "Expert cannabis guides, product reviews, and educational content about live resin, rosin pens, and premium THC vapes.",
-  "url": "https://luigioil.com/blog",
+  "url": "https://www.luigiofficialbrand.com/blog",
   "publisher": {
     "@type": "Organization",
     "name": "Luigi Oil",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://luigioil.com/logo.png"
+      "url": "https://www.luigiofficialbrand.com/logo.png"
     }
   }
 }

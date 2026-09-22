@@ -9,7 +9,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Luigi Oil 2026 Guide: Disposables, Fattones & Rosin",
-  description: "Explore Luigi Oil&apos;s 2026 guide to 2G disposables, Fattones, Series 6 live resin, and rosin pre-rolls from licensed California dispensaries.",
+  description: "Explore Luigi Oil's 2026 guide to 2G disposables, Fattones, Series 6 live resin, and rosin pre-rolls from licensed California dispensaries.",
   keywords: [
     "buy Luigi 2G disposable online",
     "Luigi disposable near me",
@@ -131,7 +131,7 @@ export default function LuigiLiveResinPage() {
         {/* Hero / Introduction */}
         <section className="bg-black py-16 md:py-24 lg:py-32 relative overflow-hidden">
           <Image
-            src="/images/luigi-bg-pattern.jpg"
+            src="/images/hero-product.jpg"
             alt=""
             width={1920}
             height={1080}
@@ -829,7 +829,7 @@ export default function LuigiLiveResinPage() {
                   <div className="bg-white rounded-xl p-6 shadow-sm">
                     <h4 className="font-semibold text-gray-900 flex items-center gap-2">
                       <CheckCircle className="h-5 w-5 text-green-500" />
-                      Official Brand Site (luigioil.com)
+                      Official Brand Site (www.luigiofficialbrand.com)
                     </h4>
                     <p className="text-gray-600 mt-2 text-sm">Directs you to authorized retailers and Weedmaps locator.</p>
                   </div>
@@ -850,7 +850,7 @@ export default function LuigiLiveResinPage() {
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-red-500 mt-0.5">X</span>
-                        No QR/scratch-off verification code linking to luigioil.com
+                        No QR/scratch-off verification code linking to www.luigiofficialbrand.com
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-red-500 mt-0.5">X</span>

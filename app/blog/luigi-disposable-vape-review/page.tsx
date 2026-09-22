@@ -409,7 +409,7 @@ export default function LuigiDisposableVapeReviewPage() {
                   Shop All Products
                 </Link>
                 <Link
-                  href="/wholesale"
+                  href="/wholesale-inquiry"
                   className="px-8 py-3 border border-[#D4AF37] text-[#D4AF37] font-semibold rounded-lg hover:bg-[#D4AF37]/10 transition-colors"
                 >
                   Wholesale Orders

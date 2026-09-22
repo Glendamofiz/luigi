@@ -20,6 +20,12 @@ const productCategories = [
     href: "/products/rosin-pens",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE--6045HM9VKkLCniR70yFVcnR864SqQQ.png"
   },
+  { 
+    id: 4, 
+    name: "Gummies", 
+    href: "/products/gummies",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/watermelon_joint-dTVzypY8deiJIBYR1SQIe0AdRfi346.avif"
+  },
 ]
 
 export function ProductsGridSection() {

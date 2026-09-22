@@ -45,19 +45,19 @@ const articleSchema = {
   "author": {
     "@type": "Organization",
     "name": "Luigi Oil",
-    "url": "https://luigioil.com"
+    "url": "https://www.luigiofficialbrand.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Luigi Oil",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://luigioil.com/logo.png"
+      "url": "https://www.luigiofficialbrand.com/logo.png"
     }
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://luigioil.com/blog/buy-luigi-2g-disposable-online"
+    "@id": "https://www.luigiofficialbrand.com/blog/buy-luigi-2g-disposable-online"
   }
 }
 
@@ -102,7 +102,7 @@ const faqSchema = {
       "name": "How do I spot a fake Luigi disposable?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Look for premium packaging with holographic elements, scan the verification QR code on luigioil.com, check oil color (should be golden-amber), and only buy from licensed dispensaries."
+        "text": "Look for premium packaging with holographic elements, scan the verification QR code on www.luigiofficialbrand.com, check oil color (should be golden-amber), and only buy from licensed dispensaries."
       }
     }
   ]
@@ -502,7 +502,7 @@ export default function BuyLuigi2GDisposablePage() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-4 h-4 mt-1 flex-shrink-0" />
-                      <span>QR code verifies on luigioil.com</span>
+                      <span>QR code verifies on www.luigiofficialbrand.com</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-4 h-4 mt-1 flex-shrink-0" />
@@ -625,7 +625,7 @@ export default function BuyLuigi2GDisposablePage() {
                     <span className="text-[#D4AF37] group-open:rotate-180 transition-transform">+</span>
                   </summary>
                   <p className="mt-4 text-gray-700">
-                    Look for premium packaging with holographic elements, scan the verification QR code on luigioil.com, 
+                    Look for premium packaging with holographic elements, scan the verification QR code on www.luigiofficialbrand.com, 
                     check oil color (should be golden-amber), and only buy from licensed dispensaries.
                   </p>
                 </details>
