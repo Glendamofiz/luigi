@@ -4,6 +4,7 @@ import Script from "next/script"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AgeVerification } from "@/components/age-verification"
+import { AddToCartButton } from "@/components/add-to-cart-button"
 
 const watermelonImages = [
   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/watermelon_joint-dTVzypY8deiJIBYR1SQIe0AdRfi346.avif",
@@ -61,6 +62,18 @@ export default function GummiesPage() {
                 <span className="text-3xl font-bold">$15.00</span>
                 <span className="rounded-full border border-[#D4AF37]/50 px-4 py-2 text-sm text-[#D4AF37]">10 Gummies + 1 Preroll</span>
               </div>
+              <AddToCartButton
+                className="mt-8 max-w-sm"
+                product={{
+                  id: "luigi-watermelon-gummy-pack",
+                  name: "Watermelon Gummy Pack",
+                  fullName: "Luigi Watermelon Gummy Pack",
+                  image: watermelonImages[0],
+                }}
+                price="$15"
+                priceNumber={15}
+                units="10 gummies + 1 preroll"
+              />
             </div>
             <div className="grid grid-cols-2 gap-4">
               {watermelonImages.map((src, index) => (
