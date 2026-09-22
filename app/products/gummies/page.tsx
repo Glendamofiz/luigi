@@ -12,105 +12,35 @@ const watermelonImages = [
 ]
 
 export const metadata: Metadata = {
-  title: "Luigi Gummies | Watermelon Rosin Gummies + Preroll",
-  description: "Shop Luigi Watermelon Gummy Pack: ten 10mg bubble hash rosin-infused indica gummies paired with a 0.5g live resin preroll for $15.",
-  keywords: ["Luigi gummies", "watermelon THC gummies", "rosin gummies", "gummy and preroll pack"],
+  title: "Watermelon Indica Gummies + Preroll | LUIGI Rosin Pack — $15",
+  description: "Ten 10mg bubble hash rosin watermelon indica gummies paired with a .5g live resin preroll. Just $15. Premium flavor, twice the experience. Shop LUIGI in California.",
+  keywords: ["watermelon THC gummies", "rosin infused gummies", "THC gummies with preroll", "indica gummies", "bubble hash rosin gummies California", "live resin preroll", "liquid diamonds preroll", "10mg THC gummies", "infused preroll pack", "indica watermelon gummies", "rosin edibles California", "watermelon indica gummies with preroll", "THC gummy and preroll combo pack", "best rosin gummies Los Angeles", "LUIGI cannabis Los Angeles", "cheap THC gummies California", "affordable rosin gummies", "$15 THC gummy pack"],
   alternates: { canonical: "/products/gummies" },
-  openGraph: {
-    title: "Luigi Watermelon Gummy Pack | Rosin Gummies + Preroll",
-    description: "Ten 10mg watermelon rosin gummies paired with a 0.5g live resin preroll. Shop the $15 Luigi Gummy Pack.",
-    url: "https://www.luigiofficialbrand.com/products/gummies",
-    type: "website",
-    images: [{ url: watermelonImages[0], width: 1200, height: 1200, alt: "Luigi Watermelon Gummy Pack" }],
-  },
+  openGraph: { title: "Watermelon Gummy Pack | LUIGI Cannabis — $15", description: "Ten 10mg bubble hash rosin-infused watermelon indica gummies plus a .5g live resin preroll. Just $15.", url: "https://www.luigiofficialbrand.com/products/gummies", siteName: "LUIGI", type: "website", images: [{ url: watermelonImages[0], width: 1200, height: 1200, alt: "LUIGI Watermelon Indica THC Gummies" }] },
   twitter: { card: "summary_large_image", images: [watermelonImages[0]] },
 }
 
-const productSchema = {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  name: "Luigi Watermelon Gummy Pack",
-  description: "Ten 10mg bubble hash rosin-infused watermelon indica gummies paired with a 0.5g live resin preroll.",
-  image: watermelonImages,
-  brand: { "@type": "Brand", name: "Luigi Oil" },
-  url: "https://www.luigiofficialbrand.com/products/gummies",
-  sku: "LUIGI-WATERMELON-GUMMY-PACK",
-  offers: {
-    "@type": "Offer",
-    priceCurrency: "USD",
-    price: "15.00",
-    availability: "https://schema.org/InStock",
-    url: "https://www.luigiofficialbrand.com/products/gummies",
-  },
-}
+const productSchema = { "@context": "https://schema.org", "@type": "Product", name: "LUIGI Watermelon Gummy Pack", description: "Ten 10mg bubble hash rosin-infused watermelon indica gummies paired with a 0.5g live resin preroll.", image: watermelonImages, brand: { "@type": "Brand", name: "LUIGI" }, url: "https://www.luigiofficialbrand.com/products/gummies", sku: "LUIGI-WATERMELON-GUMMY-PACK", offers: { "@type": "Offer", priceCurrency: "USD", price: "15.00", availability: "https://schema.org/InStock", url: "https://www.luigiofficialbrand.com/products/gummies" } }
+
+const Section = ({ title, children }: { title: string; children: React.ReactNode }) => <section className="border-b border-gray-200 py-14 md:py-20"><h2 className="text-3xl font-bold tracking-tight text-black md:text-4xl">{title}</h2><div className="mt-6 flex flex-col gap-5 text-lg leading-8 text-gray-700">{children}</div></section>
 
 export default function GummiesPage() {
-  return (
-    <>
-      <Script id="gummies-product-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
-      <AgeVerification />
-      <Header />
-      <main className="pt-16 lg:pt-20">
-        <section className="bg-black py-16 text-white md:py-24">
-          <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-2 lg:items-center lg:px-8">
-            <div>
-              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#D4AF37]">Gummies</p>
-              <h1 className="text-4xl font-bold tracking-tight md:text-6xl">Watermelon Gummy Pack</h1>
-              <p className="mt-5 text-xl text-gray-300">Indica rosin gummies paired with a live resin preroll.</p>
-              <p className="mt-6 max-w-xl text-gray-400">Ten 10mg bubble hash rosin-infused watermelon gummies and one matching 0.5g preroll. Two ways to experience the same juicy flavor for $15.</p>
-              <div className="mt-8 flex flex-wrap items-center gap-4">
-                <span className="text-3xl font-bold">$15.00</span>
-                <span className="rounded-full border border-[#D4AF37]/50 px-4 py-2 text-sm text-[#D4AF37]">10 Gummies + 1 Preroll</span>
-              </div>
-              <AddToCartButton
-                className="mt-8 max-w-sm"
-                product={{
-                  id: "luigi-watermelon-gummy-pack",
-                  name: "Watermelon Gummy Pack",
-                  fullName: "Luigi Watermelon Gummy Pack",
-                  image: watermelonImages[0],
-                }}
-                price="$15"
-                priceNumber={15}
-                units="10 gummies + 1 preroll"
-              />
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              {watermelonImages.map((src, index) => (
-                <div key={src} className="relative aspect-square overflow-hidden rounded-lg bg-white/10">
-                  <Image src={src} alt={index === 0 ? "Luigi Watermelon Gummy Pack" : "Luigi Watermelon Preroll"} fill className="object-contain p-4" priority={index === 0} />
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-        <section className="bg-white py-16 md:py-24">
-          <div className="mx-auto max-w-5xl px-6 lg:px-8">
-            <div className="grid gap-12 md:grid-cols-2">
-              <div>
-                <h2 className="text-3xl font-bold text-black">Two ways to experience watermelon</h2>
-                <p className="mt-5 leading-7 text-gray-600">Bubble hash rosin-infused gummies bring a sweet, juicy flavor and simple dosing. The live resin and liquid diamonds preroll adds bright citrus, sour pungency, and a deep earthy finish.</p>
-                <p className="mt-4 leading-7 text-gray-600">Start with one gummy and give edible effects 30–90 minutes before taking more. Enjoy the preroll separately or pair it with the gummy for a layered session.</p>
-              </div>
-              <div className="rounded-lg bg-gray-50 p-6">
-                <h2 className="text-2xl font-bold text-black">What&apos;s inside</h2>
-                <dl className="mt-5 divide-y divide-gray-200 text-sm">
-                  <div className="flex justify-between gap-4 py-3"><dt className="font-semibold text-gray-700">Gummies</dt><dd className="text-right text-gray-600">10 × 10mg rosin gummies</dd></div>
-                  <div className="flex justify-between gap-4 py-3"><dt className="font-semibold text-gray-700">Preroll</dt><dd className="text-right text-gray-600">1 × 0.5g live resin preroll</dd></div>
-                  <div className="flex justify-between gap-4 py-3"><dt className="font-semibold text-gray-700">Type</dt><dd className="text-right text-gray-600">Indica</dd></div>
-                  <div className="flex justify-between gap-4 py-3"><dt className="font-semibold text-gray-700">Price</dt><dd className="text-right font-bold text-black">$15.00</dd></div>
-                </dl>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="bg-black py-14 text-center text-white">
-          <h2 className="text-3xl font-bold">Find Luigi Gummies near you</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-gray-400">Available through licensed California dispensaries and delivery services. Check your local retailer for availability.</p>
-          <a href="/find-luigi" className="mt-7 inline-flex rounded-md bg-[#D4AF37] px-6 py-3 font-semibold text-black transition hover:bg-[#E3C45B]">Find a Dispensary</a>
-        </section>
-      </main>
-      <Footer />
-    </>
-  )
+  return <>
+    <Script id="gummies-product-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+    <AgeVerification /><Header />
+    <main className="pt-16 lg:pt-20">
+      <section className="bg-black py-16 text-white md:py-24"><div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-2 lg:items-center lg:px-8"><div><p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#D4AF37]">Gummies</p><h1 className="text-4xl font-bold tracking-tight md:text-6xl">Watermelon Gummy Pack — Indica Rosin Gummies + Live Resin Preroll</h1><p className="mt-5 text-xl text-gray-300"><strong>Dangerously delicious. Seriously good.</strong></p><p className="mt-5 max-w-xl text-lg leading-8 text-gray-300">Ten 10mg bubble hash rosin-infused watermelon indica gummies. One matching .5g live resin preroll. Two ways to experience the same juicy, sun-ripened flavor — and twice the reason to reach for LUIGI.</p><p className="mt-5 text-sm font-semibold uppercase tracking-wide text-gray-400">Medium Potency | 9.2mg THC per pack | 10 Gummies + 1 Preroll</p><div className="mt-8 flex flex-wrap items-center gap-4"><span className="text-3xl font-bold">$15.00</span><span className="rounded-full border border-[#D4AF37]/50 px-4 py-2 text-sm text-[#D4AF37]">10 Gummies + 1 Preroll</span></div><AddToCartButton className="mt-8 max-w-sm" product={{ id: "luigi-watermelon-gummy-pack", name: "Watermelon Gummy Pack", fullName: "LUIGI Watermelon Gummy Pack", image: watermelonImages[0] }} price="$15" priceNumber={15} units="10 gummies + 1 preroll" /></div><div className="grid grid-cols-2 gap-4">{watermelonImages.map((src, index) => <div key={src} className="relative aspect-square overflow-hidden rounded-lg bg-white/10"><Image src={src} alt={index === 0 ? "LUIGI Watermelon Indica THC Gummies" : "LUIGI Watermelon Live Resin Preroll"} fill className="object-contain p-4" priority={index === 0} /></div>)}</div></div></section>
+      <div className="mx-auto max-w-5xl px-6 lg:px-8">
+        <Section title="Two Ways to Experience Watermelon — One Pack"><p>This isn&apos;t just a watermelon THC gummy pack. It&apos;s a paired experience. Each LUIGI Watermelon Gummy Pack pairs ten indica gummies — infused with bubble hash rosin for a cleaner, more flavorful high — with a .5g preroll made from live resin and liquid diamonds.</p><p>The gummies deliver that juicy, sweet watermelon rush you crave. The preroll layers in bright citrus, sour pungency, and a deep, earthy finish. Together, they create a session that goes from first bite to final exhale. This is what a THC gummy and preroll combo pack should feel like — intentional, balanced, and memorable.</p><p>And at just <strong>$15.00</strong>, it&apos;s one of the most value-forward rosin-infused gummy packs in California. Premium inputs, in-house production, and a paired preroll — without the premium markup.</p></Section>
+        <Section title="What&apos;s Inside the Watermelon Gummy Pack"><div className="overflow-x-auto"><table className="w-full border-collapse text-left text-base"><thead><tr className="border-b-2 border-black"><th className="py-3 pr-6">Component</th><th className="py-3">Details</th></tr></thead><tbody>{[["Gummies","10 × 10mg bubble hash rosin-infused watermelon indica gummies"],["Preroll","1 × 0.5g live resin + liquid diamonds infused preroll"],["Total THC","9.2mg per pack (medium potency)"],["Type","Indica"],["Flavor Profile","Sweet watermelon, bright citrus, sour pungent notes, earthy finish"],["Price","$15.00"]].map(([a,b]) => <tr key={a} className="border-b border-gray-200"><td className="py-4 pr-6 font-semibold">{a}</td><td className="py-4">{b}</td></tr>)}</tbody></table></div></Section>
+        <Section title="Watermelon Gummy: Refresh Your Senses"><p>Refresh your senses with our watermelon-infused indica THC gummies. Bursting with the juicy, sweet essence of ripe watermelon on a hot summer day, each gummy delivers a deliciously fruity flavor in a convenient, bite-sized format.</p><p>What sets these rosin-infused gummies apart is the infusion itself. Bubble hash rosin is a solventless cannabis extract prized for its purity and full-spectrum flavor. Infusing it into gummies delivers a cleaner taste and more nuanced effect than distillate-based alternatives. The result is a 10mg THC gummy that tastes like real fruit — not chemicals — and hits with the kind of consistency LUIGI is known for.</p><p>Each gummy is a standard 10mg serving, making dosing simple whether you&apos;re a seasoned connoisseur or new to indica gummies. For a milder experience, split the gummy in half. Effects typically begin within 30–90 minutes — give it time before reaching for another.</p></Section>
+        <Section title="Watermelon Preroll: A Refined Indica Experience"><p>Indulge in the refined experience of our Watermelon-infused Live Resin Indica Pre-Rolls, crafted for the discerning cannabis connoisseur. A luscious fusion of sweet, sun-ripened watermelon and bright citrus opens the experience, followed by intriguing sour and pungent notes. A deep, earthy finish rounds out the profile, creating an elevated and sophisticated flavor journey from first light to final exhale.</p><p>The magic here is the live resin and liquid diamonds infusion. Live resin preserves the plant&apos;s natural terpenes for a flavorful, aromatic smoke. Liquid diamonds add a potent, crystalline THC punch. Together, they create an infused preroll that&apos;s both smooth and strong — the kind of live resin preroll that reminds you why extract-infused flower is worth seeking out.</p></Section>
+        <Section title="How to Enjoy the Watermelon Gummy Pack"><p><strong>The Gummies:</strong> Start with one. Each gummy is a standard 10mg serving. For a milder experience, split the gummy in half. Effects typically begin within 30–90 minutes.</p><p><strong>The Preroll:</strong> Save it for the come-up, the peak, or the wind-down. The live resin and liquid diamonds deliver a smooth, flavorful smoke that complements the gummy experience.</p><p><strong>The Pairing:</strong> For the full LUIGI experience, enjoy the preroll while the gummies take effect. The combination of edible body high and inhalable terpene profile creates a layered, memorable session.</p></Section>
+        <Section title="Premium Rosin Gummies at a $15 Price Point"><p>Most rosin-infused edible packs in California retail between $25 and $40. The LUIGI Watermelon Gummy Pack delivers the same solventless-infused quality — plus a live resin and liquid diamonds preroll — for just <strong>$15.00</strong>.</p><p>How? Because everything we do starts in-house. Formulation, production, packaging, and distribution all happen under one roof. No middlemen. No inflated wholesale markups. Just premium cannabis products priced for the people who actually smoke them.</p><p>If you&apos;ve been searching for affordable rosin gummies in California without sacrificing flavor or potency, this is the pack.</p></Section>
+        <Section title="Why LUIGI?"><p>Born in Los Angeles and built from the ground up, LUIGI is a cannabis brand for people who appreciate quality without the pretense. Everything we do starts in-house — formulation, production, packaging, distribution — giving us complete control over every product that carries our name.</p><p>We combine premium inputs, innovative hardware, and unique product formats to create experiences that stand out in a crowded market. Whether it&apos;s our signature Dual Packs, rosin-infused products, Fattone collections, or limited-edition drops, LUIGI is committed to delivering flavor, potency, consistency, and value in every package.</p><p>We&apos;re inspired by art, culture, hospitality, and the communities that support us. That&apos;s why LUIGI isn&apos;t just a cannabis brand — it&apos;s a movement built around bringing people together and making every session a little more memorable.</p></Section>
+        <Section title="Frequently Asked Questions"><div className="flex flex-col gap-7">{[["What does bubble hash rosin-infused mean?","Bubble hash rosin is a solventless cannabis extract prized for its purity and full-spectrum flavor. Infusing it into gummies delivers a cleaner taste and more nuanced effect than distillate-based alternatives."],["What&apos;s the difference between live resin and liquid diamonds?","Live resin preserves the plant&apos;s natural terpenes for a flavorful, aromatic smoke. Liquid diamonds add a potent, crystalline THC punch. Together, they create a preroll that&apos;s both smooth and strong."],["How much THC is in each gummy?","Each gummy contains 10mg THC — the standard single serving in California. The full pack is rated medium potency at 9.2mg THC per pack."],["How much does the Watermelon Gummy Pack cost?","The LUIGI Watermelon Gummy Pack retails for $15.00 and includes ten 10mg bubble hash rosin-infused indica gummies plus one 0.5g live resin and liquid diamonds infused preroll."],["Is this product indica or sativa?","Indica. Expect a relaxing, body-forward experience — ideal for evening sessions or winding down."],["Can I buy this pack for delivery in Los Angeles?","LUIGI products are available through licensed California dispensaries. Check your local retailer or delivery service for availability."],["How long do the effects of the gummies last?","Edible effects typically begin within 30–90 minutes and can last 4–6 hours depending on your metabolism, tolerance, and whether you&apos;ve eaten. Start low and go slow."]].map(([q,a]) => <div key={q}><h3 className="text-xl font-bold text-black" dangerouslySetInnerHTML={{ __html: q }} /><p className="mt-2">{a}</p></div>)}</div></Section>
+      </div>
+      <section className="bg-black py-16 text-center text-white"><div className="mx-auto max-w-3xl px-6"><h2 className="text-3xl font-bold md:text-4xl">Ready to Experience the Watermelon Gummy Pack?</h2><p className="mt-5 text-lg leading-8 text-gray-300">Ten rosin-infused indica gummies. One live resin preroll. Twice the flavor. Twice the experience. Just <strong>$15.00</strong>. Find LUIGI at a licensed California dispensary near you.</p><a href="/find-luigi" className="mt-8 inline-flex rounded-md bg-[#D4AF37] px-6 py-3 font-semibold text-black transition hover:bg-[#E3C45B]">Find a Dispensary — $15</a></div></section>
+    </main><Footer />
+  </>
 }
