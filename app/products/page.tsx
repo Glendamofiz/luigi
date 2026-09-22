@@ -56,6 +56,12 @@ const productsSchema = {
         "position": 3,
         "name": "Luigi Rosin Pens",
         "url": "https://www.luigiofficialbrand.com/products/rosin-pens"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Luigi Gummies",
+        "url": "https://www.luigiofficialbrand.com/products/gummies"
       }
     ]
   }
@@ -79,6 +85,12 @@ const productCategories = [
     description: "Pure solventless rosin in convenient pen form",
     href: "/products/rosin-pens",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OG-RESERVE-2400x2400-OA10oIBvKBToWVDytXhwa5JPGI0xCU.png",
+  },
+  {
+    name: "Gummies",
+    description: "Watermelon rosin gummies paired with a live resin preroll",
+    href: "/products/gummies",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/watermelon_joint-dTVzypY8deiJIBYR1SQIe0AdRfi346.avif",
   },
 ]
 
