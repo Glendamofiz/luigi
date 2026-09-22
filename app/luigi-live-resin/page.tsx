@@ -9,7 +9,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Luigi Oil 2026 Guide: Disposables, Fattones & Rosin",
-  description: "Explore Luigi Oil&apos;s 2026 guide to 2G disposables, Fattones, Series 6 live resin, and rosin pre-rolls from licensed California dispensaries.",
+  description: "Explore Luigi Oil's 2026 guide to 2G disposables, Fattones, Series 6 live resin, and rosin pre-rolls from licensed California dispensaries.",
   keywords: [
     "buy Luigi 2G disposable online",
     "Luigi disposable near me",
