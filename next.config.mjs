@@ -29,6 +29,16 @@ const nextConfig = {
   redirects: async () => {
     return [
       {
+        source: '/products/gummies/watermelon',
+        destination: '/products/watermelon-gummy-pack',
+        permanent: true,
+      },
+      {
+        source: '/products/gummies/var-banana',
+        destination: '/products/var-banana-gummy-pack',
+        permanent: true,
+      },
+      {
         source: '/:path*',
         has: [
           {
