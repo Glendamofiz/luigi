@@ -4,6 +4,7 @@ import Script from "next/script"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { RelatedGummyProducts } from "@/components/related-gummy-products"
 import { AgeVerification } from "@/components/age-verification"
 import { AddToCartButton } from "@/components/add-to-cart-button"
 
@@ -58,6 +59,6 @@ export default function PinkLemonadeGummyPackPage() {
         <Section title="Frequently Asked Questions"><div className="flex flex-col gap-3">{faqs.map(([question, answer]) => <details key={question} itemScope itemType="https://schema.org/Question" className="group rounded-lg border border-gray-200 bg-white"><summary itemProp="name" className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 text-lg font-bold text-black marker:content-none"><span>{question}</span><span aria-hidden="true" className="text-2xl font-normal leading-none text-[#B08D24] transition-transform group-open:rotate-45">+</span></summary><div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer" className="border-t border-gray-200 px-5 py-4 leading-7 text-gray-700"><p itemProp="text">{answer}</p></div></details>)}</div></Section>
       </div>
       <section className="bg-black py-16 text-center text-white"><div className="mx-auto max-w-3xl px-6">{/* Image slot 7 — Final CTA: Cherry pack at a California dispensary. */}<h2 className="text-3xl font-bold md:text-4xl">Ready to Experience the Cherry Gummy Pack?</h2><p className="mt-5 text-lg leading-8 text-gray-300">Ten rosin-infused hybrid gummies. One Cherry Pie live resin preroll. Twice the flavor. Twice the experience. Just $15.00. Find LUIGI at a licensed California dispensary near you.</p><Link href="/find-luigi" className="mt-8 inline-flex rounded-md bg-[#D4AF37] px-6 py-3 font-semibold text-black transition hover:bg-[#E3C45B]">Find a Dispensary — $15</Link></div></section>
-    </main><Footer />
+    <RelatedGummyProducts currentSlug="cherry-gummy-pack" /></main><Footer />
   </>
 }

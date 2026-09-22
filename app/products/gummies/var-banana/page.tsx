@@ -3,6 +3,7 @@ import Image from "next/image"
 import Script from "next/script"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { RelatedGummyProducts } from "@/components/related-gummy-products"
 import { AgeVerification } from "@/components/age-verification"
 import { AddToCartButton } from "@/components/add-to-cart-button"
 
@@ -64,6 +65,6 @@ export default function GummiesPage() {
         <Section title="Frequently Asked Questions"><div className="flex flex-col gap-3">{faqItems.map(([question, answer]) => <details key={question} className="group rounded-lg border border-gray-200 bg-white"><summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 text-lg font-bold text-black marker:content-none"><span>{question}</span><span aria-hidden="true" className="text-2xl font-normal leading-none text-[#B08D24] transition-transform group-open:rotate-45">+</span></summary><div className="border-t border-gray-200 px-5 py-4 leading-7 text-gray-700"><p>{answer}</p></div></details>)}</div></Section>
       </div>
       <section className="bg-black py-16 text-center text-white"><div className="mx-auto max-w-3xl px-6"><h2 className="text-3xl font-bold md:text-4xl">Ready to Experience the Var Banana Gummy Pack?</h2><p className="mt-5 text-lg leading-8 text-gray-300">Ten rosin-infused indica gummies. One live resin preroll. Twice the flavor. Twice the experience. Just <strong>$15.00</strong>. Find LUIGI at a licensed California dispensary near you.</p><a href="/find-luigi" className="mt-8 inline-flex rounded-md bg-[#D4AF37] px-6 py-3 font-semibold text-black transition hover:bg-[#E3C45B]">Find a Dispensary — $15</a></div></section>
-    </main><Footer />
+    <RelatedGummyProducts currentSlug="gummies/var-banana" /></main><Footer />
   </>
 }
