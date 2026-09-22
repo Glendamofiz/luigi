@@ -5,7 +5,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AgeVerification } from "@/components/age-verification"
 
-const productImage = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/watermelon_joint-dTVzypY8deiJIBYR1SQIe0AdRfi346.avif"
+const productImage = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1789512159-watermelon_1_-IRbHAsWWr6YGRAsvzyI4NLUveXChLq.avif"
 
 export const metadata: Metadata = {
   title: "LUIGI Gummies | Watermelon Rosin Gummy Pack",
