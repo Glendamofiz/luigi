@@ -131,7 +131,7 @@ export default function LuigiLiveResinPage() {
         {/* Hero / Introduction */}
         <section className="bg-black py-16 md:py-24 lg:py-32 relative overflow-hidden">
           <Image
-            src="/images/luigi-bg-pattern.jpg"
+            src="/images/hero-product.jpg"
             alt=""
             width={1920}
             height={1080}

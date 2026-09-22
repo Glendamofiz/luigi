@@ -102,6 +102,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${baseUrl}/wholesale-inquiry`,
+      lastModified,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/wholesale`,
       lastModified,
       changeFrequency: 'weekly' as const,

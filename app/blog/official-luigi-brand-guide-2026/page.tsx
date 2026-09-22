@@ -304,7 +304,7 @@ export default function OfficialLuigiBrandGuidePage() {
                   <Link href="/products" className="px-6 py-3 bg-[#D4AF37] text-black font-semibold rounded-lg hover:bg-[#C5A028] transition-colors">
                     Shop Products
                   </Link>
-                  <Link href="/wholesale" className="px-6 py-3 border border-[#D4AF37] text-[#D4AF37] font-semibold rounded-lg hover:bg-[#D4AF37]/10 transition-colors">
+                  <Link href="/wholesale-inquiry" className="px-6 py-3 border border-[#D4AF37] text-[#D4AF37] font-semibold rounded-lg hover:bg-[#D4AF37]/10 transition-colors">
                     Wholesale
                   </Link>
                 </div>

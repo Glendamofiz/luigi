@@ -161,7 +161,7 @@ export default function BuyLuigiWholesale() {
             <p>Wholesale cannabis orders require a valid state retail or distribution license in a jurisdiction where Luigi Oil operates. Have your license number and business documentation ready before reaching out — this is the first thing any legitimate wholesale channel will ask for.</p>
 
             <h3>2. Submit a Wholesale Inquiry</h3>
-            <p>Orders go through the official <Link href="/wholesale">Luigi Oil Wholesale</Link> page. Submitting your business details there connects you with a licensed distributor rather than a third-party reseller, which matters both for pricing and for making sure what lands on your shelf is genuine.</p>
+            <p>Orders go through the official <Link href="/wholesale-inquiry">Luigi Oil Wholesale</Link> page. Submitting your business details there connects you with a licensed distributor rather than a third-party reseller, which matters both for pricing and for making sure what lands on your shelf is genuine.</p>
 
             <h3>3. Review the Product Lineup</h3>
             <p>Before placing an order, walk through the full <Link href="/products">Products page</Link> to see the current catalog: 2G Disposables, Fattones pre-rolls, the Series 6 collection, and Rosin Pens. Many dispensaries start with a mixed first order across two or three product lines to see what resonates with their customer base before scaling up.</p>
@@ -241,7 +241,7 @@ export default function BuyLuigiWholesale() {
             </ul>
 
             <h2>Buy Luigi Carts Wholesale vs. Ordering From a Secondary Distributor</h2>
-            <p>Some dispensaries are tempted to source Luigi Oil products through secondary distributors or unfamiliar resellers, usually chasing a lower upfront price. This carries real risk: secondary sourcing bypasses the batch verification and quality control built into the official wholesale channel, and it puts your dispensary&apos;s reputation on the line if a customer ends up with a product that isn&apos;t genuine. Ordering direct through <Link href="/wholesale">Luigi Oil Wholesale</Link> keeps your supply chain verifiable and your shelf stocked with authentic product every time.</p>
+            <p>Some dispensaries are tempted to source Luigi Oil products through secondary distributors or unfamiliar resellers, usually chasing a lower upfront price. This carries real risk: secondary sourcing bypasses the batch verification and quality control built into the official wholesale channel, and it puts your dispensary&apos;s reputation on the line if a customer ends up with a product that isn&apos;t genuine. Ordering direct through <Link href="/wholesale-inquiry">Luigi Oil Wholesale</Link> keeps your supply chain verifiable and your shelf stocked with authentic product every time.</p>
 
             <h2>Frequently Asked Questions</h2>
 
@@ -261,7 +261,7 @@ export default function BuyLuigiWholesale() {
             <p>Timelines depend on order size, destination, and current inventory. Exact shipping windows are confirmed with your dedicated wholesale contact after the order is placed.</p>
 
             <h2>Final Thoughts</h2>
-            <p>For dispensary owners ready to buy Luigi carts wholesale, the path is straightforward: confirm your license, order through the official channel, and start with a product mix that fits your customer base. Browse the full <Link href="/products">Products page</Link> to plan your first order, or head straight to <Link href="/wholesale">Luigi Oil Wholesale</Link> to get your account set up. Questions before you order? Reach the team directly via the <Link href="/contact">Contact page</Link>.</p>
+            <p>For dispensary owners ready to buy Luigi carts wholesale, the path is straightforward: confirm your license, order through the official channel, and start with a product mix that fits your customer base. Browse the full <Link href="/products">Products page</Link> to plan your first order, or head straight to <Link href="/wholesale-inquiry">Luigi Oil Wholesale</Link> to get your account set up. Questions before you order? Reach the team directly via the <Link href="/contact">Contact page</Link>.</p>
             </div>
           </div>
       </article>
@@ -279,7 +279,7 @@ export default function BuyLuigiWholesale() {
         <div className="mx-auto max-w-4xl px-4 md:px-6 lg:px-8 text-center">
           <h3 className="text-2xl font-bold text-gray-900 mb-2">Ready to become an authorized retailer?</h3>
           <p className="text-gray-600 mb-6">Apply for Luigi wholesale partnership to stock our premium products and build your cannabis business.</p>
-          <Link href="/wholesale" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
+          <Link href="/wholesale-inquiry" className="inline-block bg-[#D4AF37] text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#C5A028] transition-colors">
             Apply for Wholesale
           </Link>
         </div>
