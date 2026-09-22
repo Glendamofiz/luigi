@@ -89,7 +89,7 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Luigi Oil",
-    "logo": { "@type": "ImageObject", "url": "https://luigiofficialbrand.com/logo.png" }
+    "logo": { "@type": "ImageObject", "url": "https://www.luigiofficialbrand.com/logo.png" }
   },
   "description": "Find the best dispensaries in Los Angeles carrying Luigi Oil with a practical evaluation checklist."
 }

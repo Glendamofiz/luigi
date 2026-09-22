@@ -89,7 +89,7 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Luigi Oil",
-    "logo": { "@type": "ImageObject", "url": "https://luigiofficialbrand.com/logo.png" }
+    "logo": { "@type": "ImageObject", "url": "https://www.luigiofficialbrand.com/logo.png" }
   },
   "description": "Everything a dispensary owner needs to know before you buy Luigi carts wholesale — licensing, minimums, pricing tiers, and the full product lineup."
 }

@@ -1,5 +1,5 @@
 export async function GET() {
-  const baseUrl = "https://luigiofficialbrand.com"
+  const baseUrl = "https://www.luigiofficialbrand.com"
 
   // Product data for Google Merchant Center feed
   const products = [

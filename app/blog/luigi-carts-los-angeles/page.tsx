@@ -42,7 +42,7 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Luigi Oil",
-    "logo": { "@type": "ImageObject", "url": "https://luigiofficialbrand.com/logo.png" }
+    "logo": { "@type": "ImageObject", "url": "https://www.luigiofficialbrand.com/logo.png" }
   },
   "description": "Find Luigi carts in Los Angeles with confirmed dispensaries, stock checking tips, and authenticity verification."
 }

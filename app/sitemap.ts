@@ -42,13 +42,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/products/gummies/watermelon`,
+      url: `${baseUrl}/products/watermelon-gummy-pack`,
       lastModified,
       changeFrequency: 'weekly' as const,
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/products/gummies/var-banana`,
+      url: `${baseUrl}/products/var-banana-gummy-pack`,
       lastModified,
       changeFrequency: 'weekly' as const,
       priority: 0.85,
@@ -91,12 +91,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/products/caribbean-fruit-gummy-pack`,
-      lastModified,
-      changeFrequency: 'weekly' as const,
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/products/blue-berries-gummy-pack`,
       lastModified,
       changeFrequency: 'weekly' as const,
       priority: 0.85,

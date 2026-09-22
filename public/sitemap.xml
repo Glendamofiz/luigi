@@ -10,6 +10,19 @@
   <url><loc>https://www.luigiofficialbrand.com/about</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.luigiofficialbrand.com/contact</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
+  <!-- Gummy collection and product pages -->
+  <url><loc>https://www.luigiofficialbrand.com/products/gummies</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.luigiofficialbrand.com/products/watermelon-gummy-pack</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.luigiofficialbrand.com/products/var-banana-gummy-pack</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.luigiofficialbrand.com/products/strawberry-gummy-pack</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.luigiofficialbrand.com/products/raspberry-gummy-pack</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.luigiofficialbrand.com/products/pomegranate-gummy-pack</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.luigiofficialbrand.com/products/pink-lemonade-gummy-pack</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.luigiofficialbrand.com/products/pineapple-gummy-pack</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.luigiofficialbrand.com/products/cherry-gummy-pack</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.luigiofficialbrand.com/products/caribbean-fruit-gummy-pack</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.luigiofficialbrand.com/products/blue-berries-gummy-pack</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+
   <!-- Product category pages -->
   <url><loc>https://www.luigiofficialbrand.com/products/fattones</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.luigiofficialbrand.com/products/series-6</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>

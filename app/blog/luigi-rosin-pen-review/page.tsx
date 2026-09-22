@@ -42,7 +42,7 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Luigi Oil",
-    "logo": { "@type": "ImageObject", "url": "https://luigiofficialbrand.com/logo.png" }
+    "logo": { "@type": "ImageObject", "url": "https://www.luigiofficialbrand.com/logo.png" }
   },
   "description": "An honest Luigi Rosin Pen review comparing solventless rosin to live resin."
 }
