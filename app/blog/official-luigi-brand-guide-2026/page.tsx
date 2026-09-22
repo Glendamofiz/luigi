@@ -89,7 +89,7 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Luigi Oil",
-    "logo": { "@type": "ImageObject", "url": "https://luigioil.com/logo.png" }
+    "logo": { "@type": "ImageObject", "url": "https://www.luigiofficialbrand.com/logo.png" }
   },
   "description": "Complete guide to the official Luigi brand products including disposables, 2G live resin, and Rosin Pens."
 }
@@ -275,7 +275,7 @@ export default function OfficialLuigiBrandGuidePage() {
               <ul className="list-disc pl-6 mb-6 text-gray-700 space-y-2">
                 <li><strong>Weedmaps</strong> - The primary locator. Search &quot;Luigi&quot; to find 100+ California dispensaries</li>
                 <li><strong>Licensed Dispensary Websites</strong> - Many offer same-day or next-day delivery</li>
-                <li><strong>Official Site (luigioil.com)</strong> - Use it to verify authorized retailers</li>
+                <li><strong>Official Site (www.luigiofficialbrand.com)</strong> - Use it to verify authorized retailers</li>
               </ul>
 
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-12 mb-6">

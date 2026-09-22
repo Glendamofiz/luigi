@@ -42,7 +42,7 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Luigi Oil",
-    "logo": { "@type": "ImageObject", "url": "https://luigioil.com/logo.png" }
+    "logo": { "@type": "ImageObject", "url": "https://www.luigiofficialbrand.com/logo.png" }
   },
   "description": "Complete guide to Luigi Rosin Pens flavors - the cleanest solventless vape option from Luigi Oil."
 }
@@ -334,7 +334,7 @@ export default function RosinPensFlavorsGuidePage() {
 
               <ul className="list-disc pl-6 mb-6 text-gray-700 space-y-2">
                 <li>Use the official <strong>Weedmaps brand page</strong> (search &quot;Luigi&quot;) to find 100+ licensed California dispensaries</li>
-                <li>Check <strong>luigioil.com</strong> or authorized retailer lists for the latest stock</li>
+                <li>Check <strong>www.luigiofficialbrand.com</strong> or authorized retailer lists for the latest stock</li>
                 <li>Always <strong>scan the QR code</strong> on packaging for verification</li>
                 <li>Look for batch-specific COAs confirming solventless hash rosin and purity</li>
               </ul>

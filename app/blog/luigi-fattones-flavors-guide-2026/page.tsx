@@ -330,7 +330,7 @@ export default function FattonesFlavorGuidePage() {
 
               <ul className="list-disc pl-6 mb-6 text-gray-700 space-y-2">
                 <li>Use the official <strong>Weedmaps brand page</strong> (search &quot;Luigi&quot;) to find 100+ licensed California dispensaries</li>
-                <li>Check <strong>luigioil.com</strong> for authorized retailers</li>
+                <li>Check <strong>www.luigiofficialbrand.com</strong> for authorized retailers</li>
                 <li>Always <strong>scan the QR code</strong> on packaging for verification</li>
                 <li>Look for proper child-resistant packaging and batch COAs</li>
               </ul>

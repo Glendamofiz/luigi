@@ -6,6 +6,8 @@ import { Footer } from "@/components/footer"
 import { AgeVerification } from "@/components/age-verification"
 import { AddToCartButton } from "@/components/add-to-cart-button"
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.luigiofficialbrand.com"
+const productUrl = `${siteUrl}/products/gummies/watermelon`
 const watermelonImages = [
   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/watermelon_joint-dTVzypY8deiJIBYR1SQIe0AdRfi346.avif",
   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1789512159-watermelon_1_-IRbHAsWWr6YGRAsvzyI4NLUveXChLq.avif",
@@ -15,12 +17,12 @@ export const metadata: Metadata = {
   title: "Watermelon Indica Gummies + Preroll | LUIGI Rosin Pack — $15",
   description: "Ten 10mg bubble hash rosin watermelon indica gummies paired with a .5g live resin preroll. Just $15. Premium flavor, twice the experience. Shop LUIGI in California.",
   keywords: ["watermelon THC gummies", "rosin infused gummies", "THC gummies with preroll", "indica gummies", "bubble hash rosin gummies California", "live resin preroll", "liquid diamonds preroll", "10mg THC gummies", "infused preroll pack", "indica watermelon gummies", "rosin edibles California", "watermelon indica gummies with preroll", "THC gummy and preroll combo pack", "best rosin gummies Los Angeles", "LUIGI cannabis Los Angeles", "cheap THC gummies California", "affordable rosin gummies", "$15 THC gummy pack"],
-  alternates: { canonical: "/products/gummies/watermelon" },
-  openGraph: { title: "Watermelon Gummy Pack | LUIGI Cannabis — $15", description: "Ten 10mg bubble hash rosin-infused watermelon indica gummies plus a .5g live resin preroll. Just $15.", url: "https://www.luigiofficialbrand.com/products/gummies/watermelon", siteName: "LUIGI", type: "website", images: [{ url: watermelonImages[0], width: 1200, height: 1200, alt: "LUIGI Watermelon Indica THC Gummies" }] },
+  alternates: { canonical: productUrl },
+  openGraph: { title: "Watermelon Gummy Pack | LUIGI Cannabis — $15", description: "Ten 10mg bubble hash rosin-infused watermelon indica gummies plus a .5g live resin preroll. Just $15.", url: productUrl, siteName: "LUIGI", type: "website", images: [{ url: watermelonImages[0], width: 1200, height: 1200, alt: "LUIGI Watermelon Indica THC Gummies" }] },
   twitter: { card: "summary_large_image", images: [watermelonImages[0]] },
 }
 
-const productSchema = { "@context": "https://schema.org", "@type": "Product", name: "LUIGI Watermelon Gummy Pack", description: "Ten 10mg bubble hash rosin-infused watermelon indica gummies paired with a 0.5g live resin preroll.", image: watermelonImages, brand: { "@type": "Brand", name: "LUIGI" }, url: "https://www.luigiofficialbrand.com/products/gummies/watermelon", sku: "LUIGI-WATERMELON-GUMMY-PACK", offers: { "@type": "Offer", priceCurrency: "USD", price: "15.00", availability: "https://schema.org/InStock", url: "https://www.luigiofficialbrand.com/products/gummies/watermelon" } }
+const productSchema = { "@context": "https://schema.org", "@type": "Product", name: "LUIGI Watermelon Gummy Pack", description: "Ten 10mg bubble hash rosin-infused watermelon indica gummies paired with a 0.5g live resin preroll.", image: watermelonImages, brand: { "@type": "Brand", name: "LUIGI" }, url: productUrl, sku: "LUIGI-WATERMELON-GUMMY-PACK", offers: { "@type": "Offer", priceCurrency: "USD", price: "15.00", availability: "https://schema.org/InStock", url: productUrl } }
 
 const faqItems = [
   ["What does bubble hash rosin-infused mean?", "Bubble hash rosin is a solventless cannabis extract prized for its purity and full-spectrum flavor. Infusing it into gummies delivers a cleaner taste and more nuanced effect than distillate-based alternatives."],

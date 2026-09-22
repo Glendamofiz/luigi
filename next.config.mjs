@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  env: {
+    NEXT_PUBLIC_SITE_URL: 'https://www.luigiofficialbrand.com',
+  },
   typescript: {
     ignoreBuildErrors: true,
   },

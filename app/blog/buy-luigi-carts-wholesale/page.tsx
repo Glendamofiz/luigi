@@ -42,7 +42,7 @@ const faqSchema = {
       "name": "What's the minimum order for Luigi wholesale?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Wholesale MOQs vary by product category and partnership tier. Contact Luigi Oil wholesale at wholesale@luigioil.com for specific MOQ details and custom pricing based on your order volume."
+        "text": "Wholesale MOQs vary by product category and partnership tier. Contact Luigi Oil wholesale at wholesale@www.luigiofficialbrand.com for specific MOQ details and custom pricing based on your order volume."
       }
     },
     {

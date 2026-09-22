@@ -42,7 +42,7 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Luigi Oil",
-    "logo": { "@type": "ImageObject", "url": "https://luigioil.com/logo.png" }
+    "logo": { "@type": "ImageObject", "url": "https://www.luigiofficialbrand.com/logo.png" }
   },
   "description": "Complete guide to Luigi Series 6 disposable flavors including effects, tasting notes, and where to buy."
 }
@@ -296,7 +296,7 @@ export default function Series6FlavorsGuidePage() {
               <div className="bg-[#D4AF37]/10 border border-[#D4AF37] rounded-xl p-6 my-8">
                 <h4 className="font-bold text-gray-900 mb-4">Safe Buying Tips:</h4>
                 <ul className="list-disc pl-6 text-gray-700 space-y-2">
-                  <li>Visit the official Luigi website (luigioil.com) and use the store locator</li>
+                  <li>Visit the official Luigi website (www.luigiofficialbrand.com) and use the store locator</li>
                   <li>Search &quot;Luigi&quot; on Weedmaps to find 100+ licensed California dispensaries</li>
                   <li>Always scan the QR code on packaging for verification</li>
                   <li>Check batch-specific COAs for potency and purity</li>

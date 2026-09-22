@@ -30,13 +30,13 @@ function replaceInFile(filePath) {
     let modified = false;
 
     // Replace domain references
-    if (content.includes('luigioil.com')) {
+    if (content.includes('www.luigiofficialbrand.com')) {
       content = content.replace(/luigioil\.com/g, 'www.luigiofficialbrand.com');
       modified = true;
     }
 
     // Replace email references
-    if (content.includes('info@luigioil.com')) {
+    if (content.includes('info@www.luigiofficialbrand.com')) {
       content = content.replace(/info@luigioil\.com/g, 'support@luigiofficialbrand.com');
       modified = true;
     }
