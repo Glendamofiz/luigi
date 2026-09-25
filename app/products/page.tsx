@@ -62,6 +62,12 @@ const productsSchema = {
         "position": 4,
         "name": "Luigi Gummies",
         "url": "https://www.luigiofficialbrand.com/products/gummies"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "LUIGI Blunt 2pk",
+        "url": "https://www.luigiofficialbrand.com/products/blunt-2pk"
       }
     ]
   }
@@ -91,6 +97,12 @@ const productCategories = [
     description: "Watermelon rosin gummies paired with a live resin preroll",
     href: "/products/gummies",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/watermelon_joint-dTVzypY8deiJIBYR1SQIe0AdRfi346.avif",
+  },
+  {
+    name: "Blunt 2pk",
+    description: "Premium rosin-infused blunts in a two-pack format",
+    href: "/products/blunt-2pk",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790271722-peanut_butter_breath_family-07HnZb3mtwe2oND1JfLyJDsrSgZyrY.avif",
   },
 ]
 
