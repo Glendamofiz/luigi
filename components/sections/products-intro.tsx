@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-const productImage = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/LUIGI_gummy.830-copy-1%20%281%29-ke6veLTvrpN2usmL3BS4pR3Wv8Paka.png"
+const productImage = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1789512159-watermelon_1_-IRbHAsWWr6YGRAsvzyI4NLUveXChLq.avif"
 
 export function ProductsIntroSection() {
   return (
