@@ -241,6 +241,7 @@ export default function CheckoutPage() {
   const [step, setStep] = useState<"cart" | "shipping" | "payment" | "confirmation">("cart")
   const [isProcessing, setIsProcessing] = useState(false)
   const [orderNumber, setOrderNumber] = useState("")
+  const [telegramInvoiceUrl, setTelegramInvoiceUrl] = useState("")
   
   const [shippingInfo, setShippingInfo] = useState({
     firstName: "",
@@ -350,9 +351,24 @@ export default function CheckoutPage() {
       console.error('Failed to send order email:', error)
     }
     
-    setIsProcessing(false)
-    setStep("confirmation")
-    clearCart()
+  const invoiceMessage = [
+    `Hello LUIGI team, I just placed order ${newOrderNumber}.`,
+    `Name: ${orderData.customerName}`,
+    `Email: ${orderData.customerEmail}`,
+    `Phone: ${orderData.customerPhone}`,
+    `Shipping: ${orderData.shippingAddress.street}, ${orderData.shippingAddress.city}, ${orderData.shippingAddress.state} ${orderData.shippingAddress.zip}, ${orderData.shippingAddress.country}`,
+    `Items: ${orderData.items.map((item) => `${item.quantity} x ${item.name} ($${item.price.toFixed(2)})`).join(", ")}`,
+    `Subtotal: $${orderData.subtotal.toFixed(2)}`,
+    `Crypto discount: $${orderData.cryptoDiscount.toFixed(2)}`,
+    `Total: $${orderData.total.toFixed(2)}`,
+    `Payment method: ${orderData.paymentMethod}`,
+    "Please send me payment instructions.",
+  ].join("\\n")
+  setTelegramInvoiceUrl(`https://t.me/luigiofficial?text=${encodeURIComponent(invoiceMessage)}`)
+  setIsProcessing(false)
+  setStep("confirmation")
+  clearCart()
+
   }
 
   if (items.length === 0 && step !== "confirmation") {
@@ -426,8 +442,16 @@ export default function CheckoutPage() {
                   <p className="text-sm text-gray-500 mb-2">Order Number</p>
                   <p className="text-2xl font-bold text-gray-900">{orderNumber}</p>
                 </div>
-                <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-8 text-left">
-                  <h3 className="font-semibold text-amber-800 mb-2">What happens next?</h3>
+  <div className="mb-8 rounded-xl border border-[#0088cc]/30 bg-[#0088cc]/5 p-5 text-left">
+  <h3 className="mb-2 font-semibold text-[#0077b5]">Complete payment with our team</h3>
+  <p className="mb-4 text-sm leading-6 text-gray-700">Contact our team on Telegram to receive payment instructions. Your order invoice is prefilled in the chat message.</p>
+  <a href={telegramInvoiceUrl || "https://t.me/luigiofficial"} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-[#0088cc] px-5 py-3 font-semibold text-white transition-colors hover:bg-[#0077b5]">
+    <MessageCircle className="h-5 w-5" />
+    Contact LUIGI on Telegram
+  </a>
+  </div>
+  <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-8 text-left">
+  <h3 className="font-semibold text-amber-800 mb-2">What happens next?</h3>
                   <ul className="text-sm text-amber-700 space-y-1">
                     <li>1. You&apos;ll receive a confirmation email at {shippingInfo.email}</li>
                     <li>2. Our team will verify your payment</li>
