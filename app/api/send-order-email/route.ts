@@ -56,11 +56,16 @@ function generateCustomerEmailHTML(order: OrderData) {
         </div>
         
         <div style="background-color: #ffffff; padding: 40px 30px; border-radius: 0 0 12px 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-          <h2 style="color: #1a1a1a; margin: 0 0 20px; font-size: 24px;">Thank You for Your Order!</h2>
+          <h2 style="color: #1a1a1a; margin: 0 0 20px; font-size: 24px;">Order Received — Pending Payment</h2>
+
+          <div style="background-color: #fff8e1; border: 2px solid #c9a227; padding: 18px 20px; border-radius: 10px; margin-bottom: 24px;">
+            <p style="margin: 0 0 8px; color: #7a5a00; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Order Status</p>
+            <p style="margin: 0; color: #5d4500; font-size: 20px; font-weight: 700;">Pending Payment</p>
+          </div>
           
           <p style="color: #666; line-height: 1.6; margin-bottom: 30px;">
             Hi ${order.customerName},<br><br>
-            We've received your order and it's being processed. You'll receive tracking information once your order ships.
+            We've received your order, but it is not confirmed yet. Please contact the LUIGI team on Telegram to receive payment instructions and complete your order. Your order will move forward after payment is verified.
           </p>
           
           <div style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; margin-bottom: 30px;">
@@ -108,11 +113,11 @@ function generateCustomerEmailHTML(order: OrderData) {
           </p>
           
           <div style="background-color: #f0f8ff; border: 2px solid #0088cc; padding: 25px; border-radius: 12px; margin-bottom: 30px; text-align: center;">
-            <h3 style="color: #0088cc; margin: 0 0 15px; font-size: 18px;">📱 Questions About Your Order?</h3>
+            <h3 style="color: #0088cc; margin: 0 0 15px; font-size: 18px;">Complete Payment on Telegram</h3>
             <p style="color: #666; margin: 0 0 15px; line-height: 1.6;">
-              Contact our team on Telegram for quick support and updates on your order.
+              Your order is <strong>pending payment</strong>. Click below to open a chat with the LUIGI team, share your order number, and receive secure payment instructions.
             </p>
-            <a href="https://t.me/luigiofficial" target="_blank" style="display: inline-block; background-color: #0088cc; color: white; padding: 12px 32px; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px; transition: background-color 0.3s; margin-top: 10px;">Message Us on Telegram</a>
+            <a href="https://t.me/luigiofficial" target="_blank" rel="noopener noreferrer" style="display: inline-block; background-color: #0088cc; color: white; padding: 12px 32px; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px; transition: background-color 0.3s; margin-top: 10px;">Proceed to Payment on Telegram</a>
           </div>
         </div>
         
@@ -154,8 +159,9 @@ function generateAdminEmailHTML(order: OrderData) {
         
         <div style="background-color: #ffffff; padding: 30px; border-radius: 0 0 12px 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
           
-          <div style="background-color: #e8f5e9; border-left: 4px solid #4caf50; padding: 15px; margin-bottom: 25px;">
-            <strong style="color: #2e7d32;">Order Total: $${order.total.toFixed(2)}</strong>
+          <div style="background-color: #fff8e1; border-left: 4px solid #c9a227; padding: 15px; margin-bottom: 25px;">
+            <strong style="color: #7a5a00;">Order Status: Pending Payment</strong><br>
+            <span style="color: #7a5a00;">Order Total: $${order.total.toFixed(2)}</span>
           </div>
           
           <h3 style="color: #1a1a1a; border-bottom: 2px solid #c9a227; padding-bottom: 10px; margin-bottom: 20px;">Customer Information</h3>
@@ -274,7 +280,7 @@ export async function POST(request: NextRequest) {
         'content-type': 'application/json',
       },
       body: JSON.stringify({
-        subject: `Order Confirmation - ${order.orderId}`,
+        subject: `Order Received — Pending Payment | ${order.orderId}`,
         htmlContent: generateCustomerEmailHTML(order),
         sender: { name: fromName, email: fromEmail },
         to: [{ email: order.customerEmail, name: order.customerName }],
