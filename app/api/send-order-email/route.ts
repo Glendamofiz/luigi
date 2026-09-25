@@ -259,12 +259,48 @@ function generateAdminEmailHTML(order: OrderData) {
   `
 }
 
+async function sendBrevoEmail(to: string, subject: string, htmlContent: string, orderId: string) {
+  const apiKey = process.env.BREVO_API_KEY
+  const senderEmail = process.env.BREVO_SENDER_EMAIL
+
+  if (!apiKey || !senderEmail) {
+    throw new Error('Brevo email configuration is missing')
+  }
+
+  const response = await fetch('https://api.brevo.com/v3/smtp/email', {
+    method: 'POST',
+    headers: {
+      accept: 'application/json',
+      'api-key': apiKey,
+      'content-type': 'application/json',
+    },
+    body: JSON.stringify({
+      sender: { email: senderEmail, name: 'Luigi Oil' },
+      to: [{ email: to }],
+      subject,
+      htmlContent,
+      headers: { 'X-Order-Number': orderId },
+    }),
+  })
+
+  if (!response.ok) {
+    const details = await response.text()
+    console.error('[v0] Brevo send failed:', response.status, details)
+    throw new Error('Brevo email delivery failed')
+  }
+}
+
 export async function POST(request: NextRequest) {
   try {
     const order: OrderData = await request.json()
 
     if (!order.orderId || !order.customerEmail || !order.customerName || !Array.isArray(order.items) || order.items.length === 0) {
       return NextResponse.json({ error: 'Invalid order payload' }, { status: 400 })
+    }
+
+    const adminEmail = process.env.ADMIN_EMAIL
+    if (!adminEmail) {
+      return NextResponse.json({ error: 'Email configuration is incomplete' }, { status: 500 })
     }
 
     const { error: orderError } = await supabase.from('orders').insert({
@@ -287,6 +323,21 @@ export async function POST(request: NextRequest) {
       console.error('[v0] Failed to save order:', orderError.message)
       return NextResponse.json({ error: 'Unable to save order' }, { status: 500 })
     }
+
+    await Promise.all([
+      sendBrevoEmail(
+        order.customerEmail,
+        `Order ${order.orderId} received — pending payment`,
+        generateCustomerEmailHTML(order),
+        order.orderId,
+      ),
+      sendBrevoEmail(
+        adminEmail,
+        `New order ${order.orderId} — pending payment`,
+        generateAdminEmailHTML(order),
+        order.orderId,
+      ),
+    ])
 
     return NextResponse.json({ success: true, orderNumber: order.orderId })
   } catch (error: unknown) {
