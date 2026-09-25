@@ -352,18 +352,30 @@ export default function CheckoutPage() {
     }
     
   const invoiceMessage = [
-    `Hello LUIGI team, I just placed order ${newOrderNumber}.`,
+    "LUIGI PRIVATE ORDER INVOICE",
+    "────────────────────────────",
+    `Order reference: ${newOrderNumber}`,
+    "",
+    "CUSTOMER DETAILS",
     `Name: ${orderData.customerName}`,
     `Email: ${orderData.customerEmail}`,
     `Phone: ${orderData.customerPhone}`,
-    `Shipping: ${orderData.shippingAddress.street}, ${orderData.shippingAddress.city}, ${orderData.shippingAddress.state} ${orderData.shippingAddress.zip}, ${orderData.shippingAddress.country}`,
-    `Items: ${orderData.items.map((item) => `${item.quantity} x ${item.name} ($${item.price.toFixed(2)})`).join(", ")}`,
+    "",
+    "DELIVERY DETAILS",
+    `${orderData.shippingAddress.street}`,
+    `${orderData.shippingAddress.city}, ${orderData.shippingAddress.state} ${orderData.shippingAddress.zip}`,
+    `${orderData.shippingAddress.country}`,
+    "",
+    "ORDER SUMMARY",
+    ...orderData.items.map((item) => `${item.quantity} × ${item.name} — $${(item.price * item.quantity).toFixed(2)}`),
+    "",
     `Subtotal: $${orderData.subtotal.toFixed(2)}`,
-    `Crypto discount: $${orderData.cryptoDiscount.toFixed(2)}`,
-    `Total: $${orderData.total.toFixed(2)}`,
+    ...(orderData.cryptoDiscount > 0 ? [`Crypto payment savings: −$${orderData.cryptoDiscount.toFixed(2)}`] : []),
+    `TOTAL DUE: $${orderData.total.toFixed(2)}`,
     `Payment method: ${orderData.paymentMethod}`,
-    "Please send me payment instructions.",
-  ].join("\\n")
+    "",
+    "Please send payment instructions and next steps for my LUIGI order.",
+  ].join("\n")
   setTelegramInvoiceUrl(`https://t.me/luigiofficial?text=${encodeURIComponent(invoiceMessage)}`)
   setIsProcessing(false)
   setStep("confirmation")
@@ -404,7 +416,7 @@ export default function CheckoutPage() {
                 { key: "cart", label: "Cart", icon: ShoppingCart },
                 { key: "shipping", label: "Shipping", icon: Truck },
                 { key: "payment", label: "Payment", icon: Wallet },
-                { key: "confirmation", label: "Complete", icon: CheckCircle },
+                { key: "confirmation", label: "Pending Payment", icon: Wallet },
               ].map((s, index) => {
                 const Icon = s.icon
                 const isActive = step === s.key
@@ -431,13 +443,18 @@ export default function CheckoutPage() {
           {step === "confirmation" && (
             <div className="max-w-2xl mx-auto text-center">
               <div className="bg-white rounded-2xl p-8 md:p-12 shadow-sm">
-                <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <CheckCircle className="w-10 h-10 text-green-600" />
+                <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-amber-100">
+                  <Wallet className="h-10 w-10 text-amber-600" />
                 </div>
-                <h1 className="text-3xl font-bold text-gray-900 mb-4">Order Confirmed!</h1>
-                <p className="text-gray-600 mb-8">
-                  Thank you for your order. We&apos;ve sent a confirmation email with your order details.
+                <h1 className="mb-4 text-3xl font-bold text-gray-900">Order Pending — Proceed to Payment</h1>
+                <p className="mb-8 text-gray-600">
+                  Your order has been received and is pending payment. Contact our LUIGI team on Telegram using the invoice below to complete your order.
                 </p>
+                <div className="mb-8 rounded-lg border border-amber-200 bg-amber-50 p-6">
+                  <p className="mb-2 text-sm text-amber-700">Payment Status</p>
+                  <p className="text-xl font-bold text-amber-900">Pending Payment</p>
+                  <p className="mt-3 text-sm text-amber-800">Order reference: {orderNumber}</p>
+                </div>
                 <div className="bg-gray-50 rounded-lg p-6 mb-8">
                   <p className="text-sm text-gray-500 mb-2">Order Number</p>
                   <p className="text-2xl font-bold text-gray-900">{orderNumber}</p>
@@ -454,9 +471,10 @@ export default function CheckoutPage() {
   <h3 className="font-semibold text-amber-800 mb-2">What happens next?</h3>
                   <ul className="text-sm text-amber-700 space-y-1">
                     <li>1. You&apos;ll receive a confirmation email at {shippingInfo.email}</li>
-                    <li>2. Our team will verify your payment</li>
-                    <li>3. Your order will be shipped within 1-2 business days</li>
-                    <li>4. You&apos;ll receive tracking information via email</li>
+                    <li>2. Complete payment with our team on Telegram</li>
+                    <li>3. Our team will verify your payment</li>
+                    <li>4. Your order will be shipped within 1-2 business days</li>
+                    <li>5. You&apos;ll receive tracking information via email</li>
                   </ul>
                 </div>
                 <Link href="/">
