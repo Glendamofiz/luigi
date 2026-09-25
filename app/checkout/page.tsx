@@ -352,18 +352,30 @@ export default function CheckoutPage() {
     }
     
   const invoiceMessage = [
-    `Hello LUIGI team, I just placed order ${newOrderNumber}.`,
+    "LUIGI PRIVATE ORDER INVOICE",
+    "────────────────────────────",
+    `Order reference: ${newOrderNumber}`,
+    "",
+    "CUSTOMER DETAILS",
     `Name: ${orderData.customerName}`,
     `Email: ${orderData.customerEmail}`,
     `Phone: ${orderData.customerPhone}`,
-    `Shipping: ${orderData.shippingAddress.street}, ${orderData.shippingAddress.city}, ${orderData.shippingAddress.state} ${orderData.shippingAddress.zip}, ${orderData.shippingAddress.country}`,
-    `Items: ${orderData.items.map((item) => `${item.quantity} x ${item.name} ($${item.price.toFixed(2)})`).join(", ")}`,
+    "",
+    "DELIVERY DETAILS",
+    `${orderData.shippingAddress.street}`,
+    `${orderData.shippingAddress.city}, ${orderData.shippingAddress.state} ${orderData.shippingAddress.zip}`,
+    `${orderData.shippingAddress.country}`,
+    "",
+    "ORDER SUMMARY",
+    ...orderData.items.map((item) => `${item.quantity} × ${item.name} — $${(item.price * item.quantity).toFixed(2)}`),
+    "",
     `Subtotal: $${orderData.subtotal.toFixed(2)}`,
-    `Crypto discount: $${orderData.cryptoDiscount.toFixed(2)}`,
-    `Total: $${orderData.total.toFixed(2)}`,
+    ...(orderData.cryptoDiscount > 0 ? [`Crypto payment savings: −$${orderData.cryptoDiscount.toFixed(2)}`] : []),
+    `TOTAL DUE: $${orderData.total.toFixed(2)}`,
     `Payment method: ${orderData.paymentMethod}`,
-    "Please send me payment instructions.",
-  ].join("\\n")
+    "",
+    "Please send payment instructions and next steps for my LUIGI order.",
+  ].join("\n")
   setTelegramInvoiceUrl(`https://t.me/luigiofficial?text=${encodeURIComponent(invoiceMessage)}`)
   setIsProcessing(false)
   setStep("confirmation")
