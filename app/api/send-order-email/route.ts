@@ -1,11 +1,18 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
 
-const supabase = createClient(
-  process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_SECRET_KEY!,
-  { auth: { autoRefreshToken: false, persistSession: false } },
-)
+function getSupabaseClient() {
+  const supabaseUrl = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL
+  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_SECRET_KEY
+
+  if (!supabaseUrl || !supabaseKey) {
+    throw new Error('Supabase server configuration is missing')
+  }
+
+  return createClient(supabaseUrl, supabaseKey, {
+    auth: { autoRefreshToken: false, persistSession: false },
+  })
+}
 
 interface OrderItem {
   name: string
@@ -303,6 +310,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Email configuration is incomplete' }, { status: 500 })
     }
 
+    const supabase = getSupabaseClient()
     const { error: orderError } = await supabase.from('orders').insert({
       order_number: order.orderId,
       customer_email: order.customerEmail,
@@ -324,7 +332,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Unable to save order' }, { status: 500 })
     }
 
-    await Promise.all([
+    const deliveries = await Promise.allSettled([
       sendBrevoEmail(
         order.customerEmail,
         `Order ${order.orderId} received — pending payment`,
@@ -338,6 +346,28 @@ export async function POST(request: NextRequest) {
         order.orderId,
       ),
     ])
+
+    const failedRecipients = deliveries
+      .map((delivery, index) => ({ delivery, recipient: index === 0 ? 'customer' : 'admin' }))
+      .filter(({ delivery }) => delivery.status === 'rejected')
+      .map(({ delivery, recipient }) => {
+        const reason = delivery.status === 'rejected' && delivery.reason instanceof Error
+          ? delivery.reason.message
+          : 'Unknown delivery failure'
+        console.error(`[v0] Brevo ${recipient} email failed:`, reason)
+        return recipient
+      })
+
+    if (failedRecipients.length > 0) {
+      return NextResponse.json(
+        {
+          error: 'Order saved, but one or more notification emails failed',
+          orderNumber: order.orderId,
+          failedRecipients,
+        },
+        { status: 502 },
+      )
+    }
 
     return NextResponse.json({ success: true, orderNumber: order.orderId })
   } catch (error: unknown) {

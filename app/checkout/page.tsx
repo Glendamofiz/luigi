@@ -240,6 +240,7 @@ export default function CheckoutPage() {
   const { items, removeItem, updateQuantity, totalPrice, clearCart } = useCart()
   const [step, setStep] = useState<"cart" | "shipping" | "payment" | "confirmation">("cart")
   const [isProcessing, setIsProcessing] = useState(false)
+  const [emailError, setEmailError] = useState("")
   const [orderNumber, setOrderNumber] = useState("")
   const [telegramInvoiceUrl, setTelegramInvoiceUrl] = useState("")
   
@@ -339,16 +340,19 @@ export default function CheckoutPage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(orderData),
       })
-      
+      const result = await response.json()
+
       if (!response.ok) {
-        const errorData = await response.json()
-        console.error('Email API error:', response.status, errorData)
-      } else {
-        const result = await response.json()
-        console.log('Order emails sent successfully:', result)
+        console.error('[v0] Email API error:', response.status, result)
+        setEmailError(result.error || 'We could not send the order emails. Please try again.')
+        setIsProcessing(false)
+        return
       }
     } catch (error) {
-      console.error('Failed to send order email:', error)
+      console.error('[v0] Failed to send order email:', error)
+      setEmailError('We could not connect to the order service. Please try again.')
+      setIsProcessing(false)
+      return
     }
     
   const invoiceMessage = [
@@ -923,12 +927,17 @@ export default function CheckoutPage() {
                         </div>
                       )}
 
-                      <div className="pt-4">
-                        <Button 
-                          type="submit"
-                          disabled={!selectedPayment || (selectedPayment === "crypto" && !selectedCrypto) || isProcessing}
-                          className="w-full bg-[#D4AF37] text-black hover:bg-[#C5A028] py-6 font-semibold disabled:opacity-50"
-                        >
+      <div className="pt-4">
+        {emailError && (
+          <div role="alert" className="mb-4 rounded-lg border border-red-200 bg-red-50 p-4 text-sm text-red-800">
+            {emailError} The order was saved, but please retry so both the buyer and admin receive their emails.
+          </div>
+        )}
+        <Button
+          type="submit"
+          disabled={!selectedPayment || (selectedPayment === "crypto" && !selectedCrypto) || isProcessing}
+          className="w-full bg-[#D4AF37] text-black hover:bg-[#C5A028] py-6 font-semibold disabled:opacity-50"
+        >
                           {isProcessing ? "Processing..." : selectedPayment === "crypto" ? "Complete Crypto Order" : "Complete Order"}
                         </Button>
                         {selectedPayment === "crypto" && !selectedCrypto && (
