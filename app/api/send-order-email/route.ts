@@ -305,7 +305,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Invalid order payload' }, { status: 400 })
     }
 
-    const adminEmail = process.env.ADMIN_EMAIL || 'orders@luigiofficialbrand.com'
+    const adminEmail = 'orders@luigiofficialbrand.com'
 
     const supabase = getSupabaseClient()
     const { error: orderError } = await supabase.from('orders').insert({
