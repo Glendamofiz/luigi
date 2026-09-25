@@ -24,7 +24,7 @@ const productCategories = [
     id: 4, 
     name: "Gummies", 
     href: "/products/gummies",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/watermelon_joint-dTVzypY8deiJIBYR1SQIe0AdRfi346.avif"
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1789583518-blue_beries-01J7OcwNphj1liB08a5GKnv9G8hoW0.avif"
   },
 ]
 
