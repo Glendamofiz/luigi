@@ -268,9 +268,9 @@ function generateAdminEmailHTML(order: OrderData) {
 
 async function sendBrevoEmail(to: string, subject: string, htmlContent: string, orderId: string) {
   const apiKey = process.env.BREVO_API_KEY
-  const senderEmail = process.env.BREVO_SENDER_EMAIL
+  const senderEmail = 'support@luigiofficialbrand.com'
 
-  if (!apiKey || !senderEmail) {
+  if (!apiKey) {
     throw new Error('Brevo email configuration is missing')
   }
 
@@ -305,10 +305,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Invalid order payload' }, { status: 400 })
     }
 
-    const adminEmail = process.env.ADMIN_EMAIL
-    if (!adminEmail) {
-      return NextResponse.json({ error: 'Email configuration is incomplete' }, { status: 500 })
-    }
+    const adminEmail = process.env.ADMIN_EMAIL || 'orders@luigiofficialbrand.com'
 
     const supabase = getSupabaseClient()
     const { error: orderError } = await supabase.from('orders').insert({
