@@ -2,119 +2,44 @@ import type { Metadata } from "next"
 import Script from "next/script"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowLeft, Check, Leaf, Sparkles } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AgeVerification } from "@/components/age-verification"
 import { AddToCartButton } from "@/components/add-to-cart-button"
 
-const product = {
-  id: "peanut-butter-breath-blunt-2pk",
-  name: "Peanut Butter Breath",
-  fullName: "Peanut Butter Breath Blunt 2pk",
-  image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/peanut-butter-breath_blunt-qmQqayyCI2HA4bB4c6PWtOaLZXRrOA.avif",
-  familyImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790271722-peanut_butter_breath_family-C9f1QXq076kJTdiPfKBeQcdYgDQgP2.avif",
-  tubeImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/peanut-butter-breath_tube-zpFkuvYcHGqtR5s5JH6DpWk9xFTbXT.avif",
+const site = "https://www.luigiofficialbrand.com"
+const url = `${site}/products/peanut-butter-breath-blunt-2pk`
+const images = {
+  hero: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790271722-peanut_butter_breath_family-C9f1QXq076kJTdiPfKBeQcdYgDQgP2.avif",
+  pack: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/peanut-butter-breath_tube-zpFkuvYcHGqtR5s5JH6DpWk9xFTbXT.avif",
+  blunt: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/peanut-butter-breath_blunt-qmQqayyCI2HA4bB4c6PWtOaLZXRrOA.avif",
 }
+const product = { id: "peanut-butter-breath-blunt-2pk", name: "Peanut Butter Breath Blunt 2-Pack", image: images.hero }
 
 export const metadata: Metadata = {
-  title: "Peanut Butter Breath Blunt 2pk | Luigi Oil",
-  description: "Shop the Luigi Oil Peanut Butter Breath Blunt 2pk: two 1.25g rosin-infused hybrid blunts crafted for a rich, smooth session.",
-  keywords: ["Peanut Butter Breath blunt", "Luigi Blunt 2pk", "rosin infused blunts", "Luigi Oil"],
-  alternates: { canonical: "/products/peanut-butter-breath-blunt-2pk" },
-  openGraph: {
-    title: "Peanut Butter Breath Blunt 2pk | Luigi Oil",
-    description: "Two 1.25g rosin-infused hybrid blunts in every pack.",
-    type: "website",
-    url: "https://www.luigiofficialbrand.com/products/peanut-butter-breath-blunt-2pk",
-    images: [{ url: product.familyImage, width: 1200, height: 1200, alt: "Peanut Butter Breath Blunt 2pk" }],
-  },
+  title: "Peanut Butter Breath Rosin Blunt 2-Pack | LUIGI Hybrid — $30",
+  description: "Two 1.25g rosin-infused Peanut Butter Breath hybrid blunts. 2.5g total. Nutty, gassy, smooth. Just $30. Shop LUIGI in California.",
+  keywords: ["peanut butter breath blunt", "peanut butter breath 2 pack", "rosin infused blunts", "hybrid blunts California", "peanut butter breath strain", "thugpug genetics peanut butter breath", "do si dos mendo breath cross", "premium rosin blunts", "2.5g blunt pack", "infused blunt pack California", "LUIGI cannabis blunts", "LUIGI blunt 2 pack", "best rosin blunts California", "affordable rosin blunts", "$30 blunt pack", "nutty weed strains", "gassy hybrid blunts", "peanut butter breath effects", "relaxed hybrid blunts", "California rosin blunts", "buy blunts online California", "cannabis blunt delivery Los Angeles", "premium infused blunts", "1.25g blunts"],
+  alternates: { canonical: url },
+  openGraph: { title: "Peanut Butter Breath Rosin Blunt 2-Pack | LUIGI Cannabis — $30", description: "Two 1.25g rosin-infused Peanut Butter Breath hybrid blunts. 2.5g total. Nutty, gassy, smooth. Just $30.", url, siteName: "LUIGI", type: "website", images: [{ url: images.hero, alt: "LUIGI Peanut Butter Breath Rosin Infused Hybrid Blunt 2-Pack" }] },
 }
 
-const productSchema = {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  name: product.fullName,
-  description: "Two 1.25g rosin-infused Peanut Butter Breath hybrid blunts.",
-  brand: { "@type": "Brand", name: "Luigi Oil" },
-  image: [product.tubeImage, product.image, product.familyImage],
-  url: "https://www.luigiofficialbrand.com/products/peanut-butter-breath-blunt-2pk",
-  sku: "LUIGI-PBB-BLUNT-2PK",
-  offers: {
-    "@type": "Offer",
-    priceCurrency: "USD",
-    price: "25",
-    availability: "https://schema.org/InStock",
-    url: "https://www.luigiofficialbrand.com/products/peanut-butter-breath-blunt-2pk",
-  },
-}
+const sections = [
+  ["Peanut Butter Breath — A Savory Standout from ThugPug Genetics", "Peanut Butter Breath earns its reputation on flavor alone — and then backs it up with effect. Bred by ThugPug Genetics from a Do-Si-Dos and Mendo Breath cross, it is a hybrid that leans into its indica lineage on the back end while keeping the front end cheerful and social. The flower is known for striking frost coverage, dense structure, and an unmistakable nutty, earthy aroma with a gas-forward finish. When you light up a Peanut Butter Breath blunt, you get the full expression of the strain — no shortcuts, no filler."],
+  ["Peanut Butter Breath Effects: Relaxed, Happy, Giggly", "Consumers consistently report three signature effects: relaxed, happy, and giggly. The high starts with a cheerful, mood-lifting wave that is social and easygoing — perfect for sharing or enjoying solo. As the experience settles in, the hybrid’s physical weight becomes more apparent. It lands in the sweet spot: substantial body calm paired with a light, playful head high and a gentle, unwinding descent ideal for evenings and weekends."],
+  ["Nutty, Earthy, Woody — A Flavor Experience Worth Savoring", "The first notes are creamy, nutty, and smooth — almost dessert-like in their richness. As the smoke develops, earthy and woody undertones add depth and complexity. The finish brings a punch of classic gas that cuts through the sweetness and keeps things grounded. It is a flavor journey that rewards slow, intentional draws."],
+  ["Why We Infuse with Premium Rosin", "Most infused blunts use distillate, a refined THC extract stripped of natural terpenes and minor cannabinoids. LUIGI blunts use premium rosin instead. Rosin is solventless, full-spectrum, and retains natural terpenes, flavonoids, and minor cannabinoids. The nutty, earthy, gassy flavor comes from the same place the effect does — not an artificial flavor additive — for a smoother, richer, more layered smoke."],
+  ["How to Enjoy the Peanut Butter Breath Blunt 2-Pack", "Sharing: With two 1.25g blunts in every pack, this is built for sharing. Pass one around and save the second for later — or keep both for yourself. Solo Session: One blunt is plenty for a full session. Start slow, take your time, and let the slow finish do its thing. Storage: Keep blunts in a cool, dark, dry place, ideally in an airtight container away from sunlight and heat."],
+  ["How the Peanut Butter Breath Blunt 2-Pack Compares to Distillate Blunts", "Distillate packs are potent but often stripped of plant terpenes and minor cannabinoids, with flavor added back artificially. The LUIGI pack uses solventless, full-spectrum rosin that retains terpenes, flavonoids, and minor cannabinoids. Two 1.25g blunts for $30.00 means 2.5g of rosin-infused flower at a price point distillate packs barely compete with."],
+  ["Premium Rosin Blunts at a $30 Price Point", "Comparable rosin-infused blunt packs in California often retail for $40 to $60. LUIGI delivers solventless-infused quality and two full 1.25g blunts for $30.00 because formulation, production, packaging, and distribution happen in-house. No middlemen. No inflated wholesale markups. Just premium products priced fairly for the people who smoke them."],
+  ["Why LUIGI?", "Born in Los Angeles and built from the ground up, LUIGI is a cannabis brand for people who appreciate quality without pretense. We combine premium inputs, innovative hardware, and unique formats to deliver flavor, potency, consistency, and value. Inspired by art, culture, hospitality, and community, LUIGI is more than a cannabis brand — it is a movement built around making every session memorable."],
+]
+const faq = [["What’s included in the Peanut Butter Breath Blunt 2-Pack?", "Two 1.25g rosin-infused blunts — 2.5g total — packed with Peanut Butter Breath hybrid flower and premium rosin."], ["What strain is in the pack?", "Peanut Butter Breath, a ThugPug Genetics hybrid bred from Do-Si-Dos and Mendo Breath."], ["Is it indica, sativa, or hybrid?", "Hybrid, typically reported as relaxed, happy, and giggly."], ["What does it taste like?", "Nutty, earthy, and woody with creamy smoothness and classic gas on the finish."], ["How much does it cost?", "$30.00 for two 1.25g rosin-infused blunts — 2.5g total."], ["How should I store my blunts?", "Store them in a cool, dark, dry place, ideally airtight and away from heat and direct sunlight."], ["Can I buy LUIGI blunts for delivery in Los Angeles?", "LUIGI products are available through licensed California dispensaries. Check local retailer availability."], ["What is the difference between a rosin-infused and regular blunt?", "A regular blunt is flower; a rosin-infused blunt adds solventless rosin for richer flavor complexity and a fuller terpene expression."]]
+const schema = { "@context": "https://schema.org", "@type": "Product", name: product.name, brand: { "@type": "Brand", name: "LUIGI" }, description: "Two 1.25g rosin-infused Peanut Butter Breath hybrid blunts — 2.5g total. Nutty, earthy, woody, and gassy with relaxed, happy, giggly effects. $30.00.", sku: "LUIGI-PBB-BLUNT-2PK", category: "Cannabis > Pre-Rolls > Infused Blunts", image: [images.hero, images.pack, images.blunt], offers: { "@type": "Offer", priceCurrency: "USD", price: "30.00", availability: "https://schema.org/InStock", url } }
+const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map(([name, text]) => ({ "@type": "Question", name, acceptedAnswer: { "@type": "Answer", text } })) }
+function CopySection({ title, text }: { title: string; text: string }) { return <section className="border-t border-gray-200 py-12"><h2 className="mb-5 text-3xl font-bold text-gray-950">{title}</h2><p className="max-w-4xl whitespace-pre-line leading-8 text-gray-600">{text}</p></section> }
+function ProductImage({ src, alt, slot }: { src: string; alt: string; slot: string }) { return <div className="relative aspect-square overflow-hidden rounded-xl bg-gray-100">{/* {slot} */}<Image src={src} alt={alt} fill className="object-contain p-5" sizes="(max-width: 768px) 100vw, 50vw" /></div> }
 
 export default function PeanutButterBreathBluntPage() {
-  return (
-    <>
-      <Script id="peanut-butter-breath-product-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
-      <AgeVerification />
-      <Header />
-      <main className="bg-white pt-16 lg:pt-20">
-        <section className="mx-auto max-w-7xl px-6 py-10 lg:px-8 lg:py-16">
-          <Link href="/products" className="mb-8 inline-flex items-center gap-2 text-sm font-medium text-gray-600 transition-colors hover:text-black">
-            <ArrowLeft className="h-4 w-4" />
-            Back to products
-          </Link>
-
-          <div className="grid gap-12 lg:grid-cols-2 lg:items-start lg:gap-20">
-            <div className="space-y-4">
-              <div className="relative aspect-square overflow-hidden rounded-xl bg-gray-100">
-                <Image src={product.familyImage} alt="Peanut Butter Breath Blunt 2pk full product pack" fill priority className="object-contain p-4" sizes="(max-width: 1024px) 100vw, 50vw" />
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="relative aspect-square overflow-hidden rounded-xl bg-gray-100">
-                  <Image src={product.image} alt="Peanut Butter Breath infused blunt" fill className="object-contain p-6" sizes="25vw" />
-                </div>
-                <div className="relative aspect-square overflow-hidden rounded-xl bg-gray-100">
-                  <Image src={product.tubeImage} alt="Peanut Butter Breath blunt tube packaging" fill className="object-contain p-6" sizes="25vw" />
-                </div>
-              </div>
-            </div>
-
-            <div className="lg:sticky lg:top-28">
-              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#9a7b16]">Blunt 2pk</p>
-              <h1 className="text-4xl font-bold tracking-tight text-gray-950 md:text-5xl">Peanut Butter Breath</h1>
-              <p className="mt-3 text-xl text-gray-600">Two premium rosin-infused hybrid blunts</p>
-              <div className="my-8 flex items-center gap-4 border-y border-gray-200 py-5">
-                <span className="text-3xl font-bold text-gray-950">$25</span>
-                <span className="text-sm text-gray-500">2 x 1.25g blunts</span>
-              </div>
-              <p className="text-base leading-7 text-gray-600">Rich, nutty Peanut Butter Breath flavor meets Luigi&apos;s signature rosin infusion. Each pack includes two slow-burning hybrid blunts made for sharing or stretching out your session.</p>
-
-              <div className="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-5">
-                <AddToCartButton product={product} price="$25" priceNumber={25} units="2 x 1.25g" perUnit="per 2-pack" />
-              </div>
-
-              <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                <div className="flex gap-3"><Leaf className="mt-1 h-5 w-5 shrink-0 text-[#9a7b16]" /><div><h2 className="font-semibold text-gray-950">Hybrid profile</h2><p className="mt-1 text-sm leading-6 text-gray-600">Balanced, flavorful effects with a smooth finish.</p></div></div>
-                <div className="flex gap-3"><Sparkles className="mt-1 h-5 w-5 shrink-0 text-[#9a7b16]" /><div><h2 className="font-semibold text-gray-950">Rosin infused</h2><p className="mt-1 text-sm leading-6 text-gray-600">Crafted with premium solventless rosin.</p></div></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="border-t border-gray-200 bg-gray-50">
-          <div className="mx-auto grid max-w-7xl gap-10 px-6 py-14 lg:grid-cols-2 lg:px-8">
-            <div>
-              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#9a7b16]">Inside the pack</p>
-              <h2 className="text-3xl font-bold text-gray-950">A two-blunt session, dialed in.</h2>
-              <ul className="mt-6 space-y-4 text-gray-600">
-                {["2 x 1.25g Peanut Butter Breath blunts", "Premium hybrid flower", "Rosin infusion for a richer experience", "Ready-to-share tube packaging"].map((item) => (
-                  <li key={item} className="flex items-center gap-3"><Check className="h-5 w-5 text-[#9a7b16]" />{item}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="rounded-xl bg-black p-8 text-white"><p className="text-sm uppercase tracking-[0.2em] text-[#D4AF37]">Luigi Oil</p><p className="mt-4 text-2xl font-semibold leading-tight">Premium flavor. Thoughtful craft. No shortcuts.</p><p className="mt-4 leading-7 text-gray-300">Please enjoy responsibly and only where permitted by local law. For adults of legal age only.</p></div>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </>
-  )
+  return <><Script id="product-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} /><Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} /><AgeVerification /><Header /><main className="bg-white pt-16 lg:pt-20"><section className="mx-auto max-w-7xl px-6 py-12 lg:px-8 lg:py-20"><Link href="/products/blunt-2pk" className="text-sm font-semibold text-gray-600">← Back to Blunt 2pk</Link><div className="mt-8 grid gap-12 lg:grid-cols-2"><ProductImage src={images.hero} alt="LUIGI Peanut Butter Breath Rosin Infused Hybrid Blunt 2-Pack" slot="Slot 1 — Hero" /><div><p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#9a7b16]">LUIGI Blunt 2pk</p><h1 className="mt-4 text-4xl font-bold text-gray-950 md:text-6xl">Peanut Butter Breath Blunt 2-Pack — Rosin-Infused Hybrid Blunts</h1><p className="mt-5 text-xl font-semibold text-gray-700">Nutty, gassy, and oh-so-smooth.</p><p className="mt-5 leading-8 text-gray-600">Two 1.25g blunts loaded with premium rosin — 2.5g total. Creamy peanut butter vibes, earthy terps, and a punch of classic gas. Rich flavor, bold character, and double the fun in every pack.</p><p className="mt-6 font-semibold text-gray-700">Hybrid · 2 × 1.25g Blunts · 2.5g Total · Rosin Infused</p><p className="mt-6 text-3xl font-bold text-gray-950">$30.00</p><div className="mt-6"><AddToCartButton product={product} price="$30.00" priceNumber={30} units="2 × 1.25g" perUnit="per 2-pack" /></div></div></div></section><div className="mx-auto grid max-w-7xl gap-6 px-6 pb-4 md:grid-cols-2 lg:px-8"><ProductImage src={images.pack} alt="Two 1.25g Peanut Butter Breath rosin blunts — 2.5g total" slot="Slot 2 — Pack Contents" /><ProductImage src={images.blunt} alt="Close-up of Peanut Butter Breath rosin-infused blunt with visible oil ring" slot="Slot 3 — Blunt Close-Up" /></div><div className="mx-auto max-w-7xl px-6 lg:px-8"><CopySection title="Two Blunts. One Iconic Strain. Double the Fun." text="The LUIGI Rosin Infused Double Blunt Pack comes loaded with two 1.25g blunts, packing 2.5g of bold, flavorful goodness. Perfect for sharing — or keeping both for yourself. Game on. A savory standout from ThugPug Genetics, Peanut Butter Breath combines nutty flavor, striking frost, and a cheerful high with substantial physical weight. At $30.00, you get premium inputs and in-house production without inflated markup." /><section className="border-t border-gray-200 py-12"><h2 className="mb-5 text-3xl font-bold text-gray-950">What&apos;s Inside the Peanut Butter Breath Blunt 2-Pack</h2><table className="w-full max-w-3xl text-left text-sm"><tbody>{[["Blunts", "2× 1.25g rosin-infused blunts"], ["Total Weight", "2.5g total"], ["Strain", "Peanut Butter Breath"], ["Type", "Hybrid"], ["Genetics", "Do-Si-Dos × Mendo Breath (ThugPug Genetics)"], ["Effects", "Relaxed, Happy, Giggly"], ["Flavor Profile", "Nutty, earthy, woody, gassy"], ["Price", "$30.00"]].map(([key, value]) => <tr key={key} className="border-b border-gray-200"><th className="py-4 font-semibold text-gray-950">{key}</th><td className="py-4 text-gray-600">{value}</td></tr>)}</tbody></table></section>{sections.map(([title, text]) => <CopySection key={title} title={title} text={text} />)}<section className="border-t border-gray-200 py-12" itemScope itemType="https://schema.org/FAQPage"><h2 className="mb-7 text-3xl font-bold text-gray-950">Frequently Asked Questions</h2><div className="space-y-7">{faq.map(([question, answer]) => <div key={question} itemScope itemProp="mainEntity" itemType="https://schema.org/Question"><h3 itemProp="name" className="text-lg font-semibold text-gray-950">{question}</h3><div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text" className="mt-2 leading-7 text-gray-600">{answer}</p></div></div>)}</div></section><section className="mb-16 rounded-xl bg-black px-6 py-14 text-center text-white"><h2 className="text-3xl font-bold">Ready to Experience the Peanut Butter Breath Blunt 2-Pack?</h2><p className="mx-auto mt-5 max-w-2xl leading-8 text-gray-300">Two 1.25g rosin-infused blunts. 2.5g total. Nutty, gassy, and oh-so-smooth. Just $30.00. Find LUIGI at a licensed California dispensary near you.</p><Link href="/products/blunt-2pk" className="mt-7 inline-flex rounded-full bg-[#D4AF37] px-7 py-3 font-bold text-black">Find a Dispensary — $30</Link></section></div></main><Footer /></>
 }

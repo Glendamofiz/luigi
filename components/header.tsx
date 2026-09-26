@@ -11,7 +11,7 @@ const productCategories = [
   { name: "The Series 6 Collections", href: "/products/series-6" },
   { name: "Rosin Pens", href: "/products/rosin-pens" },
   { name: "Gummies", href: "/products/gummies" },
-  { name: "Blunt 2pk", href: "/products/peanut-butter-breath-blunt-2pk" },
+  { name: "Blunt 2pk", href: "/products/blunt-2pk" },
 ]
 
 const navItems = [
