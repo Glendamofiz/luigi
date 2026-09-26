@@ -20,6 +20,7 @@ const products = [
   { href: "/products/garlic-glue-blunt-2pk", name: "Garlic Glue", type: "Hybrid", description: "Savory garlic, earthy gas, and pungent terps.", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790271010-garlic_glue_family-GxDwL54dLBLDzvYKi5SKnhvi4c2A7d.avif" },
   { href: "/products/og-reserve-blunt-2pk", name: "OG Reserve", type: "Indica", description: "Earthy, piney, classic OG flavor with smooth calm.", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790271576-og_reserve_family-B8SVEKeMz6FnHkJbJVR11HOGD3TL9A.avif" },
   { href: "/products/sour-ribbon-tarts-blunt-2pk", name: "Sour Ribbon Tarts", type: "Sativa", description: "Zingy citrus, tangy candy, and a sugary fruity finish.", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790271901-sour_tart_ribbons_family-i2AdrAYqbcHMZCUbUeCezpyZHUMohB.avif" },
+  { href: "/products/tangie-diesel-blunt-2pk", name: "Tangie Diesel", type: "Hybrid", description: "Juicy tangerine, bold diesel, and a funky twist.", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790272714-tangie_diesel_family-HvETsC1udVjVTve1oV8AGT7iFRIq3o.avif" },
 ]
 
 export default function Blunt2pkPage() {
