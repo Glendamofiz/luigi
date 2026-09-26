@@ -5,6 +5,7 @@ import Image from "next/image"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AgeVerification } from "@/components/age-verification"
+import { BluntRelatedCards } from "@/components/blunt-related-cards"
 import { AddToCartButton } from "@/components/add-to-cart-button"
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.luigiofficialbrand.com"
@@ -54,7 +55,7 @@ export default function BerryAmarilloBluntPage() {
     <Section title="Why LUIGI?"><p>Born in Los Angeles, LUIGI is a cannabis brand for people who appreciate quality without the pretense. Everything starts in-house, giving us complete control over every product that carries our name.</p><p>We combine premium inputs, innovative hardware, and unique product formats to create experiences that stand out. LUIGI is committed to flavor, potency, consistency, and value in every package.</p><p>We're inspired by art, culture, hospitality, and the communities that support us. LUIGI is more than a cannabis brand, it's a movement built around bringing people together.</p></Section>
     <section id="frequently-asked-questions" className="scroll-mt-24 border-t border-gray-200 py-12" itemScope itemType="https://schema.org/FAQPage"><h2 className="mb-8 text-3xl font-bold text-gray-950">Frequently Asked Questions</h2><div className="max-w-4xl divide-y divide-gray-200 rounded-xl border border-gray-200">{faq.map(([question, answer]) => <details key={question} itemScope itemProp="mainEntity" itemType="https://schema.org/Question" className="group p-5 open:bg-gray-50"><summary itemProp="name" className="flex cursor-pointer list-none items-center justify-between gap-6 text-lg font-semibold text-gray-950"><span>{question}</span><span aria-hidden="true" className="text-2xl font-normal text-gray-500 transition-transform group-open:rotate-45">+</span></summary><div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"><p itemProp="text" className="mt-4 leading-7 text-gray-600">{answer}</p></div></details>)}</div></section>
     <section className="mb-16 rounded-xl bg-black px-6 py-14 text-center text-white"><h2 className="mt-8 text-3xl font-bold md:text-4xl">Ready to Experience the Berry Amarillo Blunt 2-Pack?</h2><p className="mx-auto mt-5 max-w-2xl leading-8 text-gray-300">Two 1.25g rosin-infused indica blunts. 2.5g total. Ripe berry, zesty citrus, and a juicy little getaway in every spark. Just $30.00. Find LUIGI at a licensed California dispensary near you.</p><Link href="/products/berry-amarillo-blunt-2pk" className="mt-7 inline-flex rounded-full bg-[#D4AF37] px-7 py-3 font-bold text-black">Find a Dispensary, $30</Link></section>
-  </div></main><Footer /></>
+  </div><BluntRelatedCards currentSlug="berry-amarillo-blunt-2pk" /></main><Footer /></>
 }
 
 // All canonical, internal, Open Graph, and offer URLs use https://www.luigiofficialbrand.com.
