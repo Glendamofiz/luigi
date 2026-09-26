@@ -102,7 +102,7 @@ const productCategories = [
     name: "Gummies",
     description: "Watermelon rosin gummies paired with a live resin preroll",
     href: "/products/gummies",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/watermelon_joint-dTVzypY8deiJIBYR1SQIe0AdRfi346.avif",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1789512159-watermelon_1_-IRbHAsWWr6YGRAsvzyI4NLUveXChLq.avif",
   },
   {
     name: "Blunt 2pk",
