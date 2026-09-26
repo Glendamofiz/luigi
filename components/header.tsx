@@ -12,6 +12,7 @@ const productCategories = [
   { name: "Rosin Pens", href: "/products/rosin-pens" },
   { name: "Gummies", href: "/products/gummies" },
   { name: "Blunt 2pk", href: "/products/blunt-2pk" },
+  { name: "LRLD AIO", href: "/products/lrld-aio" },
 ]
 
 const navItems = [

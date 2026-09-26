@@ -48,6 +48,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/products/lrld-aio`,
+      lastModified,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/products/acapulco-gold-aio-dual-pack`,
+      lastModified,
+      changeFrequency: 'weekly' as const,
+      priority: 0.85,
+    },
+    {
       url: `${baseUrl}/products/watermelon-gummy-pack`,
       lastModified,
       changeFrequency: 'weekly' as const,
