@@ -68,6 +68,12 @@ const productsSchema = {
         "position": 5,
         "name": "Blunt 2pk",
         "url": "https://www.luigiofficialbrand.com/products/blunt-2pk"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "LRLD AIO",
+        "url": "https://www.luigiofficialbrand.com/products/lrld-aio"
       }
     ]
   }
@@ -103,6 +109,12 @@ const productCategories = [
     description: "Two 1.25g rosin-infused Peanut Butter Breath hybrid blunts",
     href: "/products/blunt-2pk",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790271722-peanut_butter_breath_family-C9f1QXq076kJTdiPfKBeQcdYgDQgP2.avif",
+  },
+  {
+    name: "LRLD AIO",
+    description: "Live resin liquid diamond AIO packs with an infused preroll",
+    href: "/products/lrld-aio",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790014410-tokyo_family-echqNcZhLenruPxCk3vPoCRQYx3GXt.avif",
   },
 ]
 
