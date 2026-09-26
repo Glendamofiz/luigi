@@ -199,7 +199,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }))
 
-  const aioProducts = ['acapulco-gold-aio-dual-pack', 'bubblegum-kush-aio-dual-pack', 'bullet-trainwreck-aio-dual-pack', 'eiffel-lights-aio-dual-pack', 'green-crack-aio-dual-pack', 'manhattan-midnight-aio-dual-pack', 'private-reserve-aio-dual-pack', 'thai-blaze-aio-dual-pack'].map((slug) => ({ url: `${baseUrl}/products/${slug}`, lastModified, changeFrequency: 'weekly' as const, priority: 0.85 }))
+  const aioProducts = ['acapulco-gold-aio-dual-pack', 'bubblegum-kush-aio-dual-pack', 'bullet-trainwreck-aio-dual-pack', 'eiffel-lights-aio-dual-pack', 'green-crack-aio-dual-pack', 'manhattan-midnight-aio-dual-pack', 'private-reserve-aio-dual-pack', 'thai-blaze-aio-dual-pack', 'tower-fog-og-aio-dual-pack'].map((slug) => ({ url: `${baseUrl}/products/${slug}`, lastModified, changeFrequency: 'weekly' as const, priority: 0.85 }))
 
   const blogPosts = [
     'luigi-carts-los-angeles',

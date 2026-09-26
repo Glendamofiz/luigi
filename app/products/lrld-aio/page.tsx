@@ -12,6 +12,7 @@ const products = [
   ["manhattan-midnight-aio-dual-pack", "Manhattan Midnight AIO Dual Pack", "Hybrid", "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790013592-new_york_family-xQxSK50iaUFDFMh4z6z4VIECReNuBD.avif"],
   ["private-reserve-aio-dual-pack", "Private Reserve AIO Dual Pack", "Hybrid", "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790014743-dubai_family-K8QzPho5h62yKJ2WyjX7PgDo7F4gAN.avif"],
   ["thai-blaze-aio-dual-pack", "Thai Blaze AIO Dual Pack", "Sativa", "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790013166-bangkok_family-d9nkzceWmOdUd52nc23FXNKGtqMa6M.avif"],
+  ["tower-fog-og-aio-dual-pack", "Tower Fog OG AIO Dual Pack", "Indica", "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790014224-london_family-nPv27u5y1HGPsGBKgsplY29m0bGkvg.avif"],
 ] as const
 
 export const metadata = { title: "LRLD AIO | LUIGI Live Resin Liquid Diamond AIO Packs", description: "Shop LUIGI live resin liquid diamond AIO dual packs with infused prerolls." }
