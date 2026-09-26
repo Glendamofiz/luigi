@@ -62,6 +62,12 @@ const productsSchema = {
         "position": 4,
         "name": "Luigi Gummies",
         "url": "https://www.luigiofficialbrand.com/products/gummies"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Blunt 2pk",
+        "url": "https://www.luigiofficialbrand.com/products/peanut-butter-breath-blunt-2pk"
       }
     ]
   }
@@ -91,6 +97,12 @@ const productCategories = [
     description: "Watermelon rosin gummies paired with a live resin preroll",
     href: "/products/gummies",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/watermelon_joint-dTVzypY8deiJIBYR1SQIe0AdRfi346.avif",
+  },
+  {
+    name: "Blunt 2pk",
+    description: "Two 1.25g rosin-infused Peanut Butter Breath hybrid blunts",
+    href: "/products/peanut-butter-breath-blunt-2pk",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790271722-peanut_butter_breath_family-C9f1QXq076kJTdiPfKBeQcdYgDQgP2.avif",
   },
 ]
 
