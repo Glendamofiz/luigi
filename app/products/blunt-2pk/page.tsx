@@ -21,6 +21,7 @@ const products = [
   { href: "/products/og-reserve-blunt-2pk", name: "OG Reserve", type: "Indica", description: "Earthy, piney, classic OG flavor with smooth calm.", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790271576-og_reserve_family-B8SVEKeMz6FnHkJbJVR11HOGD3TL9A.avif" },
   { href: "/products/sour-ribbon-tarts-blunt-2pk", name: "Sour Ribbon Tarts", type: "Sativa", description: "Zingy citrus, tangy candy, and a sugary fruity finish.", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790271901-sour_tart_ribbons_family-i2AdrAYqbcHMZCUbUeCezpyZHUMohB.avif" },
   { href: "/products/tangie-diesel-blunt-2pk", name: "Tangie Diesel", type: "Hybrid", description: "Juicy tangerine, bold diesel, and a funky twist.", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790272714-tangie_diesel_family-HvETsC1udVjVTve1oV8AGT7iFRIq3o.avif" },
+  { href: "/products/tropicana-gold-blunt-2pk", name: "Tropicana Gold", type: "Hybrid", description: "Juicy citrus, tropical fruit, and a splash of sunshine.", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790272790-tropicana_gold_family-mMVq1NfDuyZ4CwqiZyTsQxvL0tSoal.avif" },
 ]
 
 export default function Blunt2pkPage() {
