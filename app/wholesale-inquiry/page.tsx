@@ -69,6 +69,8 @@ const wholesaleProducts = [
   }
 ]
 
+const wholesaleTelegramUrl = "https://t.me/luigiofficial?text=Hello%20LUIGI%20team%2C%20I%27d%20like%20to%20request%20a%20wholesale%20quote.%20My%20business%20is%20ready%20to%20discuss%20products%2C%20pricing%2C%20and%20order%20volume."
+
 const benefits = [
   "Premium quality products with consistent potency",
   "Strong brand recognition in California market",
@@ -671,7 +673,7 @@ export default function WholesalePage() {
               </h3>
 
               <p className="text-gray-600 leading-relaxed mb-6">
-                Ready to <strong>buy Luigi prerolls wholesale</strong> or stock up on our entire product line? The process is simple. Contact our wholesale team through the form above, share your business details and volume requirements, and we&apos;ll provide a customized quote within 24 hours. Our account managers are here to help you build a successful partnership with Luigi Oil.
+                Ready to <strong>buy Luigi prerolls wholesale</strong> or stock up on our entire product line? Contact our team on Telegram to request a wholesale quote. Share your business details and volume requirements in the prefilled chat, and our account managers will help you get started.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-6">
@@ -680,9 +682,12 @@ export default function WholesalePage() {
 
               <div className="bg-gray-100 p-6 rounded-xl mt-10">
                 <p className="text-gray-700 font-semibold mb-2">Ready to Partner with Luigi Oil?</p>
-                <p className="text-gray-600">
-                  Contact us today to learn more about our wholesale pricing, product availability, and partnership opportunities. We ship worldwide and offer competitive terms for new accounts.
+                <p className="text-gray-600 mb-5">
+                  Contact our team on Telegram for wholesale pricing, product availability, and partnership opportunities. Request a quote directly and we&apos;ll help you get started.
                 </p>
+                <a href={wholesaleTelegramUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center rounded-lg bg-[#0088cc] px-5 py-3 font-semibold text-white transition-colors hover:bg-[#0077b5]">
+                  Contact Our Team on Telegram
+                </a>
               </div>
             </article>
           </div>
