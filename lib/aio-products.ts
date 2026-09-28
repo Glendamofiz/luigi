@@ -26,13 +26,13 @@ const assets: Record<string, AioProduct["images"]> = {
 
 const definitions: [string, string, AioProduct["type"], string, string, string, string][] = [
   ["acapulco-gold-aio-dual-pack", "Acapulco Gold", "Sativa", "LUIGI-AG-AIO-DUAL", "Skunk, blueberry, and pungent tropical notes", "Happy, creative, and energetic", "Mexican × Nepalese landrace"],
-  ["bubblegum-kush-aio-dual-pack", "Bubblegum Kush", "Hybrid", "LUIGI-BK-AIO-DUAL", "Sweet bubblegum, berry, pine, citrus, and earth", "Relaxed, giggly, happy, euphoric, sleepy, and uplifted", "Bubble Gum genetics from The Bulldog Seeds in Amsterdam"],
+  ["bubblegum-kush-aio-dual-pack", "Bubblegum Kush", "Hybrid", "LUIGI-BK-AIO-DUAL", "Sweet, berry, pine, citrus, earthy", "Relaxed, giggly, happy, euphoric, sleepy, uplifted", "Bubble Gum (The Bulldog Seeds, Amsterdam)"],
   ["bullet-trainwreck-aio-dual-pack", "Bullet Trainwreck", "Sativa", "LUIGI-BT-AIO-DUAL", "Bright, pungent, terpene-forward flavor", "Energetic, focused, and uplifting", "Trainwreck-inspired sativa profile"],
   ["eiffel-lights-aio-dual-pack", "Eiffel Lights", "Hybrid", "LUIGI-EL-AIO-DUAL", "Bold terpene profile with loud flavor", "Balanced, uplifting, and social", "Balanced hybrid profile"],
-  ["green-crack-aio-dual-pack", "Green Crack", "Sativa", "LUIGI-GC-AIO-DUAL", "Skunk, citrus, mango, earthy, and sweet", "Energetic, uplifted, happy, creative, euphoric, and focused", "Skunk #1 × Afghani"],
+  ["green-crack-aio-dual-pack", "Green Crack", "Sativa", "LUIGI-GC-AIO-DUAL", "Skunk, citrus, mango, earthy, sweet", "Energetic, uplifted, happy, creative, euphoric, focused", "Skunk #1 × Afghani"],
   ["manhattan-midnight-aio-dual-pack", "Manhattan Midnight", "Indica", "LUIGI-MM-AIO-DUAL", "Deep, bold, rich, and smooth", "Relaxing, calm, and unwinding", "Deep indica profile"],
   ["private-reserve-aio-dual-pack", "Private Reserve", "Hybrid", "LUIGI-PR-AIO-DUAL", "Rich, layered, and refined", "Balanced, refined, and elevated", "Balanced hybrid profile"],
-  ["thai-blaze-aio-dual-pack", "Thai Blaze", "Sativa", "LUIGI-TB-AIO-DUAL", "Tropical, citrus, and earthy", "Energetic, uplifting, and creative", "Thai-inspired sativa profile"],
+  ["thai-blaze-aio-dual-pack", "Thai Blaze", "Sativa", "LUIGI-TB-AIO-DUAL", "Tropical, citrus, earthy", "Energetic, Uplifting, Creative", "Thai sativa"],
   ["tower-fog-og-aio-dual-pack", "Tower Fog OG", "Indica", "LUIGI-TFO-AIO-DUAL", "Deep OG, earthy, and smooth", "Relaxing, calm, and heavy-hitting", "OG indica profile"],
   ["canal-drift-aio-dual-pack", "Canal Drift", "Indica", "LUIGI-CD-AIO-DUAL", "Rich, earthy, smooth, and lingering", "Relaxing, calm, and flowing", "Bold indica profile"],
 ]
