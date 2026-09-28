@@ -179,14 +179,12 @@ export default function WholesalePage() {
     const tier = product.pricing[selectedIndex]
     addItem({
       id: `${productId}-${selectedIndex}`,
-      name: `${product.name} - ${tier.units} units`,
-      price: tier.price.replace(/[$,]/g, ''),
-      image: product.image,
-      quantity: 1,
-      productName: product.name,
+      productId,
+      productName: `${product.name} - ${tier.units} units`,
       productImage: product.image,
-      units: typeof tier.units === 'number' ? tier.units : parseInt(tier.units.replace(/,/g, '')),
+      price: tier.price.replace(/[$,]/g, ''),
       perUnit: tier.perUnit,
+      units: typeof tier.units === 'number' ? tier.units : parseInt(tier.units.replace(/,/g, '')),
       source: "wholesale",
     })
 
