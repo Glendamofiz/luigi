@@ -1,4 +1,18 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { createClient } from '@supabase/supabase-js'
+
+function getSupabaseClient() {
+  const supabaseUrl = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL
+  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_SECRET_KEY
+
+  if (!supabaseUrl || !supabaseKey) {
+    throw new Error('Supabase server configuration is missing')
+  }
+
+  return createClient(supabaseUrl, supabaseKey, {
+    auth: { autoRefreshToken: false, persistSession: false },
+  })
+}
 
 interface OrderItem {
   name: string
@@ -252,76 +266,107 @@ function generateAdminEmailHTML(order: OrderData) {
   `
 }
 
+async function sendBrevoEmail(to: string, subject: string, htmlContent: string, orderId: string) {
+  const apiKey = process.env.BREVO_API_KEY
+  const senderEmail = 'support@luigiofficialbrand.com'
+
+  if (!apiKey) {
+    throw new Error('Brevo email configuration is missing')
+  }
+
+  const response = await fetch('https://api.brevo.com/v3/smtp/email', {
+    method: 'POST',
+    headers: {
+      accept: 'application/json',
+      'api-key': apiKey,
+      'content-type': 'application/json',
+    },
+    body: JSON.stringify({
+      sender: { email: senderEmail, name: 'Luigi Oil' },
+      to: [{ email: to }],
+      subject,
+      htmlContent,
+      headers: { 'X-Order-Number': orderId },
+    }),
+  })
+
+  if (!response.ok) {
+    const details = await response.text()
+    console.error('[v0] Brevo send failed:', response.status, details)
+    throw new Error('Brevo email delivery failed')
+  }
+}
+
 export async function POST(request: NextRequest) {
   try {
     const order: OrderData = await request.json()
 
-    if (!process.env.BREVO_API_KEY) {
-      console.error('BREVO_API_KEY is not configured')
+    if (!order.orderId || !order.customerEmail || !order.customerName || !Array.isArray(order.items) || order.items.length === 0) {
+      return NextResponse.json({ error: 'Invalid order payload' }, { status: 400 })
+    }
+
+    const adminEmail = 'orders@luigiofficialbrand.com'
+
+    const supabase = getSupabaseClient()
+    const { error: orderError } = await supabase.from('orders').insert({
+      order_number: order.orderId,
+      customer_email: order.customerEmail,
+      customer_name: order.customerName,
+      customer_phone: order.customerPhone,
+      shipping_address: order.shippingAddress,
+      items: order.items,
+      subtotal: order.subtotal,
+      shipping: order.shipping,
+      total: order.total,
+      payment_method: order.paymentMethod,
+      payment_proof_image: order.paymentProofImage ?? null,
+      notes: order.notes ?? null,
+      status: 'pending_payment',
+    })
+
+    if (orderError) {
+      console.error('[v0] Failed to save order:', orderError.message)
+      return NextResponse.json({ error: 'Unable to save order' }, { status: 500 })
+    }
+
+    const deliveries = await Promise.allSettled([
+      sendBrevoEmail(
+        order.customerEmail,
+        `Order ${order.orderId} received — pending payment`,
+        generateCustomerEmailHTML(order),
+        order.orderId,
+      ),
+      sendBrevoEmail(
+        adminEmail,
+        `New order ${order.orderId} — pending payment`,
+        generateAdminEmailHTML(order),
+        order.orderId,
+      ),
+    ])
+
+    const failedRecipients = deliveries
+      .map((delivery, index) => ({ delivery, recipient: index === 0 ? 'customer' : 'admin' }))
+      .filter(({ delivery }) => delivery.status === 'rejected')
+      .map(({ delivery, recipient }) => {
+        const reason = delivery.status === 'rejected' && delivery.reason instanceof Error
+          ? delivery.reason.message
+          : 'Unknown delivery failure'
+        console.error(`[v0] Brevo ${recipient} email failed:`, reason)
+        return recipient
+      })
+
+    if (failedRecipients.length > 0) {
       return NextResponse.json(
-        { error: 'Email service not configured' },
-        { status: 500 }
+        {
+          error: 'Order saved, but one or more notification emails failed',
+          orderNumber: order.orderId,
+          failedRecipients,
+        },
+        { status: 502 },
       )
     }
 
-    const adminEmail = process.env.ADMIN_EMAIL || 'admin@luigiofficialbrand.com'
-    const fromEmail = process.env.BREVO_FROM_EMAIL || 'orders@luigiofficialbrand.com'
-    const fromName = process.env.BREVO_FROM_NAME || 'Luigi Oil'
-
-    console.log('Sending customer email to:', order.customerEmail)
-    console.log('Sending admin email to:', adminEmail)
-
-    // Send customer confirmation email
-    const customerResponse = await fetch('https://api.brevo.com/v3/smtp/email', {
-      method: 'POST',
-      headers: {
-        'accept': 'application/json',
-        'api-key': process.env.BREVO_API_KEY,
-        'content-type': 'application/json',
-      },
-      body: JSON.stringify({
-        subject: `Order Received — Pending Payment | ${order.orderId}`,
-        htmlContent: generateCustomerEmailHTML(order),
-        sender: { name: fromName, email: fromEmail },
-        to: [{ email: order.customerEmail, name: order.customerName }],
-      }),
-    })
-
-    if (!customerResponse.ok) {
-      throw new Error(`Failed to send customer email: ${customerResponse.statusText}`)
-    }
-
-    const customerResult = await customerResponse.json()
-    console.log('Customer email sent successfully')
-
-    // Send admin notification email
-    const adminResponse = await fetch('https://api.brevo.com/v3/smtp/email', {
-      method: 'POST',
-      headers: {
-        'accept': 'application/json',
-        'api-key': process.env.BREVO_API_KEY,
-        'content-type': 'application/json',
-      },
-      body: JSON.stringify({
-        subject: `New Order: ${order.orderId} - $${order.total.toFixed(2)}`,
-        htmlContent: generateAdminEmailHTML(order),
-        sender: { name: fromName, email: fromEmail },
-        to: [{ email: adminEmail, name: 'Luigi Oil Admin' }],
-      }),
-    })
-
-    if (!adminResponse.ok) {
-      throw new Error(`Failed to send admin email: ${adminResponse.statusText}`)
-    }
-
-    const adminResult = await adminResponse.json()
-    console.log('Admin email sent successfully')
-
-    return NextResponse.json({
-      success: true,
-      customerMessageId: customerResult.messageId,
-      adminMessageId: adminResult.messageId,
-    })
+    return NextResponse.json({ success: true, orderNumber: order.orderId })
   } catch (error: unknown) {
     const errorMessage = error instanceof Error ? error.message : 'Unknown error'
     const errorDetails = error instanceof Error ? error.stack : JSON.stringify(error)

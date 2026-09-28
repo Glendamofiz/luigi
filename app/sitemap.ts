@@ -54,6 +54,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/products/blunt-2pk`,
+      lastModified,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/products/vapes`,
+      lastModified,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/products/lrld-aio`,
+      lastModified,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/products/acapulco-gold-aio-dual-pack`,
+      lastModified,
+      changeFrequency: 'weekly' as const,
+      priority: 0.85,
+    },
+    {
       url: `${baseUrl}/products/watermelon-gummy-pack`,
       lastModified,
       changeFrequency: 'weekly' as const,
@@ -175,6 +199,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
+  const bluntProducts = [
+    'peanut-butter-breath-blunt-2pk',
+    'berry-amarillo-blunt-2pk',
+    'casablanca-peach-blunt-2pk',
+    'citrus-mimosa-blunt-2pk',
+    'donny-burger-blunt-2pk',
+    'garlic-glue-blunt-2pk',
+    'og-reserve-blunt-2pk',
+    'sour-ribbon-tarts-blunt-2pk',
+    'tangie-diesel-blunt-2pk',
+    'tropicana-gold-blunt-2pk',
+  ].map((slug) => ({
+    url: `${baseUrl}/products/${slug}`,
+    lastModified,
+    changeFrequency: 'weekly' as const,
+    priority: 0.85,
+  }))
+
+  const aioProducts = ['acapulco-gold-aio-dual-pack', 'bubblegum-kush-aio-dual-pack', 'bullet-trainwreck-aio-dual-pack', 'eiffel-lights-aio-dual-pack', 'green-crack-aio-dual-pack', 'manhattan-midnight-aio-dual-pack', 'private-reserve-aio-dual-pack', 'thai-blaze-aio-dual-pack', 'tower-fog-og-aio-dual-pack', 'canal-drift-aio-dual-pack'].map((slug) => ({ url: `${baseUrl}/products/${slug}`, lastModified, changeFrequency: 'weekly' as const, priority: 0.85 }))
+
   const blogPosts = [
     'luigi-carts-los-angeles',
     'buy-luigi-carts-wholesale',
@@ -208,5 +252,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...staticPages, ...blogPosts]
+  return [...staticPages, ...bluntProducts, ...aioProducts, ...blogPosts]
 }

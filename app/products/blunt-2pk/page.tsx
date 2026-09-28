@@ -1,25 +1,29 @@
 import type { Metadata } from "next"
-import Image from "next/image"
 import Link from "next/link"
+import Image from "next/image"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AgeVerification } from "@/components/age-verification"
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.luigiofficialbrand.com"
-const familyImage = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790271722-peanut_butter_breath_family-07HnZb3mtwe2oND1JfLyJDsrSgZyrY.avif"
-
 export const metadata: Metadata = {
-  title: "LUIGI Blunt 2pk | Premium Rosin-Infused Blunts",
-  description: "Shop LUIGI premium rosin-infused blunt 2-packs. Two full-size blunts, bold strain flavor, and smooth California sessions.",
-  keywords: ["LUIGI blunt 2pk", "rosin infused blunts", "premium blunt pack", "California infused blunts"],
-  alternates: { canonical: `${siteUrl}/products/blunt-2pk` },
-  openGraph: { title: "LUIGI Blunt 2pk | Premium Rosin-Infused Blunts", description: "Two premium rosin-infused blunts in every LUIGI 2-pack.", url: `${siteUrl}/products/blunt-2pk`, siteName: "LUIGI", type: "website", images: [{ url: familyImage, alt: "LUIGI Peanut Butter Breath Blunt 2-Pack" }] },
+  title: "Blunt 2pk | LUIGI Rosin-Infused Blunts",
+  description: "Explore LUIGI's rosin-infused blunt 2-packs, crafted for bold flavor and easy sharing.",
+  alternates: { canonical: "https://www.luigiofficialbrand.com/products/blunt-2pk" },
 }
+
+const products = [
+  { href: "/products/peanut-butter-breath-blunt-2pk", name: "Peanut Butter Breath", type: "Hybrid", description: "Nutty, gassy, smooth. Two 1.25g rosin-infused blunts.", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790271722-peanut_butter_breath_family-C9f1QXq076kJTdiPfKBeQcdYgDQgP2.avif" },
+  { href: "/products/berry-amarillo-blunt-2pk", name: "Berry Amarillo", type: "Indica", description: "Ripe berry, zesty citrus, and bright terps in every pack.", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790269924-berry_amarillo_family-XHqPtoIFbssAsb3BvPhh4Fqg7U71uz.avif" },
+  { href: "/products/casablanca-peach-blunt-2pk", name: "Casablanca Peach", type: "Indica", description: "Lush peach, tropical sweetness, and premium rosin.", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790270278-casablanca_peach_family-GfW4hZCFY1G5SZb9CQjnzT5v8JPiAj.avif" },
+  { href: "/products/citrus-mimosa-blunt-2pk", name: "Citrus Mimosa", type: "Hybrid", description: "Bright orange, zesty citrus, and bubbly mimosa vibes.", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790270470-citrus_mimosa_family-algKiDA7gyKLwVm08CkT0xN28IC5uH.avif" },
+  { href: "/products/donny-burger-blunt-2pk", name: "Donny Burger", type: "Hybrid", description: "Cheesy, gassy, funky terps with a full-bodied finish.", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790270690-donny_burger_family-UMW09pDhBUEVWgXjpAOpQXWdk4eC1F.avif" },
+  { href: "/products/garlic-glue-blunt-2pk", name: "Garlic Glue", type: "Hybrid", description: "Savory garlic, earthy gas, and pungent terps.", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790271010-garlic_glue_family-GxDwL54dLBLDzvYKi5SKnhvi4c2A7d.avif" },
+  { href: "/products/og-reserve-blunt-2pk", name: "OG Reserve", type: "Indica", description: "Earthy, piney, classic OG flavor with smooth calm.", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790271576-og_reserve_family-B8SVEKeMz6FnHkJbJVR11HOGD3TL9A.avif" },
+  { href: "/products/sour-ribbon-tarts-blunt-2pk", name: "Sour Ribbon Tarts", type: "Sativa", description: "Zingy citrus, tangy candy, and a sugary fruity finish.", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790271901-sour_tart_ribbons_family-i2AdrAYqbcHMZCUbUeCezpyZHUMohB.avif" },
+  { href: "/products/tangie-diesel-blunt-2pk", name: "Tangie Diesel", type: "Hybrid", description: "Juicy tangerine, bold diesel, and a funky twist.", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790272714-tangie_diesel_family-HvETsC1udVjVTve1oV8AGT7iFRIq3o.avif" },
+  { href: "/products/tropicana-gold-blunt-2pk", name: "Tropicana Gold", type: "Hybrid", description: "Juicy citrus, tropical fruit, and a splash of sunshine.", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1790272790-tropicana_gold_family-mMVq1NfDuyZ4CwqiZyTsQxvL0tSoal.avif" },
+]
 
 export default function Blunt2pkPage() {
-  return <><AgeVerification /><Header /><main className="pt-16 lg:pt-20">
-    <section className="bg-black py-16 text-white md:py-24"><div className="mx-auto max-w-7xl px-6 lg:px-8"><p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#D4AF37]">LUIGI Blunt 2pk</p><h1 className="mt-4 max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">Premium Rosin-Infused Blunts, Two in Every Pack</h1><p className="mt-6 max-w-2xl text-xl leading-8 text-gray-300">Big flavor, smooth sessions, and two full-size infused blunts made for sharing or keeping close.</p></div></section>
-    <section className="py-16 md:py-24"><div className="mx-auto max-w-5xl px-6 lg:px-8"><h2 className="text-3xl font-bold md:text-4xl">Choose Your LUIGI Blunt 2pk</h2><div className="mt-10 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm"><div className="grid gap-8 p-6 md:grid-cols-2 md:p-8"><div className="relative aspect-square rounded-xl bg-gray-50"><Image src={familyImage} alt="LUIGI Peanut Butter Breath Rosin Infused Hybrid Blunt 2-Pack" fill className="object-contain p-5" /></div><div className="flex flex-col justify-center"><p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#B08D24]">Hybrid · Rosin Infused</p><h3 className="mt-3 text-3xl font-bold">Peanut Butter Breath Blunt 2-Pack</h3><p className="mt-4 text-lg leading-8 text-gray-600">Two 1.25g Peanut Butter Breath hybrid blunts. 2.5g total. Nutty, gassy, smooth, and ready for a premium California session.</p><div className="mt-6 flex items-center gap-4"><span className="text-3xl font-bold">$30.00</span><span className="rounded-full bg-[#f7f1dc] px-3 py-1 text-sm font-semibold text-[#8a6815]">2 × 1.25g</span></div><Link href="/products/peanut-butter-breath-blunt-2pk" className="mt-7 inline-flex w-fit rounded-md bg-black px-6 py-3 font-semibold text-white transition hover:bg-[#D4AF37] hover:text-black">View product</Link></div></div></div></div></section>
-  </main><Footer /></>
+  return <><AgeVerification /><Header /><main className="bg-white pt-16 lg:pt-20"><section className="bg-black px-6 py-20 text-center text-white"><p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#D4AF37]">LUIGI Blunt 2pk</p><h1 className="mx-auto mt-5 max-w-3xl text-4xl font-bold tracking-tight md:text-6xl">Two blunts. One iconic strain. Double the fun.</h1><p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-300">Premium rosin-infused blunts made for sharing, saving, and savoring.</p></section><section className="mx-auto max-w-7xl px-6 py-14 lg:px-8"><div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">{products.map((product) => <Link key={product.href} href={product.href} className="group overflow-hidden rounded-xl border border-gray-200 bg-gray-50"><div className="relative aspect-square"><Image src={product.image} alt={`LUIGI ${product.name} Rosin Infused ${product.type} Blunt 2-Pack`} fill className="object-contain p-6 transition-transform group-hover:scale-105" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" /></div><div className="p-6"><p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#9a7b16]">{product.type} blunt 2pk</p><h2 className="mt-2 text-2xl font-bold text-gray-950">{product.name}</h2><p className="mt-3 leading-7 text-gray-600">{product.description} 2.5g total. Just $30.</p><span className="mt-5 inline-flex rounded-full bg-black px-5 py-3 font-semibold text-white">View product, $30</span></div></Link>)}</div></section></main><Footer /></>
 }
-
