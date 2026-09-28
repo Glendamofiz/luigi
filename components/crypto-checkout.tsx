@@ -165,7 +165,7 @@ export function CryptoCheckout({ totalAmount, onCryptoSelect, selectedCrypto }: 
       {/* Crypto Selection Grid */}
       <div className="grid grid-cols-3 gap-3">
         {cryptoCategories[activeTab].map((cryptoId) => {
-          const crypto = CRYPTO_WALLETS[cryptoId]
+          const crypto = CRYPTO_WALLETS[cryptoId] as (typeof CRYPTO_WALLETS)[keyof typeof CRYPTO_WALLETS] & { recommended?: boolean }
           const isSelected = selectedCrypto === cryptoId
           
           return (

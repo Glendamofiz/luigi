@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: 'https://www.luigiofficialbrand.com/blog/luigi-series-6-vs-series-5',
     images: [
       {
-    images: 'https://www.luigiofficialbrand.com/og-images/blog-series-6-disposables.png',
+    url: 'https://www.luigiofficialbrand.com/og-images/blog-series-6-disposables.png',
         width: 1200,
         height: 630,
         alt: 'Luigi Series 6 vs Series 5 Comparison'
